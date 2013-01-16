@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/networking/ClientPoller.h" open="1" top="0" tabpos="0">
+		<Cursor position="106" topLine="0" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/networking/ClientListener.h" open="1" top="0" tabpos="0">
+		<Cursor position="0" topLine="0" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/util/Thread.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="15" />
+	</File>
+	<File name="include/util/Thread.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="10" />
+	</File>
+	<File name="src/networking/Server.cpp" open="1" top="1" tabpos="0">
+		<Cursor position="1252" topLine="91" />
+		<BrowseMarks positions="2243" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/util/ConfigReader.h" open="0" top="0" tabpos="0">
+		<Cursor position="109" topLine="23" />
+	</File>
+	<File name="include/networking/Client.h" open="0" top="0" tabpos="0">
+		<Cursor position="804" topLine="16" />
+	</File>
+	<File name="include/networking/Server.h" open="0" top="0" tabpos="0">
+		<Cursor position="752" topLine="0" />
+	</File>
+	<File name="include/networking/ClientAttenderBuilder.h" open="0" top="0" tabpos="0">
+		<Cursor position="375" topLine="0" />
+	</File>
+	<File name="include/networking/NetworkException.h" open="0" top="0" tabpos="0">
+		<Cursor position="409" topLine="0" />
+	</File>
+	<File name="include/networking/ClientAttender.h" open="1" top="0" tabpos="0">
+		<Cursor position="302" topLine="6" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/networking/Client.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="983" topLine="0" />
+		<BrowseMarks positions="572,990" />
+	</File>
+	<File name="src/networking/ClientPoller.cpp" open="1" top="0" tabpos="0">
+		<Cursor position="1709" topLine="33" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/chatServerMain.cpp" open="1" top="0" tabpos="0">
+		<Cursor position="174" topLine="0" />
+		<BrowseMarks positions="726" />
+		<Book_Marks positions="" />
+	</File>
+</BrowseTracker_layout_file>

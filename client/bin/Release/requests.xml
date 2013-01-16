@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<requests>
+	<option name="workshop">
+		<property name="building">Taller</property>
+		<property name="building">Establo</property>
+		<property name="building">Cuartel</property>
+	</option>
+
+
+	<building name="Taller">
+		<property name="unitType">Autogiro</property>
+		<property name="unitType">Carreta</property>
+		<property name="unitType">Planeador</property>
+		<property name="unitType">Tanque</property>
+	</building>
+
+
+	<building name="Establo">
+		<property name="unitType">Arcabucero Montado</property>
+		<property name="unitType">Caballero Montado</property>
+	</building>
+
+	<building name="Cuartel">
+		<property name="unitType">Arcabucero</property>
+		<property name="unitType">Caballero</property>
+		<property name="unitType">Lancero</property>
+	</building>
+</requests>

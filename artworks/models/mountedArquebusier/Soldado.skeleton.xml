@@ -1,0 +1,12 @@
+<skeleton>
+	<bones>
+		<bone id="0" name="Cuello">
+			<position x="0.044579" y="1.171505" z="-0.251011"/>
+			<rotation angle="3.141592">
+				<axis x="0.000000" y="0.998638" z="-0.052165"/>
+			</rotation>
+		</bone>
+	</bones>
+	<bonehierarchy>
+	</bonehierarchy>
+</skeleton>

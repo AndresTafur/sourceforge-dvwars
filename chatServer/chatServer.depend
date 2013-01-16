@@ -1,0 +1,291 @@
+# depslib dependency file v1.0
+1356736352 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/chatServer.cpp
+	<cstdlib>
+	<iostream>
+	<boost/bind.hpp>
+	<boost/asio.hpp>
+
+1356743560 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/ChatServer.cpp
+	"ChatServer.h"
+	<fcntl.h>
+	<netinet/tcp.h>
+	<iostream>
+
+1356743480 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/ChatServer.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+	"NetworkException.h"
+
+1356755224 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/chatServerMain.cpp
+	<cstdlib>
+	<iostream>
+	"Server.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/Client.cpp
+	"Client.h"
+	<stdio.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/Client.h
+	<string>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<boost/thread.hpp>
+	<ClientListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/ClientListener.h
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/ClientAttender.cpp
+	"ClientAttender.h"
+	<iostream>
+	<fcntl.h>
+
+1356743133 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/ClientAttender.h
+	"Client.h"
+	"util/Thread.h"
+	"RequestManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/util/Thread.h
+	<boost/thread.hpp>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/RequestManager.h
+	<string>
+	<vector>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/RequestManager.cpp
+	"RequestManager.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/Server.cpp
+	"Server.h"
+	<fcntl.h>
+	<netinet/tcp.h>
+	<iostream>
+
+1356743038 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/Server.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+	"NetworkException.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/ClientAttenderBuilder.h
+	"ClientAttender.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/NetworkException.h
+	<exception>
+	<string>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/util/ConfigReader.cpp
+	"ConfigReader.h"
+
+1356743890 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/util/ConfigReader.h
+	<stdio.h>
+	<string>
+	<vector>
+	<libxml/parser.h>
+	<libxml/xpath.h>
+
+1344541157 /usr/include/libxml2/libxml/parser.h
+	<stdarg.h>
+	<libxml/xmlversion.h>
+	<libxml/tree.h>
+	<libxml/dict.h>
+	<libxml/hash.h>
+	<libxml/valid.h>
+	<libxml/entities.h>
+	<libxml/xmlerror.h>
+	<libxml/xmlstring.h>
+	<libxml/encoding.h>
+	<libxml/xmlIO.h>
+	<libxml/globals.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlversion.h
+	<libxml/xmlexports.h>
+	<ansidecl.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlexports.h
+
+1344541157 /usr/include/libxml2/libxml/tree.h
+	<stdio.h>
+	<libxml/xmlversion.h>
+	<libxml/xmlstring.h>
+	<libxml/xmlregexp.h>
+	<libxml/xmlmemory.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlstring.h
+	<stdarg.h>
+	<libxml/xmlversion.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlregexp.h
+	<libxml/xmlversion.h>
+	<libxml/tree.h>
+	<libxml/dict.h>
+
+1344541157 /usr/include/libxml2/libxml/dict.h
+	<libxml/xmlversion.h>
+	<libxml/tree.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlmemory.h
+	<stdio.h>
+	<libxml/xmlversion.h>
+	<libxml/threads.h>
+	<libxml/globals.h>
+
+1344541157 /usr/include/libxml2/libxml/threads.h
+	<libxml/xmlversion.h>
+	<libxml/globals.h>
+
+1344541157 /usr/include/libxml2/libxml/globals.h
+	<libxml/xmlversion.h>
+	<libxml/parser.h>
+	<libxml/xmlerror.h>
+	<libxml/SAX.h>
+	<libxml/SAX2.h>
+	<libxml/xmlmemory.h>
+	<libxml/threads.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlerror.h
+	<libxml/parser.h>
+
+1344541157 /usr/include/libxml2/libxml/SAX.h
+	<stdio.h>
+	<stdlib.h>
+	<libxml/xmlversion.h>
+	<libxml/parser.h>
+	<libxml/xlink.h>
+
+1344541157 /usr/include/libxml2/libxml/xlink.h
+	<libxml/xmlversion.h>
+	<libxml/tree.h>
+
+1344541157 /usr/include/libxml2/libxml/SAX2.h
+	<stdio.h>
+	<stdlib.h>
+	<libxml/xmlversion.h>
+	<libxml/parser.h>
+	<libxml/xlink.h>
+
+1344541157 /usr/include/libxml2/libxml/hash.h
+	<libxml/xmlversion.h>
+	<libxml/parser.h>
+	<libxml/dict.h>
+
+1344541157 /usr/include/libxml2/libxml/valid.h
+	<libxml/xmlversion.h>
+	<libxml/xmlerror.h>
+	<libxml/tree.h>
+	<libxml/list.h>
+	<libxml/xmlautomata.h>
+	<libxml/xmlregexp.h>
+
+1344541157 /usr/include/libxml2/libxml/list.h
+	<libxml/xmlversion.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlautomata.h
+	<libxml/xmlversion.h>
+	<libxml/tree.h>
+	<libxml/xmlregexp.h>
+
+1344541157 /usr/include/libxml2/libxml/entities.h
+	<libxml/xmlversion.h>
+	<libxml/tree.h>
+
+1344541157 /usr/include/libxml2/libxml/encoding.h
+	<libxml/xmlversion.h>
+	<iconv.h>
+	<unicode/ucnv.h>
+	<libxml/tree.h>
+
+1344541157 /usr/include/libxml2/libxml/xmlIO.h
+	<stdio.h>
+	<libxml/xmlversion.h>
+	<libxml/globals.h>
+	<libxml/tree.h>
+	<libxml/parser.h>
+	<libxml/encoding.h>
+
+1344541157 /usr/include/libxml2/libxml/xpath.h
+	<libxml/xmlversion.h>
+	<libxml/xmlerror.h>
+	<libxml/tree.h>
+	<libxml/hash.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/util/Thread.cpp
+	"Thread.h"
+
+1356747214 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/networking/ChatServer.cpp
+	"ChatServer.h"
+	<fcntl.h>
+	<netinet/tcp.h>
+	<iostream>
+
+1356745377 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/ChatServer.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+	"NetworkException.h"
+	"ClientPoller.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/ClientAttenderBuilder.h
+	"ClientAttender.h"
+
+1356755210 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/ClientAttender.h
+	"Client.h"
+	"util/Thread.h"
+	"RequestManager.h"
+	"NetworkException.h"
+
+1356755153 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/Client.h
+	<string>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<boost/thread.hpp>
+	<ClientListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/ClientListener.h
+
+1356748256 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/NetworkException.h
+	<exception>
+	<string>
+
+1356755140 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/networking/Client.cpp
+	"Client.h"
+	<stdio.h>
+	<fcntl.h>
+	"NetworkException.h"
+
+1356747097 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/networking/ClientAttender.cpp
+	"ClientAttender.h"
+	<iostream>
+	<fcntl.h>
+
+1356747119 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/ClientPoller.h
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+
+1356755193 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/networking/ClientPoller.cpp
+	"ClientPoller.h"
+	<poll.h>
+
+1356752344 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/src/networking/Server.cpp
+	"Server.h"
+	<fcntl.h>
+	<netinet/tcp.h>
+	<iostream>
+
+1356752360 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwarsSVN/chatServer/include/networking/Server.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+	"NetworkException.h"
+	"ClientPoller.h"
+

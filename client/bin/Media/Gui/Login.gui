@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout">
+    <Widget type="Window" skin="WindowCS" position="480 250 240 160" layer="Back" name="ipConnectionWnd">
+        <Property key="Widget_Caption" value="Conection"/>
+        <Widget type="StaticText" skin="StaticText" position="10 10 250 24">
+            <Property key="Widget_Caption" value="Please enter server IP Address:"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="40 40 150 24" name="ipAddress">
+            <Property key="Widget_Caption" value="127.0.0.1"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="70 80 72 24" name="connectBtn">
+            <Property key="Widget_Caption" value="Connect"/>
+        </Widget>
+    </Widget>
+    <Widget type="Window" skin="WindowCS" position="72 240 328 328" layer="Back" name="registerWnd">
+        <Property key="Widget_Caption" value="Register"/>
+        <Property key="Widget_Visible" value="false"/>  
+       <Widget type="StaticText" skin="StaticText" position="28 33 88 23">
+            <Property key="Widget_Caption" value="User"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="124 33 136 24" name="regUsername"/>
+        <Widget type="Edit" skin="Edit" position="124 73 136 24" name="regPasswd">
+            <Property key="Edit_Password" value="true"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="124 113 136 24" name="regConfirm">
+            <Property key="Edit_Password" value="true"/>
+        </Widget>
+        <Widget type="Edit" skin="Edit" position="124 153 136 24" name="regEmail"/>
+        <Widget type="StaticText" skin="StaticText" position="28 73 88 24">
+            <Property key="Widget_Caption" value="Password:"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="28 113 88 24">
+            <Property key="Widget_Caption" value="Confirm:"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="28 153 88 24">
+            <Property key="Widget_Caption" value="Email:"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="64 245 72 24" name="regOK">
+            <Property key="Widget_Caption" value="Register"/>
+        </Widget>
+        <Widget type="Button" skin="Button" position="168 245 72 24" name="regCancel">
+            <Property key="Widget_Caption" value="Close"/>
+        </Widget>
+        <Widget type="ComboBox" skin="ComboBox" position="124 193 136 24" name="regSide">
+            <Property key="Edit_ReadOnly" value="false"/>
+            <Property key="Edit_Static" value="true"/>
+            <Property key="ComboBox_AddItem" value="Florence"/>
+            <Property key="ComboBox_AddItem" value="Milan"/>
+            <Property key="ComboBox_AddItem" value="Venice"/>
+            <Property key="ComboBox_AddItem" value="Pisa"/>
+            <Property key="ComboBox_AddItem" value="Napoles"/>
+        </Widget>
+        <Widget type="StaticText" skin="StaticText" position="28 193 88 24" name="statCombo">
+            <Property key="Widget_Caption" value="City:"/>
+        </Widget>
+    </Widget>
+    <Widget type="Button" skin="Button" position="486 268 96 32" layer="Back" name="showLogin">
+        <Property key="Widget_Caption" value="Login"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="Button" skin="Button" position="486 324 96 32" layer="Back" name="showRegister">
+        <Property key="Widget_Caption" value="Register"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="Button" skin="Button" position="486 380 96 32" layer="Back" name="Close">
+        <Property key="Widget_Caption" value="Close"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="StaticText" skin="StaticText" position="406 240 80 24" layer="Back" name="userLbl">
+        <Property key="Widget_Caption" value="User:"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="StaticText" skin="StaticText" position="406 290 80 24" layer="Back" name="passLbl">
+        <Property key="Widget_Caption" value="Password:"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="Edit" skin="Edit" position="486 240 112 24" layer="Back" name="user">
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="Edit" skin="Edit" position="486 288 112 24" layer="Back" name="pass">
+        <Property key="Widget_Visible" value="false"/>
+        <Property key="Edit_Password" value="true"/>
+    </Widget>
+    <Widget type="Button" skin="Button" position="486 336 96 32" layer="Back" name="Login">
+        <Property key="Widget_Caption" value="Login"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+    <Widget type="Button" skin="Button" position="486 380 96 32" layer="Back" name="Back">
+        <Property key="Widget_Caption" value="Back"/>
+        <Property key="Widget_Visible" value="false"/>
+    </Widget>
+</MyGUI>

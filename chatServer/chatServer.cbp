@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="chatServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/chatServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="include/util" />
+					<Add directory="include/networking" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/chatServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags libxml-2.0`" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config --libs libxml-2.0`" />
+			<Add library="boost_thread" />
+			<Add library="boost_system" />
+		</Linker>
+		<Unit filename="include/networking/Client.h" />
+		<Unit filename="include/networking/ClientAttender.h" />
+		<Unit filename="include/networking/ClientAttenderBuilder.h" />
+		<Unit filename="include/networking/ClientListener.h" />
+		<Unit filename="include/networking/ClientPoller.h" />
+		<Unit filename="include/networking/NetworkException.h" />
+		<Unit filename="include/networking/Server.h" />
+		<Unit filename="include/util/ConfigReader.h" />
+		<Unit filename="include/util/Thread.h" />
+		<Unit filename="src/chatServerMain.cpp" />
+		<Unit filename="src/networking/Client.cpp" />
+		<Unit filename="src/networking/ClientPoller.cpp" />
+		<Unit filename="src/networking/Server.cpp" />
+		<Unit filename="src/util/ConfigReader.cpp" />
+		<Unit filename="src/util/Thread.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

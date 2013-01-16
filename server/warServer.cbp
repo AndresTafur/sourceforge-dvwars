@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="warServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/warServer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/warServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags libxml-2.0`" />
+			<Add directory="include" />
+			<Add directory="include/util" />
+			<Add directory="include/boid" />
+			<Add directory="include/game" />
+			<Add directory="include/security" />
+			<Add directory="include/networking" />
+			<Add directory="include/persistance" />
+			<Add directory="include/userManager" />
+			<Add directory="include/chat" />
+		</Compiler>
+		<Linker>
+			<Add library="mysqlclient" />
+			<Add library="boost_thread" />
+			<Add library="gcrypt" />
+			<Add library="xml2" />
+		</Linker>
+		<Unit filename="include/DWClientAttender.h" />
+		<Unit filename="include/DWClientBuilder.h" />
+		<Unit filename="include/LoginAdapter.h" />
+		<Unit filename="include/boid/AligmentRule.h" />
+		<Unit filename="include/boid/Boid.h" />
+		<Unit filename="include/boid/BoidContext.h" />
+		<Unit filename="include/boid/Cohesion.h" />
+		<Unit filename="include/boid/Crowd.h" />
+		<Unit filename="include/boid/Rule.h" />
+		<Unit filename="include/boid/Separation.h" />
+		<Unit filename="include/boid/Vector2.h" />
+		<Unit filename="include/chat/ChatManager.h" />
+		<Unit filename="include/game/BuildingCreationRequest.h" />
+		<Unit filename="include/game/ChallengeManager.h" />
+		<Unit filename="include/game/CreationRequest.h" />
+		<Unit filename="include/game/GameManager.h" />
+		<Unit filename="include/game/GameRequest.h" />
+		<Unit filename="include/game/MoveRequest.h" />
+		<Unit filename="include/game/Player.h" />
+		<Unit filename="include/game/SquadBuilder.h" />
+		<Unit filename="include/game/entity/Game.h" />
+		<Unit filename="include/game/entity/Squad.h" />
+		<Unit filename="include/game/entity/Unit.h" />
+		<Unit filename="include/game/entity/Workshop.h" />
+		<Unit filename="include/networking/Client.h" />
+		<Unit filename="include/networking/ClientAttender.h" />
+		<Unit filename="include/networking/ClientAttenderBuilder.h" />
+		<Unit filename="include/networking/ClientListener.h" />
+		<Unit filename="include/networking/NetworkException.h" />
+		<Unit filename="include/networking/RequestManager.h" />
+		<Unit filename="include/networking/Server.h" />
+		<Unit filename="include/persistance/DBException.h" />
+		<Unit filename="include/persistance/MySQL.h" />
+		<Unit filename="include/persistance/Query.h" />
+		<Unit filename="include/persistance/ResultRow.h" />
+		<Unit filename="include/security/Cripto.h" />
+		<Unit filename="include/userManager/LoginManager.h" />
+		<Unit filename="include/userManager/User.h" />
+		<Unit filename="include/userManager/UserDAO.h" />
+		<Unit filename="include/util/ConfigReader.h" />
+		<Unit filename="include/util/Thread.h" />
+		<Unit filename="src/DWClientAttender.cpp" />
+		<Unit filename="src/DWClientBuilder.cpp" />
+		<Unit filename="src/LoginAdapter.cpp" />
+		<Unit filename="src/boid/AligmentRule.cpp" />
+		<Unit filename="src/boid/Boid.cpp" />
+		<Unit filename="src/boid/BoidContext.cpp" />
+		<Unit filename="src/boid/BoidObstacle.cpp" />
+		<Unit filename="src/boid/Cohesion.cpp" />
+		<Unit filename="src/boid/Crowd.cpp" />
+		<Unit filename="src/boid/Separation.cpp" />
+		<Unit filename="src/boid/Vector2.cpp" />
+		<Unit filename="src/chat/ChatManager.cpp" />
+		<Unit filename="src/game/BuildingCreationRequest.cpp" />
+		<Unit filename="src/game/ChallengeManager.cpp" />
+		<Unit filename="src/game/CreationRequest.cpp" />
+		<Unit filename="src/game/ForestGenerator.cpp" />
+		<Unit filename="src/game/GameManager.cpp" />
+		<Unit filename="src/game/MoveRequest.cpp" />
+		<Unit filename="src/game/Player.cpp" />
+		<Unit filename="src/game/SquadBuilder.cpp" />
+		<Unit filename="src/game/entity/Game.cpp" />
+		<Unit filename="src/game/entity/Squad.cpp" />
+		<Unit filename="src/game/entity/Tree.cpp" />
+		<Unit filename="src/game/entity/Unit.cpp" />
+		<Unit filename="src/game/entity/Workshop.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/networking/Client.cpp" />
+		<Unit filename="src/networking/ClientAttender.cpp" />
+		<Unit filename="src/networking/RequestManager.cpp" />
+		<Unit filename="src/networking/Server.cpp" />
+		<Unit filename="src/persistance/MySQL.cpp" />
+		<Unit filename="src/persistance/Query.cpp" />
+		<Unit filename="src/persistance/ResultRow.cpp" />
+		<Unit filename="src/security/Cripto.cpp" />
+		<Unit filename="src/userManager/LoginManager.cpp" />
+		<Unit filename="src/userManager/User.cpp" />
+		<Unit filename="src/userManager/UserDAO.cpp" />
+		<Unit filename="src/util/ConfigReader.cpp" />
+		<Unit filename="src/util/Thread.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

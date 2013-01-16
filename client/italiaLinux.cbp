@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Davinciwars" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/davinciwars" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="`pkg-config --cflags MYGUI`" />
+					<Add option="-g2" />
+					<Add directory="include" />
+					<Add directory="include/control" />
+					<Add directory="include/engine" />
+					<Add directory="include/entity" />
+					<Add directory="include/view" />
+					<Add directory="include/util" />
+					<Add directory="include/sound" />
+					<Add directory="include/chat" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add option="`pkg-config --libs MYGUI`" />
+					<Add library="OgreMain" />
+					<Add library="OIS" />
+					<Add library="MyGUI.OgrePlatform" />
+					<Add library="gcrypt" />
+					<Add library="boost_thread" />
+					<Add library="vorbis" />
+					<Add library="openal" />
+					<Add library="vorbisfile" />
+					<Add library="alut" />
+					<Add library="vorbisenc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pg" />
+			<Add option="-g" />
+			<Add option="`pkg-config --cflags libxml-2.0`" />
+			<Add directory="src" />
+			<Add directory="/usr/include/OGRE" />
+		</Compiler>
+		<Linker>
+			<Add option="-pg" />
+			<Add library="xml2" />
+			<Add directory="/usr/lib/OGRE" />
+		</Linker>
+		<Unit filename="include/chat/ChatControl.h" />
+		<Unit filename="include/chat/ChatView.h" />
+		<Unit filename="include/control/Action.h" />
+		<Unit filename="include/control/ActionFactory.h" />
+		<Unit filename="include/control/BuildingManager.h" />
+		<Unit filename="include/control/CreateAction.h" />
+		<Unit filename="include/control/CreationListener.h" />
+		<Unit filename="include/control/GameManager.h" />
+		<Unit filename="include/control/GoldAction.h" />
+		<Unit filename="include/control/InputSystem.h" />
+		<Unit filename="include/control/LoginSceneManager.h" />
+		<Unit filename="include/control/MoveAction.h" />
+		<Unit filename="include/control/NatureAction.h" />
+		<Unit filename="include/control/RTSCameraManager.h" />
+		<Unit filename="include/control/SelectionManager.h" />
+		<Unit filename="include/control/SquadBuilder.h" />
+		<Unit filename="include/control/SquadManager.h" />
+		<Unit filename="include/control/WorkShopManager.h" />
+		<Unit filename="include/engine/Client.h" />
+		<Unit filename="include/engine/ClientListener.h" />
+		<Unit filename="include/engine/KeyboardListener.h" />
+		<Unit filename="include/engine/Main.h" />
+		<Unit filename="include/engine/RenderBox.h" />
+		<Unit filename="include/engine/SelectionListener.h" />
+		<Unit filename="include/entity/Building.h" />
+		<Unit filename="include/entity/Game.h" />
+		<Unit filename="include/entity/GameObject.h" />
+		<Unit filename="include/entity/Indicator.h" />
+		<Unit filename="include/entity/MainScene.h" />
+		<Unit filename="include/entity/Squad.h" />
+		<Unit filename="include/entity/Unit.h" />
+		<Unit filename="include/entity/WorkShop.h" />
+		<Unit filename="include/sound/GameSound.h" />
+		<Unit filename="include/sound/SoundManager.h" />
+		<Unit filename="include/util/ConfigReader.h" />
+		<Unit filename="include/util/Cripto.h" />
+		<Unit filename="include/util/DaVinciGlobals.h" />
+		<Unit filename="include/util/Thread.h" />
+		<Unit filename="include/view/BuildingView.h" />
+		<Unit filename="include/view/ChallengeView.h" />
+		<Unit filename="include/view/GUI.h" />
+		<Unit filename="include/view/LoginView.h" />
+		<Unit filename="include/view/MainView.h" />
+		<Unit filename="include/view/WorkShopView.h" />
+		<Unit filename="src/chat/ChatControl.cpp" />
+		<Unit filename="src/chat/ChatView.cpp" />
+		<Unit filename="src/control/ActionFactory.cpp" />
+		<Unit filename="src/control/BuildingManager.cpp" />
+		<Unit filename="src/control/CreateAction.cpp" />
+		<Unit filename="src/control/GameManager.cpp" />
+		<Unit filename="src/control/GoldAction.cpp" />
+		<Unit filename="src/control/InputSystem.cpp" />
+		<Unit filename="src/control/LoginSceneManager.cpp" />
+		<Unit filename="src/control/MoveAction.cpp" />
+		<Unit filename="src/control/NatureAction.cpp" />
+		<Unit filename="src/control/RTSCameraManager.cpp" />
+		<Unit filename="src/control/SelectionManager.cpp" />
+		<Unit filename="src/control/SquadBuilder.cpp" />
+		<Unit filename="src/control/SquadManager.cpp" />
+		<Unit filename="src/control/WorkShopManager.cpp" />
+		<Unit filename="src/engine/Client.cpp" />
+		<Unit filename="src/engine/Main.cpp" />
+		<Unit filename="src/entity/Building.cpp" />
+		<Unit filename="src/entity/Game.cpp" />
+		<Unit filename="src/entity/GameObject.cpp" />
+		<Unit filename="src/entity/GameStaticObjectBatch.cpp" />
+		<Unit filename="src/entity/Indicator.cpp" />
+		<Unit filename="src/entity/MainScene.cpp" />
+		<Unit filename="src/entity/Squad.cpp" />
+		<Unit filename="src/entity/Unit.cpp" />
+		<Unit filename="src/entity/WorkShop.cpp" />
+		<Unit filename="src/sound/GameSound.cpp" />
+		<Unit filename="src/util/ConfigReader.cpp" />
+		<Unit filename="src/util/Cripto.cpp" />
+		<Unit filename="src/util/Thread.cpp" />
+		<Unit filename="src/view/BuildingView.cpp" />
+		<Unit filename="src/view/ChallengeView.cpp" />
+		<Unit filename="src/view/GUI.cpp" />
+		<Unit filename="src/view/LoginView.cpp" />
+		<Unit filename="src/view/MainView.cpp" />
+		<Unit filename="src/view/WorkShopView.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+
+<Config>
+	<buildingConfig>
+
+		<building name="Cuartel">
+			<property name='cost'>100</property>
+			<property name='buildTime'>10</property>
+			<property name='mesh'>WorkShop.mesh</property>
+		</building>
+		<building name="Establo">
+			<property name='cost'>100</property>
+			<property name='buildTime'>10</property>
+			<property name='mesh'>WorkShop.mesh</property>
+		</building>
+		<building name="Taller">
+			<property name='cost'>100</property>
+			<property name='buildTime'>7</property>
+			<property name='mesh'>WorkShop.mesh</property>
+		</building>
+	</buildingConfig>
+
+	<squadConfig>
+		<squad name='Caballero'>
+			<property name='speed'>10</property>
+			<property name='units'>20</property>
+			<property name='mesh'>Soldier.mesh</property>
+			<property name='cost'>100</property>
+			<property name='buildTime'>10</property>
+		</squad>
+		<squad name='Arcabucero'>
+			<property name='speed'>10</property>
+			<property name='units'>20</property>
+			<property name='mesh'>Soldier.mesh</property>
+			<property name='cost'>100</property>
+			<property name='buildTime'>10</property>
+		</squad>
+		<squad name='Lancero'>
+		  	<property name='speed'>10</property>
+		  	<property name='units'>15</property>
+			<property name='mesh'>Soldier.mesh</property>
+			<property name='cost'>80</property>
+			<property name='buildTime'>10</property>
+		</squad>
+		<squad name='Penguin'>
+		  	<property name='speed'>10</property>
+		  	<property name='units'>15</property>
+			<property name='mesh'>robot.mesh</property>
+			<property name='cost'>80</property>
+			<property name='buildTime'>5</property>
+		</squad>
+	
+	
+		<squad name='Caballero Montado'>
+		  	<property name='speed'>10</property>
+		  	<property name='units'>10</property>
+			<property name='mesh'>Caballo.mesh</property>
+			<property name='cost'>120</property>
+			<property name='buildTime'>10</property>
+		</squad>
+		<squad name='Arcabucero Montado'>
+		  	<property name='speed'>10</property>
+		  	<property name='units'>10</property>
+			<property name='mesh'>Caballo.mesh</property>
+			<property name='cost'>120</property>
+			<property name='buildTime'>10</property>
+		</squad>
+	
+
+		<squad name='Autogiro'>
+		  	<property name='speed'>10</property>
+		  	<property name='units'>10</property>
+			<property name='mesh'>Heli.mesh</property>
+			<property name='cost'>800</property>
+			<property name='buildTime'>10</property>
+		</squad>
+		<squad name='Carreta'>
+		  	<property name='speed'>9</property>
+		  	<property name='units'>1</property>
+			<property name='mesh'>Carreta.mesh</property>
+			<property name='cost'>300</property>
+			<property name='buildTime'>10</property>
+		</squad>
+		<squad name='Tanque'>
+		  	<property name='speed'>10</property>
+		  	<property name='units'>3</property>
+			<property name='mesh'>Tanque.mesh</property>
+			<property name='cost'>500</property>
+			<property name='buildTime'>1</property>
+		</squad>
+	</squadConfig>
+</Config>
+

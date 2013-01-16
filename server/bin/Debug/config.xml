@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<config>
+	<Option name='network'>
+		<property name='port'>2588</property>
+	</Option>
+	<Option name='database'>
+		<property name='host'>127.0.0.1</property>
+		<property name='port'>3306</property>
+		<property name='schema'>davinciwars</property>
+		<property name='user'>dvadmin</property>
+		<property name='password'>dvWars</property>
+	</Option>
+</config>

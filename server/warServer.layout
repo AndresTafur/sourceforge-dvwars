@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/DWClientAttender.h" open="0" top="0" tabpos="0">
+		<Cursor position="528" topLine="0" />
+	</File>
+	<File name="include/DWClientBuilder.h" open="0" top="0" tabpos="4">
+		<Cursor position="212" topLine="6" />
+	</File>
+	<File name="include/LoginAdapter.h" open="1" top="0" tabpos="2">
+		<Cursor position="112" topLine="0" />
+	</File>
+	<File name="include/boid/AligmentRule.h" open="0" top="0" tabpos="0">
+		<Cursor position="543" topLine="0" />
+	</File>
+	<File name="include/boid/Boid.h" open="0" top="0" tabpos="8">
+		<Cursor position="129" topLine="6" />
+	</File>
+	<File name="include/boid/BoidContext.h" open="0" top="0" tabpos="0">
+		<Cursor position="955" topLine="25" />
+	</File>
+	<File name="include/boid/Cohesion.h" open="0" top="0" tabpos="3">
+		<Cursor position="467" topLine="0" />
+	</File>
+	<File name="include/boid/Crowd.h" open="0" top="0" tabpos="5">
+		<Cursor position="267" topLine="1" />
+	</File>
+	<File name="include/boid/Rule.h" open="0" top="0" tabpos="1">
+		<Cursor position="424" topLine="0" />
+	</File>
+	<File name="include/boid/Separation.h" open="0" top="0" tabpos="0">
+		<Cursor position="134" topLine="0" />
+	</File>
+	<File name="include/boid/Vector2.h" open="0" top="0" tabpos="5">
+		<Cursor position="779" topLine="15" />
+	</File>
+	<File name="include/chat/ChatManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="605" topLine="8" />
+	</File>
+	<File name="include/game/BuildingCreationRequest.h" open="0" top="0" tabpos="2">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="include/game/ChallengeManager.h" open="0" top="0" tabpos="1">
+		<Cursor position="1081" topLine="26" />
+	</File>
+	<File name="include/game/CreationRequest.h" open="0" top="0" tabpos="2">
+		<Cursor position="684" topLine="8" />
+	</File>
+	<File name="include/game/GameManager.h" open="0" top="0" tabpos="3">
+		<Cursor position="944" topLine="0" />
+	</File>
+	<File name="include/game/GameRequest.h" open="0" top="0" tabpos="0">
+		<Cursor position="162" topLine="0" />
+	</File>
+	<File name="include/game/MoveRequest.h" open="0" top="0" tabpos="0">
+		<Cursor position="514" topLine="2" />
+	</File>
+	<File name="include/game/Player.h" open="0" top="0" tabpos="4">
+		<Cursor position="670" topLine="4" />
+	</File>
+	<File name="include/game/SquadBuilder.h" open="0" top="0" tabpos="0">
+		<Cursor position="192" topLine="0" />
+	</File>
+	<File name="include/game/entity/Game.h" open="0" top="0" tabpos="0">
+		<Cursor position="681" topLine="0" />
+	</File>
+	<File name="include/game/entity/Squad.h" open="0" top="0" tabpos="9">
+		<Cursor position="844" topLine="27" />
+	</File>
+	<File name="include/game/entity/Unit.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="3" />
+	</File>
+	<File name="include/game/entity/Workshop.h" open="0" top="0" tabpos="0">
+		<Cursor position="381" topLine="0" />
+	</File>
+	<File name="include/networking/Client.h" open="0" top="0" tabpos="0">
+		<Cursor position="173" topLine="29" />
+	</File>
+	<File name="include/networking/ClientAttender.h" open="0" top="0" tabpos="0">
+		<Cursor position="1164" topLine="27" />
+	</File>
+	<File name="include/networking/ClientAttenderBuilder.h" open="0" top="0" tabpos="0">
+		<Cursor position="307" topLine="0" />
+	</File>
+	<File name="include/networking/NetworkException.h" open="0" top="0" tabpos="3">
+		<Cursor position="400" topLine="0" />
+	</File>
+	<File name="include/networking/RequestManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="209" topLine="1" />
+	</File>
+	<File name="include/networking/Server.h" open="0" top="0" tabpos="0">
+		<Cursor position="834" topLine="24" />
+	</File>
+	<File name="include/persistance/DBException.h" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/persistance/MySQL.h" open="0" top="0" tabpos="4">
+		<Cursor position="487" topLine="0" />
+	</File>
+	<File name="include/persistance/Query.h" open="0" top="0" tabpos="3">
+		<Cursor position="451" topLine="12" />
+	</File>
+	<File name="include/persistance/ResultRow.h" open="0" top="0" tabpos="0">
+		<Cursor position="332" topLine="0" />
+	</File>
+	<File name="include/security/Cripto.h" open="0" top="0" tabpos="0">
+		<Cursor position="444" topLine="14" />
+	</File>
+	<File name="include/userManager/LoginManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="419" topLine="12" />
+	</File>
+	<File name="include/userManager/User.h" open="0" top="0" tabpos="0">
+		<Cursor position="658" topLine="12" />
+	</File>
+	<File name="include/userManager/UserDAO.h" open="0" top="0" tabpos="0">
+		<Cursor position="334" topLine="0" />
+	</File>
+	<File name="include/util/ConfigReader.h" open="0" top="0" tabpos="1">
+		<Cursor position="922" topLine="23" />
+	</File>
+	<File name="include/util/Thread.h" open="0" top="0" tabpos="3">
+		<Cursor position="396" topLine="13" />
+	</File>
+	<File name="src/DWClientAttender.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="392" topLine="8" />
+	</File>
+	<File name="src/DWClientBuilder.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="406" topLine="0" />
+	</File>
+	<File name="src/LoginAdapter.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="1420" topLine="0" />
+	</File>
+	<File name="src/boid/AligmentRule.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="442" topLine="0" />
+	</File>
+	<File name="src/boid/Boid.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="2213" topLine="69" />
+	</File>
+	<File name="src/boid/BoidContext.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="1412" topLine="47" />
+	</File>
+	<File name="src/boid/Cohesion.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="551" topLine="0" />
+	</File>
+	<File name="src/boid/Crowd.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="328" topLine="0" />
+	</File>
+	<File name="src/boid/Separation.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="79" topLine="0" />
+	</File>
+	<File name="src/boid/Vector2.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="439" topLine="8" />
+	</File>
+	<File name="src/chat/ChatManager.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="1777" topLine="0" />
+	</File>
+	<File name="src/game/BuildingCreationRequest.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1899" topLine="32" />
+	</File>
+	<File name="src/game/ChallengeManager.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="2757" topLine="73" />
+	</File>
+	<File name="src/game/CreationRequest.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="994" topLine="12" />
+	</File>
+	<File name="src/game/ForestGenerator.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="739" topLine="0" />
+	</File>
+	<File name="src/game/GameManager.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="2308" topLine="99" />
+	</File>
+	<File name="src/game/MoveRequest.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="602" topLine="0" />
+	</File>
+	<File name="src/game/Player.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="460" topLine="3" />
+	</File>
+	<File name="src/game/SquadBuilder.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="1622" topLine="30" />
+	</File>
+	<File name="src/game/entity/Game.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="24" topLine="0" />
+	</File>
+	<File name="src/game/entity/Squad.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="439" topLine="0" />
+	</File>
+	<File name="src/game/entity/Unit.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="752" topLine="20" />
+	</File>
+	<File name="src/game/entity/Workshop.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="217" topLine="0" />
+	</File>
+	<File name="src/main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="2029" topLine="36" />
+	</File>
+	<File name="src/networking/Client.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="430" topLine="11" />
+	</File>
+	<File name="src/networking/ClientAttender.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="183" topLine="28" />
+	</File>
+	<File name="src/networking/Server.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1264" topLine="51" />
+	</File>
+	<File name="src/persistance/MySQL.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="585" topLine="6" />
+	</File>
+	<File name="src/persistance/Query.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="995" topLine="24" />
+	</File>
+	<File name="src/persistance/ResultRow.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="113" topLine="0" />
+	</File>
+	<File name="src/security/Cripto.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="2662" topLine="111" />
+	</File>
+	<File name="src/userManager/LoginManager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="288" topLine="0" />
+	</File>
+	<File name="src/userManager/UserDAO.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="959" topLine="12" />
+	</File>
+	<File name="src/util/ConfigReader.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3072" topLine="83" />
+	</File>
+	<File name="src/util/Thread.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="265" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

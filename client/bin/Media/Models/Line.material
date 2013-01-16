@@ -1,0 +1,30 @@
+material BlackLineMaterial
+{
+	receive_shadows off
+	lighting on
+
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0
+			diffuse 0 0 0
+		}
+	}
+}
+
+
+material BlueLineMaterial
+{
+	receive_shadows off
+	lighting on
+
+	technique
+	{
+		pass
+		{
+			ambient 0 0 1
+			diffuse 0 0 1
+		}
+	}
+}
