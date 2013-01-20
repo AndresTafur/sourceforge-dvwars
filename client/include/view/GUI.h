@@ -5,11 +5,15 @@
 #include <OIS/OIS.h>
 #include <InputSystem.h>
 
+
+
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
 
 
 #include <engine/RenderBox.h>
+
+
 
 
 /**
@@ -39,7 +43,14 @@ public:
              *
              *  @param layName layout to be loaded.
              */
-            void loadLayout(std::string layName);
+            MyGUI::VectorWidgetPtr loadLayout(std::string layName);
+
+            /**
+             *  unloads a previously loaded xml Layout.
+             *
+             *  @param layName layout to be loaded.
+             */
+            void unloadLayout(MyGUI::VectorWidgetPtr layName);
 
 
             //TODO: Separate this from the GUI define a game UI.

@@ -45,7 +45,7 @@ MainView::MainView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 mWorkShop = new WorkShopView();
 
 
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->eventMouseButtonClick = MyGUI::newDelegate(this, &MainView::onClose);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->eventMouseButtonClick += MyGUI::newDelegate(this, &MainView::onClose);
         }
 
 

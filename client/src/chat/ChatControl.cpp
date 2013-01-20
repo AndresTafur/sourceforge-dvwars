@@ -12,7 +12,7 @@ ChatControl::ChatControl(MyGUI::TabPtr noteBook, std::string tabName, std::strin
           mEdit->setEditMultiLine(true);
           mEdit->setOverflowToTheLeft(true);
 
-          mEdit->eventEditTextChange = MyGUI::newDelegate(this, &ChatControl::onMainTextChange);
+          mEdit->eventEditTextChange += MyGUI::newDelegate(this, &ChatControl::onMainTextChange);
 }
 
 
@@ -33,7 +33,7 @@ ChatControl::ChatControl(MyGUI::TabPtr noteBook, std::string tabName, std::strin
 
         void ChatControl::addMessage(std::string user, std::string message)
         {
-            mLogView->setCaptionWithNewLine( mLogView->getCaption() + user + ": "  + message );
+            mLogView->setCaption( mLogView->getCaption() + user + ": "  + message + "\n" );
         }
 
 

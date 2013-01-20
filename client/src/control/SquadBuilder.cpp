@@ -15,7 +15,6 @@ SquadBuilder::SquadBuilder()
         {
           Ogre::Entity       *baseEntity;
           Ogre::Entity       *entity;
-          Ogre::SceneNode    *node;
           Ogre::SceneManager *mgr = Ogre::Root::getSingletonPtr()->getSceneManager("MainManager");
           Squad              *sqd;
           Unit               *unit;

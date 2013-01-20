@@ -9,6 +9,8 @@
 #include <ChatControl.h>
 #include <ClientListener.h>
 
+#include <GUI.h>
+
 class ChatView : public ClientListener
 {
 public:
@@ -39,7 +41,6 @@ public:
 
 
 private:
-MyGUI::VectorWidgetPtr    mLayout;
 MyGUI::TabPtr             mTab;
 MyGUI::ButtonPtr          mHide;
 MyGUI::ButtonPtr          mShow;

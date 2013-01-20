@@ -50,7 +50,6 @@ SelectionManager::SelectionManager()
                         {
                                 if ( itr->worldFragment )
                                 {
-                                    Ogre::Vector3 location = itr->worldFragment->singleIntersection;
                                     for(iter = mObservers.begin(); iter != mObservers.end(); iter++)
                                             (*iter)->onWorldSelection(itr->worldFragment,id);
                                 }

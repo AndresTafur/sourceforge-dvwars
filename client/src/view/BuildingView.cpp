@@ -26,7 +26,7 @@ BuildingView::BuildingView(Building *building)
                     btn = panel->createWidget<MyGUI::Button>("Button", MyGUI::IntCoord(10+200*i,50,150,24), MyGUI::Align::Default, mOptions[i] );
                     btn->setInheritsAlpha (false);
                     btn->setCaption(mOptions[i]);
-                    btn->eventMouseButtonClick  = MyGUI::newDelegate(this, &BuildingView::createSquad);
+                    btn->eventMouseButtonClick  += MyGUI::newDelegate(this, &BuildingView::createSquad);
                 }
 
                 panel     = MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("ProgressPanel");
@@ -43,8 +43,10 @@ BuildingView::BuildingView(Building *building)
 
         void BuildingView::createSquad(MyGUI::Widget* btn)
         {
-                mBuildMgr->requestSquadCreation( btn->getCaption() );
-                mStatic->setCaption(btn->getCaption() + ".");
+            MyGUI::ButtonPtr button = static_cast<MyGUI::ButtonPtr>(btn);
+
+                mBuildMgr->requestSquadCreation(  button->getCaption() );
+                mStatic->setCaption(button->getCaption() + ".");
         }
 
 

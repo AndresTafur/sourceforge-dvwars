@@ -31,13 +31,10 @@ MainScene::MainScene(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
     void MainScene::createNature()
     {
       int nodes_per_side = 0;
-      int nodes_per_side_all_pagesW = 0;
-      int nodes_per_side_all_pagesH = 0;
 
       Ogre::ConfigFile config;
       Ogre::String val;
       Ogre::Vector3 scale = Ogre::Vector3::ZERO;
-      Ogre::Real worldWidth, worldHeight;
 
 
                 mSceneMgr->getOption("Scale", &scale);
@@ -65,10 +62,6 @@ MainScene::MainScene(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                         scale.z = atof( val.c_str() ) / nodes_per_side;
                 }
 
-                worldWidth  = scale.x * (nodes_per_side - 1);
-                worldHeight = scale.z * (nodes_per_side - 1);
-                nodes_per_side_all_pagesW = nodes_per_side;
-                nodes_per_side_all_pagesH = nodes_per_side;
     }
 
     void MainScene::destroyScene()

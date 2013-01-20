@@ -5,7 +5,6 @@
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
 
-
 #include <util/Cripto.h>
 #include <engine/Client.h>
 #include <chat/ChatView.h>
@@ -28,7 +27,7 @@ public:
         void showBuddies(MyGUI::Widget* btn);
 
 
-        void onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result);
+    //    void onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result);
 
         void disable();
 
@@ -46,7 +45,7 @@ Ogre::SceneManager      *mSceneManager;
 Ogre::Camera            *mCamera;
 
 MyGUI::VectorWidgetPtr   mLayout;
-MyGUI::MessagePtr        mWaitMsg;
+//MyGUI::MessagePtr        mWaitMsg;
 
 MyGUI::ButtonPtr         mShowChall;
 MyGUI::ButtonPtr         mShowBud;

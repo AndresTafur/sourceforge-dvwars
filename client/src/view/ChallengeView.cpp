@@ -1,6 +1,8 @@
 #include "ChallengeView.h"
 #include "GameObject.h"
 
+
+
 ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCamera( mgr->getCamera("Login Camera") )
 {
   MyGUI::Gui *bgy = MyGUI::Gui::getInstancePtr();
@@ -15,19 +17,19 @@ ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCam
             bgy->findWidget<MyGUI::Widget>("Close")->setVisible(false);
             bgy->findWidget<MyGUI::Widget>("Back")->setVisible(false);
 
-            mLayout    = MyGUI::LayoutManager::getInstance().load("Challenge.gui");
+            mLayout    = GUI::getInstancePtr()->loadLayout("Challenge.gui");
             mShowChall = bgy->findWidget<MyGUI::Button>("challengeDlg");
             mShowBud   = bgy->findWidget<MyGUI::Button>("buddiesDlg");
 
-            mShowChall->eventMouseButtonClick = MyGUI::newDelegate(this, &ChallengeView::showChallenge);
-            mShowBud->eventMouseButtonClick = MyGUI::newDelegate(this, &ChallengeView::showBuddies);
+            mShowChall->eventMouseButtonClick += MyGUI::newDelegate(this, &ChallengeView::showChallenge);
+            mShowBud->eventMouseButtonClick += MyGUI::newDelegate(this, &ChallengeView::showBuddies);
 
-            bgy->findWidget<MyGUI::Button>("challengeBtn")->eventMouseButtonClick = MyGUI::newDelegate(this, &ChallengeView::doChallenge);
-            bgy->findWidget<MyGUI::Button>("chllgCncl")->eventMouseButtonClick = MyGUI::newDelegate(this, &ChallengeView::showChallenge);
+            bgy->findWidget<MyGUI::Button>("challengeBtn")->eventMouseButtonClick += MyGUI::newDelegate(this, &ChallengeView::doChallenge);
+            bgy->findWidget<MyGUI::Button>("chllgCncl")->eventMouseButtonClick += MyGUI::newDelegate(this, &ChallengeView::showChallenge);
             MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::List>("PlayersList")->setVisible(false);
 
             mStatus     = 0;
-            mWaitMsg    = NULL;
+//            mWaitMsg    = NULL;
             mCameraNode = mgr->getSceneNode("Camera Node");
 
             Client::getInstancePtr()->addListener(this);
@@ -71,14 +73,14 @@ ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCam
 
             if( selected == MyGUI::ITEM_NONE)
             {
-                    MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"You must choose a player to challenge.", MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+//                    MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"You must choose a player to challenge.", MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                     return;
             }
 
             val = list->getItemNameAt(selected);
             Client::getInstancePtr()->Send("302|"+val);
             list->removeAllItems();
-            mWaitMsg = MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"Waiting for other player to accept or reject your challenge.", MyGUI::MessageBoxStyle::IconInfo);
+          //  mWaitMsg = MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"Waiting for other player to accept or reject your challenge.", MyGUI::MessageBoxStyle::IconInfo);
     }
 
 
@@ -86,10 +88,10 @@ ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCam
     void ChallengeView::showChallenge(MyGUI::Widget* btn)
     {
       MyGUI::WindowPtr wnd = MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Window>("PlayersWND");
-      bool visible = !wnd->isVisible();
+      bool visible = !wnd->getVisible();
 
             wnd->setVisible(visible);
-            mShowChall->setButtonPressed( visible );
+            mShowChall->setStateSelected( visible );
 
             MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::List>("PlayersList")->setVisible(visible);
 
@@ -101,37 +103,37 @@ ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCam
     void ChallengeView::showBuddies(MyGUI::Widget* btn)
     {
       MyGUI::WindowPtr wnd = MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Window>("BuddieWND");
-      bool visible = !wnd->isVisible();
+      bool visible = !wnd->getVisible();
 
             wnd->setVisible(visible);
-            mShowBud->setButtonPressed( visible );
+            mShowBud->setStateSelected( visible );
     }
 
 
 
-    void ChallengeView::onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result)
+/*    void ChallengeView::onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result)
     {
             if (result == MyGUI::MessageBoxStyle::No)
                 Client::getInstancePtr()->Send("100");
             else
                 Client::getInstancePtr()->Send("101");
     }
-
+*/
 
 
     void ChallengeView::disable()
     {
-        MyGUI::LayoutManager::getInstancePtr()->unloadLayout(mLayout);
+        GUI::getInstancePtr()->unloadLayout(mLayout);
         Ogre::Root::getSingletonPtr()->removeFrameListener(this);
 
 
                 Client::getInstancePtr()->removeListener(this);
 
-                if(mWaitMsg)
+           /*     if(mWaitMsg)
                 {
                     mWaitMsg->destroySmooth();
                     mWaitMsg = NULL;
-                }
+                }*/
     }
 
 
@@ -171,22 +173,22 @@ ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCam
             if( mStatus == 302)
             {
               std::string val;
-              MyGUI::Message* msg;
+//              MyGUI::Message* msg;
 
 
                     val = mParams[1] + " has challenged you,\n accept challenge?";
-                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),val, MyGUI::MessageBoxStyle::IconInfo|MyGUI::MessageBoxStyle::Yes|MyGUI::MessageBoxStyle::No);
+//                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),val, MyGUI::MessageBoxStyle::IconInfo|MyGUI::MessageBoxStyle::Yes|MyGUI::MessageBoxStyle::No);
 
                     MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::List>("PlayersList")->removeAllItems();
-                    msg->setMessageModal(true);
-                    msg->eventMessageBoxResult = MyGUI::newDelegate(this, &ChallengeView::onAcceptDecline);
+           //         msg->setMessageModal(true);
+           //         msg->eventMessageBoxResult = MyGUI::newDelegate(this, &ChallengeView::onAcceptDecline);
 
                     mStatus = 0;
             }
             else if( mStatus == 100)
             {
-                    MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"Your oponent has rejected the challenge.", MyGUI::MessageBoxStyle::IconInfo|MyGUI::MessageBoxStyle::Ok);
-                    mWaitMsg->destroySmooth();
+//                    MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"Your oponent has rejected the challenge.", MyGUI::MessageBoxStyle::IconInfo|MyGUI::MessageBoxStyle::Ok);
+ //                   mWaitMsg->destroySmooth();
                     mStatus = 0;
             }
 
@@ -204,16 +206,15 @@ ChallengeView::ChallengeView(Ogre::SceneManager *mgr) : mSceneManager(mgr), mCam
 
 ChallengeView::~ChallengeView()
 {
-
-        MyGUI::LayoutManager::getInstancePtr()->unloadLayout(mLayout);
+        GUI::getInstancePtr()->unloadLayout(mLayout);
         Ogre::Root::getSingletonPtr()->removeFrameListener(this);
 
-        if(mWaitMsg)
+/*        if(mWaitMsg)
         {
             mWaitMsg->destroySmooth();
             mWaitMsg = NULL;
         }
-
+*/
 
         if( mChatView )
         {

@@ -5,19 +5,20 @@ ChatView::ChatView()
    MyGUI::Gui *bgy = MyGUI::Gui::getInstancePtr();
 
 
-            mLayout   = MyGUI::LayoutManager::getInstance().load("Chat.gui");
+            GUI::getInstancePtr()->loadLayout("Chat.gui");
+
             mTab      = bgy->findWidget<MyGUI::Tab>("chatNB");
             mHide     = bgy->findWidget<MyGUI::Button>("chatHide");
             mShow     = bgy->findWidget<MyGUI::Button>("chatShow");
             mPrivate  = bgy->findWidget<MyGUI::Button>("privateChat");
             mMainChat = new ChatControl( mTab, "Main chat", "800|" );
 
-            mHide->eventMouseButtonClick     = MyGUI::newDelegate(this, &ChatView::onHideChat);
-            mShow->eventMouseButtonClick     = MyGUI::newDelegate(this, &ChatView::onShowChat);
-            mPrivate->eventMouseButtonClick  = MyGUI::newDelegate(this, &ChatView::onPrivate);
+            mHide->eventMouseButtonClick     += MyGUI::newDelegate(this, &ChatView::onHideChat);
+            mShow->eventMouseButtonClick     += MyGUI::newDelegate(this, &ChatView::onShowChat);
+            mPrivate->eventMouseButtonClick  += MyGUI::newDelegate(this, &ChatView::onPrivate);
 
-            bgy->findWidget<MyGUI::Button>("privateOpen")->eventMouseButtonClick =  MyGUI::newDelegate(this, &ChatView::onPrivateOpen);
-            bgy->findWidget<MyGUI::Button>("privateCancel")->eventMouseButtonClick =  MyGUI::newDelegate(this, &ChatView::onPrivate);
+            bgy->findWidget<MyGUI::Button>("privateOpen")->eventMouseButtonClick   +=  MyGUI::newDelegate(this, &ChatView::onPrivateOpen);
+            bgy->findWidget<MyGUI::Button>("privateCancel")->eventMouseButtonClick +=  MyGUI::newDelegate(this, &ChatView::onPrivate);
 
 
             Client::getInstancePtr()->addListener(this);
@@ -46,10 +47,10 @@ ChatView::ChatView()
     {
         MyGUI::Gui *bgy = MyGUI::Gui::getInstancePtr();
         MyGUI::WindowPtr wnd = bgy->findWidget<MyGUI::Window>("privateChatDlg");
-        bool visible = !wnd->isVisible();
+        bool visible = !wnd->getVisible();
 
                     wnd->setVisible( visible );
-                    mPrivate->setButtonPressed( visible );
+                    mPrivate->setStateSelected( visible );
     }
 
 

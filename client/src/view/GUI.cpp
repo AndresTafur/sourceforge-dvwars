@@ -35,9 +35,15 @@ GUI* GUI::sm_instance = 0;
         }
 
 
-        void GUI::loadLayout(std::string layName)
+        MyGUI::VectorWidgetPtr GUI::loadLayout(std::string layName)
         {
-            mGUI->load(layName);
+          return  MyGUI::LayoutManager::getInstance().loadLayout(layName);
+        }
+
+
+        void GUI::unloadLayout(MyGUI::VectorWidgetPtr layout)
+        {
+            MyGUI::LayoutManager::getInstancePtr()->unloadLayout(layout);
         }
 
 
@@ -48,32 +54,32 @@ GUI* GUI::sm_instance = 0;
 
         bool GUI::mouseMoved(const OIS::MouseEvent &evt)
         {
-            mGUI->injectMouseMove(evt.state.X.abs, evt.state.Y.abs, evt.state.Z.abs);
+            MyGUI::InputManager::getInstancePtr()->injectMouseMove(evt.state.X.abs, evt.state.Y.abs, evt.state.Z.abs);
             return true;
         }
 
         bool GUI::mousePressed(const OIS::MouseEvent &evt, OIS::MouseButtonID id)
         {
-            mGUI->injectMousePress(evt.state.X.abs, evt.state.Y.abs, MyGUI::MouseButton::Enum(id));
+            MyGUI::InputManager::getInstancePtr()->injectMousePress(evt.state.X.abs, evt.state.Y.abs, MyGUI::MouseButton::Enum(id));
             return true;
         }
 
         bool GUI::mouseReleased(const OIS::MouseEvent &evt, OIS::MouseButtonID id)
         {
-            mGUI->injectMouseRelease(evt.state.X.abs, evt.state.Y.abs, MyGUI::MouseButton::Enum(id));
+            MyGUI::InputManager::getInstancePtr()->injectMouseRelease(evt.state.X.abs, evt.state.Y.abs, MyGUI::MouseButton::Enum(id));
             return true;
         }
 
         bool GUI::keyPressed( const OIS::KeyEvent &evt )
         {
 
-            mGUI->injectKeyPress(MyGUI::KeyCode::Enum(evt.key), evt.text);
+            MyGUI::InputManager::getInstancePtr()->injectKeyPress(MyGUI::KeyCode::Enum(evt.key), evt.text);
             return true;
         }
 
         bool GUI::keyReleased( const OIS::KeyEvent &evt )
         {
-            mGUI->injectKeyRelease(MyGUI::KeyCode::Enum(evt.key));
+            MyGUI::InputManager::getInstancePtr()->injectKeyRelease(MyGUI::KeyCode::Enum(evt.key));
             return true;
         }
 

@@ -18,16 +18,16 @@ WorkShopView::WorkShopView()
                 options    = reader.getAttributes("/descendant::option[@name='workshop']/child::property[@name='building']");
                 mainPanel  = MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("CreationPanel");
 
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Button>("hideProgressPanel")->eventMouseButtonClick  = MyGUI::newDelegate(this, &WorkShopView::handleProgressPanel);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Button>("showProgressPanel")->eventMouseButtonClick  = MyGUI::newDelegate(this, &WorkShopView::handleProgressPanel);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Button>("hideProgressPanel")->eventMouseButtonClick  += MyGUI::newDelegate(this, &WorkShopView::handleProgressPanel);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Button>("showProgressPanel")->eventMouseButtonClick  += MyGUI::newDelegate(this, &WorkShopView::handleProgressPanel);
 
                 for(unsigned int i=0; i < options.size();i++)
                 {
                         btn =  mainPanel->createWidget<MyGUI::Button>("Button", MyGUI::IntCoord(110+100*i,10,88,24), MyGUI::Align::Default, options[i] );
                         btn->setInheritsAlpha (false);
                         btn->setCaption(options[i]);
-                        btn->eventMouseButtonClick  = MyGUI::newDelegate(this, &WorkShopView::createBuilding);
-                        btn->eventMouseMove  = MyGUI::newDelegate(this, &WorkShopView::onHover);
+                        btn->eventMouseButtonClick  += MyGUI::newDelegate(this, &WorkShopView::createBuilding);
+                        btn->eventMouseMove  += MyGUI::newDelegate(this, &WorkShopView::onHover);
                 }
 
 
@@ -42,7 +42,7 @@ WorkShopView::WorkShopView()
 
         void WorkShopView::createBuilding(MyGUI::Widget* btn)
         {
-            mWShopMgr->requestBuildingCreation(btn->getCaption());
+            mWShopMgr->requestBuildingCreation( static_cast<MyGUI::ButtonPtr>(btn)->getCaption());
         }
 
 
@@ -86,12 +86,13 @@ WorkShopView::WorkShopView()
         void WorkShopView::onHover(MyGUI::Widget* btn, int x, int y)
         {
            std::map<std::string,BuildingView*>::iterator iter;
+           MyGUI::ButtonPtr  button = static_cast<MyGUI::ButtonPtr>(btn);
 
                 for(iter = mBuildingViews.begin(); iter != mBuildingViews.end(); iter++ )
                         (*iter).second->hideView();
 
-                if( mBuildingViews.find(btn->getCaption()) != mBuildingViews.end() )
-                    mBuildingViews[btn->getCaption()]->showView();
+                if( mBuildingViews.find(button->getCaption()) != mBuildingViews.end() )
+                    mBuildingViews[button->getCaption()]->showView();
         }
 
         void WorkShopView::onSelection(Ogre::MovableObject *ent,  OIS::MouseButtonID id)

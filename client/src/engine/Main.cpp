@@ -48,7 +48,7 @@ MainApplication::MainApplication()
                 if (!configure())
                     return false;
 
-                mSceneMgr  = mRoot->createSceneManager( "TerrainSceneManager", "MainManager" );
+                mSceneMgr  = mRoot->createSceneManager( "OctreeSceneManager", "MainManager" );
 
                 Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
                 loadResources();

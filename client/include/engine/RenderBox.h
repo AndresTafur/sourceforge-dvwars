@@ -49,7 +49,7 @@ namespace wraps
 		}
 
 		virtual void setCanvas(MyGUI::CanvasPtr _value)
-		{
+		{/*
 			destroy();
 
 			mCanvas = _value;
@@ -57,55 +57,55 @@ namespace wraps
 			mCanvas->eventPreTextureChanges = MyGUI::newDelegate(this, &RenderBox::eventPreTextureChanges);
 			mCanvas->requestUpdateCanvas = MyGUI::newDelegate(this, &RenderBox::requestUpdateCanvas);
 
-			mCanvas->updateTexture();
+			mCanvas->updateTexture();*/
 		}
 
 		virtual void destroy()
-		{
+		{/*
 			if (mCanvas)
 			{
 				mCanvas->eventPreTextureChanges = nullptr;
 				mCanvas->requestUpdateCanvas = nullptr;
 				mCanvas->destroyTexture();
 				mCanvas = nullptr;
-			}
+			}*/
 		}
 
 		void setBackgroundColour(const Ogre::ColourValue& _value)
-		{
+		{/*
 			mColour = _value;
 
 			if (mCanvas)
 			{
 				mRenderTarget = nullptr;
 				mCanvas->updateTexture();
-			}
+			}*/
 		}
 
 		void setBackgroundColour(const MyGUI::Colour& _value)
 		{
-			setBackgroundColour(Ogre::ColourValue(_value.red, _value.green, _value.blue, _value.alpha));
+			//setBackgroundColour(Ogre::ColourValue(_value.red, _value.green, _value.blue, _value.alpha));
 		}
 
 	protected:
 		void removeTexture()
-		{
+		{/*
 			if (mRenderTarget != nullptr)
 			{
 				mRenderTarget->removeAllViewports();
 				mRenderTarget = nullptr;
 				if (mCanvas)
 					Ogre::Root::getSingleton().getRenderSystem()->destroyRenderTexture(mCanvas->getTexture()->getName());
-			}
+			}*/
 		}
 
 		void eventPreTextureChanges(MyGUI::CanvasPtr _canvas)
 		{
-			removeTexture();
+			//removeTexture();
 		}
 
 		virtual void requestUpdateCanvas(MyGUI::CanvasPtr _canvas, MyGUI::Canvas::Event _event)
-		{
+		{/*
 			if (!mCamera)
 				return;
 
@@ -127,7 +127,7 @@ namespace wraps
 				viewport->setClearEveryFrame(true);
 				viewport->setOverlaysEnabled(false);
 
-			}
+			}*/
 		}
 
 	protected:

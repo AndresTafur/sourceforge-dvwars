@@ -33,9 +33,14 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
         {
           GUI *guiMgr =  GUI::getInstancePtr();
 
+
                 guiMgr->loadLayout("Login.gui");
 
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->eventMouseButtonClick        = MyGUI::newDelegate(this, &LoginView::onClose);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::onClose);
+
+
+
+                /*
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->eventMouseButtonClick    = MyGUI::newDelegate(this, &LoginView::showLogin);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->eventMouseButtonClick = MyGUI::newDelegate(this, &LoginView::showRegister);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->eventMouseButtonClick = MyGUI::newDelegate(this, &LoginView::doLogIn);
@@ -44,11 +49,12 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regCancel")->eventMouseButtonClick    = MyGUI::newDelegate(this, &LoginView::regCancel);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->eventMouseButtonClick         = MyGUI::newDelegate(this, &LoginView::showMain);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("connectBtn")->eventMouseButtonClick   = MyGUI::newDelegate(this, &LoginView::onConnect);
+                */
         }
 
 
         void LoginView::onConnect(MyGUI::Widget* btn)
-        {
+        {/*
           std::string val;
 
             try
@@ -65,8 +71,8 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
             }
             catch(std::string ex)
             {
-                MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
-            }
+//                MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+            }*/
         }
 
 
@@ -83,7 +89,7 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 
 
         void LoginView::showMain(MyGUI::Widget* btn)
-        {
+        {/*
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->setVisible(true);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->setVisible(true);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->setVisible(true);
@@ -93,11 +99,11 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("user")->setVisible(false);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("pass")->setVisible(false);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->setVisible(false);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->setVisible(false);*/
        }
 
         void LoginView::showLogin(MyGUI::Widget* btn)
-        {
+        {/*
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->setVisible(false);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->setVisible(false);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->setVisible(false);
@@ -107,7 +113,7 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("user")->setVisible(true);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("pass")->setVisible(true);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->setVisible(true);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->setVisible(true);*/
         }
 
 
@@ -118,7 +124,7 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 
 
         void LoginView::doRegister(MyGUI::Widget* btn)
-        {
+        {/*
           MyGUI::MessagePtr  msg;
           std::string pass, pass2, uname, email, side;
           size_t sideIndex;
@@ -133,7 +139,7 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 
                         if( pass.compare(pass2) != 0)
                         {
-                            MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Passwords doesn't match please verify."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+//                            MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Passwords doesn't match please verify."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                             return;
                         }
 
@@ -143,15 +149,15 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 }
                 catch(std::string)
                 {
-                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
-                }
+//                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+                }*/
         }
 
 
         void LoginView::doLogIn(MyGUI::Widget* btn)
-        {
+        {/*
           MyGUI::Gui        *bgy =  MyGUI::Gui::getInstancePtr();
-          MyGUI::MessagePtr  msg;
+//          MyGUI::MessagePtr  msg;
           std::string str;
 
                 try
@@ -160,8 +166,8 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 }
                 catch(std::string)
                 {
-                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
-                }
+//                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+                }*/
         }
 
 
@@ -207,18 +213,18 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                         }
                         else if( status == 200)
                         {
-                            MyGUI::Message::createMessageBox("Message",Ogre::String("Register"),Ogre::String("User registered sucessfully."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+//                            MyGUI::Message::createMessageBox("Message",Ogre::String("Register"),Ogre::String("User registered sucessfully."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                             MyGUI::Gui::getInstance().findWidget<MyGUI::Window>("registerWnd")->setVisibleSmooth(false);
                             mLogSceneMgr->setStatus(0);
                         }
                         else if( status == 404)
                         {
-                            MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Incorrect user/password."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+//                            MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Incorrect user/password."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                             mLogSceneMgr->setStatus(0);
                         }
                         else if( status == 409)
                         {
-                            MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("User already registered."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+ //                           MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("User already registered."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                             mLogSceneMgr->setStatus(0);
                         }
 

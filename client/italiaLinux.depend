@@ -9,7 +9,7 @@
 	"ApplicationFrameListener.h"
 	<CoreFoundation/CoreFoundation.h>
 
-1304879284 /usr/include/OGRE/Ogre.h
+1346563635 /usr/include/OGRE/Ogre.h
 	"OgrePrerequisites.h"
 	"OgreAnimation.h"
 	"OgreAnimationState.h"
@@ -38,6 +38,9 @@
 	"OgreHardwarePixelBuffer.h"
 	"OgreHighLevelGpuProgram.h"
 	"OgreHighLevelGpuProgramManager.h"
+	"OgreInstanceBatch.h"
+	"OgreInstancedEntity.h"
+	"OgreInstanceManager.h"
 	"OgreKeyFrame.h"
 	"OgreLight.h"
 	"OgreLogManager.h"
@@ -107,31 +110,31 @@
 	"OgreShadowCameraSetupPlaneOptimal.h"
 	"OgreShadowCameraSetupPSSM.h"
 
-1304879284 /usr/include/OGRE/OgrePrerequisites.h
+1346563635 /usr/include/OGRE/OgrePrerequisites.h
 	"OgrePlatform.h"
 	<string>
 	"Threading/OgreThreadDefines.h"
 	"OgreStdHeaders.h"
 	"OgreMemoryAllocatorConfig.h"
 
-1304879284 /usr/include/OGRE/OgrePlatform.h
+1346563635 /usr/include/OGRE/OgrePlatform.h
 	"OgreConfig.h"
 	<_mingw.h>
 
-1304879284 /usr/include/OGRE/OgreConfig.h
+1346563635 /usr/include/OGRE/OgreConfig.h
 	"OgreBuildSettings.h"
 
-1309663812 /usr/include/OGRE/OgreBuildSettings.h
+1349955257 /usr/include/OGRE/OgreBuildSettings.h
 
-1304879284 /usr/include/OGRE/Threading/OgreThreadDefines.h
+1346563635 /usr/include/OGRE/Threading/OgreThreadDefines.h
 	"OgreThreadDefinesNone.h"
 	"OgreThreadDefinesBoost.h"
 	"OgreThreadDefinesPoco.h"
 	"OgreThreadDefinesTBB.h"
 
-1304879284 /usr/include/OGRE/Threading/OgreThreadDefinesBoost.h
+1346563635 /usr/include/OGRE/Threading/OgreThreadDefinesBoost.h
 
-1304879284 /usr/include/OGRE/OgreStdHeaders.h
+1346563635 /usr/include/OGRE/OgreStdHeaders.h
 	<cassert>
 	<cstdio>
 	<cstdlib>
@@ -153,6 +156,10 @@
 	<ext/hash_set>
 	<unordered_map>
 	<unordered_set>
+	<tr1/unordered_map>
+	<tr1/unordered_set>
+	<unordered_map>
+	<unordered_set>
 	<hash_set>
 	<hash_map>
 	<algorithm>
@@ -172,12 +179,12 @@
 	<CoreFoundation/CoreFoundation.h>
 	"Threading/OgreThreadHeaders.h"
 
-1304879284 /usr/include/OGRE/Threading/OgreThreadHeaders.h
+1346563635 /usr/include/OGRE/Threading/OgreThreadHeaders.h
 	"OgreThreadHeadersBoost.h"
 	"OgreThreadHeadersPoco.h"
 	"OgreThreadHeadersTBB.h"
 
-1304879284 /usr/include/OGRE/Threading/OgreThreadHeadersBoost.h
+1346563635 /usr/include/OGRE/Threading/OgreThreadHeadersBoost.h
 	<boost/thread/tss.hpp>
 	<boost/thread/recursive_mutex.hpp>
 	<boost/thread/condition.hpp>
@@ -185,7 +192,7 @@
 	<boost/thread/shared_mutex.hpp>
 	<boost/thread/locks.hpp>
 
-1304879284 /usr/include/OGRE/OgreMemoryAllocatorConfig.h
+1346563635 /usr/include/OGRE/OgreMemoryAllocatorConfig.h
 	"OgreMemoryAllocatedObject.h"
 	"OgreMemoryAllocatedObject.h"
 	"OgreMemorySTLAllocator.h"
@@ -193,37 +200,37 @@
 	"OgreMemoryNedAlloc.h"
 	"OgreMemoryStdAlloc.h"
 
-1304879284 /usr/include/OGRE/OgreMemoryAllocatedObject.h
+1346563635 /usr/include/OGRE/OgreMemoryAllocatedObject.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreMemorySTLAllocator.h
+1346563635 /usr/include/OGRE/OgreMemorySTLAllocator.h
 	"OgrePrerequisites.h"
 	"OgreHeaderPrefix.h"
 	"OgreHeaderSuffix.h"
 
-1304879284 /usr/include/OGRE/OgreHeaderPrefix.h
+1346563635 /usr/include/OGRE/OgreHeaderPrefix.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreHeaderSuffix.h
+1346563635 /usr/include/OGRE/OgreHeaderSuffix.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreMemoryNedPooling.h
+1346563635 /usr/include/OGRE/OgreMemoryNedPooling.h
 
-1304879284 /usr/include/OGRE/OgreMemoryNedAlloc.h
+1346563635 /usr/include/OGRE/OgreMemoryNedAlloc.h
 
-1304879284 /usr/include/OGRE/OgreMemoryStdAlloc.h
+1346563635 /usr/include/OGRE/OgreMemoryStdAlloc.h
 	<memory>
 	<limits>
 	"OgreAlignedAllocator.h"
 	"OgreMemoryTracker.h"
 
-1304879284 /usr/include/OGRE/OgreAlignedAllocator.h
+1346563635 /usr/include/OGRE/OgreAlignedAllocator.h
 
-1304879284 /usr/include/OGRE/OgreMemoryTracker.h
+1346563635 /usr/include/OGRE/OgreMemoryTracker.h
 	<tr1/unordered_map>
 	<ext/hash_map>
 
-1304879284 /usr/include/OGRE/OgreAnimation.h
+1346563635 /usr/include/OGRE/OgreAnimation.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreIteratorWrappers.h"
@@ -231,22 +238,22 @@
 	"OgreAnimationTrack.h"
 	"OgreAnimationState.h"
 
-1304879284 /usr/include/OGRE/OgreString.h
+1346563635 /usr/include/OGRE/OgreString.h
 	"OgrePrerequisites.h"
 	<tr1/unordered_map>
 	<ext/hash_map>
 
-1304879284 /usr/include/OGRE/OgreIteratorWrappers.h
+1346563635 /usr/include/OGRE/OgreIteratorWrappers.h
 	"OgrePrerequisites.h"
 	"OgreIteratorWrapper.h"
 	"OgreIteratorRange.h"
 
-1304879284 /usr/include/OGRE/OgreIteratorWrapper.h
+1346563635 /usr/include/OGRE/OgreIteratorWrapper.h
 
-1304879284 /usr/include/OGRE/OgreIteratorRange.h
+1346563635 /usr/include/OGRE/OgreIteratorRange.h
 	<boost/range.hpp>
 
-1304879284 /usr/include/OGRE/OgreAnimable.h
+1346563635 /usr/include/OGRE/OgreAnimable.h
 	"OgrePrerequisites.h"
 	"OgreVector2.h"
 	"OgreVector3.h"
@@ -258,52 +265,52 @@
 	"OgreException.h"
 	"OgreAny.h"
 
-1304879284 /usr/include/OGRE/OgreVector2.h
+1346563635 /usr/include/OGRE/OgreVector2.h
 	"OgrePrerequisites.h"
 	"OgreMath.h"
 
-1304879284 /usr/include/OGRE/OgreMath.h
+1346563635 /usr/include/OGRE/OgreMath.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreVector3.h
+1346563635 /usr/include/OGRE/OgreVector3.h
 	"OgrePrerequisites.h"
 	"OgreMath.h"
 	"OgreQuaternion.h"
 
-1304879284 /usr/include/OGRE/OgreQuaternion.h
+1346563635 /usr/include/OGRE/OgreQuaternion.h
 	"OgrePrerequisites.h"
 	"OgreMath.h"
 
-1304879284 /usr/include/OGRE/OgreVector4.h
+1346563635 /usr/include/OGRE/OgreVector4.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 
-1304879284 /usr/include/OGRE/OgreColourValue.h
+1346563635 /usr/include/OGRE/OgreColourValue.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreSharedPtr.h
+1346563635 /usr/include/OGRE/OgreSharedPtr.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreStringVector.h
+1346563635 /usr/include/OGRE/OgreStringVector.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreSharedPtr.h"
 
-1304879284 /usr/include/OGRE/OgreException.h
+1346563635 /usr/include/OGRE/OgreException.h
 	"OgrePrerequisites.h"
 	"OgreHeaderPrefix.h"
 	"OgreString.h"
 	<exception>
 	"OgreHeaderSuffix.h"
 
-1304879284 /usr/include/OGRE/OgreAny.h
+1346563635 /usr/include/OGRE/OgreAny.h
 	"OgrePrerequisites.h"
 	"OgreException.h"
 	"OgreString.h"
 	<algorithm>
 	<typeinfo>
 
-1304879284 /usr/include/OGRE/OgreAnimationTrack.h
+1346563635 /usr/include/OGRE/OgreAnimationTrack.h
 	"OgrePrerequisites.h"
 	"OgreSimpleSpline.h"
 	"OgreRotationalSpline.h"
@@ -311,31 +318,31 @@
 	"OgreAnimable.h"
 	"OgrePose.h"
 
-1304879284 /usr/include/OGRE/OgreSimpleSpline.h
+1346563635 /usr/include/OGRE/OgreSimpleSpline.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreMatrix4.h"
 
-1304879284 /usr/include/OGRE/OgreMatrix4.h
+1346563635 /usr/include/OGRE/OgreMatrix4.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreMatrix3.h"
 	"OgreVector4.h"
 	"OgrePlane.h"
 
-1304879284 /usr/include/OGRE/OgreMatrix3.h
+1346563635 /usr/include/OGRE/OgreMatrix3.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 
-1304879284 /usr/include/OGRE/OgrePlane.h
+1346563635 /usr/include/OGRE/OgrePlane.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 
-1304879284 /usr/include/OGRE/OgreRotationalSpline.h
+1346563635 /usr/include/OGRE/OgreRotationalSpline.h
 	"OgrePrerequisites.h"
 	"OgreQuaternion.h"
 
-1304879284 /usr/include/OGRE/OgreKeyFrame.h
+1346563635 /usr/include/OGRE/OgreKeyFrame.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreQuaternion.h"
@@ -343,33 +350,34 @@
 	"OgreHardwareVertexBuffer.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreHardwareVertexBuffer.h
+1346563635 /usr/include/OGRE/OgreHardwareVertexBuffer.h
 	"OgrePrerequisites.h"
 	"OgreHardwareBuffer.h"
 	"OgreSharedPtr.h"
 	"OgreColourValue.h"
 
-1304879284 /usr/include/OGRE/OgreHardwareBuffer.h
+1346563635 /usr/include/OGRE/OgreHardwareBuffer.h
 	"OgrePrerequisites.h"
+	"OgreException.h"
 
-1304879284 /usr/include/OGRE/OgrePose.h
+1346563635 /usr/include/OGRE/OgrePose.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreHardwareVertexBuffer.h"
 	"OgreVector3.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreAnimationState.h
+1346563635 /usr/include/OGRE/OgreAnimationState.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreController.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreController.h
+1346563635 /usr/include/OGRE/OgreController.h
 	"OgrePrerequisites.h"
 	"OgreSharedPtr.h"
 
-1304879284 /usr/include/OGRE/OgreArchive.h
+1346563635 /usr/include/OGRE/OgreArchive.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreDataStream.h"
@@ -378,18 +386,18 @@
 	"OgreException.h"
 	<ctime>
 
-1304879284 /usr/include/OGRE/OgreDataStream.h
+1346563635 /usr/include/OGRE/OgreDataStream.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreSharedPtr.h"
 	<istream>
 
-1304879284 /usr/include/OGRE/OgreArchiveManager.h
+1346563635 /usr/include/OGRE/OgreArchiveManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreSingleton.h"
 
-1304879284 /usr/include/OGRE/OgreResourceManager.h
+1346563635 /usr/include/OGRE/OgreResourceManager.h
 	"OgrePrerequisites.h"
 	"OgreResource.h"
 	"OgreResourceGroupManager.h"
@@ -399,31 +407,31 @@
 	"OgreStringVector.h"
 	"OgreScriptLoader.h"
 
-1304879284 /usr/include/OGRE/OgreResource.h
+1346563635 /usr/include/OGRE/OgreResource.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreSharedPtr.h"
 	"OgreStringInterface.h"
 	"OgreAtomicWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreStringInterface.h
+1346563635 /usr/include/OGRE/OgreStringInterface.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreCommon.h"
 
-1304879284 /usr/include/OGRE/OgreCommon.h
+1346563635 /usr/include/OGRE/OgreCommon.h
 	"OgreString.h"
 	<utility>
 	<sstream>
 
-1304879284 /usr/include/OGRE/OgreAtomicWrappers.h
+1346563635 /usr/include/OGRE/OgreAtomicWrappers.h
 	<signal.h>
 	"OgrePrerequisites.h"
 	"OgreException.h"
 	<windows.h>
 	<intrin.h>
 
-1304879284 /usr/include/OGRE/OgreResourceGroupManager.h
+1346563635 /usr/include/OGRE/OgreResourceGroupManager.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgreCommon.h"
@@ -433,28 +441,28 @@
 	"OgreIteratorWrappers.h"
 	<ctime>
 
-1304879284 /usr/include/OGRE/OgreSingleton.h
+1346563635 /usr/include/OGRE/OgreSingleton.h
 	"OgrePrerequisites.h"
 	"OgreHeaderPrefix.h"
 	"OgreHeaderSuffix.h"
 
-1304879284 /usr/include/OGRE/OgreScriptLoader.h
+1346563635 /usr/include/OGRE/OgreScriptLoader.h
 	"OgrePrerequisites.h"
 	"OgreDataStream.h"
 	"OgreStringVector.h"
 
-1304879284 /usr/include/OGRE/OgreAxisAlignedBox.h
+1346563635 /usr/include/OGRE/OgreAxisAlignedBox.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreMatrix4.h"
 
-1304879284 /usr/include/OGRE/OgreBillboardChain.h
+1346563635 /usr/include/OGRE/OgreBillboardChain.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreRenderable.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreMovableObject.h
+1346563635 /usr/include/OGRE/OgreMovableObject.h
 	"OgrePrerequisites.h"
 	"OgreRenderQueue.h"
 	"OgreAxisAlignedBox.h"
@@ -465,21 +473,21 @@
 	"OgreAny.h"
 	"OgreUserObjectBindings.h"
 
-1304879284 /usr/include/OGRE/OgreRenderQueue.h
+1346563635 /usr/include/OGRE/OgreRenderQueue.h
 	"OgreHeaderPrefix.h"
 	"OgrePrerequisites.h"
 	"OgreIteratorWrappers.h"
 	"OgreHeaderSuffix.h"
 
-1304879284 /usr/include/OGRE/OgreSphere.h
+1346563635 /usr/include/OGRE/OgreSphere.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 
-1304879284 /usr/include/OGRE/OgreShadowCaster.h
+1346563635 /usr/include/OGRE/OgreShadowCaster.h
 	"OgrePrerequisites.h"
 	"OgreRenderable.h"
 
-1304879284 /usr/include/OGRE/OgreRenderable.h
+1346563635 /usr/include/OGRE/OgreRenderable.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreRenderOperation.h"
@@ -491,21 +499,21 @@
 	"OgreException.h"
 	"OgreUserObjectBindings.h"
 
-1304879284 /usr/include/OGRE/OgreRenderOperation.h
+1346563635 /usr/include/OGRE/OgreRenderOperation.h
 	"OgrePrerequisites.h"
 	"OgreVertexIndexData.h"
 
-1304879284 /usr/include/OGRE/OgreVertexIndexData.h
+1346563635 /usr/include/OGRE/OgreVertexIndexData.h
 	"OgrePrerequisites.h"
 	"OgreHardwareVertexBuffer.h"
 	"OgreHardwareIndexBuffer.h"
 
-1304879284 /usr/include/OGRE/OgreHardwareIndexBuffer.h
+1346563635 /usr/include/OGRE/OgreHardwareIndexBuffer.h
 	"OgrePrerequisites.h"
 	"OgreHardwareBuffer.h"
 	"OgreSharedPtr.h"
 
-1304879284 /usr/include/OGRE/OgreMaterial.h
+1346563635 /usr/include/OGRE/OgreMaterial.h
 	"OgrePrerequisites.h"
 	"OgreResource.h"
 	"OgreIteratorWrappers.h"
@@ -513,11 +521,11 @@
 	"OgreColourValue.h"
 	"OgreBlendMode.h"
 
-1304879284 /usr/include/OGRE/OgreBlendMode.h
+1346563635 /usr/include/OGRE/OgreBlendMode.h
 	"OgrePrerequisites.h"
 	"OgreColourValue.h"
 
-1304879284 /usr/include/OGRE/OgreGpuProgram.h
+1346563635 /usr/include/OGRE/OgreGpuProgram.h
 	"OgrePrerequisites.h"
 	"OgreResource.h"
 	"OgreSharedPtr.h"
@@ -526,12 +534,12 @@
 	"OgreRenderOperation.h"
 	"OgreGpuProgramParams.h"
 
-1304879284 /usr/include/OGRE/OgreSerializer.h
+1346563635 /usr/include/OGRE/OgreSerializer.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreDataStream.h"
 
-1304879284 /usr/include/OGRE/OgreGpuProgramParams.h
+1346563635 /usr/include/OGRE/OgreGpuProgramParams.h
 	"OgrePrerequisites.h"
 	"OgreSharedPtr.h"
 	"OgreIteratorWrappers.h"
@@ -539,14 +547,14 @@
 	"OgreRenderOperation.h"
 	"OgreAny.h"
 
-1304879284 /usr/include/OGRE/OgreUserObjectBindings.h
+1346563635 /usr/include/OGRE/OgreUserObjectBindings.h
 	"OgrePrerequisites.h"
 	"OgreAny.h"
 
-1304879284 /usr/include/OGRE/OgreFactoryObj.h
+1346563635 /usr/include/OGRE/OgreFactoryObj.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreBillboardSet.h
+1346563635 /usr/include/OGRE/OgreBillboardSet.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreRenderable.h"
@@ -554,14 +562,14 @@
 	"OgreCommon.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreRadixSort.h
+1346563635 /usr/include/OGRE/OgreRadixSort.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreBone.h
+1346563635 /usr/include/OGRE/OgreBone.h
 	"OgrePrerequisites.h"
 	"OgreNode.h"
 
-1304879284 /usr/include/OGRE/OgreNode.h
+1346563635 /usr/include/OGRE/OgreNode.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreMatrix3.h"
@@ -573,21 +581,21 @@
 	"OgreMesh.h"
 	"OgreUserObjectBindings.h"
 
-1304879284 /usr/include/OGRE/OgreMesh.h
+1346563635 /usr/include/OGRE/OgreMesh.h
 	"OgrePrerequisites.h"
 	"OgreResource.h"
 	"OgreVertexIndexData.h"
 	"OgreAxisAlignedBox.h"
 	"OgreVertexBoneAssignment.h"
 	"OgreIteratorWrappers.h"
-	"OgreProgressiveMesh.h"
 	"OgreHardwareVertexBuffer.h"
 	"OgreSkeleton.h"
+	"OgreAnimation.h"
 	"OgreAnimationTrack.h"
 	"OgrePose.h"
 	"OgreDataStream.h"
 
-1304879284 /usr/include/OGRE/OgreVertexBoneAssignment.h
+1346563635 /usr/include/OGRE/OgreVertexBoneAssignment.h
 	"OgrePrerequisites.h"
 
 1304879284 /usr/include/OGRE/OgreProgressiveMesh.h
@@ -597,15 +605,16 @@
 	"OgreHardwareIndexBuffer.h"
 	"OgreRenderOperation.h"
 
-1304879284 /usr/include/OGRE/OgreSkeleton.h
+1346563635 /usr/include/OGRE/OgreSkeleton.h
 	"OgrePrerequisites.h"
 	"OgreResource.h"
 	"OgreQuaternion.h"
 	"OgreVector3.h"
 	"OgreIteratorWrappers.h"
 	"OgreStringVector.h"
+	"OgreAnimation.h"
 
-1304879284 /usr/include/OGRE/OgreCamera.h
+1346563635 /usr/include/OGRE/OgreCamera.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreMovableObject.h"
@@ -618,7 +627,7 @@
 	"OgreRay.h"
 	"OgrePlaneBoundedVolume.h"
 
-1304879284 /usr/include/OGRE/OgreFrustum.h
+1346563635 /usr/include/OGRE/OgreFrustum.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreRenderable.h"
@@ -626,31 +635,31 @@
 	"OgreVertexIndexData.h"
 	"OgreMovablePlane.h"
 
-1304879284 /usr/include/OGRE/OgreMovablePlane.h
+1346563635 /usr/include/OGRE/OgreMovablePlane.h
 	"OgrePrerequisites.h"
 	"OgrePlane.h"
 	"OgreMovableObject.h"
 
-1304879284 /usr/include/OGRE/OgreRay.h
+1346563635 /usr/include/OGRE/OgreRay.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgrePlaneBoundedVolume.h"
 
-1304879284 /usr/include/OGRE/OgrePlaneBoundedVolume.h
+1346563635 /usr/include/OGRE/OgrePlaneBoundedVolume.h
 	"OgrePrerequisites.h"
 	"OgreAxisAlignedBox.h"
 	"OgreSphere.h"
 	"OgreMath.h"
 	"OgrePlane.h"
 
-1304879284 /usr/include/OGRE/OgreConfigFile.h
+1346563635 /usr/include/OGRE/OgreConfigFile.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreStringVector.h"
 	"OgreIteratorWrappers.h"
 	"OgreDataStream.h"
 
-1304879284 /usr/include/OGRE/OgreControllerManager.h
+1346563635 /usr/include/OGRE/OgreControllerManager.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreSingleton.h"
@@ -659,17 +668,17 @@
 	"OgreTextureUnitState.h"
 	"OgreSharedPtr.h"
 
-1304879284 /usr/include/OGRE/OgrePredefinedControllers.h
+1346563635 /usr/include/OGRE/OgrePredefinedControllers.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreController.h"
 	"OgreFrameListener.h"
 	"OgreGpuProgram.h"
 
-1304879284 /usr/include/OGRE/OgreFrameListener.h
+1346563635 /usr/include/OGRE/OgreFrameListener.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreTextureUnitState.h
+1346563635 /usr/include/OGRE/OgreTextureUnitState.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreBlendMode.h"
@@ -678,23 +687,23 @@
 	"OgreString.h"
 	"OgreTexture.h"
 
-1304879284 /usr/include/OGRE/OgreTexture.h
+1346563635 /usr/include/OGRE/OgreTexture.h
 	"OgrePrerequisites.h"
 	"OgreHardwareBuffer.h"
 	"OgreResource.h"
 	"OgreImage.h"
 
-1304879284 /usr/include/OGRE/OgreImage.h
+1346563635 /usr/include/OGRE/OgreImage.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgrePixelFormat.h"
 	"OgreDataStream.h"
 
-1304879284 /usr/include/OGRE/OgrePixelFormat.h
+1346563635 /usr/include/OGRE/OgrePixelFormat.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 
-1304879284 /usr/include/OGRE/OgreEntity.h
+1346563635 /usr/include/OGRE/OgreEntity.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreString.h"
@@ -706,47 +715,47 @@
 	"OgreRenderable.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreHardwareBufferManager.h
+1346563635 /usr/include/OGRE/OgreHardwareBufferManager.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgreHardwareVertexBuffer.h"
 	"OgreHardwareIndexBuffer.h"
 	"OgreRenderToVertexBuffer.h"
 
-1304879284 /usr/include/OGRE/OgreRenderToVertexBuffer.h
+1346563635 /usr/include/OGRE/OgreRenderToVertexBuffer.h
 	"OgrePrerequisites.h"
 	"OgreMaterial.h"
 	"OgreRenderOperation.h"
 
-1304879284 /usr/include/OGRE/OgreGpuProgramManager.h
+1346563635 /usr/include/OGRE/OgreGpuProgramManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreException.h"
 	"OgreGpuProgram.h"
 	"OgreSingleton.h"
 
-1304879284 /usr/include/OGRE/OgreHardwarePixelBuffer.h
+1346563635 /usr/include/OGRE/OgreHardwarePixelBuffer.h
 	"OgrePrerequisites.h"
 	"OgreHardwareBuffer.h"
 	"OgreSharedPtr.h"
 	"OgrePixelFormat.h"
 	"OgreImage.h"
 
-1304879284 /usr/include/OGRE/OgreHardwareOcclusionQuery.h
+1346563635 /usr/include/OGRE/OgreHardwareOcclusionQuery.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreHighLevelGpuProgram.h
+1346563635 /usr/include/OGRE/OgreHighLevelGpuProgram.h
 	"OgrePrerequisites.h"
 	"OgreGpuProgram.h"
 
-1304879284 /usr/include/OGRE/OgreHighLevelGpuProgramManager.h
+1346563635 /usr/include/OGRE/OgreHighLevelGpuProgramManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreSingleton.h"
 	"OgreException.h"
 	"OgreHighLevelGpuProgram.h"
 
-1304879284 /usr/include/OGRE/OgreLight.h
+1346563635 /usr/include/OGRE/OgreLight.h
 	"OgrePrerequisites.h"
 	"OgreColourValue.h"
 	"OgreVector3.h"
@@ -756,28 +765,28 @@
 	"OgrePlaneBoundedVolume.h"
 	"OgreShadowCameraSetup.h"
 
-1304879284 /usr/include/OGRE/OgreShadowCameraSetup.h
+1346563635 /usr/include/OGRE/OgreShadowCameraSetup.h
 	"OgrePrerequisites.h"
 	"OgreMovablePlane.h"
 	"OgreSharedPtr.h"
 
-1304879284 /usr/include/OGRE/OgreLogManager.h
+1346563635 /usr/include/OGRE/OgreLogManager.h
 	"OgrePrerequisites.h"
 	"OgreLog.h"
 	"OgreSingleton.h"
 	"OgreString.h"
 
-1304879284 /usr/include/OGRE/OgreLog.h
+1346563635 /usr/include/OGRE/OgreLog.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 
-1304879284 /usr/include/OGRE/OgreManualObject.h
+1346563635 /usr/include/OGRE/OgreManualObject.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreRenderable.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreMaterialManager.h
+1346563635 /usr/include/OGRE/OgreMaterialManager.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgreResourceManager.h"
@@ -785,7 +794,7 @@
 	"OgreStringVector.h"
 	"OgreMaterialSerializer.h"
 
-1304879284 /usr/include/OGRE/OgreMaterialSerializer.h
+1346563635 /usr/include/OGRE/OgreMaterialSerializer.h
 	"OgrePrerequisites.h"
 	"OgreMaterial.h"
 	"OgreBlendMode.h"
@@ -793,7 +802,7 @@
 	"OgreGpuProgram.h"
 	"OgreStringVector.h"
 
-1304879284 /usr/include/OGRE/OgreMeshManager.h
+1346563635 /usr/include/OGRE/OgreMeshManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreSingleton.h"
@@ -802,24 +811,24 @@
 	"OgreMesh.h"
 	"OgrePatchMesh.h"
 
-1304879284 /usr/include/OGRE/OgrePatchMesh.h
+1346563635 /usr/include/OGRE/OgrePatchMesh.h
 	"OgrePrerequisites.h"
 	"OgreMesh.h"
 	"OgrePatchSurface.h"
 
-1304879284 /usr/include/OGRE/OgrePatchSurface.h
+1346563635 /usr/include/OGRE/OgrePatchSurface.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreString.h"
 	"OgreRenderOperation.h"
 	"OgreAxisAlignedBox.h"
 
-1304879284 /usr/include/OGRE/OgreMeshSerializer.h
+1346563635 /usr/include/OGRE/OgreMeshSerializer.h
 	"OgrePrerequisites.h"
-	"OgreMeshSerializerImpl.h"
 	"OgreSerializer.h"
+	"OgreMeshSerializerImpl.h"
 
-1304879284 /usr/include/OGRE/OgreMeshSerializerImpl.h
+1346563635 /usr/include/OGRE/OgreMeshSerializerImpl.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreSerializer.h"
@@ -827,30 +836,30 @@
 	"OgreMesh.h"
 	"OgreEdgeListBuilder.h"
 
-1304879284 /usr/include/OGRE/OgreEdgeListBuilder.h
+1346563635 /usr/include/OGRE/OgreEdgeListBuilder.h
 	"OgrePrerequisites.h"
 	"OgreVector4.h"
 	"OgreHardwareVertexBuffer.h"
 	"OgreRenderOperation.h"
 
-1304879284 /usr/include/OGRE/OgreOverlay.h
+1346563635 /usr/include/OGRE/OgreOverlay.h
 	"OgrePrerequisites.h"
 	"OgreSceneNode.h"
 	"OgreIteratorWrappers.h"
 	"OgreMatrix4.h"
 
-1304879284 /usr/include/OGRE/OgreSceneNode.h
+1346563635 /usr/include/OGRE/OgreSceneNode.h
 	"OgrePrerequisites.h"
 	"OgreNode.h"
 	"OgreIteratorWrappers.h"
 	"OgreAxisAlignedBox.h"
 
-1304879284 /usr/include/OGRE/OgreOverlayContainer.h
+1346563635 /usr/include/OGRE/OgreOverlayContainer.h
 	"OgrePrerequisites.h"
 	"OgreOverlayElement.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreOverlayElement.h
+1346563635 /usr/include/OGRE/OgreOverlayElement.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreRenderable.h"
@@ -860,20 +869,20 @@
 	"OgreColourValue.h"
 	"OgreRectangle.h"
 
-1304879284 /usr/include/OGRE/OgreUTFString.h
+1346563635 /usr/include/OGRE/OgreUTFString.h
 	"OgrePrerequisites.h"
 	<iterator>
 	<string>
 	<stdexcept>
 
-1304879284 /usr/include/OGRE/OgreOverlayElementCommands.h
+1346563635 /usr/include/OGRE/OgreOverlayElementCommands.h
 	"OgrePrerequisites.h"
 	"OgreStringInterface.h"
 
-1304879284 /usr/include/OGRE/OgreRectangle.h
+1346563635 /usr/include/OGRE/OgreRectangle.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreOverlayManager.h
+1346563635 /usr/include/OGRE/OgreOverlayManager.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgreStringVector.h"
@@ -881,12 +890,12 @@
 	"OgreScriptLoader.h"
 	"OgreFrustum.h"
 
-1304879284 /usr/include/OGRE/OgreParticleAffector.h
+1346563635 /usr/include/OGRE/OgreParticleAffector.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreStringInterface.h"
 
-1304879284 /usr/include/OGRE/OgreParticleEmitter.h
+1346563635 /usr/include/OGRE/OgreParticleEmitter.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreVector3.h"
@@ -895,21 +904,21 @@
 	"OgreParticleEmitterCommands.h"
 	"OgreParticle.h"
 
-1304879284 /usr/include/OGRE/OgreParticleEmitterCommands.h
+1346563635 /usr/include/OGRE/OgreParticleEmitterCommands.h
 	"OgrePrerequisites.h"
 	"OgreStringInterface.h"
 
-1304879284 /usr/include/OGRE/OgreParticle.h
+1346563635 /usr/include/OGRE/OgreParticle.h
 	"OgrePrerequisites.h"
 	"OgreBillboard.h"
 
-1304879284 /usr/include/OGRE/OgreBillboard.h
+1346563635 /usr/include/OGRE/OgreBillboard.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreColourValue.h"
 	"OgreCommon.h"
 
-1304879284 /usr/include/OGRE/OgreParticleSystemManager.h
+1346563635 /usr/include/OGRE/OgreParticleSystemManager.h
 	"OgrePrerequisites.h"
 	"OgreParticleSystem.h"
 	"OgreFrameListener.h"
@@ -918,7 +927,7 @@
 	"OgreScriptLoader.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreParticleSystem.h
+1346563635 /usr/include/OGRE/OgreParticleSystem.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 	"OgreString.h"
@@ -929,10 +938,10 @@
 	"OgreController.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreParticleIterator.h
+1346563635 /usr/include/OGRE/OgreParticleIterator.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgrePass.h
+1346563635 /usr/include/OGRE/OgrePass.h
 	"OgrePrerequisites.h"
 	"OgreGpuProgram.h"
 	"OgreColourValue.h"
@@ -942,18 +951,18 @@
 	"OgreTextureUnitState.h"
 	"OgreUserObjectBindings.h"
 
-1304879284 /usr/include/OGRE/OgreProfiler.h
+1346563635 /usr/include/OGRE/OgreProfiler.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgreString.h"
 	"OgreOverlay.h"
 
-1304879284 /usr/include/OGRE/OgreRenderQueueInvocation.h
+1346563635 /usr/include/OGRE/OgreRenderQueueInvocation.h
 	"OgrePrerequisites.h"
 	"OgreRenderQueueSortingGrouping.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreRenderQueueSortingGrouping.h
+1346563635 /usr/include/OGRE/OgreRenderQueueSortingGrouping.h
 	"OgrePrerequisites.h"
 	"OgreIteratorWrappers.h"
 	"OgreMaterial.h"
@@ -961,7 +970,7 @@
 	"OgrePass.h"
 	"OgreRadixSort.h"
 
-1304879284 /usr/include/OGRE/OgreTechnique.h
+1346563635 /usr/include/OGRE/OgreTechnique.h
 	"OgrePrerequisites.h"
 	"OgreIteratorWrappers.h"
 	"OgreBlendMode.h"
@@ -971,7 +980,7 @@
 	"OgreRenderSystemCapabilities.h"
 	"OgreUserObjectBindings.h"
 
-1304879284 /usr/include/OGRE/OgreRenderSystemCapabilities.h
+1346563635 /usr/include/OGRE/OgreRenderSystemCapabilities.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreStringConverter.h"
@@ -979,7 +988,7 @@
 	"OgreResource.h"
 	"OgreLogManager.h"
 
-1304879284 /usr/include/OGRE/OgreStringConverter.h
+1346563635 /usr/include/OGRE/OgreStringConverter.h
 	"OgrePrerequisites.h"
 	"OgreStringVector.h"
 	"OgreColourValue.h"
@@ -991,20 +1000,21 @@
 	"OgreVector3.h"
 	"OgreVector4.h"
 
-1304879284 /usr/include/OGRE/OgreRenderQueueListener.h
+1346563635 /usr/include/OGRE/OgreRenderQueueListener.h
 	"OgrePrerequisites.h"
 	"OgreRenderQueue.h"
 
-1304879284 /usr/include/OGRE/OgreRenderObjectListener.h
+1346563635 /usr/include/OGRE/OgreRenderObjectListener.h
 	"OgrePrerequisites.h"
 	"OgreRenderable.h"
 	"OgrePass.h"
 
-1304879284 /usr/include/OGRE/OgreRenderSystem.h
+1346563635 /usr/include/OGRE/OgreRenderSystem.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreTextureUnitState.h"
 	"OgreCommon.h"
+	"OgreMaterialManager.h"
 	"OgreRenderOperation.h"
 	"OgreRenderSystemCapabilities.h"
 	"OgreRenderTarget.h"
@@ -1015,66 +1025,68 @@
 	"OgrePlane.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreRenderTarget.h
+1346563635 /usr/include/OGRE/OgreRenderTarget.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreTextureManager.h"
 	"OgreViewport.h"
 	"OgreTimer.h"
 
-1304879284 /usr/include/OGRE/OgreTextureManager.h
+1346563635 /usr/include/OGRE/OgreTextureManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreTexture.h"
 	"OgreSingleton.h"
 
-1304879284 /usr/include/OGRE/OgreViewport.h
+1346563635 /usr/include/OGRE/OgreViewport.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreColourValue.h"
 	"OgreFrustum.h"
 
-1304879284 /usr/include/OGRE/OgreTimer.h
+1346563635 /usr/include/OGRE/OgreTimer.h
 	"OgrePrerequisites.h"
 	"OgrePlatform.h"
 	"WIN32/OgreTimerImp.h"
 	"GLX/OgreTimerImp.h"
+	"NaCl/OgreTimerImp.h"
 	"OSX/OgreTimerImp.h"
-	"iPhone/OgreTimerImp.h"
+	"iOS/OgreTimerImp.h"
+	"Android/OgreTimerImp.h"
 
-1304879284 /usr/include/OGRE/GLX/OgreTimerImp.h
+1346563635 /usr/include/OGRE/GLX/OgreTimerImp.h
 	"../OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreRenderTexture.h
+1346563635 /usr/include/OGRE/OgreRenderTexture.h
 	"OgrePrerequisites.h"
 	"OgreRenderTarget.h"
 
-1304879284 /usr/include/OGRE/OgreConfigOptionMap.h
+1346563635 /usr/include/OGRE/OgreConfigOptionMap.h
 	"OgrePrerequisites.h"
 	"OgreStringVector.h"
 	"OgreString.h"
 
-1304879284 /usr/include/OGRE/OgreRenderTargetListener.h
+1346563635 /usr/include/OGRE/OgreRenderTargetListener.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreRenderWindow.h
+1346563635 /usr/include/OGRE/OgreRenderWindow.h
 	"OgrePrerequisites.h"
 	"OgreRenderTarget.h"
 
-1304879284 /usr/include/OGRE/OgreResourceBackgroundQueue.h
+1346563635 /usr/include/OGRE/OgreResourceBackgroundQueue.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreSingleton.h"
 	"OgreResource.h"
 	"OgreWorkQueue.h"
 
-1304879284 /usr/include/OGRE/OgreWorkQueue.h
+1346563635 /usr/include/OGRE/OgreWorkQueue.h
 	"OgrePrerequisites.h"
 	"OgreAtomicWrappers.h"
 	"OgreAny.h"
 	"OgreSharedPtr.h"
 
-1304879284 /usr/include/OGRE/OgreRibbonTrail.h
+1346563635 /usr/include/OGRE/OgreRibbonTrail.h
 	"OgrePrerequisites.h"
 	"OgreBillboardChain.h"
 	"OgreNode.h"
@@ -1082,7 +1094,7 @@
 	"OgreFrameListener.h"
 	"OgreControllerManager.h"
 
-1304879284 /usr/include/OGRE/OgreRoot.h
+1346563635 /usr/include/OGRE/OgreRoot.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgreString.h"
@@ -1092,13 +1104,13 @@
 	"OgreWorkQueue.h"
 	<exception>
 
-1304879284 /usr/include/OGRE/OgreSceneManagerEnumerator.h
+1346563635 /usr/include/OGRE/OgreSceneManagerEnumerator.h
 	"OgrePrerequisites.h"
 	"OgreSceneManager.h"
 	"OgreSingleton.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreSceneManager.h
+1346563635 /usr/include/OGRE/OgreSceneManager.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreSceneNode.h"
@@ -1120,9 +1132,10 @@
 	"OgreCamera.h"
 	"OgreInstancedGeometry.h"
 	"OgreLodListener.h"
+	"OgreInstanceManager.h"
 	"OgreRenderSystem.h"
 
-1304879284 /usr/include/OGRE/OgreSceneQuery.h
+1346563635 /usr/include/OGRE/OgreSceneQuery.h
 	"OgrePrerequisites.h"
 	"OgreAxisAlignedBox.h"
 	"OgreSphere.h"
@@ -1130,7 +1143,7 @@
 	"OgreRenderOperation.h"
 	"OgrePlaneBoundedVolume.h"
 
-1304879284 /usr/include/OGRE/OgreAutoParamDataSource.h
+1346563635 /usr/include/OGRE/OgreAutoParamDataSource.h
 	"OgrePrerequisites.h"
 	"OgreCommon.h"
 	"OgreMatrix4.h"
@@ -1138,25 +1151,25 @@
 	"OgreLight.h"
 	"OgreColourValue.h"
 
-1304879284 /usr/include/OGRE/OgreRectangle2D.h
+1346563635 /usr/include/OGRE/OgreRectangle2D.h
 	"OgrePrerequisites.h"
 	"OgreSimpleRenderable.h"
 
-1304879284 /usr/include/OGRE/OgreSimpleRenderable.h
+1346563635 /usr/include/OGRE/OgreSimpleRenderable.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreRenderable.h"
 	"OgreAxisAlignedBox.h"
 	"OgreMaterial.h"
 
-1304879284 /usr/include/OGRE/OgreShadowTextureManager.h
+1346563635 /usr/include/OGRE/OgreShadowTextureManager.h
 	"OgrePrerequisites.h"
 	"OgreSingleton.h"
 	"OgrePixelFormat.h"
 	"OgreTexture.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreInstancedGeometry.h
+1346563635 /usr/include/OGRE/OgreInstancedGeometry.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreSimpleRenderable.h"
@@ -1167,66 +1180,65 @@
 	"OgreIteratorWrappers.h"
 	"OgreMesh.h"
 
-1304879284 /usr/include/OGRE/OgreSkeletonInstance.h
+1346563635 /usr/include/OGRE/OgreSkeletonInstance.h
 	"OgrePrerequisites.h"
 	"OgreSkeleton.h"
 
-1304879284 /usr/include/OGRE/OgreLodListener.h
+1346563635 /usr/include/OGRE/OgreLodListener.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreLodStrategyManager.h
+1346563635 /usr/include/OGRE/OgreLodStrategyManager.h
 	"OgrePrerequisites.h"
 	"OgreLodStrategy.h"
 	"OgreSingleton.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreLodStrategy.h
+1346563635 /usr/include/OGRE/OgreLodStrategy.h
 	"OgrePrerequisites.h"
 	"OgreMesh.h"
 	"OgreMovableObject.h"
 	"OgreCamera.h"
 
-1304879284 /usr/include/OGRE/OgreSkeletonManager.h
+1346563635 /usr/include/OGRE/OgreSkeletonManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreSingleton.h"
 
-1304879284 /usr/include/OGRE/OgreSkeletonSerializer.h
+1346563635 /usr/include/OGRE/OgreSkeletonSerializer.h
 	"OgrePrerequisites.h"
 	"OgreSkeleton.h"
 	"OgreSerializer.h"
 
-1304879284 /usr/include/OGRE/OgreStaticGeometry.h
+1346563635 /usr/include/OGRE/OgreStaticGeometry.h
 	"OgrePrerequisites.h"
 	"OgreMovableObject.h"
 	"OgreRenderable.h"
 	"OgreMesh.h"
 	"OgreLodStrategy.h"
 
-1304879284 /usr/include/OGRE/OgreSubEntity.h
+1346563635 /usr/include/OGRE/OgreSubEntity.h
 	"OgrePrerequisites.h"
 	"OgreString.h"
 	"OgreRenderable.h"
 	"OgreHardwareBufferManager.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreSubMesh.h
+1346563635 /usr/include/OGRE/OgreSubMesh.h
 	"OgrePrerequisites.h"
 	"OgreVertexIndexData.h"
 	"OgreMaterial.h"
 	"OgreRenderOperation.h"
 	"OgreVertexBoneAssignment.h"
-	"OgreProgressiveMesh.h"
 	"OgreAnimationTrack.h"
 	"OgreResourceGroupManager.h"
 
-1304879284 /usr/include/OGRE/OgreCompositor.h
+1346563635 /usr/include/OGRE/OgreCompositor.h
 	"OgrePrerequisites.h"
 	"OgreIteratorWrappers.h"
 	"OgreResource.h"
 	"OgreTexture.h"
 
-1304879284 /usr/include/OGRE/OgreCompositorManager.h
+1346563635 /usr/include/OGRE/OgreCompositorManager.h
 	"OgrePrerequisites.h"
 	"OgreResourceManager.h"
 	"OgreCompositor.h"
@@ -1234,64 +1246,65 @@
 	"OgreRenderSystem.h"
 	"OgreCompositionTechnique.h"
 
-1304879284 /usr/include/OGRE/OgreCompositionTechnique.h
+1346563635 /usr/include/OGRE/OgreCompositionTechnique.h
 	"OgrePrerequisites.h"
 	"OgrePixelFormat.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreCompositorChain.h
+1346563635 /usr/include/OGRE/OgreCompositorChain.h
 	"OgrePrerequisites.h"
 	"OgreRenderTargetListener.h"
 	"OgreRenderQueueListener.h"
 	"OgreCompositorInstance.h"
 	"OgreCompositor.h"
+	"OgreViewport.h"
 
-1304879284 /usr/include/OGRE/OgreCompositorInstance.h
+1346563635 /usr/include/OGRE/OgreCompositorInstance.h
 	"OgrePrerequisites.h"
 	"OgreMaterialManager.h"
 	"OgreTexture.h"
 	"OgreRenderQueue.h"
 	"OgreCompositionTechnique.h"
 
-1304879284 /usr/include/OGRE/OgreCompositionPass.h
+1346563635 /usr/include/OGRE/OgreCompositionPass.h
 	"OgrePrerequisites.h"
 	"OgreMaterial.h"
 	"OgreRenderSystem.h"
 	"OgreRenderQueue.h"
 
-1304879284 /usr/include/OGRE/OgreCompositionTargetPass.h
+1346563635 /usr/include/OGRE/OgreCompositionTargetPass.h
 	"OgrePrerequisites.h"
 	"OgreIteratorWrappers.h"
 
-1304879284 /usr/include/OGRE/OgreWindowEventUtilities.h
+1346563635 /usr/include/OGRE/OgreWindowEventUtilities.h
 	"OgrePrerequisites.h"
 	"OgrePlatform.h"
 	<windows.h>
 	<Carbon/Carbon.h>
 
-1304879284 /usr/include/OGRE/OgreShadowCameraSetupFocused.h
+1346563635 /usr/include/OGRE/OgreShadowCameraSetupFocused.h
 	"OgrePrerequisites.h"
 	"OgreShadowCameraSetup.h"
 	"OgrePolygon.h"
 	"OgreConvexBody.h"
 
-1304879284 /usr/include/OGRE/OgrePolygon.h
+1346563635 /usr/include/OGRE/OgrePolygon.h
 	"OgrePrerequisites.h"
 	"OgreVector3.h"
 
-1304879284 /usr/include/OGRE/OgreConvexBody.h
+1346563635 /usr/include/OGRE/OgreConvexBody.h
 	"OgrePrerequisites.h"
 	"OgrePolygon.h"
 
-1304879284 /usr/include/OGRE/OgreShadowCameraSetupLiSPSM.h
+1346563635 /usr/include/OGRE/OgreShadowCameraSetupLiSPSM.h
 	"OgrePrerequisites.h"
 	"OgreShadowCameraSetupFocused.h"
 
-1304879284 /usr/include/OGRE/OgreShadowCameraSetupPlaneOptimal.h
+1346563635 /usr/include/OGRE/OgreShadowCameraSetupPlaneOptimal.h
 	"OgrePrerequisites.h"
 	"OgreShadowCameraSetup.h"
 
-1304879284 /usr/include/OGRE/OgreShadowCameraSetupPSSM.h
+1346563635 /usr/include/OGRE/OgreShadowCameraSetupPSSM.h
 	"OgrePrerequisites.h"
 	"OgreShadowCameraSetupLiSPSM.h"
 
@@ -1410,32 +1423,30 @@
 	<OIS/OIS.h>
 	<Ogre.h>
 
-1265851446 /usr/include/MYGUI/MyGUI.h
+1329949660 /usr/include/MYGUI/MyGUI.h
 	"MyGUI_Gui.h"
 	"MyGUI_Button.h"
 	"MyGUI_ComboBox.h"
-	"MyGUI_Edit.h"
-	"MyGUI_HScroll.h"
-	"MyGUI_List.h"
-	"MyGUI_StaticText.h"
-	"MyGUI_StaticImage.h"
-	"MyGUI_Tab.h"
+	"MyGUI_EditBox.h"
+	"MyGUI_ListBox.h"
+	"MyGUI_TextBox.h"
+	"MyGUI_ImageBox.h"
+	"MyGUI_TabControl.h"
 	"MyGUI_TabItem.h"
-	"MyGUI_VScroll.h"
 	"MyGUI_Window.h"
-	"MyGUI_Progress.h"
-	"MyGUI_Message.h"
+	"MyGUI_ProgressBar.h"
 	"MyGUI_ItemBox.h"
-	"MyGUI_MultiList.h"
-	"MyGUI_MenuCtrl.h"
+	"MyGUI_MultiListBox.h"
+	"MyGUI_MenuControl.h"
 	"MyGUI_MenuItem.h"
 	"MyGUI_PopupMenu.h"
 	"MyGUI_MenuBar.h"
+	"MyGUI_ScrollBar.h"
 	"MyGUI_ScrollView.h"
 	"MyGUI_DDContainer.h"
 	"MyGUI_Canvas.h"
-	"MyGUI_ListCtrl.h"
-	"MyGUI_ListBox.h"
+	"MyGUI_MultiListItem.h"
+	"MyGUI_DeprecatedWidgets.h"
 	"MyGUI_InputManager.h"
 	"MyGUI_SubWidgetManager.h"
 	"MyGUI_ClipboardManager.h"
@@ -1460,7 +1471,6 @@
 	"MyGUI_ControllerPosition.h"
 	"MyGUI_CoordConverter.h"
 	"MyGUI_IResource.h"
-	"MyGUI_CastWidget.h"
 	"MyGUI_Any.h"
 	"MyGUI_MenuItemType.h"
 	"MyGUI_Version.h"
@@ -1468,31 +1478,33 @@
 	"MyGUI_WidgetStyle.h"
 	"MyGUI_IObject.h"
 	"MyGUI_ISerializable.h"
-	"MyGUI_RenderOut.h"
-	"MyGUI_RawRect.h"
+	"MyGUI_PolygonalSkin.h"
 	"MyGUI_RotatingSkin.h"
 	"MyGUI_TextureUtility.h"
+	"MyGUI_Constants.h"
+	"MyGUI_Bitwise.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Gui.h
+1329949660 /usr/include/MYGUI/MyGUI_Gui.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_XmlDocument.h"
-	"MyGUI_IWidgetCreator.h"
 	"MyGUI_IUnlinkWidget.h"
 	"MyGUI_Widget.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Prerequest.h
+1329949662 /usr/include/MYGUI/MyGUI_Prerequest.h
 	"MyGUI_Platform.h"
+	<crtdbg.h>
+	"MyGUI_DeprecatedTypes.h"
 
-1265998202 /usr/include/MYGUI/MyGUI_Platform.h
+1329949664 /usr/include/MYGUI/MyGUI_Platform.h
 
-1265851446 /usr/include/MYGUI/MyGUI_Types.h
+1329949660 /usr/include/MYGUI/MyGUI_Types.h
 	"MyGUI_Prerequest.h"
 	<vector>
 	<map>
 	<string>
-	"MyGUI_Utility.h"
 	"MyGUI_Align.h"
 	"MyGUI_TPoint.h"
 	"MyGUI_TSize.h"
@@ -1504,54 +1516,59 @@
 	<vector>
 	<sstream>
 
-1265851446 /usr/include/MYGUI/MyGUI_Align.h
+1329949662 /usr/include/MYGUI/MyGUI_Align.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Macros.h"
 	"MyGUI_Diagnostic.h"
+	"MyGUI_StringUtility.h"
 	<map>
 
-1265697692 /usr/include/MYGUI/MyGUI_Macros.h
+1329949662 /usr/include/MYGUI/MyGUI_Macros.h
+	"MyGUI_Prerequest.h"
+	<limits>
+	<stddef.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_Diagnostic.h
+1329949662 /usr/include/MYGUI/MyGUI_Diagnostic.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Exception.h"
 	"MyGUI_LogManager.h"
 	<sstream>
 	<crtdbg.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_Exception.h
+1329949662 /usr/include/MYGUI/MyGUI_Exception.h
 	"MyGUI_Prerequest.h"
 	<exception>
 	<string>
 
-1265851446 /usr/include/MYGUI/MyGUI_LogManager.h
+1329949662 /usr/include/MYGUI/MyGUI_LogManager.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_LogStream.h"
-	<map>
+	"MyGUI_LogSource.h"
+	"MyGUI_Diagnostic.h"
+	<vector>
 
-1265851446 /usr/include/MYGUI/MyGUI_LogStream.h
+1329949662 /usr/include/MYGUI/MyGUI_LogStream.h
 	"MyGUI_Prerequest.h"
-	<fstream>
-	<iostream>
-	<string>
+	<string.h>
+	<sstream>
 
-1265851446 /usr/include/MYGUI/MyGUI_TPoint.h
-	"MyGUI_Prerequest.h"
-
-1265697320 /usr/include/MYGUI/MyGUI_TSize.h
+1329949664 /usr/include/MYGUI/MyGUI_TPoint.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_TRect.h
+1329949660 /usr/include/MYGUI/MyGUI_TSize.h
 	"MyGUI_Prerequest.h"
 
-1265697666 /usr/include/MYGUI/MyGUI_TCoord.h
+1329949662 /usr/include/MYGUI/MyGUI_TRect.h
+	"MyGUI_Prerequest.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_TCoord.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_TPoint.h"
 	"MyGUI_TSize.h"
 
 1265697580 /usr/include/MYGUI/MyGUI_Instance.h
 
-1265851446 /usr/include/MYGUI/MyGUI_XmlDocument.h
+1329949662 /usr/include/MYGUI/MyGUI_XmlDocument.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_UString.h"
 	"MyGUI_Diagnostic.h"
@@ -1563,20 +1580,18 @@
 	<sstream>
 	<assert.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_UString.h
+1329949662 /usr/include/MYGUI/MyGUI_UString.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-	"MyGUI_Diagnostic.h"
-	"MyGUI_LogManager.h"
 	<iterator>
 	<string>
 	<stdexcept>
 
-1265697382 /usr/include/MYGUI/MyGUI_DataStream.h
+1329949662 /usr/include/MYGUI/MyGUI_DataStream.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_IDataStream.h"
 
-1265697398 /usr/include/MYGUI/MyGUI_IDataStream.h
+1329949662 /usr/include/MYGUI/MyGUI_IDataStream.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
@@ -1585,52 +1600,51 @@
 	"MyGUI_Types.h"
 	"MyGUI_WidgetStyle.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_WidgetStyle.h
+1329949664 /usr/include/MYGUI/MyGUI_WidgetStyle.h
 	"MyGUI_Prerequest.h"
 	<string.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_IUnlinkWidget.h
+1329949664 /usr/include/MYGUI/MyGUI_IUnlinkWidget.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_WidgetDefines.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_WidgetDefines.h
+1329949662 /usr/include/MYGUI/MyGUI_WidgetDefines.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Enumerator.h"
 	<vector>
 	<map>
 
-1265851446 /usr/include/MYGUI/MyGUI_Enumerator.h
+1329949662 /usr/include/MYGUI/MyGUI_Enumerator.h
 	<assert.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_Widget.h
+1329949662 /usr/include/MYGUI/MyGUI_Widget.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Any.h"
 	"MyGUI_ICroppedRectangle.h"
-	"MyGUI_ISubWidgetRect.h"
-	"MyGUI_ISubWidgetText.h"
-	"MyGUI_LayerItem.h"
 	"MyGUI_WidgetUserData.h"
-	"MyGUI_WidgetEvent.h"
-	"MyGUI_IWidgetCreator.h"
+	"MyGUI_WidgetInput.h"
 	"MyGUI_ResourceSkin.h"
+	"MyGUI_ResourceLayout.h"
 	"MyGUI_IObject.h"
+	"MyGUI_SkinItem.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Any.h
+1329949662 /usr/include/MYGUI/MyGUI_Any.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Diagnostic.h"
 	<algorithm>
 	<typeinfo>
 
-1265851446 /usr/include/MYGUI/MyGUI_ICroppedRectangle.h
+1329949662 /usr/include/MYGUI/MyGUI_ICroppedRectangle.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1265697474 /usr/include/MYGUI/MyGUI_ISubWidgetRect.h
+1329949662 /usr/include/MYGUI/MyGUI_ISubWidgetRect.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISubWidget.h"
 	"MyGUI_Colour.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ISubWidget.h
+1329949662 /usr/include/MYGUI/MyGUI_ISubWidget.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ICroppedRectangle.h"
 	"MyGUI_ILayerNode.h"
@@ -1639,54 +1653,55 @@
 	"MyGUI_IStateInfo.h"
 	"MyGUI_IObject.h"
 
-1265697392 /usr/include/MYGUI/MyGUI_ILayerNode.h
+1329949662 /usr/include/MYGUI/MyGUI_ILayerNode.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Enumerator.h"
 	"MyGUI_IObject.h"
 	"MyGUI_IRenderTarget.h"
 
-1265697534 /usr/include/MYGUI/MyGUI_IObject.h
+1329949662 /usr/include/MYGUI/MyGUI_IObject.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_RTTI.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_RTTI.h
+1329949662 /usr/include/MYGUI/MyGUI_RTTI.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Diagnostic.h"
-	<typeinfo>
 	<string>
+	<typeinfo>
 
-1265697328 /usr/include/MYGUI/MyGUI_IRenderTarget.h
+1329949660 /usr/include/MYGUI/MyGUI_IRenderTarget.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_RenderTargetInfo.h"
+	<stddef.h>
 
-1265697576 /usr/include/MYGUI/MyGUI_RenderTargetInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_RenderTargetInfo.h
 	"MyGUI_Prerequest.h"
 
-1265697508 /usr/include/MYGUI/MyGUI_IStateInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_IStateInfo.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISerializable.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ISerializable.h
+1329949664 /usr/include/MYGUI/MyGUI_ISerializable.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_IObject.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_Version.h"
 
-1265697604 /usr/include/MYGUI/MyGUI_Version.h
+1329949662 /usr/include/MYGUI/MyGUI_Version.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-	"MyGUI_Utility.h"
+	"MyGUI_StringUtility.h"
 
-1265697672 /usr/include/MYGUI/MyGUI_Colour.h
+1329949662 /usr/include/MYGUI/MyGUI_Colour.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ISubWidgetText.h
+1329949662 /usr/include/MYGUI/MyGUI_ISubWidgetText.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISubWidget.h"
 	"MyGUI_Colour.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_LayerItem.h
+1329949660 /usr/include/MYGUI/MyGUI_LayerItem.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_LayerManager.h"
 	"MyGUI_ILayer.h"
@@ -1694,46 +1709,45 @@
 	"MyGUI_ILayerItem.h"
 	"MyGUI_ISubWidget.h"
 
-1265697794 /usr/include/MYGUI/MyGUI_LayerManager.h
+1329949664 /usr/include/MYGUI/MyGUI_LayerManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_Enumerator.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_IUnlinkWidget.h"
 	"MyGUI_ResourceManager.h"
 	"MyGUI_ILayer.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ResourceManager.h
+1329949662 /usr/include/MYGUI/MyGUI_ResourceManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_Enumerator.h"
-	"MyGUI_Guid.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_IResource.h"
-	"MyGUI_ResourceHolder.h"
 	"MyGUI_Delegate.h"
+	"MyGUI_BackwardCompatibility.h"
 
 1265851446 /usr/include/MYGUI/MyGUI_Guid.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 	<memory.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_IResource.h
+1329949662 /usr/include/MYGUI/MyGUI_IResource.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_XmlDocument.h"
-	"MyGUI_Guid.h"
 	"MyGUI_Version.h"
 	"MyGUI_ISerializable.h"
-	"MyGUI_ResourceHolder.h"
 
 1265697546 /usr/include/MYGUI/MyGUI_ResourceHolder.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Enumerator.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Delegate.h
+1329949664 /usr/include/MYGUI/MyGUI_Delegate.h
 	"MyGUI_Diagnostic.h"
-	<typeinfo>
 	<list>
+	<typeinfo>
+	"MyGUI_DelegateImplement.h"
 	"MyGUI_DelegateImplement.h"
 	"MyGUI_DelegateImplement.h"
 	"MyGUI_DelegateImplement.h"
@@ -1741,21 +1755,20 @@
 	"MyGUI_DelegateImplement.h"
 	"MyGUI_DelegateImplement.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_DelegateImplement.h
+1329949662 /usr/include/MYGUI/MyGUI_DelegateImplement.h
 
-1265697656 /usr/include/MYGUI/MyGUI_ILayer.h
+1329949662 /usr/include/MYGUI/MyGUI_ILayer.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 	"MyGUI_IRenderTarget.h"
 	"MyGUI_ILayerNode.h"
 	"MyGUI_ISerializable.h"
 
-1265697782 /usr/include/MYGUI/MyGUI_ILayerItem.h
+1329949664 /usr/include/MYGUI/MyGUI_ILayerItem.h
 	"MyGUI_Prerequest.h"
 
-1265697594 /usr/include/MYGUI/MyGUI_WidgetUserData.h
+1329949662 /usr/include/MYGUI/MyGUI_WidgetUserData.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_WidgetDefines.h"
 	"MyGUI_Any.h"
 
 1265851446 /usr/include/MYGUI/MyGUI_WidgetEvent.h
@@ -1765,15 +1778,14 @@
 	"MyGUI_WidgetToolTip.h"
 	"MyGUI_InputDefine.h"
 
-1265697566 /usr/include/MYGUI/MyGUI_WidgetToolTip.h
+1329949662 /usr/include/MYGUI/MyGUI_WidgetToolTip.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-	"MyGUI_WidgetToolTip.h"
 
 1265851446 /usr/include/MYGUI/MyGUI_InputDefine.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ResourceSkin.h
+1329949662 /usr/include/MYGUI/MyGUI_ResourceSkin.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_SubWidgetBinding.h"
 	"MyGUI_ChildSkinInfo.h"
@@ -1781,36 +1793,39 @@
 	"MyGUI_IResource.h"
 	"MyGUI_SubWidgetInfo.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_SubWidgetBinding.h
+1329949662 /usr/include/MYGUI/MyGUI_SubWidgetBinding.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISubWidget.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ChildSkinInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_ChildSkinInfo.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_WidgetStyle.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_MaskPickInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_MaskPickInfo.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1265697642 /usr/include/MYGUI/MyGUI_SubWidgetInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_SubWidgetInfo.h
 	"MyGUI_Prerequest.h"
 
-1265697650 /usr/include/MYGUI/MyGUI_Button.h
+1329949662 /usr/include/MYGUI/MyGUI_Button.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_StaticText.h"
+	"MyGUI_TextBox.h"
 
 1265697562 /usr/include/MYGUI/MyGUI_StaticText.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 
-1265697724 /usr/include/MYGUI/MyGUI_ComboBox.h
+1329949662 /usr/include/MYGUI/MyGUI_ComboBox.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Edit.h"
-	"MyGUI_List.h"
+	"MyGUI_EditBox.h"
+	"MyGUI_ListBox.h"
 	"MyGUI_Any.h"
 	"MyGUI_EventPair.h"
 	"MyGUI_ControllerFadeAlpha.h"
+	"MyGUI_FlowDirection.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
 
 1265697608 /usr/include/MYGUI/MyGUI_Edit.h
 	"MyGUI_Prerequest.h"
@@ -1820,31 +1835,31 @@
 	"MyGUI_EventPair.h"
 	"MyGUI_ScrollViewBase.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_TextChangeHistory.h
+1329949662 /usr/include/MYGUI/MyGUI_TextChangeHistory.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Macros.h"
 	"MyGUI_UString.h"
 	<deque>
 
-1265697400 /usr/include/MYGUI/MyGUI_TextIterator.h
+1329949662 /usr/include/MYGUI/MyGUI_TextIterator.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Colour.h"
 	"MyGUI_TextChangeHistory.h"
 	"MyGUI_IFont.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_IFont.h
+1329949664 /usr/include/MYGUI/MyGUI_IFont.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISerializable.h"
 	"MyGUI_IResource.h"
 	"MyGUI_FontData.h"
 
-1265697502 /usr/include/MYGUI/MyGUI_FontData.h
+1329949662 /usr/include/MYGUI/MyGUI_FontData.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_EventPair.h
+1329949664 /usr/include/MYGUI/MyGUI_EventPair.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ScrollViewBase.h
+1329949662 /usr/include/MYGUI/MyGUI_ScrollViewBase.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
@@ -1854,12 +1869,12 @@
 	"MyGUI_Any.h"
 	"MyGUI_EventPair.h"
 
-1265697428 /usr/include/MYGUI/MyGUI_ControllerFadeAlpha.h
+1329949662 /usr/include/MYGUI/MyGUI_ControllerFadeAlpha.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_ControllerItem.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ControllerItem.h
+1329949664 /usr/include/MYGUI/MyGUI_ControllerItem.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_IObject.h"
@@ -1881,7 +1896,7 @@
 	"MyGUI_ImageInfo.h"
 	"MyGUI_Guid.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ResourceImageSet.h
+1329949662 /usr/include/MYGUI/MyGUI_ResourceImageSet.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Macros.h"
 	"MyGUI_XmlDocument.h"
@@ -1890,11 +1905,12 @@
 	"MyGUI_Enumerator.h"
 	"MyGUI_ResourceManager.h"
 	"MyGUI_GenericFactory.h"
+	"MyGUI_ResourceImageSetData.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ImageInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_ImageInfo.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_GenericFactory.h
+1329949662 /usr/include/MYGUI/MyGUI_GenericFactory.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 	"MyGUI_Delegate.h"
@@ -1906,14 +1922,14 @@
 	"MyGUI_EventPair.h"
 	"MyGUI_ControllerFadeAlpha.h"
 
-1265697306 /usr/include/MYGUI/MyGUI_TabItem.h
+1329949660 /usr/include/MYGUI/MyGUI_TabItem.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-	"MyGUI_Tab.h"
+	"MyGUI_TextBox.h"
+	"MyGUI_TabControl.h"
 
-1265697584 /usr/include/MYGUI/MyGUI_Window.h
+1329949662 /usr/include/MYGUI/MyGUI_Window.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
+	"MyGUI_TextBox.h"
 	"MyGUI_EventPair.h"
 	"MyGUI_ControllerFadeAlpha.h"
 
@@ -1933,7 +1949,7 @@
 1265851446 /usr/include/MYGUI/MyGUI_MessageStyle.h
 	"MyGUI_Prerequest.h"
 
-1265697798 /usr/include/MYGUI/MyGUI_ItemBox.h
+1329949664 /usr/include/MYGUI/MyGUI_ItemBox.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_DDContainer.h"
 	"MyGUI_IBItemInfo.h"
@@ -1941,16 +1957,16 @@
 	"MyGUI_EventPair.h"
 	"MyGUI_ScrollViewBase.h"
 
-1265697708 /usr/include/MYGUI/MyGUI_DDContainer.h
+1329949662 /usr/include/MYGUI/MyGUI_DDContainer.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 	"MyGUI_DDItemInfo.h"
 	"MyGUI_EventPair.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_DDItemInfo.h
+1329949660 /usr/include/MYGUI/MyGUI_DDItemInfo.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_IBItemInfo.h
+1329949662 /usr/include/MYGUI/MyGUI_IBItemInfo.h
 	"MyGUI_Prerequest.h"
 
 1265697662 /usr/include/MYGUI/MyGUI_MultiList.h
@@ -1961,7 +1977,7 @@
 	"MyGUI_BiIndexBase.h"
 	"MyGUI_EventPair.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_BiIndexBase.h
+1329949662 /usr/include/MYGUI/MyGUI_BiIndexBase.h
 	"MyGUI_Prerequest.h"
 
 1265851446 /usr/include/MYGUI/MyGUI_MenuCtrl.h
@@ -1974,39 +1990,40 @@
 	"MyGUI_MenuItemType.h"
 	"MyGUI_ControllerFadeAlpha.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_MenuItemType.h
+1329949664 /usr/include/MYGUI/MyGUI_MenuItemType.h
 	"MyGUI_Prerequest.h"
 
-1265697298 /usr/include/MYGUI/MyGUI_MenuItem.h
+1329949660 /usr/include/MYGUI/MyGUI_MenuItem.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Button.h"
-	"MyGUI_MenuCtrl.h"
+	"MyGUI_MenuControl.h"
+	"MyGUI_IItem.h"
 
-1265697694 /usr/include/MYGUI/MyGUI_PopupMenu.h
+1329949662 /usr/include/MYGUI/MyGUI_PopupMenu.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_MenuCtrl.h"
+	"MyGUI_MenuControl.h"
 
-1265697706 /usr/include/MYGUI/MyGUI_MenuBar.h
+1329949662 /usr/include/MYGUI/MyGUI_MenuBar.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_MenuCtrl.h"
+	"MyGUI_MenuControl.h"
 
-1265697618 /usr/include/MYGUI/MyGUI_ScrollView.h
+1329949662 /usr/include/MYGUI/MyGUI_ScrollView.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 	"MyGUI_ScrollViewBase.h"
 
-1265697646 /usr/include/MYGUI/MyGUI_Canvas.h
+1329949662 /usr/include/MYGUI/MyGUI_Canvas.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 	"MyGUI_ITexture.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ITexture.h
+1329949662 /usr/include/MYGUI/MyGUI_ITexture.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_IRenderTarget.h"
 	"MyGUI_RenderFormat.h"
 	<string>
 
-1265851446 /usr/include/MYGUI/MyGUI_RenderFormat.h
+1329949662 /usr/include/MYGUI/MyGUI_RenderFormat.h
 	"MyGUI_Macros.h"
 
 1265697572 /usr/include/MYGUI/MyGUI_ListCtrl.h
@@ -2017,161 +2034,177 @@
 	"MyGUI_EventPair.h"
 	"MyGUI_ScrollViewBase.h"
 
-1265697470 /usr/include/MYGUI/MyGUI_ListBox.h
+1329949662 /usr/include/MYGUI/MyGUI_ListBox.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_ListCtrl.h"
+	"MyGUI_Button.h"
+	"MyGUI_Any.h"
+	"MyGUI_EventPair.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_InputManager.h
+1329949662 /usr/include/MYGUI/MyGUI_InputManager.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Macros.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_IUnlinkWidget.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_XmlDocument.h"
-	"MyGUI_InputDefine.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
 	"MyGUI_Timer.h"
 	"MyGUI_ILayer.h"
 	"MyGUI_Delegate.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265697458 /usr/include/MYGUI/MyGUI_Timer.h
+1329949662 /usr/include/MYGUI/MyGUI_Timer.h
 	"MyGUI_Prerequest.h"
 
-1265697312 /usr/include/MYGUI/MyGUI_SubWidgetManager.h
+1329949660 /usr/include/MYGUI/MyGUI_SubWidgetManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ClipboardManager.h
+1329949660 /usr/include/MYGUI/MyGUI_ClipboardManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_Types.h"
 	"MyGUI_UString.h"
 
-1265697324 /usr/include/MYGUI/MyGUI_SkinManager.h
+1329949660 /usr/include/MYGUI/MyGUI_SkinManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_Enumerator.h"
 	"MyGUI_ResourceSkin.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_ResourceManager.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_WidgetManager.h
+1329949664 /usr/include/MYGUI/MyGUI_WidgetManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
-	"MyGUI_IWidgetCreator.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_IUnlinkWidget.h"
 	"MyGUI_ICroppedRectangle.h"
 	"MyGUI_Widget.h"
 	<set>
+	"MyGUI_BackwardCompatibility.h"
 
-1265697524 /usr/include/MYGUI/MyGUI_LayoutManager.h
+1329949662 /usr/include/MYGUI/MyGUI_LayoutManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_WidgetDefines.h"
-	"MyGUI_Gui.h"
+	"MyGUI_ResourceLayout.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_FontManager.h
+1329949660 /usr/include/MYGUI/MyGUI_FontManager.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Enumerator.h"
 	"MyGUI_IFont.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_ResourceManager.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265697530 /usr/include/MYGUI/MyGUI_PointerManager.h
+1329949662 /usr/include/MYGUI/MyGUI_PointerManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_IUnlinkWidget.h"
-	"MyGUI_IWidgetCreator.h"
-	"MyGUI_StaticImage.h"
+	"MyGUI_ImageBox.h"
 	"MyGUI_IPointer.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_IPointer.h
+1329949662 /usr/include/MYGUI/MyGUI_IPointer.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_IResource.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_PluginManager.h
+1329949662 /usr/include/MYGUI/MyGUI_PluginManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_Plugin.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_Version.h"
+	"MyGUI_DynLib.h"
 	<set>
+	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Plugin.h
+1329949664 /usr/include/MYGUI/MyGUI_Plugin.h
 	"MyGUI_Prerequest.h"
 	<string>
 
-1265851446 /usr/include/MYGUI/MyGUI_DynLibManager.h
+1329949662 /usr/include/MYGUI/MyGUI_DynLibManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_DynLib.h"
 	<map>
 
-1265995406 /usr/include/MYGUI/MyGUI_DynLib.h
+1329949662 /usr/include/MYGUI/MyGUI_DynLib.h
 	"MyGUI_Prerequest.h"
 	<string>
 	<CoreFoundation/CFBundle.h>
 
-1265697598 /usr/include/MYGUI/MyGUI_ControllerManager.h
+1329949662 /usr/include/MYGUI/MyGUI_ControllerManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_ControllerItem.h"
 	"MyGUI_IUnlinkWidget.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_ActionController.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ActionController.h
+1329949662 /usr/include/MYGUI/MyGUI_ActionController.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 	<math.h>
 
-1265851446 /usr/include/MYGUI/MyGUI_LanguageManager.h
+1329949664 /usr/include/MYGUI/MyGUI_LanguageManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_XmlDocument.h"
 	"MyGUI_Delegate.h"
+	"MyGUI_Types.h"
+	"MyGUI_BackwardCompatibility.h"
 
-1265697528 /usr/include/MYGUI/MyGUI_RenderManager.h
+1329949662 /usr/include/MYGUI/MyGUI_RenderManager.h
 	"MyGUI_Prerequest.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_RenderFormat.h"
 	"MyGUI_ITexture.h"
 	"MyGUI_IVertexBuffer.h"
 	"MyGUI_IRenderTarget.h"
 
-1265697746 /usr/include/MYGUI/MyGUI_IVertexBuffer.h
+1329949664 /usr/include/MYGUI/MyGUI_IVertexBuffer.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_VertexData.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_VertexData.h
+1329949662 /usr/include/MYGUI/MyGUI_VertexData.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1265697716 /usr/include/MYGUI/MyGUI_DataManager.h
+1329949662 /usr/include/MYGUI/MyGUI_DataManager.h
 	"MyGUI_Prerequest.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_IDataStream.h"
+	"MyGUI_Types.h"
 
-1265697636 /usr/include/MYGUI/MyGUI_FactoryManager.h
+1329949662 /usr/include/MYGUI/MyGUI_FactoryManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
+	"MyGUI_Singleton.h"
 	"MyGUI_IObject.h"
 	"MyGUI_GenericFactory.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ControllerEdgeHide.h
+1329949662 /usr/include/MYGUI/MyGUI_ControllerEdgeHide.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_ControllerItem.h"
 	"MyGUI_Types.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_ControllerPosition.h
+1329949662 /usr/include/MYGUI/MyGUI_ControllerPosition.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Delegate.h"
 	"MyGUI_Types.h"
 	"MyGUI_WidgetDefines.h"
 	"MyGUI_ControllerItem.h"
 
-1265697670 /usr/include/MYGUI/MyGUI_CoordConverter.h
+1329949662 /usr/include/MYGUI/MyGUI_CoordConverter.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
@@ -2200,14 +2233,13 @@
 	"MyGUI_ResourceSkin.h"
 	"MyGUI_IStateInfo.h"
 
-1265697352 /usr/include/MYGUI/MyGUI_RotatingSkin.h
+1329949662 /usr/include/MYGUI/MyGUI_RotatingSkin.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_XmlDocument.h"
 	"MyGUI_Types.h"
-	"MyGUI_ICroppedRectangle.h"
-	"MyGUI_SubSkin.h"
+	"MyGUI_ISubWidgetRect.h"
+	"MyGUI_RenderFormat.h"
 
-1262140554 /usr/include/MYGUI/MyGUI_TextureUtility.h
+1329949662 /usr/include/MYGUI/MyGUI_TextureUtility.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Colour.h"
 	"MyGUI_RenderFormat.h"
@@ -2430,7 +2462,7 @@
 1299379382 source:/things/otros/unal/ingesoft 2/italia/src/gui/GUI.cpp
 	<gui/GUI.h>
 
-1262140614 /usr/include/MYGUI/MyGUI_OgrePlatform.h
+1329949720 /usr/include/MYGUI/MyGUI_OgrePlatform.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_OgreTexture.h"
 	"MyGUI_OgreVertexBuffer.h"
@@ -2438,8 +2470,10 @@
 	"MyGUI_OgreDataManager.h"
 	"MyGUI_OgreDiagnostic.h"
 	"MyGUI_OgreTexture.h"
+	"MyGUI_LogManager.h"
+	"MyGUI_LastHeader.h"
 
-1265697268 /usr/include/MYGUI/MyGUI_OgreTexture.h
+1329949720 /usr/include/MYGUI/MyGUI_OgreTexture.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ITexture.h"
 	"MyGUI_RenderFormat.h"
@@ -2447,9 +2481,10 @@
 	<OgreTexture.h>
 	"MyGUI_LastHeader.h"
 
-1262140614 /usr/include/MYGUI/MyGUI_LastHeader.h
+1329949720 /usr/include/MYGUI/MyGUI_LastHeader.h
+	"MyGUI_Prerequest.h"
 
-1262140614 /usr/include/MYGUI/MyGUI_OgreVertexBuffer.h
+1329949720 /usr/include/MYGUI/MyGUI_OgreVertexBuffer.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_IVertexBuffer.h"
 	<OgreHardwareBufferManager.h>
@@ -2461,21 +2496,19 @@
 	<OgreTextureUnitState.h>
 	"MyGUI_LastHeader.h"
 
-1265851476 /usr/include/MYGUI/MyGUI_OgreRenderManager.h
+1329949720 /usr/include/MYGUI/MyGUI_OgreRenderManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
 	"MyGUI_RenderFormat.h"
 	"MyGUI_IVertexBuffer.h"
 	"MyGUI_RenderManager.h"
 	<Ogre.h>
 	"MyGUI_LastHeader.h"
 
-1265851476 /usr/include/MYGUI/MyGUI_OgreDataManager.h
+1329949720 /usr/include/MYGUI/MyGUI_OgreDataManager.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Instance.h"
 	"MyGUI_DataManager.h"
 
-1262140614 /usr/include/MYGUI/MyGUI_OgreDiagnostic.h
+1329949720 /usr/include/MYGUI/MyGUI_OgreDiagnostic.h
 	"MyGUI_Prerequest.h"
 
 1297615392 source:/things/otros/unal/ingesoft 2/italia/src/MouseNotifier.cpp
@@ -3012,7 +3045,7 @@
 	<libxml/parser.h>
 	<libxml/xpath.h>
 
-1307152439 /usr/include/libxml2/libxml/parser.h
+1344541157 /usr/include/libxml2/libxml/parser.h
 	<stdarg.h>
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
@@ -3026,43 +3059,43 @@
 	<libxml/xmlIO.h>
 	<libxml/globals.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlversion.h
+1344541157 /usr/include/libxml2/libxml/xmlversion.h
 	<libxml/xmlexports.h>
 	<ansidecl.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlexports.h
+1344541157 /usr/include/libxml2/libxml/xmlexports.h
 
-1307152439 /usr/include/libxml2/libxml/tree.h
+1344541157 /usr/include/libxml2/libxml/tree.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/xmlstring.h>
 	<libxml/xmlregexp.h>
 	<libxml/xmlmemory.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlstring.h
+1344541157 /usr/include/libxml2/libxml/xmlstring.h
 	<stdarg.h>
 	<libxml/xmlversion.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlregexp.h
+1344541157 /usr/include/libxml2/libxml/xmlregexp.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 	<libxml/dict.h>
 
-1307152439 /usr/include/libxml2/libxml/dict.h
+1344541157 /usr/include/libxml2/libxml/dict.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlmemory.h
+1344541157 /usr/include/libxml2/libxml/xmlmemory.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/threads.h>
 	<libxml/globals.h>
 
-1307152439 /usr/include/libxml2/libxml/threads.h
+1344541157 /usr/include/libxml2/libxml/threads.h
 	<libxml/xmlversion.h>
 	<libxml/globals.h>
 
-1307152439 /usr/include/libxml2/libxml/globals.h
+1344541157 /usr/include/libxml2/libxml/globals.h
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xmlerror.h>
@@ -3071,33 +3104,33 @@
 	<libxml/xmlmemory.h>
 	<libxml/threads.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlerror.h
+1344541157 /usr/include/libxml2/libxml/xmlerror.h
 	<libxml/parser.h>
 
-1307152439 /usr/include/libxml2/libxml/SAX.h
+1344541157 /usr/include/libxml2/libxml/SAX.h
 	<stdio.h>
 	<stdlib.h>
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xlink.h>
 
-1307152439 /usr/include/libxml2/libxml/xlink.h
+1344541157 /usr/include/libxml2/libxml/xlink.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/SAX2.h
+1344541157 /usr/include/libxml2/libxml/SAX2.h
 	<stdio.h>
 	<stdlib.h>
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xlink.h>
 
-1307152439 /usr/include/libxml2/libxml/hash.h
+1344541157 /usr/include/libxml2/libxml/hash.h
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/dict.h>
 
-1307152439 /usr/include/libxml2/libxml/valid.h
+1344541157 /usr/include/libxml2/libxml/valid.h
 	<libxml/xmlversion.h>
 	<libxml/xmlerror.h>
 	<libxml/tree.h>
@@ -3105,25 +3138,25 @@
 	<libxml/xmlautomata.h>
 	<libxml/xmlregexp.h>
 
-1307152439 /usr/include/libxml2/libxml/list.h
+1344541157 /usr/include/libxml2/libxml/list.h
 	<libxml/xmlversion.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlautomata.h
+1344541157 /usr/include/libxml2/libxml/xmlautomata.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 	<libxml/xmlregexp.h>
 
-1307152439 /usr/include/libxml2/libxml/entities.h
+1344541157 /usr/include/libxml2/libxml/entities.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/encoding.h
+1344541157 /usr/include/libxml2/libxml/encoding.h
 	<libxml/xmlversion.h>
 	<iconv.h>
 	<unicode/ucnv.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlIO.h
+1344541157 /usr/include/libxml2/libxml/xmlIO.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/globals.h>
@@ -3131,7 +3164,7 @@
 	<libxml/parser.h>
 	<libxml/encoding.h>
 
-1307152439 /usr/include/libxml2/libxml/xpath.h
+1344541157 /usr/include/libxml2/libxml/xpath.h
 	<libxml/xmlversion.h>
 	<libxml/xmlerror.h>
 	<libxml/tree.h>
@@ -3493,4 +3526,622 @@
 	<Ogre.h>
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
+
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/chat/ChatControl.cpp
+	"ChatControl.h"
+	<Client.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/chat/ChatControl.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1346563635 /usr/include/OGRE/OgreInstanceBatch.h
+	"OgrePrerequisites.h"
+	"OgreRenderOperation.h"
+	"OgreRenderable.h"
+	"OgreMovableObject.h"
+	"OgreMesh.h"
+
+1346563635 /usr/include/OGRE/OgreInstancedEntity.h
+	"OgreMovableObject.h"
+	"OgreNode.h"
+
+1346563635 /usr/include/OGRE/OgreInstanceManager.h
+	"OgrePrerequisites.h"
+	"OgreMesh.h"
+	"OgreRenderOperation.h"
+
+1329949660 /usr/include/MYGUI/MyGUI_DeprecatedTypes.h
+
+1329949662 /usr/include/MYGUI/MyGUI_LogSource.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_ILogFilter.h"
+	"MyGUI_ILogListener.h"
+	<vector>
+
+1329949664 /usr/include/MYGUI/MyGUI_ILogFilter.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_LogLevel.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_LogLevel.h
+	"MyGUI_Prerequest.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_ILogListener.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_LogLevel.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_StringUtility.h
+	"MyGUI_Prerequest.h"
+	<vector>
+	<sstream>
+
+1329949662 /usr/include/MYGUI/MyGUI_Singleton.h
+	"MyGUI_Diagnostic.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_WidgetInput.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Macros.h"
+	"MyGUI_WidgetDefines.h"
+	"MyGUI_WidgetToolTip.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
+	"MyGUI_MaskPickInfo.h"
+	"MyGUI_Delegate.h"
+	"MyGUI_EventPair.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_MouseButton.h
+	"MyGUI_Prerequest.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_KeyCode.h
+	"MyGUI_Prerequest.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_ResourceLayout.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_IResource.h"
+	"MyGUI_LayoutData.h"
+
+1329949664 /usr/include/MYGUI/MyGUI_LayoutData.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Common.h"
+
+1329949660 /usr/include/MYGUI/MyGUI_Common.h
+	"MyGUI_Prerequest.h"
+	<string>
+	<list>
+	<set>
+	<map>
+	<vector>
+	<deque>
+	<exception>
+	<math.h>
+	"MyGUI_CustomAllocator.h"
+	"MyGUI_Allocator.h"
+	"MyGUI_Macros.h"
+	"MyGUI_Diagnostic.h"
+	"MyGUI_LogManager.h"
+	"MyGUI_Singleton.h"
+	"MyGUI_Types.h"
+	"MyGUI_StringUtility.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
+	"MyGUI_Version.h"
+	"MyGUI_WidgetStyle.h"
+	"MyGUI_UString.h"
+	"MyGUI_Delegate.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_CustomAllocator.h
+	<memory>
+	<limits>
+	<OgrePrerequisites.h>
+	<OgreMemoryManager.h>
+	<OgreNoMemoryMacros.h>
+	<OgreMemoryMacros.h>
+
+1329949662 /usr/include/MYGUI/MyGUI_Allocator.h
+	<memory>
+	<limits>
+
+1329949662 /usr/include/MYGUI/MyGUI_SkinItem.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_LayerItem.h"
+	"MyGUI_ISubWidgetRect.h"
+	"MyGUI_ISubWidgetText.h"
+	"MyGUI_ResourceSkin.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_BackwardCompatibility.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Colour.h"
+	"MyGUI_ResourceSkin.h"
+	"MyGUI_Any.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
+	"MyGUI_Macros.h"
+	"MyGUI_WidgetDefines.h"
+	"MyGUI_IResource.h"
+	<map>
+	<set>
+
+1329949662 /usr/include/MYGUI/MyGUI_TextBox.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Widget.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_EditBox.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_TextBox.h"
+	"MyGUI_TextChangeHistory.h"
+	"MyGUI_TextIterator.h"
+	"MyGUI_EventPair.h"
+	"MyGUI_ScrollViewBase.h"
+
+1329949660 /usr/include/MYGUI/MyGUI_IItem.h
+	"MyGUI_Prerequest.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_IItemContainer.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Constants.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_Constants.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_UString.h"
+	"MyGUI_Types.h"
+
+1329949664 /usr/include/MYGUI/MyGUI_FlowDirection.h
+	"MyGUI_Prerequest.h"
+	<string>
+
+1329949662 /usr/include/MYGUI/MyGUI_ImageBox.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Widget.h"
+	"MyGUI_ResourceImageSet.h"
+	"MyGUI_ImageInfo.h"
+
+1329949664 /usr/include/MYGUI/MyGUI_ResourceImageSetData.h
+	"MyGUI_Prerequest.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_TabControl.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Widget.h"
+	"MyGUI_Any.h"
+	"MyGUI_EventPair.h"
+	"MyGUI_ControllerFadeAlpha.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_ProgressBar.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Align.h"
+	"MyGUI_FlowDirection.h"
+	"MyGUI_Widget.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_MultiListBox.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Widget.h"
+	"MyGUI_ListBox.h"
+	"MyGUI_Any.h"
+	"MyGUI_BiIndexBase.h"
+	"MyGUI_EventPair.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
+	"MyGUI_ResizingPolicy.h"
+
+1329949664 /usr/include/MYGUI/MyGUI_ResizingPolicy.h
+	"MyGUI_Prerequest.h"
+
+1329949664 /usr/include/MYGUI/MyGUI_MenuControl.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Types.h"
+	"MyGUI_MenuItemType.h"
+	"MyGUI_Widget.h"
+	"MyGUI_Any.h"
+	"MyGUI_EventPair.h"
+	"MyGUI_MenuItemType.h"
+	"MyGUI_ControllerFadeAlpha.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
+
+1329949664 /usr/include/MYGUI/MyGUI_ScrollBar.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Widget.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_MultiListItem.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_TextBox.h"
+	"MyGUI_TabControl.h"
+	"MyGUI_ResizingPolicy.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_DeprecatedWidgets.h
+	"MyGUI_DeprecatedTypes.h"
+	"MyGUI_ScrollBar.h"
+	"MyGUI_EventPair.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_PolygonalSkin.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Types.h"
+	"MyGUI_ISubWidgetRect.h"
+	"MyGUI_RenderFormat.h"
+
+1329949662 /usr/include/MYGUI/MyGUI_Bitwise.h
+	"MyGUI_Prerequest.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Client.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<netdb.h>
+	"Thread.h"
+	"ClientListener.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Thread.h
+	<boost/thread.hpp>
+	<stdio.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/ClientListener.h
+	<string>
+	<vector>
+
+1358722743 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/chat/ChatView.cpp
+	"ChatView.h"
+
+1358722757 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/chat/ChatView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<Client.h>
+	<ChatControl.h>
+	<ClientListener.h>
+	<GUI.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/ActionFactory.cpp
+	"ActionFactory.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/ActionFactory.h
+	<map>
+	"Action.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/Action.h
+	<string>
+	<vector>
+	<Ogre.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/BuildingManager.cpp
+	"BuildingManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/BuildingManager.h
+	<entity/GameObject.h>
+	<control/CreationListener.h>
+	<engine/Client.h>
+	<util/Cripto.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/GameObject.h
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/CreationListener.h
+	<entity/Squad.h>
+	<entity/Building.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Squad.h
+	<Ogre.h>
+	"entity/Unit.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Unit.h
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Building.h
+	<GameObject.h>
+	<DaVinciGlobals.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/DaVinciGlobals.h
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Cripto.h
+	<string>
+	<gcrypt.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/CreateAction.cpp
+	"CreateAction.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/CreateAction.h
+	"Action.h"
+	"control/SquadManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/SquadManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<map>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<entity/Squad.h>
+	<control/SquadBuilder.h>
+	<control/SelectionManager.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/SquadBuilder.h
+	<Ogre.h>
+	<entity/Squad.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/SelectionManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<control/InputSystem.h>
+	<engine/SelectionListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/InputSystem.h
+	<list>
+	<Ogre.h>
+	<OIS/OIS.h>
+	<KeyboardListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/KeyboardListener.h
+	<Ogre.h>
+	<OIS/OIS.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SelectionListener.h
+	<Ogre.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/GameManager.cpp
+	"GameManager.h"
+	"GameSound.h"
+	"CreateAction.h"
+	"MoveAction.h"
+	"NatureAction.h"
+	"GoldAction.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/GameManager.h
+	<vector>
+	<boost/thread.hpp>
+	<entity/Squad.h>
+	<engine/Client.h>
+	<control/Action.h>
+	<control/ActionFactory.h>
+	<control/SquadManager.h>
+	<control/SelectionManager.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/sound/GameSound.h
+	<string>
+	<list>
+	<AL/al.h>
+	<AL/alut.h>
+	<ogg/ogg.h>
+	<vorbis/codec.h>
+	<vorbis/vorbisenc.h>
+	<vorbis/vorbisfile.h>
+	"GameSoundListener.h"
+	"util/Thread.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/sound/GameSoundListener.h
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/MoveAction.h
+	<Ogre.h>
+	<Action.h>
+	"control/SquadManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/NatureAction.h
+	<Action.h>
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/GoldAction.h
+	<MyGUI.h>
+	<Action.h>
+	<MyGUI_OgrePlatform.h>
+
+1358709507 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/GoldAction.cpp
+	"GoldAction.h"
+
+1358714515 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/InputSystem.cpp
+	"InputSystem.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/LoginSceneManager.cpp
+	"LoginSceneManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/LoginSceneManager.h
+	<Ogre.h>
+	<entity/Game.h>
+	<engine/Client.h>
+	<engine/ClientListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Game.h
+	<entity/GameObject.h>
+	<entity/GameStaticObjectBatch.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/GameStaticObjectBatch.h
+	<Ogre.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/MoveAction.cpp
+	"MoveAction.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/NatureAction.cpp
+	"NatureAction.h"
+	<entity/Game.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/RTSCameraManager.cpp
+	"RTSCameraManager.h"
+	<InputSystem.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/RTSCameraManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<KeyboardListener.h>
+
+1358719910 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/SelectionManager.cpp
+	"SelectionManager.h"
+
+1358719961 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/SquadBuilder.cpp
+	"SquadBuilder.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/SquadManager.cpp
+	"SquadManager.h"
+	<entity/Game.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/WorkShopManager.cpp
+	"WorkShopManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/WorkShopManager.h
+	<Ogre.h>
+	<queue>
+	<entity/Game.h>
+	<entity/Building.h>
+	<entity/WorkShop.h>
+	<control/SelectionManager.h>
+	<control/CreationListener.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<engine/SelectionListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/WorkShop.h
+	<DaVinciGlobals.h>
+	<entity/Building.h>
+	<entity/GameObject.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Client.cpp
+	"Client.h"
+	<iostream>
+	<stdio.h>
+	<fcntl.h>
+
+1358713403 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Main.cpp
+	"Main.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Main.h
+	<Ogre.h>
+	<view/LoginView.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/LoginView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<view/GUI.h>
+	<view/MainView.h>
+	<view/ChallengeView.h>
+	<util/Cripto.h>
+	<entity/Game.h>
+	<control/LoginSceneManager.h>
+
+1358722965 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/GUI.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<InputSystem.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<engine/RenderBox.h>
+
+1358715574 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/RenderBox.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/MainView.h
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<view/GUI.h>
+	<view/WorkShopView.h>
+	<entity/MainScene.h>
+	<control/GameManager.h>
+	<control/LoginSceneManager.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/WorkShopView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<entity/Game.h>
+	<entity/Indicator.h>
+	<view/BuildingView.h>
+	<control/SquadManager.h>
+	<control/WorkShopManager.h>
+	<control/CreationListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Indicator.h
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/BuildingView.h
+	<vector>
+	<string>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<control/CreationListener.h>
+	<control/BuildingManager.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/MainScene.h
+	<MyGUI.h>
+	<view/GUI.h>
+	<control/SelectionManager.h>
+	<control/RTSCameraManager.h>
+
+1358711150 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/ChallengeView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<chat/ChatView.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Building.cpp
+	"Building.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Game.cpp
+	"Game.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/GameObject.cpp
+	<GameObject.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/GameStaticObjectBatch.cpp
+	"GameStaticObjectBatch.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Indicator.cpp
+	"Indicator.h"
+
+1358715682 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/MainScene.cpp
+	"MainScene.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Squad.cpp
+	<entity/Squad.h>
+	<entity/Game.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Unit.cpp
+	"entity/Unit.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/WorkShop.cpp
+	"WorkShop.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/sound/GameSound.cpp
+	"GameSound.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/ConfigReader.cpp
+	"ConfigReader.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/ConfigReader.h
+	<stdio.h>
+	<string>
+	<vector>
+	<libxml/parser.h>
+	<libxml/xpath.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/Cripto.cpp
+	"Cripto.h"
+	<iostream>
+	<stdio.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/Thread.cpp
+	"Thread.h"
+
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/BuildingView.cpp
+	"BuildingView.h"
+	<util/ConfigReader.h>
+
+1358722928 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/ChallengeView.cpp
+	"ChallengeView.h"
+	"GameObject.h"
+
+1358723028 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/GUI.cpp
+	<view/GUI.h>
+
+1358717660 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/LoginView.cpp
+	"LoginView.h"
+
+1358717484 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/MainView.cpp
+	"MainView.h"
+
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/WorkShopView.cpp
+	"WorkShopView.h"
+	"util/ConfigReader.h"
 
