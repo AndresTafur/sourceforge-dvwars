@@ -1,5 +1,5 @@
 #include "NatureAction.h"
-#include <entity/Game.h>
+#include <Game.h>
 
 NatureAction::NatureAction()
 {

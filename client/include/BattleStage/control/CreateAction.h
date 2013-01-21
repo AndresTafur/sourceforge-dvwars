@@ -2,7 +2,7 @@
 #define _CREATEACTION_H_
 
 #include "Action.h"
-#include "control/SquadManager.h"
+#include "SquadManager.h"
 
 /**
  * Handles a creation action.

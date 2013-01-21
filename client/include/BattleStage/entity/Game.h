@@ -1,8 +1,8 @@
 #ifndef _GAME_H_
 #define _GAME_H_
 
-#include <entity/GameObject.h>
-#include <entity/GameStaticObjectBatch.h>
+#include <GameObject.h>
+#include <GameStaticObjectBatch.h>
 
 
 /**

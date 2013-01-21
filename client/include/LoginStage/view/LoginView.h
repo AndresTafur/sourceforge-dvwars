@@ -5,15 +5,15 @@
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
 
-#include <view/GUI.h>
-#include <view/MainView.h>
-#include <view/ChallengeView.h>
+#include <engine/GUI.h>
+#include <BattleStage/view/MainView.h> //Needed to be changed for an independent secuencer
+#include <LobbyStage/view/ChallengeView.h>
 
 #include <util/Cripto.h>
 
 
-#include <entity/Game.h>
-#include <control/LoginSceneManager.h>
+//#include <entity/Game.h>
+#include <LoginStage/control/LoginSceneManager.h>
 
 
 

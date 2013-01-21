@@ -4,11 +4,11 @@
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
 
-#include <view/GUI.h>
-#include <view/WorkShopView.h>
-#include <entity/MainScene.h>
-#include <control/GameManager.h>
-#include <control/LoginSceneManager.h>
+#include <GUI.h>
+#include <BattleStage/view/WorkShopView.h>
+#include <BattleStage/control/MainScene.h>
+#include <BattleStage/control/GameManager.h>
+
 
 /**
  * Ingame main view

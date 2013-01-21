@@ -3,7 +3,7 @@
 
 #include <Ogre.h>
 
-#include <entity/Squad.h>
+#include <Squad.h>
 
 
 /**

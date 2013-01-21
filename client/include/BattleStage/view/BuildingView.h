@@ -7,8 +7,8 @@
 #include <MyGUI_OgrePlatform.h>
 
 
-#include <control/CreationListener.h>
-#include <control/BuildingManager.h>
+#include <BattleStage/control/CreationListener.h>
+#include <BattleStage/control/BuildingManager.h>
 
 
 /**

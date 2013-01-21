@@ -4,9 +4,9 @@
 
 #include <MyGUI.h>
 
-#include <view/GUI.h>
-#include <control/SelectionManager.h>
-#include <control/RTSCameraManager.h>
+#include <engine/GUI.h>
+#include <BattleStage/control/SelectionManager.h>
+#include <BattleStage/control/RTSCameraManager.h>
 
 /**
  * Contains and creates starting game scene renderable objects.

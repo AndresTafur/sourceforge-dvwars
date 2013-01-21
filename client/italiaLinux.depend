@@ -4002,9 +4002,9 @@
 1358713403 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Main.cpp
 	"Main.h"
 
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Main.h
+1358726841 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Main.h
 	<Ogre.h>
-	<view/LoginView.h>
+	<LoginStage/view/LoginView.h>
 
 1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/LoginView.h
 	<Ogre.h>
@@ -4144,4 +4144,309 @@
 1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/WorkShopView.cpp
 	"WorkShopView.h"
 	"util/ConfigReader.h"
+
+1358725592 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/ActionFactory.cpp
+	"ActionFactory.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/ActionFactory.h
+	<map>
+	"Action.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/Action.h
+	<string>
+	<vector>
+	<Ogre.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/BuildingManager.cpp
+	"BuildingManager.h"
+
+1358725736 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/BuildingManager.h
+	<GameObject.h>
+	<CreationListener.h>
+	<engine/Client.h>
+	<util/Cripto.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/GameObject.h
+	<Ogre.h>
+
+1358725745 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/CreationListener.h
+	<Squad.h>
+	<Building.h>
+
+1358725750 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Squad.h
+	<Ogre.h>
+	"Unit.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Unit.h
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Building.h
+	<GameObject.h>
+	<DaVinciGlobals.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/CreateAction.cpp
+	"CreateAction.h"
+
+1358725796 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/CreateAction.h
+	"Action.h"
+	"SquadManager.h"
+
+1358725803 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SquadManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<map>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<Squad.h>
+	<SquadBuilder.h>
+	<SelectionManager.h>
+
+1358725808 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SquadBuilder.h
+	<Ogre.h>
+	<Squad.h>
+
+1358725813 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SelectionManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<InputSystem.h>
+	<SelectionListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/InputSystem.h
+	<list>
+	<Ogre.h>
+	<OIS/OIS.h>
+	<KeyboardListener.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/GameManager.cpp
+	"GameManager.h"
+	"GameSound.h"
+	"CreateAction.h"
+	"MoveAction.h"
+	"NatureAction.h"
+	"GoldAction.h"
+
+1358725839 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/GameManager.h
+	<vector>
+	<boost/thread.hpp>
+	<Squad.h>
+	<engine/Client.h>
+	<Action.h>
+	<ActionFactory.h>
+	<SquadManager.h>
+	<SelectionManager.h>
+
+1358725846 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/MoveAction.h
+	<Ogre.h>
+	<Action.h>
+	"SquadManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/NatureAction.h
+	<Action.h>
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/GoldAction.h
+	<MyGUI.h>
+	<Action.h>
+	<MyGUI_OgrePlatform.h>
+
+1358709507 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/GoldAction.cpp
+	"GoldAction.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/MoveAction.cpp
+	"MoveAction.h"
+
+1358725914 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/NatureAction.cpp
+	"NatureAction.h"
+	<Game.h>
+
+1358725922 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Game.h
+	<GameObject.h>
+	<GameStaticObjectBatch.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/GameStaticObjectBatch.h
+	<Ogre.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/RTSCameraManager.cpp
+	"RTSCameraManager.h"
+	<InputSystem.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/RTSCameraManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<KeyboardListener.h>
+
+1358719910 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SelectionManager.cpp
+	"SelectionManager.h"
+
+1358719961 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SquadBuilder.cpp
+	"SquadBuilder.h"
+
+1358725957 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SquadManager.cpp
+	"SquadManager.h"
+	<Game.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/WorkShopManager.cpp
+	"WorkShopManager.h"
+
+1358726088 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/WorkShopManager.h
+	<Ogre.h>
+	<queue>
+	<BattleStage/entity/Game.h>
+	<BattleStage/entity/Building.h>
+	<BattleStage/entity/WorkShop.h>
+	<BattleStage/control/SelectionManager.h>
+	<BattleStage/control/CreationListener.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<engine/SelectionListener.h>
+
+1358726078 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/WorkShop.h
+	<DaVinciGlobals.h>
+	<BattleStage/entity/Building.h>
+	<BattleStage/entity/GameObject.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Building.cpp
+	"Building.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Game.cpp
+	"Game.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/GameObject.cpp
+	<GameObject.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/GameStaticObjectBatch.cpp
+	"GameStaticObjectBatch.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Indicator.cpp
+	"Indicator.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Indicator.h
+	<Ogre.h>
+
+1358715682 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/MainScene.cpp
+	"MainScene.h"
+
+1358726202 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/MainScene.h
+	<MyGUI.h>
+	<engine/GUI.h>
+	<BattleStage/control/SelectionManager.h>
+	<BattleStage/control/RTSCameraManager.h>
+
+1358722965 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/GUI.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<InputSystem.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<engine/RenderBox.h>
+
+1358726231 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Squad.cpp
+	<BattleStage/entity/Squad.h>
+	<BattleStage/entity/Game.h>
+
+1358726296 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Unit.cpp
+	"BattleStage/entity/Unit.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/WorkShop.cpp
+	"WorkShop.h"
+
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/BuildingView.cpp
+	"BuildingView.h"
+	<util/ConfigReader.h>
+
+1358726375 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BuildingView.h
+	<vector>
+	<string>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<BattleStage/control/CreationListener.h>
+	<BattleStage/control/BuildingManager.h>
+
+1358717484 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/MainView.cpp
+	"MainView.h"
+
+1358726768 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/MainView.h
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<GUI.h>
+	<BattleStage/view/WorkShopView.h>
+	<BattleStage/control/MainScene.h>
+	<BattleStage/control/GameManager.h>
+
+1358726516 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/WorkShopView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<BattleStage/entity/Game.h>
+	<BattleStage/entity/Indicator.h>
+	<BattleStage/view/BuildingView.h>
+	<BattleStage/control/SquadManager.h>
+	<BattleStage/control/WorkShopManager.h>
+	<BattleStage/control/CreationListener.h>
+
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/WorkShopView.cpp
+	"WorkShopView.h"
+	"util/ConfigReader.h"
+
+1358726811 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/GUI.cpp
+	<engine/GUI.h>
+
+1358714515 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/InputSystem.cpp
+	"InputSystem.h"
+
+1358727071 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/view/LoginView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<engine/GUI.h>
+	<BattleStage/view/MainView.h>
+	<LobbyStage/view/ChallengeView.h>
+	<util/Cripto.h>
+	<LoginStage/control/LoginSceneManager.h>
+
+1358727000 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/view/ChallengeView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<LobbyStage/chat/ChatView.h>
+
+1358722757 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<Client.h>
+	<ChatControl.h>
+	<ClientListener.h>
+	<GUI.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatControl.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1358727143 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/control/LoginSceneManager.h
+	<Ogre.h>
+	<engine/Client.h>
+	<engine/ClientListener.h>
+
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatControl.cpp
+	"ChatControl.h"
+	<Client.h>
+
+1358722743 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatView.cpp
+	"ChatView.h"
+
+1358722928 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/ChallengeView.cpp
+	"ChallengeView.h"
+	"GameObject.h"
+
+1358727224 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
+	"LoginSceneManager.h"
+
+1358717660 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
+	"LoginView.h"
 

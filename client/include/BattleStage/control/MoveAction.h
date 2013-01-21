@@ -3,7 +3,7 @@
 
 #include <Ogre.h>
 #include <Action.h>
-#include "control/SquadManager.h"
+#include "SquadManager.h"
 
 
 /**

@@ -12,9 +12,9 @@
 #include <util/Cripto.h>
 #include <engine/Client.h>
 
-#include <entity/Squad.h>
-#include <control/SquadBuilder.h>
-#include <control/SelectionManager.h>
+#include <Squad.h>
+#include <SquadBuilder.h>
+#include <SelectionManager.h>
 
 
 /**

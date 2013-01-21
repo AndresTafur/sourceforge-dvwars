@@ -1,8 +1,8 @@
 #ifndef _CREATIONLISTENER_H_
 #define _CREATIONLISTENER_H_
 
-#include <entity/Squad.h>
-#include <entity/Building.h>
+#include <Squad.h>
+#include <Building.h>
 
 /**
  * Interface to provide progress and create observers

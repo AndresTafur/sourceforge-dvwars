@@ -7,12 +7,12 @@
 
 
 
-#include <entity/Game.h>
-#include <entity/Indicator.h>
-#include <view/BuildingView.h>
-#include <control/SquadManager.h>
-#include <control/WorkShopManager.h>
-#include <control/CreationListener.h>
+#include <BattleStage/entity/Game.h>
+#include <BattleStage/entity/Indicator.h>
+#include <BattleStage/view/BuildingView.h>
+#include <BattleStage/control/SquadManager.h>
+#include <BattleStage/control/WorkShopManager.h>
+#include <BattleStage/control/CreationListener.h>
 
 
 

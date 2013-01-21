@@ -98,7 +98,6 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderWindow
                 else if( data[0] == "700")
                 {
                     mStatus = 700;
-                    Game::getInstancePtr()->setActivePlayer( atoi(data[1].c_str()) );
                 }
         }
 

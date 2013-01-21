@@ -2,7 +2,7 @@
 #define _SQUAD_H
 
 #include <Ogre.h>
-#include "entity/Unit.h"
+#include "Unit.h"
 
 class SquadBuilder;
 

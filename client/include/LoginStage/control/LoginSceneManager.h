@@ -3,7 +3,6 @@
 
 #include <Ogre.h>
 
-#include <entity/Game.h>
 
 #include <engine/Client.h>
 #include <engine/ClientListener.h>

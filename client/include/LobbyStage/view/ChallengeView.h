@@ -7,7 +7,7 @@
 
 #include <util/Cripto.h>
 #include <engine/Client.h>
-#include <chat/ChatView.h>
+#include <LobbyStage/chat/ChatView.h>
 
 /**
  * Manage challenge interface

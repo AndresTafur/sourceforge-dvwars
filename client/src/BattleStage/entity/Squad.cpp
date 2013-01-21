@@ -1,5 +1,5 @@
-#include <entity/Squad.h>
-#include <entity/Game.h>
+#include <BattleStage/entity/Squad.h>
+#include <BattleStage/entity/Game.h>
 
 int Squad::mSquadCount = 0;
 

@@ -4,7 +4,7 @@
 
 #include <Ogre.h>
 
-#include <view/LoginView.h>
+#include <LoginStage/view/LoginView.h>
 
 /**
  * Creates de main  scene.

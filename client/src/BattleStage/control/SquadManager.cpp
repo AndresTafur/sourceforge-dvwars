@@ -1,6 +1,6 @@
 #include "SquadManager.h"
 
-#include <entity/Game.h>
+#include <Game.h>
 
 SquadManager::SquadManager()
 {

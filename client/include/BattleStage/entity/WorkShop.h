@@ -2,8 +2,8 @@
 #define _WORKSHOP_H_
 
 #include <DaVinciGlobals.h>
-#include <entity/Building.h>
-#include <entity/GameObject.h>
+#include <BattleStage/entity/Building.h>
+#include <BattleStage/entity/GameObject.h>
 
 
 /**

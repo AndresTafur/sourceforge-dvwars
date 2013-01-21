@@ -4,12 +4,12 @@
 #include <vector>
 #include <boost/thread.hpp>
 
-#include <entity/Squad.h>
+#include <Squad.h>
 #include <engine/Client.h>
-#include <control/Action.h>
-#include <control/ActionFactory.h>
-#include <control/SquadManager.h>
-#include <control/SelectionManager.h>
+#include <Action.h>
+#include <ActionFactory.h>
+#include <SquadManager.h>
+#include <SelectionManager.h>
 
 
 

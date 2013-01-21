@@ -5,12 +5,12 @@
 #include <Ogre.h>
 #include <queue>
 
-#include <entity/Game.h>
-#include <entity/Building.h>
-#include <entity/WorkShop.h>
+#include <BattleStage/entity/Game.h>
+#include <BattleStage/entity/Building.h>
+#include <BattleStage/entity/WorkShop.h>
 
-#include <control/SelectionManager.h>
-#include <control/CreationListener.h>
+#include <BattleStage/control/SelectionManager.h>
+#include <BattleStage/control/CreationListener.h>
 
 #include <util/Cripto.h>
 #include <engine/Client.h>

@@ -3,8 +3,8 @@
 
 #include <Ogre.h>
 #include <OIS/OIS.h>
-#include <control/InputSystem.h>
-#include <engine/SelectionListener.h>
+#include <InputSystem.h>
+#include <SelectionListener.h>
 
 
 /**

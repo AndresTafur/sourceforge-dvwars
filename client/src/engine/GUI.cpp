@@ -1,4 +1,4 @@
-#include <view/GUI.h>
+#include <engine/GUI.h>
 
 GUI* GUI::sm_instance = 0;
 

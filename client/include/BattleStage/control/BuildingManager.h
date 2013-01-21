@@ -2,8 +2,8 @@
 #define _BUILDINGMANAGER_H_
 
 
-#include <entity/GameObject.h>
-#include <control/CreationListener.h>
+#include <GameObject.h>
+#include <CreationListener.h>
 
 #include <engine/Client.h>
 #include <util/Cripto.h>
