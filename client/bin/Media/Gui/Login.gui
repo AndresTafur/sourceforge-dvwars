@@ -80,4 +80,8 @@
         <Property key="Caption" value="Server:"/>
         <Property key="Visible" value="true"/>
     </Widget>
+    <Widget type="TextBox" skin="TextBox" position="400 190 310 35" layer="Back" name="errorMsg">
+        <Property key="FontHeight" value="16"/>
+        <Property key="TextColour" value="1 0 0"/>
+    </Widget>
 </MyGUI>

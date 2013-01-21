@@ -34,47 +34,54 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
           GUI *guiMgr =  GUI::getInstancePtr();
 
 
+                //Create widgets and set callbacks
                 guiMgr->loadLayout("Login.gui");
-
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("exit")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::onClose);
-
-
-
-
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("exit")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::onExit);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::showRegister);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::doLogIn);
-
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::onConnect);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regOK")->eventMouseButtonClick     += MyGUI::newDelegate(this, &LoginView::doRegister);
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regCancel")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::regCancel);
-//                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->eventMouseButtonClick         = MyGUI::newDelegate(this, &LoginView::showMain);
-//                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("connectBtn")->eventMouseButtonClick   = MyGUI::newDelegate(this, &LoginView::onConnect);
         }
 
 
         void LoginView::onConnect(MyGUI::Widget* btn)
-        {/*
+        {
           std::string val;
+          MyGUI::Gui  *bgy =  MyGUI::Gui::getInstancePtr();
 
-            try
-            {
-                    val =  MyGUI::Gui::getInstance().findWidget<MyGUI::StaticText>("ipAddress")->getCaption();
 
-                    mLogSceneMgr->connect(val,2588);
+                    //TCP Connection
+                    try
+                    {
+                            val =  MyGUI::Gui::getInstance().findWidget<MyGUI::StaticText>("server")->getCaption();
 
-                    MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->setVisible(true);
-                    MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->setVisible(true);
-                    MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->setVisible(true);
-                    MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("ipConnectionWnd")->setVisible(false);
+                            if( val.size() == 0 )
+                            {
+                                bgy->findWidget<MyGUI::TextBox>("errorMsg")->setCaption("Server name shouldn't be empty.");
+                                return;
+                            }
+                            mLogSceneMgr->connect(val,2588);
+                    }
+                    catch(std::string ex)
+                    {
+                            MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::TextBox>("errorMsg")->setCaption("Unable to connect, please try again later.");
+                            return;
+                    }
 
-            }
-            catch(std::string ex)
-            {
-//                MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
-            }*/
+                    //Actual Login
+                    try
+                    {
+                            bgy->findWidget<MyGUI::TextBox>("errorMsg")->setCaption("Sending login data...");
+                            mLogSceneMgr->doLogin(bgy->findWidget<MyGUI::EditBox>("user")->getCaption(), bgy->findWidget<MyGUI::EditBox>("pass")->getCaption() );
+                    }
+                    catch(std::string)
+                    {
+                            bgy->findWidget<MyGUI::TextBox>("errorMsg")->setCaption("Login failed, please check your data.");
+                    }
         }
 
 
-        void LoginView::onClose(MyGUI::Widget* btn)
+        void LoginView::onExit(MyGUI::Widget* btn)
         {
                 Ogre::Root::getSingletonPtr()->queueEndRendering();
         }
@@ -83,35 +90,6 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
         void LoginView::regCancel(MyGUI::Widget* btn)
         {
             MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("registerWnd")->setVisible(false);
-        }
-
-
-        void LoginView::showMain(MyGUI::Widget* btn)
-        {/*
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->setVisible(true);
-
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("userLbl")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("passLbl")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("user")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("pass")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->setVisible(false);*/
-       }
-
-        void LoginView::showLogin(MyGUI::Widget* btn)
-        {/*
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->setVisible(false);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->setVisible(false);
-
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("userLbl")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("passLbl")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("user")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("pass")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->setVisible(true);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->setVisible(true);*/
         }
 
 
@@ -151,22 +129,6 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                 }*/
         }
 
-
-        void LoginView::doLogIn(MyGUI::Widget* btn)
-        {/*
-          MyGUI::Gui        *bgy =  MyGUI::Gui::getInstancePtr();
-//          MyGUI::MessagePtr  msg;
-          std::string str;
-
-                try
-                {
-                     mLogSceneMgr->doLogin(bgy->findWidget<MyGUI::Edit>("user")->getCaption(), bgy->findWidget<MyGUI::Edit>("pass")->getCaption() );
-                }
-                catch(std::string)
-                {
-//                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
-                }*/
-        }
 
 
         bool LoginView::frameEnded(const Ogre::FrameEvent& evt)

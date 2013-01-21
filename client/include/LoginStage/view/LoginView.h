@@ -37,18 +37,9 @@ public:
 
         void onConnect(MyGUI::Widget* btn);
 
-        void onClose(MyGUI::Widget* btn);
+        void onExit(MyGUI::Widget* btn);
 
         void regCancel(MyGUI::Widget* btn);
-
-
-        void showMain(MyGUI::Widget* btn);
-
-        void showLogin(MyGUI::Widget* btn);
-
-
-        void doLogIn(MyGUI::Widget* btn);
-
 
 
         /**
@@ -60,6 +51,9 @@ public:
         void doRegister(MyGUI::Widget* btn);
 
 
+        /**
+         * Handles network data.
+         */
 
         void attend(std::vector<std::string> data);
 

@@ -18,13 +18,20 @@
 					<Add option="`pkg-config --cflags MYGUI`" />
 					<Add option="-g2" />
 					<Add directory="include" />
-					<Add directory="include/control" />
 					<Add directory="include/engine" />
-					<Add directory="include/entity" />
-					<Add directory="include/view" />
 					<Add directory="include/util" />
 					<Add directory="include/sound" />
 					<Add directory="include/chat" />
+					<Add directory="include/BattleStage/control" />
+					<Add directory="include/BattleStage/entity" />
+					<Add directory="include/BattleStage/view" />
+					<Add directory="include/LobbyStage/chat" />
+					<Add directory="include/LobbyStage/control" />
+					<Add directory="include/LobbyStage/entity" />
+					<Add directory="include/LobbyStage/view" />
+					<Add directory="include/LoginStage/control" />
+					<Add directory="include/LoginStage/entity" />
+					<Add directory="include/LoginStage/view" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />

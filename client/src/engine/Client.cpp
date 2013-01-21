@@ -37,6 +37,11 @@ Client::Client()
           struct hostent *host;
           int flag;
 
+
+                if( address.size() == 0  )
+                    return;
+
+
                 host  = gethostbyname(address.c_str());
 
                 m_address.sin_family = AF_INET;    // Ordenación de bytes de la máquina

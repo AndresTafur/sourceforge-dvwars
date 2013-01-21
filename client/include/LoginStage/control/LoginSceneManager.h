@@ -35,7 +35,6 @@ public:
         void connect(std::string host, unsigned short port);
 
 
-
         bool frameRenderingQueued(const Ogre::FrameEvent &evt);
 
 
