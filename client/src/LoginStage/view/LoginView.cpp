@@ -36,20 +36,18 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 
                 guiMgr->loadLayout("Login.gui");
 
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::onClose);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("exit")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::onClose);
 
 
 
-                /*
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showLogin")->eventMouseButtonClick    = MyGUI::newDelegate(this, &LoginView::showLogin);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->eventMouseButtonClick = MyGUI::newDelegate(this, &LoginView::showRegister);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->eventMouseButtonClick = MyGUI::newDelegate(this, &LoginView::doLogIn);
 
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regOK")->eventMouseButtonClick        = MyGUI::newDelegate(this, &LoginView::doRegister);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regCancel")->eventMouseButtonClick    = MyGUI::newDelegate(this, &LoginView::regCancel);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->eventMouseButtonClick         = MyGUI::newDelegate(this, &LoginView::showMain);
-                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("connectBtn")->eventMouseButtonClick   = MyGUI::newDelegate(this, &LoginView::onConnect);
-                */
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("showRegister")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::showRegister);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Login")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::doLogIn);
+
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regOK")->eventMouseButtonClick     += MyGUI::newDelegate(this, &LoginView::doRegister);
+                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("regCancel")->eventMouseButtonClick += MyGUI::newDelegate(this, &LoginView::regCancel);
+//                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Back")->eventMouseButtonClick         = MyGUI::newDelegate(this, &LoginView::showMain);
+//                MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("connectBtn")->eventMouseButtonClick   = MyGUI::newDelegate(this, &LoginView::onConnect);
         }
 
 
