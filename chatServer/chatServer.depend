@@ -289,3 +289,80 @@
 	"NetworkException.h"
 	"ClientPoller.h"
 
+1356755224 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/src/chatServerMain.cpp
+	<cstdlib>
+	<iostream>
+	"Server.h"
+
+1356752360 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/Server.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+	"NetworkException.h"
+	"ClientPoller.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/util/Thread.h
+	<boost/thread.hpp>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/ClientAttenderBuilder.h
+	"ClientAttender.h"
+
+1356755210 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/ClientAttender.h
+	"Client.h"
+	"util/Thread.h"
+	"RequestManager.h"
+	"NetworkException.h"
+
+1356755153 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/Client.h
+	<string>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<boost/thread.hpp>
+	<ClientListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/ClientListener.h
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/RequestManager.h
+	<string>
+	<vector>
+
+1356748256 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/NetworkException.h
+	<exception>
+	<string>
+
+1356747119 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/networking/ClientPoller.h
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+
+1356755140 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/src/networking/Client.cpp
+	"Client.h"
+	<stdio.h>
+	<fcntl.h>
+	"NetworkException.h"
+
+1356755193 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/src/networking/ClientPoller.cpp
+	"ClientPoller.h"
+	<poll.h>
+
+1356752344 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/src/networking/Server.cpp
+	"Server.h"
+	<fcntl.h>
+	<netinet/tcp.h>
+	<iostream>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/src/util/ConfigReader.cpp
+	"ConfigReader.h"
+
+1356743890 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/include/util/ConfigReader.h
+	<stdio.h>
+	<string>
+	<vector>
+	<libxml/parser.h>
+	<libxml/xpath.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/chatServer/src/util/Thread.cpp
+	"Thread.h"
+

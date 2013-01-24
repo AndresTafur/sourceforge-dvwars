@@ -567,43 +567,43 @@
 	<libxml/relaxng.h>
 	<libxml/xmlschemas.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlversion.h
+1344541157 /usr/include/libxml2/libxml/xmlversion.h
 	<libxml/xmlexports.h>
 	<ansidecl.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlexports.h
+1344541157 /usr/include/libxml2/libxml/xmlexports.h
 
-1307152439 /usr/include/libxml2/libxml/tree.h
+1344541157 /usr/include/libxml2/libxml/tree.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/xmlstring.h>
 	<libxml/xmlregexp.h>
 	<libxml/xmlmemory.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlstring.h
+1344541157 /usr/include/libxml2/libxml/xmlstring.h
 	<stdarg.h>
 	<libxml/xmlversion.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlregexp.h
+1344541157 /usr/include/libxml2/libxml/xmlregexp.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 	<libxml/dict.h>
 
-1307152439 /usr/include/libxml2/libxml/dict.h
+1344541157 /usr/include/libxml2/libxml/dict.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlmemory.h
+1344541157 /usr/include/libxml2/libxml/xmlmemory.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/threads.h>
 	<libxml/globals.h>
 
-1307152439 /usr/include/libxml2/libxml/threads.h
+1344541157 /usr/include/libxml2/libxml/threads.h
 	<libxml/xmlversion.h>
 	<libxml/globals.h>
 
-1307152439 /usr/include/libxml2/libxml/globals.h
+1344541157 /usr/include/libxml2/libxml/globals.h
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xmlerror.h>
@@ -612,7 +612,7 @@
 	<libxml/xmlmemory.h>
 	<libxml/threads.h>
 
-1307152439 /usr/include/libxml2/libxml/parser.h
+1344541157 /usr/include/libxml2/libxml/parser.h
 	<stdarg.h>
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
@@ -626,12 +626,12 @@
 	<libxml/xmlIO.h>
 	<libxml/globals.h>
 
-1307152439 /usr/include/libxml2/libxml/hash.h
+1344541157 /usr/include/libxml2/libxml/hash.h
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/dict.h>
 
-1307152439 /usr/include/libxml2/libxml/valid.h
+1344541157 /usr/include/libxml2/libxml/valid.h
 	<libxml/xmlversion.h>
 	<libxml/xmlerror.h>
 	<libxml/tree.h>
@@ -639,28 +639,28 @@
 	<libxml/xmlautomata.h>
 	<libxml/xmlregexp.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlerror.h
+1344541157 /usr/include/libxml2/libxml/xmlerror.h
 	<libxml/parser.h>
 
-1307152439 /usr/include/libxml2/libxml/list.h
+1344541157 /usr/include/libxml2/libxml/list.h
 	<libxml/xmlversion.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlautomata.h
+1344541157 /usr/include/libxml2/libxml/xmlautomata.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 	<libxml/xmlregexp.h>
 
-1307152439 /usr/include/libxml2/libxml/entities.h
+1344541157 /usr/include/libxml2/libxml/entities.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/encoding.h
+1344541157 /usr/include/libxml2/libxml/encoding.h
 	<libxml/xmlversion.h>
 	<iconv.h>
 	<unicode/ucnv.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/xmlIO.h
+1344541157 /usr/include/libxml2/libxml/xmlIO.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/globals.h>
@@ -668,18 +668,18 @@
 	<libxml/parser.h>
 	<libxml/encoding.h>
 
-1307152439 /usr/include/libxml2/libxml/SAX.h
+1344541157 /usr/include/libxml2/libxml/SAX.h
 	<stdio.h>
 	<stdlib.h>
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xlink.h>
 
-1307152439 /usr/include/libxml2/libxml/xlink.h
+1344541157 /usr/include/libxml2/libxml/xlink.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1307152439 /usr/include/libxml2/libxml/SAX2.h
+1344541157 /usr/include/libxml2/libxml/SAX2.h
 	<stdio.h>
 	<stdlib.h>
 	<libxml/xmlversion.h>
@@ -702,7 +702,7 @@
 	"util/ConfigReader.h"
 	"entity/Squad.h"
 
-1307152439 /usr/include/libxml2/libxml/xpath.h
+1344541157 /usr/include/libxml2/libxml/xpath.h
 	<libxml/xmlversion.h>
 	<libxml/xmlerror.h>
 	<libxml/tree.h>
@@ -1060,4 +1060,379 @@
 
 1312161540 source:/things/otros/unal/ingesoft 2/italia/server/src/chat/ChatManager.cpp
 	"ChatManager.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/AligmentRule.cpp
+	"AligmentRule.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/AligmentRule.h
+	<Rule.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/Rule.h
+	<vector>
+	"Vector2.h"
+	"Boid.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/Vector2.h
+	<string>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/Boid.h
+	"Vector2.h"
+	<boost/shared_ptr.hpp>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/Boid.cpp
+	"Boid.h"
+	"BoidContext.h"
+	"Crowd.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<boid/Separation.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/BoidContext.h
+	<vector>
+	<Thread.h>
+	"Crowd.h"
+	"Rule.h"
+	"BoidObstacle.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/util/Thread.h
+	<boost/thread.hpp>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/Crowd.h
+	<vector>
+	<Vector2.h>
+	<boost/shared_ptr.hpp>
+	"Boid.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/BoidObstacle.h
+	"Vector2.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/Separation.h
+	<Rule.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/BoidContext.cpp
+	"BoidContext.h"
+	<stdlib.h>
+	<stdio.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/BoidObstacle.cpp
+	"BoidObstacle.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/Cohesion.cpp
+	"Cohesion.h"
+	<stdio.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/boid/Cohesion.h
+	<Rule.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/Crowd.cpp
+	"Crowd.h"
+	"BoidContext.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/Separation.cpp
+	"Separation.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/boid/Vector2.cpp
+	"Vector2.h"
+	<math.h>
+	<stdlib.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/chat/ChatManager.cpp
+	"ChatManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/chat/ChatManager.h
+	<Player.h>
+	<ClientAttender.h>
+	<RequestManager.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/Player.h
+	<Client.h>
+	<entity/Squad.h>
+	<entity/Workshop.h>
+	<userManager/User.h>
+	<map>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/Client.h
+	<string>
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<boost/thread.hpp>
+	<ClientListener.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/ClientListener.h
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/entity/Squad.h
+	<string>
+	<vector>
+	<entity/Unit.h>
+	<boid/Crowd.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/entity/Unit.h
+	<stdio.h>
+	<string>
+	<vector>
+	"boid/Vector2.h"
+	"boid/Boid.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/entity/Workshop.h
+	<Vector2.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/userManager/User.h
+	<string>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/ClientAttender.h
+	"Client.h"
+	"security/Cripto.h"
+	"util/Thread.h"
+	"RequestManager.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/security/Cripto.h
+	<string>
+	<gcrypt.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/RequestManager.h
+	<string>
+	<vector>
+
+1356747758 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/DWClientAttender.cpp
+	"DWClientAttender.h"
+	<iostream>
+	<stdio.h>
+
+1356748674 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/DWClientAttender.h
+	"Player.h"
+	"ClientAttender.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/DWClientBuilder.cpp
+	"DWClientBuilder.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/DWClientBuilder.h
+	<map>
+	"DWClientAttender.h"
+	"ClientAttenderBuilder.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/ClientAttenderBuilder.h
+	"ClientAttender.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/BuildingCreationRequest.cpp
+	"BuildingCreationRequest.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/BuildingCreationRequest.h
+	<GameRequest.h>
+	<util/ConfigReader.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/GameRequest.h
+	"networking/ClientAttender.h"
+	"entity/Game.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/entity/Game.h
+	<map>
+	<Player.h>
+	<entity/Squad.h>
+	<boid/BoidContext.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/util/ConfigReader.h
+	<stdio.h>
+	<string>
+	<vector>
+	<libxml/parser.h>
+	<libxml/xpath.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/ChallengeManager.cpp
+	"ChallengeManager.h"
+	<stdio.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/ChallengeManager.h
+	<map>
+	<Player.h>
+	<GameManager.h>
+	<RequestManager.h>
+	<ClientAttender.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/GameManager.h
+	<map>
+	<queue>
+	<entity/Game.h>
+	<entity/Squad.h>
+	<GameRequest.h>
+	<Player.h>
+	<RequestManager.h>
+	<ClientAttender.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/CreationRequest.cpp
+	"CreationRequest.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/CreationRequest.h
+	"SquadBuilder.h"
+	"GameRequest.h"
+	<util/Thread.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/SquadBuilder.h
+	"util/ConfigReader.h"
+	"entity/Squad.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/entity/Game.cpp
+	"entity/Game.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/entity/Squad.cpp
+	"entity/Squad.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/entity/Tree.cpp
+	"entity/Tree.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/entity/Tree.h
+	<boid/BoidObstacle.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/entity/Unit.cpp
+	"entity/Unit.h"
+	"entity/Squad.h"
+	"entity/Game.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/entity/Workshop.cpp
+	"entity/Workshop.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/ForestGenerator.cpp
+	"ForestGenerator.h"
+	"entity/Tree.h"
+	<stdlib.h>
+	<stdio.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/ForestGenerator.h
+	<vector>
+	<entity/Tree.h>
+	<boid/Vector2.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/GameManager.cpp
+	"GameManager.h"
+	"MoveRequest.h"
+	"CreationRequest.h"
+	"ForestGenerator.h"
+	"BuildingCreationRequest.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/game/MoveRequest.h
+	<GameRequest.h>
+	<boid/Cohesion.h>
+	<boid/Separation.h>
+	<boid/AligmentRule.h>
+	<boid/BoidContext.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/MoveRequest.cpp
+	"MoveRequest.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/Player.cpp
+	"Player.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/game/SquadBuilder.cpp
+	"SquadBuilder.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/LoginAdapter.cpp
+	"LoginAdapter.h"
+	"DWClientAttender.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/LoginAdapter.h
+	<iostream>
+	<RequestManager.h>
+	<ClientAttender.h>
+	<userManager/LoginManager.h>
+	<game/ChallengeManager.h>
+	<chat/ChatManager.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/userManager/LoginManager.h
+	<stdio.h>
+	"User.h"
+	"UserDAO.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/userManager/UserDAO.h
+	<string>
+	"persistance/MySQL.h"
+	"util/ConfigReader.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/persistance/MySQL.h
+	<string>
+	"Query.h"
+	"DBException.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/persistance/Query.h
+	<mysql/mysql.h>
+	<vector>
+	"ResultRow.h"
+	"DBException.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/persistance/ResultRow.h
+	<map>
+	<string>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/persistance/DBException.h
+	<exception>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/main.cpp
+	<iostream>
+	"Server.h"
+	"DWClientBuilder.h"
+	"LoginAdapter.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/Server.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	"Cripto.h"
+	"Thread.h"
+	"ClientAttenderBuilder.h"
+	"NetworkException.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/include/networking/NetworkException.h
+	<exception>
+	<string>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/networking/Client.cpp
+	"Client.h"
+	<stdio.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/networking/ClientAttender.cpp
+	"ClientAttender.h"
+	<iostream>
+	<fcntl.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/networking/RequestManager.cpp
+	"RequestManager.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/networking/Server.cpp
+	"Server.h"
+	<fcntl.h>
+	<netinet/tcp.h>
+	<iostream>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/persistance/MySQL.cpp
+	"MySQL.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/persistance/Query.cpp
+	"Query.h"
+	<stdio.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/persistance/ResultRow.cpp
+	"ResultRow.h"
+	<stdio.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/security/Cripto.cpp
+	"Cripto.h"
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/userManager/LoginManager.cpp
+	"LoginManager.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/userManager/User.cpp
+	"User.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/userManager/UserDAO.cpp
+	"UserDAO.h"
+	<iostream>
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/util/ConfigReader.cpp
+	"ConfigReader.h"
+
+1354734041 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/server/src/util/Thread.cpp
+	"Thread.h"
 

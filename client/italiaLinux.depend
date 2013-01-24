@@ -4447,6 +4447,11 @@
 1358727224 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
 	"LoginSceneManager.h"
 
-1358734829 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
+1358735056 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
 	"LoginView.h"
+
+1359010181 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
+	"SceneSequencer.h"
+
+1359010168 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SceneSequencer.h
 
