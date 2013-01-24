@@ -1,6 +1,6 @@
 #include "LoginSceneManager.h"
 
-LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
+LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd)
 {
     mSceneMgr   = mgr;
     mWindow     = wnd;

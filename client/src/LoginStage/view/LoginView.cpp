@@ -1,30 +1,47 @@
+/*
+ *  Copyright (C) 2011-2013 Jorge A. Tafur Q. (jatafurq).
+ *
+ *  This file is part of Da Vinci Wars project.
+ *
+ *  Da Vinci Wars is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Da Vinci Wars is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Da Vinci Wars.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
 #include "LoginView.h"
 
-LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
+void LoginView::create(Ogre::SceneManager *mgr, Ogre::RenderTarget* wnd)
 {
-    mSceneMgr  = mgr;
-    mWindow    = wnd;
+            mSceneMgr  = mgr;
+            mWindow    = wnd;
 
-    Ogre::Root::getSingletonPtr()->addFrameListener(this);
-    InputSystem::getInstancePtr()->getKeyboard()->setBuffered(true);
+            Ogre::Root::getSingletonPtr()->addFrameListener(this);
+            InputSystem::getInstancePtr()->getKeyboard()->setBuffered(true);
 }
+
+        std::string LoginView::getName() {
+            return "LoginView";
+        }
+
+
+
 
 
         void LoginView::createCamera()
         {
-           mCamera      = mSceneMgr->createCamera("Login Camera");
-           mCameraNode  = mSceneMgr->createSceneNode("Camera Node");
-           mCameraNode->attachObject(mCamera);
-
+           Scene::createCamera();
 
            mLogSceneMgr = new LoginSceneManager(mSceneMgr,mWindow);
-           mViewPort    = mWindow->addViewport(mCamera);
-
-           mViewPort->setOverlaysEnabled(true);
-           mViewPort->setBackgroundColour(Ogre::ColourValue(0,0,0));
-
-           mCamera->setAspectRatio(Ogre::Real(mViewPort->getActualWidth()) / Ogre::Real(mViewPort->getActualHeight()));
-           mCamera->setNearClipDistance(1);
            mLogSceneMgr->createScene();
         }
 
@@ -132,7 +149,7 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 
 
         bool LoginView::frameEnded(const Ogre::FrameEvent& evt)
-        {
+        {/*
           unsigned int status   = mLogSceneMgr->getStatus();
 
                         if( status == 700)
@@ -168,7 +185,7 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
                         else if( status == 201 )
                         {
                             mLogSceneMgr->setStatus(0);
-                            mChallengeView = boost::shared_ptr<ChallengeView>(new ChallengeView(mSceneMgr));
+                            mChallengeView = boost::shared_ptr<LobbyView>(new LobbyView(mSceneMgr));
                             Ogre::Root::getSingletonPtr()->removeFrameListener(mLogSceneMgr);
                         }
                         else if( status == 200)
@@ -187,11 +204,16 @@ LoginView::LoginView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
  //                           MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("User already registered."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                             mLogSceneMgr->setStatus(0);
                         }
-
+*/
             return true;
         }
 
 
+        void LoginView::destroy()
+        {
+
+
+        }
 
 LoginView::~LoginView()
 {

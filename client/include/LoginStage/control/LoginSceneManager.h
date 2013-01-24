@@ -14,7 +14,7 @@ class LoginSceneManager : public ClientListener, public Ogre::FrameListener
 {
 public:
 
-        LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd);
+        LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd);
 
         /**
          * Creates scene object (currently empty, will create the museum)
@@ -52,7 +52,7 @@ private:
 Client             *mClient;
 
 Ogre::Light        *mLight;
-Ogre::RenderWindow *mWindow;
+Ogre::RenderTarget *mWindow;
 
 Ogre::SceneManager *mSceneMgr;
 Ogre::SceneNode    *mTableNode;
