@@ -21,7 +21,7 @@
 #include "Scene.h"
 
 
-SceneSequencer::SceneSequencer(Ogre::SceneManager *mgr, Ogre::RenderTarget *target) : mSceneMgr(mgr), mRenderTarget(target)
+SceneSequencer::SceneSequencer()
 {
     //ctor
 }
@@ -48,17 +48,51 @@ SceneSequencer::SceneSequencer(Ogre::SceneManager *mgr, Ogre::RenderTarget *targ
 
         void SceneSequencer::start()
         {
-                     //->create
-       //  mLoginView->createCamera();
-       //  mLoginView->createGui();
+            std::string sceneName = mSeqReader.getAttribute("/descendant::sequence/child::scene[@initial='true']/@name");
+            Scene *scene = mScenes[sceneName];
+
+
+                if(scene != NULL)
+                {
+                    scene->create(mRenderTarget);
+                    scene->createCamera();
+                    scene->createGui();
+                    scene->setSequencer(this);
+                }
 
         }
 
 
-        void SceneSequencer::endScene(Scene *scn, short state)
+        void SceneSequencer::endScene(Scene *oldScene, short state)
         {
+            Scene *scene;
+            char   charVal[10];
+            std::string sceneName;
+            std::string exp = "/descendant::sequence/child::scene[@name='"+oldScene->getName()+"']/child::state[@value='";
 
 
+                    sprintf(charVal,"%i']",state);
+                    exp += charVal;
+
+                    sceneName = mSeqReader.getAttribute(exp);
+
+                    if( sceneName == "Exit" )
+                    {
+                        Ogre::Root::getSingletonPtr()->queueEndRendering();
+                        return;
+                    }
+
+                    scene = mScenes[sceneName];
+
+                    if(scene != NULL)
+                    {
+                        oldScene->destroy();
+
+                        scene->create(mRenderTarget);
+                        scene->createCamera();
+                        scene->createGui();
+                        scene->setSequencer(this);
+                    }
         }
 
 

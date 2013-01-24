@@ -23,7 +23,7 @@ class LoginView : public Ogre::FrameListener, public Scene
 {
 public:
 
-        void create(Ogre::SceneManager *mgr, Ogre::RenderTarget* wnd);
+        void create(Ogre::RenderTarget* wnd);
 
         std::string getName();
 
@@ -76,6 +76,7 @@ public:
 private:
 LoginSceneManager  *mLogSceneMgr;
 MainView           *mMainView;
+MyGUI::VectorWidgetPtr mLayout;
 
 };
 

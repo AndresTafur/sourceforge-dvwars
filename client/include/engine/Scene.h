@@ -29,11 +29,15 @@ class Scene
 {
 public:
 
-        virtual void create(Ogre::SceneManager *mgr, Ogre::RenderTarget* wnd) = 0;
-
-        virtual std::string getName() = 0;
+        virtual void create(Ogre::RenderTarget* wnd);
 
         virtual void createCamera();
+
+        virtual void createGui() = 0;
+
+
+
+        virtual std::string getName() = 0;
 
 
         void setSequencer(SceneSequencer *seq);
@@ -41,7 +45,7 @@ public:
         void endScene(short state);
 
 
-        virtual void destroy() = 0;
+        virtual void destroy();
 
         virtual ~Scene() {}
 

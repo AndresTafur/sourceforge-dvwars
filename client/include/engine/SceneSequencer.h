@@ -26,14 +26,18 @@ class SceneSequencer
 {
 public:
 
-        SceneSequencer(Ogre::SceneManager *mgr, Ogre::RenderTarget *render);
+        SceneSequencer();
 
         void addScene(Scene *scn);
 
         void unloadScene(Scene *scn, bool destroy = false);
 
+        void endScene(Scene *oldScene, short state);
 
-        void endScene(Scene *scn, short state);
+
+        inline void setSceneManager(Ogre::SceneManager *mgr) { mSceneMgr = mgr; }
+
+        inline void setRenderTarget(Ogre::RenderTarget *target) { mRenderTarget = target; }
 
 
         void setSceneSequence(std::string seqFile);

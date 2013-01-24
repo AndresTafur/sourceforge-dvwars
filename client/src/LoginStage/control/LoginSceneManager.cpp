@@ -14,14 +14,6 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
     Ogre::Root::getSingletonPtr()->addFrameListener(this);
 }
 
-
-        void LoginSceneManager::disable()
-        {
-                Ogre::Root::getSingletonPtr()->removeFrameListener(this);
-                mSceneMgr->destroySceneNode(mMuseumNode);
-        }
-
-
         void LoginSceneManager::doLogin(std::string user, std::string password)
         {
                      fprintf(stderr,"\nSending Login Data\n");
@@ -71,7 +63,7 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
 
 
                 mCameraNode->setPosition( Ogre::Vector3(-70,80,-70) );
-                mSceneMgr->getCamera("Login Camera")->lookAt( Ogre::Vector3(0,50,0) );
+                mSceneMgr->getCamera("Main Camera")->lookAt( Ogre::Vector3(0,50,0) );
         }
 
 
@@ -115,5 +107,11 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
 LoginSceneManager::~LoginSceneManager()
 {
        Client::getInstancePtr()->removeListener(this);
-       disable();
+       Ogre::Root::getSingletonPtr()->removeFrameListener(this);
+
+       mSceneMgr->destroyLight(mLight);
+       mSceneMgr->destroySceneNode(mMuseumNode);
+       mSceneMgr->destroySceneNode(mTableNode);
+       mSceneMgr->destroySceneNode(mScrollNode);
+       mSceneMgr->destroyAllEntities();
 }

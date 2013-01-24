@@ -1,49 +1,49 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MyGUI type="Layout">
+<MyGUI type="Layout" version="3.2.0">
     <Widget type="Window" skin="Window" position="380 200 472 384" align="HCenter VCenter" layer="Back" name="PlayersWND">
-        <Property key="Widget_Caption" value="PlayerList"/>
-        <Property key="Widget_Visible" value="false"/>
-        <Widget type="List" skin="List" position="12 32 444 269" name="PlayersList"/>
+        <Property key="Caption" value="PlayerList"/>
+        <Property key="Visible" value="false"/>
+        <Widget type="ListBox" skin="ListBox" position="12 32 444 269" name="PlayersList"/>
         <Widget type="Button" skin="Button" position="132 312 88 24" name="challengeBtn">
-            <Property key="Widget_Caption" value="Challenge"/>
+            <Property key="Caption" value="Challenge"/>
         </Widget>
         <Widget type="Button" skin="Button" position="276 312 80 24" name="chllgCncl">
-            <Property key="Widget_Caption" value="Cancel"/>
+            <Property key="Caption" value="Cancel"/>
         </Widget>
-        <Widget type="StaticText" skin="StaticText" position="12 9 120 15" name="playersNum">
-            <Property key="Widget_Caption" value="Players:"/>
+        <Widget type="TextBox" skin="TextBox" position="12 9 120 15" name="playersNum">
+            <Property key="Caption" value="Players:"/>
         </Widget>
-        <Widget type="StaticText" skin="StaticText" position="300 9 120 15">
-            <Property key="Widget_Caption" value="Status:"/>
+        <Widget type="TextBox" skin="TextBox" position="300 9 120 15">
+            <Property key="Caption" value="Status:"/>
         </Widget>
     </Widget>
     <Widget type="Button" skin="Button" position="8 32 72 24" layer="Back" name="buddiesDlg">
-        <Property key="Widget_Caption" value="Buddies"/>
+        <Property key="Caption" value="Buddies"/>
     </Widget>
     <Widget type="Button" skin="Button" position="8 72 72 24" layer="Back" name="challengeDlg">
-        <Property key="Widget_Caption" value="Challenge"/>
+        <Property key="Caption" value="Challenge"/>
     </Widget>
     <Widget type="Button" skin="Button" position="936 720 64 24" layer="Back">
-        <Property key="Widget_Caption" value="Quit"/>
+        <Property key="Caption" value="Quit"/>
     </Widget>
-    <Widget type="Window" skin="WindowCS" position="424 160 432 296" layer="Back" name="BuddieWND">
-        <Property key="Widget_Caption" value="Buddies"/>
-        <Property key="Widget_Visible" value="false"/>
-        <Widget type="List" skin="List" position="12 9 316 216" name="buddieList"/>
+    <Widget type="Window" skin="WindowCS" position="430 130 432 296" layer="Back" name="BuddieWND">
+        <Property key="Caption" value="Buddies"/>
+        <Property key="Visible" value="false"/>
+        <Widget type="ListBox" skin="ListBox" position="12 9 316 216" name="buddieList"/>
         <Widget type="Button" skin="Button" position="340 136 76 25" name="BuddieTalk">
-            <Property key="Widget_Caption" value="Talk"/>
+            <Property key="Caption" value="Talk"/>
         </Widget>
         <Widget type="Button" skin="Button" position="340 41 76 24" name="buddieAdd">
-            <Property key="Widget_Caption" value="Add"/>
+            <Property key="Caption" value="Add"/>
         </Widget>
         <Widget type="Button" skin="Button" position="340 80 76 24" name="BuddieRemove">
-            <Property key="Widget_Caption" value="Remove"/>
+            <Property key="Caption" value="Remove"/>
         </Widget>
         <Widget type="Button" skin="Button" position="140 233 64 23" name="buddieDlgClose">
-            <Property key="Widget_Caption" value="Close"/>
+            <Property key="Caption" value="Close"/>
         </Widget>
         <Widget type="Button" skin="Button" position="340 177 76 24" name="BuddieChallenge">
-            <Property key="Widget_Caption" value="Challenge"/>
+            <Property key="Caption" value="Challenge"/>
         </Widget>
     </Widget>
 </MyGUI>

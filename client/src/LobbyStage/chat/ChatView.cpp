@@ -56,7 +56,7 @@ ChatView::ChatView()
 
     void ChatView::onPrivateOpen(MyGUI::Widget* btn)
     {
-      std::string tabName =  MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Edit>("privateEditDlg")->getCaption();
+      std::string tabName =  MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::EditBox>("privateEditDlg")->getCaption();
 
                         mControls.insert( std::make_pair<std::string,ChatControl*>( tabName, new ChatControl( mTab, tabName, "810|" + tabName + "|" )) );
                         Client::getInstancePtr()->Send("810|"+tabName+"|Starting conversation...\n");

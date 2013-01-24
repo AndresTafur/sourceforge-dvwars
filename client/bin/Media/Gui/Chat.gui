@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MyGUI type="Layout">
-    <Widget type="Tab" skin="Tab" position="24 432 376 312" layer="Back" name="chatNB">
-        <Property key="Widget_Alpha" value="50"/>
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="TabControl" skin="TabControl" position="24 432 376 312" layer="Back" name="chatNB">
+        <Property key="Alpha" value="50"/>
     </Widget>
-    <Widget type="Button" skin="ButtonLeft" position="8 456 15 23" layer="Back" name="chatHide"/>
-    <Widget type="Button" skin="ButtonRight" position="8 456 16 24" layer="Back" name="chatShow">
-        <Property key="Widget_Visible" value="false"/>
+    <Widget type="Button" skin="ButtonRightSkin" position="8 456 15 23" layer="Back" name="chatHide"/>
+    <Widget type="Button" skin="ButtonRightSkin" position="10 455 16 24" layer="Back" name="chatShow">
+        <Property key="Visible" value="false"/>
     </Widget>
     <Widget type="Button" skin="Button" position="408 720 64 24" layer="Back" name="privateChat">
-        <Property key="Widget_Caption" value="Private"/>
+        <Property key="Caption" value="Private"/>
     </Widget>
-    <Widget type="Window" skin="WindowCS" position="395 296 329 152" layer="Back" name="privateChatDlg">
-        <Property key="Widget_Caption" value="Private chat"/>
-        <Property key="Widget_Visible" value="false"/>
-        <Widget type="StaticText" skin="StaticText" position="13 25 99 24">
-            <Property key="Widget_Caption" value="Player Name:"/>
+    <Widget type="Window" skin="WindowCS" position="165 90 329 152" layer="Back" name="privateChatDlg">
+        <Property key="Caption" value="Private chat"/>
+        <Property key="Visible" value="false"/>
+        <Widget type="TextBox" skin="TextBox" position="13 25 99 24">
+            <Property key="Caption" value="Player Name:"/>
         </Widget>
-        <Widget type="Edit" skin="Edit" position="125 25 192 24" name="privateEditDlg"/>
+        <Widget type="EditBox" skin="EditBox" position="125 25 192 24" name="privateEditDlg"/>
         <Widget type="Button" skin="Button" position="53 73 72 24" name="privateOpen">
-            <Property key="Widget_Caption" value="Chat"/>
+            <Property key="Caption" value="Chat"/>
         </Widget>
         <Widget type="Button" skin="Button" position="197 73 64 24" name="privateCancel">
-            <Property key="Widget_Caption" value="Cancel"/>
+            <Property key="Caption" value="Cancel"/>
         </Widget>
     </Widget>
 </MyGUI>

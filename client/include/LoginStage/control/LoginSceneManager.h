@@ -22,9 +22,6 @@ public:
         void createScene();
 
 
-        void disable();
-
-
         void doLogin(std::string user, std::string password);
 
         void doRegister(std::string user, std::string password, std::string mail, std::string side);

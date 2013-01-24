@@ -30,7 +30,7 @@ BuildingView::BuildingView(Building *building)
                 }
 
                 panel     = MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("ProgressPanel");
-                mStatic   = panel->createWidget<MyGUI::StaticText>("StaticText", MyGUI::IntCoord(8,32+16*mViews,160,16), MyGUI::Align::Default);
+                mStatic   = panel->createWidget<MyGUI::TextBox>("StaticText", MyGUI::IntCoord(8,32+16*mViews,160,16), MyGUI::Align::Default);
                 mProgress = static_cast<MyGUI::ProgressPtr>(panel->createWidgetT("Progress","ProgressFill", MyGUI::IntCoord(180,32+16*mViews,190,16), MyGUI::Align::Default));
 
                 mStatic->setCaption(building->getName() +" inactive.");

@@ -7,7 +7,7 @@ GoldAction::GoldAction()
 
         bool GoldAction::execute(const Ogre::FrameEvent &evt)
         {
-            MyGUI::Gui::getInstance().findWidget<MyGUI::StaticText>("Gold")->setCaption("Gold:"+mParams[1]);
+            MyGUI::Gui::getInstance().findWidget<MyGUI::TextBox>("Gold")->setCaption("Gold:"+mParams[1]);
             return true;
         }
 

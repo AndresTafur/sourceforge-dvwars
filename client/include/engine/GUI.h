@@ -34,8 +34,9 @@ public:
             /**
              * Starts the overlay system for widget drawing.
              * @param wnd Current render target.
+             * @param mgr Ogre Scene manager.
              */
-            void initialize(Ogre::RenderWindow *wnd);
+            void initialize(Ogre::RenderTarget *wnd, Ogre::SceneManager *mgr);
 
 
             /**
@@ -64,12 +65,10 @@ public:
             bool keyReleased( const OIS::KeyEvent &arg );
 
 
+            void clean();
             static void destroy();
 
             ~GUI();
-
-protected:
-            void clean();
 
 private:
 static GUI  *sm_instance;

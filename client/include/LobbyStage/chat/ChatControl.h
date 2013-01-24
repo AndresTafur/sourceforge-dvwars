@@ -11,7 +11,7 @@ public:
 
         ChatControl(MyGUI::TabPtr noteBook, std::string tabName, std::string preData);
 
-        void onMainTextChange(MyGUI::EditPtr sender);
+        void onMainTextChange(MyGUI::EditBox *sender);
 
         void addMessage(std::string user, std::string message);
 
@@ -19,8 +19,8 @@ public:
 
 private:
 
-MyGUI::EditPtr          mEdit;
-MyGUI::StaticTextPtr    mLogView;
+MyGUI::EditBox      *mEdit;
+MyGUI::TextBox      *mLogView;
 
 std::string             mPreData;
 };

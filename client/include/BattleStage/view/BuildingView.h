@@ -47,7 +47,7 @@ public:
 
 private:
 MyGUI::ProgressPtr        mProgress;
-MyGUI::StaticTextPtr      mStatic;
+MyGUI::TextBox           *mStatic;
 BuildingManager          *mBuildMgr;
 std::vector<std::string>  mOptions;
 static unsigned short     mViews;

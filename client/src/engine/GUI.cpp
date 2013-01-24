@@ -22,10 +22,10 @@ GUI* GUI::sm_instance = 0;
                 return sm_instance;
         }
 
-        void GUI::initialize(Ogre::RenderWindow *wnd)
+        void GUI::initialize(Ogre::RenderTarget *wnd, Ogre::SceneManager *mgr)
         {
                 mPlatform = new MyGUI::OgrePlatform();
-                mPlatform->initialise(wnd, Ogre::Root::getSingleton().getSceneManager("MainManager"));
+                mPlatform->initialise( static_cast<Ogre::RenderWindow*>(wnd), mgr);
 
                 mGUI      = new MyGUI::Gui();
                 mGUI->initialise();

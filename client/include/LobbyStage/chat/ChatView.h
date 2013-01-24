@@ -18,9 +18,9 @@ public:
         ChatView();
 
 
-        void onMainTextChange(MyGUI::EditPtr sender);
+        void onMainTextChange(MyGUI::EditBox *sender);
 
-        void onBuddyTextChange(MyGUI::EditPtr sender);
+        void onBuddyTextChange(MyGUI::EditBox *sender);
 
 
         void onHideChat(MyGUI::Widget* btn);

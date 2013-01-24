@@ -24,6 +24,7 @@ MainApplication::MainApplication()
 {
     mRoot          = 0;
     mResourcePath  = "";
+    mSequencer     = NULL;
 }
 
 
@@ -34,17 +35,18 @@ MainApplication::MainApplication()
             return;
 
 
-        mSequencer =  new SceneSequencer(mSceneMgr,mWindow);
-        GUI::getInstancePtr()->initialize(mWindow);
-
-        mSequencer->start();
-
-
+        if( mSequencer != NULL )
+        {
+            mSequencer->setRenderTarget(mWindow);
+            mSequencer->start();
+        }
+        else
+            Ogre::LogManager::getSingletonPtr()->logMessage("\n Sequencer not available, render will be empty!\n");
 
         Ogre::LogManager::getSingletonPtr()->logMessage("\n\n\n=================== Starting Ogre rendering system ===================\n");
         mRoot->startRendering();
         mRoot->queueEndRendering();
-        delete mSequencer;
+
     }
 
 
@@ -65,8 +67,6 @@ MainApplication::MainApplication()
 
                 if (!configure())
                     return false;
-
-                mSceneMgr  = mRoot->createSceneManager( "OctreeSceneManager", "MainManager" );
 
                 Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
                 loadResources();

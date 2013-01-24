@@ -1,46 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MyGUI type="Layout">
-    <Widget type="Widget" skin="Panel" position="5 555 216 205" layer="Back" name="MiniMap">
+<MyGUI type="Layout" version="3.2.0">
+    <Widget type="Widget" skin="PanelSkin" position="5 555 216 205" layer="Back" name="MiniMap">
         <Widget type="Progress" skin="ProgressFill" position="131 -323 157 43">
-            <Property key="Progress_Range" value="100"/>
-            <Property key="Progress_Position" value="6"/>
+            <Property key="Range" value="100"/>
+            <Property key="RangePosition" value="6"/>
         </Widget>
     </Widget>
     <Widget type="Widget" skin="Panel" position="770 555 250 205" layer="Back">
-        <Widget type="StaticText" skin="StaticText" position="77 170 104 16">
-            <Property key="Widget_Caption" value="3 escuadrones"/>
+        <Widget type="TextBox" skin="TextBox" position="77 170 104 16">
+            <Property key="Caption" value="3 squads"/>
         </Widget>
-        <Widget type="StaticImage" skin="StaticImage" position="8 8 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="56 8 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="104 8 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="152 8 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="200 8 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="8 56 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="56 56 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="104 56 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="152 56 40 40"/>
-        <Widget type="StaticImage" skin="StaticImage" position="200 56 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="8 8 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="56 8 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="104 8 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="152 8 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="200 8 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="8 56 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="56 56 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="104 56 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="152 56 40 40"/>
+        <Widget type="ImageBox" skin="ImageBox" position="200 56 40 40"/>
     </Widget>
     <Widget type="Button" skin="Button" position="700 735 64 24" layer="Back" name="Close">
-        <Property key="Widget_Caption" value="Terminar"/>
+        <Property key="Caption" value="Terminar"/>
     </Widget>
-    <Widget type="Widget" skin="Panel" position="290 300 2048 150" layer="Back" name="CreationPanel">
-        <Property key="Widget_Alpha" value="255"/>
-        <Property key="Widget_Visible" value="false"/>
-    </Widget>
-    <Widget type="Progress" skin="ProgressFill" position="856 530 160 16" layer="Back" name="Progress_main">
-        <Property key="Progress_Range" value="100"/>
-        <Property key="Progress_Position" value="0"/>
+    <Widget type="Progress" skin="ProgressBarFill" position="856 530 160 16" layer="Back" name="Progress_main">
+        <Property key="Range" value="100"/>
+        <Property key="RangePosition" value="0"/>
     </Widget>
     <Widget type="Widget" skin="Panel" position="272 0 400 24" layer="Middle">
-        <Widget type="StaticText" skin="StaticText" position="232 0 80 16" name="Gold">
-            <Property key="Widget_Caption" value="Gold: 500"/>
+        <Widget type="TextBox" skin="TextBox" position="232 0 80 16" name="Gold">
+            <Property key="Caption" value="Gold: 500"/>
         </Widget>
     </Widget>
-    <Widget type="Widget" skin="Panel" position="280 20 382 104" layer="Back" name="ProgressPanel">
-        <Widget type="Button" skin="ButtonUp" position="180 8 32 8" name="hideProgressPanel"/>
+    <Widget type="Widget" skin="PanelSkin" position="280 20 382 104" layer="Back" name="ProgressPanel">
+        <Widget type="Button" skin="ButtonUpSkin" position="180 8 32 8" name="hideProgressPanel"/>
     </Widget>
-    <Widget type="Button" skin="ButtonDown" position="464 24 32 16" layer="Back" name="showProgressPanel">
-        <Property key="Widget_Visible" value="false"/>
+    <Widget type="Button" skin="ButtonDownSkin" position="464 24 32 16" layer="Back" name="showProgressPanel">
+        <Property key="Visible" value="false"/>
     </Widget>
 </MyGUI>

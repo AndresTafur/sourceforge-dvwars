@@ -19,7 +19,10 @@ class LobbyView : public ClientListener, public Ogre::FrameListener, public Scen
 {
 public:
 
-        void create(Ogre::SceneManager *mgr, Ogre::RenderTarget* wnd);
+        void create(Ogre::RenderTarget* wnd);
+
+        void createGui();
+
 
         std::string getName();
 
@@ -34,8 +37,6 @@ public:
 
 
     //    void onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result);
-
-        void disable();
 
         void attend(std::vector<std::string> &data);
 

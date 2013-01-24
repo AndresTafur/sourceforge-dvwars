@@ -45,6 +45,7 @@ public:
 
          inline SceneSequencer* getSequencer() { return mSequencer; }
 
+         inline void setSequencer(SceneSequencer *seq) { mSequencer = seq;}
 
 protected:
 

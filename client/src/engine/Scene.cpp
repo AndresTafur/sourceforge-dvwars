@@ -21,6 +21,12 @@
 #include <SceneSequencer.h>
 
 
+void Scene::create(Ogre::RenderTarget *wnd)
+{
+    mSceneMgr = Ogre::Root::getSingleton().createSceneManager( "OctreeSceneManager", "MainManager" );
+
+}
+
 
         void Scene::createCamera()
         {
@@ -40,6 +46,16 @@
         void Scene::setSequencer(SceneSequencer *seq)
         {
             mSequencer = seq;
+        }
+
+
+        void Scene::destroy()
+        {
+            mSceneMgr->destroySceneNode(mCameraNode);
+            mSceneMgr->destroyCamera(mCamera);
+            mWindow->removeAllViewports();
+            mSceneMgr->clearScene();
+            Ogre::Root::getSingleton().destroySceneManager(mSceneMgr);
         }
 
 

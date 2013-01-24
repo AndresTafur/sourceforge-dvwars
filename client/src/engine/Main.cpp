@@ -20,6 +20,8 @@
 
 #include "MainApplication.h"
 
+
+#include <SceneSequencer.h>
 #include <LoginStage/view/LoginView.h>
 #include <LobbyStage/view/LobbyView.h>
 
@@ -30,16 +32,17 @@ int main(int argc, char **argv)
 
     LoginView *mLogin = new LoginView();
     LobbyView *mLobby = new LobbyView();
-
+    SceneSequencer *seq = new SceneSequencer();
 
     try
     {
+        seq->addScene(mLogin);
+        seq->addScene(mLobby);
+        seq->setSceneSequence("seq.xml");
 
-        app.getSequencer()->addScene(mLogin);
-        app.getSequencer()->addScene(mLobby);
-        app.getSequencer()->setSceneSequence("seq.xml");
-
+        app.setSequencer(seq);
         app.startApplication();
+
         fprintf(stderr,"All components released, expecting libboost exit");
     }
     catch( Ogre::Exception& e )
