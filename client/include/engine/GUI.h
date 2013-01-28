@@ -40,6 +40,15 @@ public:
 
 
             /**
+             * Configures GUI to use a specific SceneManager, null scene manager will be used if not set.
+             *
+             * @param mgr Ogre Scene manager.
+             */
+            void setSceneManager(Ogre::SceneManager *mgr);
+
+
+
+            /**
              *  Loads a new xml Layout.
              *
              *  @param layName layout to be loaded.
@@ -77,6 +86,10 @@ MyGUI::Gui            *mGUI;
 MyGUI::OgrePlatform   *mPlatform;
 MyGUI::PointerManager *mPmgr;
 OIS::Mouse            *mMouse;
+Ogre::RenderTarget    *mRender;
+
+
+bool mInitialized;
 
 };
 #endif

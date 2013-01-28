@@ -21,6 +21,8 @@ public:
 
         void create(Ogre::RenderTarget* wnd);
 
+        void createCamera();
+
         void createGui();
 
 
@@ -34,6 +36,8 @@ public:
         void showChallenge(MyGUI::Widget* btn);
 
         void showBuddies(MyGUI::Widget* btn);
+
+        void onQuit(MyGUI::Widget* btn);
 
 
     //    void onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result);
@@ -59,7 +63,7 @@ unsigned int             mStatus;
 std::vector<std::string> mParams;
 
 ChatView                *mChatView;
-
+Ogre::Light             *mLight;
 };
 
 #endif // _CHALLENGEVIEW_

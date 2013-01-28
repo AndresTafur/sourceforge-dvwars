@@ -2,8 +2,8 @@
 
 <sequence>
 	<scene name="Login" initial="true">
-		<state value="1" fade="true">Lobby</state>
-		<state value="0" fade="false">Exit</state>
+		<state value="0" fade="true">Lobby</state>
+		<state value="1" fade="false">Exit</state>
 	</scene>
 	<scene name="Lobby">
 		<state value="1" fade="true">Battle</state>

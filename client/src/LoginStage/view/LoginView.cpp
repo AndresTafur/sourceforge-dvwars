@@ -23,9 +23,6 @@
 void LoginView::create(Ogre::RenderTarget* wnd)
 {
             Scene::create(wnd);
-            mWindow    = wnd;
-
-
             Ogre::Root::getSingletonPtr()->addFrameListener(this);
             InputSystem::getInstancePtr()->getKeyboard()->setBuffered(true);
 }
@@ -33,8 +30,6 @@ void LoginView::create(Ogre::RenderTarget* wnd)
         std::string LoginView::getName() {
             return "Login";
         }
-
-
 
 
 
@@ -51,7 +46,8 @@ void LoginView::create(Ogre::RenderTarget* wnd)
         {
           GUI *guiMgr =  GUI::getInstancePtr();
 
-                guiMgr->initialize(mWindow,mSceneMgr);
+
+                GUI::getInstancePtr()->initialize(mWindow,mSceneMgr);
 
                 //Create widgets and set callbacks
                 mLayout = guiMgr->loadLayout("Login.gui");
@@ -102,7 +98,7 @@ void LoginView::create(Ogre::RenderTarget* wnd)
 
         void LoginView::onExit(MyGUI::Widget* btn)
         {
-            endScene(0);
+            mLogSceneMgr->queueSceneEnd(this);
         }
 
 
@@ -207,6 +203,10 @@ void LoginView::create(Ogre::RenderTarget* wnd)
                             mLogSceneMgr->setStatus(0);
                         }
 */
+
+
+
+
             return true;
         }
 
@@ -215,12 +215,11 @@ void LoginView::create(Ogre::RenderTarget* wnd)
         {
             Ogre::Root::getSingletonPtr()->removeFrameListener(this);
             GUI::getInstancePtr()->unloadLayout(mLayout);
+            GUI::getInstancePtr()->clean();
             delete mLogSceneMgr;
 
 
-
             Scene::destroy();
-            GUI::destroy();
         }
 
 LoginView::~LoginView()

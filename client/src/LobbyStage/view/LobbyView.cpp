@@ -21,53 +21,77 @@
 #include "GameObject.h"
 
 
-
+#include <LoginStage/control/LoginSceneManager.h>
 
 void LobbyView::create( Ogre::RenderTarget* wnd)
 {
-  GameObject *obj;
-  GameObject *obj2;
-
             Scene::create(wnd);
-            GUI::getInstancePtr()->initialize(wnd,mSceneMgr);
-
-            obj   = new GameObject(0, mSceneMgr, "City.mesh");
-            obj2  = new GameObject(0, mSceneMgr, "Village.mesh");
 
             mStatus     = 0;
 //            mWaitMsg    = NULL;
 
-            obj->setPosition(Ogre::Vector3(30,0,250) );
-            obj->getEntity()->setCastShadows(false);
-
-            obj2->setPosition(Ogre::Vector3(30,-10,247) );
-            obj2->getEntity()->setCastShadows(false);
-
-
-            mChatView = new ChatView();
 }
+
+
+        void LobbyView::createCamera()
+        {
+           Scene::createCamera();
+           GameObject *obj;
+           GameObject *obj2;
+           Ogre::SceneNode *mTableNode, *mScrollNode;
+           Ogre::Entity    *mTable, *mScroll;
+
+
+                obj   = new GameObject(0, mSceneMgr, "City.mesh");
+                obj2  = new GameObject(0, mSceneMgr, "Village.mesh");
+
+                obj->setPosition(Ogre::Vector3(30,0,250) );
+                obj->getEntity()->setCastShadows(false);
+
+                obj2->setPosition(Ogre::Vector3(30,-10,247) );
+                obj2->getEntity()->setCastShadows(false);
+
+                mTable      = mSceneMgr->createEntity( "Pedestal.mesh"  );
+                mTableNode  = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+                mTableNode->attachObject(mTable);
+                mTableNode->setPosition(30,-10,250);
+
+                mScroll     = mSceneMgr->createEntity( "Scroll.mesh"  );
+                mScrollNode = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+                mScroll->setCastShadows(false);
+                mScrollNode->attachObject(mScroll);
+                mScrollNode->setPosition(34,-1,247);
+        }
+
+
+
 
         void LobbyView::createGui()
         {
-            MyGUI::Gui *bgy  = MyGUI::Gui::getInstancePtr();
+            MyGUI::Gui *bgy;
 
 
+                    GUI::getInstancePtr()->initialize( mWindow,mSceneMgr);
 
-                    mLayout    = GUI::getInstancePtr()->loadLayout("Challenge.gui");
-                    mShowChall = bgy->findWidget<MyGUI::Button>("challengeDlg");
-                    mShowBud   = bgy->findWidget<MyGUI::Button>("buddiesDlg");
+                    bgy  = MyGUI::Gui::getInstancePtr();
 
-                    mShowChall->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::showChallenge);
+                    mChatView  = new ChatView();
+                    mLayout    = GUI::getInstance().loadLayout("Lobby.gui");
+
+
+                    mShowBud   = bgy->findWidget<MyGUI::Button>("buddiesBtn");
                     mShowBud->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::showBuddies);
 
-                    bgy->findWidget<MyGUI::Button>("challengeBtn")->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::doChallenge);
-                    bgy->findWidget<MyGUI::Button>("chllgCncl")->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::showChallenge);
-                    MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::ListBox>("PlayersList")->setVisible(false);
+
+                    bgy->findWidget<MyGUI::Button>("showChallengeBtn")->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::showChallenge);
+                    //bgy->findWidget<MyGUI::Button>("challengeBtn")->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::doChallenge);
+
+                    bgy->findWidget<MyGUI::Button>("quitBtn")->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::onQuit);
 
                     //ensure created in last place
                     Client::getInstancePtr()->addListener(this);
                     Ogre::Root::getSingletonPtr()->addFrameListener(this);
-                  //  drawLine();
+                    drawLine();
         }
 
 
@@ -80,7 +104,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
     void LobbyView::drawLine()
     {
-      Ogre::ManualObject* myManualObject  =  mSceneMgr->createManualObject("manual1");
+      Ogre::ManualObject* myManualObject  = mSceneMgr->createManualObject("manual1");
       Ogre::SceneNode* myManualObjectNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("manual1_node");
 
             myManualObject->begin("BlueLineMaterial", Ogre::RenderOperation::OT_LINE_LIST);
@@ -116,29 +140,29 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
 
     void LobbyView::showChallenge(MyGUI::Widget* btn)
-    {
-      MyGUI::WindowPtr wnd = MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Window>("PlayersWND");
+    {/*
+      MyGUI::WindowPtr wnd = MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Window>("challengeWnd");
       bool visible = !wnd->getVisible();
 
             wnd->setVisible(visible);
-            mShowChall->setStateSelected( visible );
-
-            MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::ListBox>("PlayersList")->setVisible(visible);
-
-            if(visible)
-                Client::getInstancePtr()->Send("303");
+            mShowChall->setStateSelected( visible );*/
     }
 
 
     void LobbyView::showBuddies(MyGUI::Widget* btn)
     {
-      MyGUI::WindowPtr wnd = MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Window>("BuddieWND");
+      MyGUI::WindowPtr wnd = MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::Window>("buddiesWnd");
       bool visible = !wnd->getVisible();
 
             wnd->setVisible(visible);
             mShowBud->setStateSelected( visible );
     }
 
+
+    void LobbyView::onQuit(MyGUI::Widget* btn)
+    {
+        endScene(0);
+    }
 
 
 /*    void LobbyView::onAcceptDecline(MyGUI::MessagePtr sender, MyGUI::MessageBoxStyle result)
@@ -221,8 +245,6 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
     void LobbyView::destroy()
     {
-            GUI::getInstancePtr()->unloadLayout(mLayout);
-
             if( mChatView )
             {
                 delete mChatView;
@@ -235,9 +257,12 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
                 mWaitMsg = NULL;
             }
             */
-
             Client::getInstancePtr()->removeListener(this);
             Ogre::Root::getSingletonPtr()->removeFrameListener(this);
+            GUI::getInstancePtr()->unloadLayout(mLayout);
+            GUI::getInstancePtr()->clean();
+            //delete mLogSceneMgr;
+
             Scene::destroy();
     }
 

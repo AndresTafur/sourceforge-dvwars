@@ -23,6 +23,7 @@
 
 void Scene::create(Ogre::RenderTarget *wnd)
 {
+    mWindow   = wnd;
     mSceneMgr = Ogre::Root::getSingleton().createSceneManager( "OctreeSceneManager", "MainManager" );
 
 }
@@ -62,5 +63,5 @@ void Scene::create(Ogre::RenderTarget *wnd)
     //QUick fix
     void Scene::endScene(short state)
     {
-        mSequencer->endScene(this,state);
+        mSequencer->queueEndScene(this,state);
     }

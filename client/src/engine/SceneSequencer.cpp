@@ -49,50 +49,59 @@ SceneSequencer::SceneSequencer()
         void SceneSequencer::start()
         {
             std::string sceneName = mSeqReader.getAttribute("/descendant::sequence/child::scene[@initial='true']/@name");
-            Scene *scene = mScenes[sceneName];
 
 
-                if(scene != NULL)
+                mCurrentScene = mScenes[sceneName];
+                mSceneEnded = false;
+
+                if(mCurrentScene != NULL)
                 {
-                    scene->create(mRenderTarget);
-                    scene->createCamera();
-                    scene->createGui();
-                    scene->setSequencer(this);
+                    mCurrentScene->create(mRenderTarget);
+                    mCurrentScene->createCamera();
+                    mCurrentScene->createGui();
+                    mCurrentScene->setSequencer(this);
                 }
-
         }
 
 
-        void SceneSequencer::endScene(Scene *oldScene, short state)
+
+        void SceneSequencer::queueEndScene(Scene *oldScene, short state)
         {
-            Scene *scene;
-            char   charVal[10];
-            std::string sceneName;
-            std::string exp = "/descendant::sequence/child::scene[@name='"+oldScene->getName()+"']/child::state[@value='";
+                mSceneEnded  = true;
+                mState       = state;
 
 
-                    sprintf(charVal,"%i']",state);
-                    exp += charVal;
+                       Scene *scene;
+                       char   charVal[10];
+                       std::string sceneName;
+                       std::string exp = "/descendant::sequence/child::scene[@name='"+mCurrentScene->getName()+"']/child::state[@value='";
 
-                    sceneName = mSeqReader.getAttribute(exp);
 
-                    if( sceneName == "Exit" )
-                    {
-                        Ogre::Root::getSingletonPtr()->queueEndRendering();
-                        return;
-                    }
+                                sprintf(charVal,"%i']",mState);
+                                exp += charVal;
 
-                    scene = mScenes[sceneName];
+                                sceneName = mSeqReader.getAttribute(exp);
 
-                    if(scene != NULL)
-                    {
-                        oldScene->destroy();
+                                if( sceneName == "Exit" )
+                                {
+                                    Ogre::Root::getSingletonPtr()->queueEndRendering();
+                                }
 
-                        scene->create(mRenderTarget);
-                        scene->createCamera();
-                        scene->createGui();
-                        scene->setSequencer(this);
-                    }
+                                scene = mScenes[sceneName];
+
+                                if(scene != NULL)
+                                {
+                                    mCurrentScene->destroy();
+
+                                    scene->create(mRenderTarget);
+                                    scene->createCamera();
+                                    scene->createGui();
+                                    scene->setSequencer(this);
+                                }
+
+                                mCurrentScene = scene;
+                              mSceneEnded = false;
+
         }
 
 

@@ -32,7 +32,7 @@ public:
 
         void unloadScene(Scene *scn, bool destroy = false);
 
-        void endScene(Scene *oldScene, short state);
+        void queueEndScene(Scene *oldScene, short state);
 
 
         inline void setSceneManager(Ogre::SceneManager *mgr) { mSceneMgr = mgr; }
@@ -54,6 +54,9 @@ private:
  std::map<std::string, Scene*> mScenes;
  ConfigReader  mSeqReader;
 
+ bool   mSceneEnded;
+ Scene  *mCurrentScene;
+ short  mState;
 };
 
 #endif // SCENESEQUENCER_H

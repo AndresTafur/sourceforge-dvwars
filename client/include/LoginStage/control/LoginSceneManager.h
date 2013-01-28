@@ -3,7 +3,7 @@
 
 #include <Ogre.h>
 
-
+#include <engine/Scene.h>
 #include <engine/Client.h>
 #include <engine/ClientListener.h>
 
@@ -44,9 +44,13 @@ public:
         inline void setStatus( unsigned int status) { mStatus = status; }
 
 
+        inline void queueSceneEnd(Scene *scn) { mSceneEnding = true; mScene = scn;}
+
+
 private:
 
 Client             *mClient;
+Scene              *mScene;
 
 Ogre::Light        *mLight;
 Ogre::RenderTarget *mWindow;
@@ -64,6 +68,7 @@ Ogre::Entity       *mMuseum;
 
 short               mFrameCount;
 unsigned int        mStatus;
+bool                mSceneEnding;
 };
 
 #endif // _LOGINSCENEMANAGER_

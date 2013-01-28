@@ -35,6 +35,7 @@ MainApplication::MainApplication()
             return;
 
 
+
         if( mSequencer != NULL )
         {
             mSequencer->setRenderTarget(mWindow);

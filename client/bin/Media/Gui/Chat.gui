@@ -3,7 +3,7 @@
     <Widget type="TabControl" skin="TabControl" position="24 432 376 312" layer="Back" name="chatNB">
         <Property key="Alpha" value="50"/>
     </Widget>
-    <Widget type="Button" skin="ButtonRightSkin" position="8 456 15 23" layer="Back" name="chatHide"/>
+    <Widget type="Button" skin="ButtonLeftSkin" position="8 456 15 23" layer="Back" name="chatHide"/>
     <Widget type="Button" skin="ButtonRightSkin" position="10 455 16 24" layer="Back" name="chatShow">
         <Property key="Visible" value="false"/>
     </Widget>
