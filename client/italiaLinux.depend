@@ -4367,13 +4367,14 @@
 	<BattleStage/control/CreationListener.h>
 	<BattleStage/control/BuildingManager.h>
 
-1358717484 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/MainView.cpp
+1359491886 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/MainView.cpp
 	"MainView.h"
 
-1359013543 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/MainView.h
+1359491790 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/MainView.h
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
 	<GUI.h>
+	<Scene.h>
 	<BattleStage/view/WorkShopView.h>
 	<BattleStage/control/MainScene.h>
 	<BattleStage/control/GameManager.h>
@@ -4393,10 +4394,10 @@
 	"WorkShopView.h"
 	"util/ConfigReader.h"
 
-1359348490 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/GUI.cpp
+1359496644 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/GUI.cpp
 	<engine/GUI.h>
 
-1359348499 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/InputSystem.cpp
+1359496132 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/InputSystem.cpp
 	"InputSystem.h"
 
 1359022327 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/view/LoginView.h
@@ -4418,7 +4419,7 @@
 	<engine/Client.h>
 	<LobbyStage/chat/ChatView.h>
 
-1359024749 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatView.h
+1359413034 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatView.h
 	<Ogre.h>
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
@@ -4438,28 +4439,28 @@
 	<engine/Client.h>
 	<engine/ClientListener.h>
 
-1359348544 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatControl.cpp
+1359413212 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatControl.cpp
 	"ChatControl.h"
 	<Client.h>
 
-1359348550 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatView.cpp
+1359496320 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatView.cpp
 	"ChatView.h"
 
 1358722928 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/ChallengeView.cpp
 	"ChallengeView.h"
 	"GameObject.h"
 
-1359348606 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
+1359493823 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
 	"LoginSceneManager.h"
 
-1359347925 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
+1359493824 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
 	"LoginView.h"
 
-1359343646 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
+1359495348 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
 	"SceneSequencer.h"
 	"Scene.h"
 
-1359343248 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SceneSequencer.h
+1359493909 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SceneSequencer.h
 	<Ogre.h>
 	<ConfigReader.h>
 
@@ -4468,7 +4469,7 @@
 	<SceneSequencer.h>
 	<GUI.h>
 
-1359350941 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/view/LobbyView.h
+1359496410 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/view/LobbyView.h
 	<Ogre.h>
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
@@ -4477,18 +4478,18 @@
 	<engine/Scene.h>
 	<LobbyStage/chat/ChatView.h>
 
-1359022674 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Scene.h
+1359494395 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Scene.h
 	<Ogre.h>
 
-1359342597 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/MainApplication.cpp
+1359496461 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/MainApplication.cpp
 	"MainApplication.h"
 
-1359351219 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/LobbyView.cpp
+1359496399 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/LobbyView.cpp
 	"LobbyView.h"
 	"GameObject.h"
 	<LoginStage/control/LoginSceneManager.h>
 
-1359343142 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Scene.cpp
+1359494918 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Scene.cpp
 	<Scene.h>
 	<SceneSequencer.h>
 

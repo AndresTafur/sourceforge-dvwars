@@ -4,30 +4,29 @@ MainView::MainView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 {
     mSceneMgr = mgr;
     mWindow   = wnd;
-
-    createCamera();
-
+/*
     mScene    = new MainScene(mgr,wnd);
     mGameMgr  = new GameManager();
 
     mScene->createScene();
     InputSystem::getInstancePtr()->getKeyboard()->setBuffered(false);
-    InputSystem::getInstancePtr()->addKeyListener(this);
+    InputSystem::getInstancePtr()->addKeyListener(this);*/
 }
 
         void MainView::createGui()
         {
-          GUI *guiMgr =  GUI::getInstancePtr();
-          MyGUI::WidgetPtr cameraWnd;
-          MyGUI::CanvasPtr canvas;
+     //     GUI *guiMgr =  GUI::getInstancePtr();
+     //     MyGUI::WidgetPtr cameraWnd;
+      //    MyGUI::CanvasPtr canvas;
 
-                mMiniCamera    = Ogre::Root::getSingleton().getSceneManager("MainManager")->createCamera("MiniMapCamera");
-                mMiniSceneNode = Ogre::Root::getSingleton().getSceneManager("MainManager")->getRootSceneNode()->createChildSceneNode("MiniMapCameraNode");
+            //    mMiniCamera    = Ogre::Root::getSingleton().getSceneManager("MainManager")->createCamera("MiniMapCamera");
+             //   mMiniSceneNode = Ogre::Root::getSingleton().getSceneManager("MainManager")->getRootSceneNode()->createChildSceneNode("MiniMapCameraNode");
 
-                guiMgr->loadLayout("GameInterface.gui");
-
+//                guiMgr->loadLayout("GameInterface.gui");
+//
 
                //TODO: Change minimap
+               /*
                 cameraWnd  = MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("MiniMap");
                 canvas     = cameraWnd->createWidget<MyGUI::Canvas>("Canvas", MyGUI::IntCoord(3, 3, cameraWnd->getClientCoord().width-8, cameraWnd->getClientCoord().height-8), MyGUI::Align::Stretch);
 
@@ -46,6 +45,7 @@ MainView::MainView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
 
 
                 MyGUI::Gui::getInstance().findWidget<MyGUI::Widget>("Close")->eventMouseButtonClick += MyGUI::newDelegate(this, &MainView::onClose);
+                */
         }
 
 
@@ -72,15 +72,25 @@ MainView::MainView(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
         }
 
 
-        void MainView::createCamera(void)
+      /*  void MainView::createCamera(void)
         {
-          mCamMgr   = new RTSCameraManager(mSceneMgr, mWindow);
+           Scene::createCamera();
+           mCamMgr   = new RTSCameraManager(mSceneMgr, mWindow);
+
+        }*/
+
+
+        void MainView::destroy()
+        {
+
+
 
         }
 
+
         void MainView::onClose(MyGUI::Widget* btn)
         {
-                Ogre::Root::getSingletonPtr()->queueEndRendering();
+                //Ogre::Root::getSingletonPtr()->queueEndRendering();
         }
 
 

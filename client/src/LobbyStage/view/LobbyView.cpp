@@ -29,6 +29,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
             mStatus     = 0;
 //            mWaitMsg    = NULL;
+            Ogre::Root::getSingletonPtr()->addFrameListener(this);
 
 }
 
@@ -90,7 +91,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
                     //ensure created in last place
                     Client::getInstancePtr()->addListener(this);
-                    Ogre::Root::getSingletonPtr()->addFrameListener(this);
+
                     drawLine();
         }
 
@@ -207,7 +208,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
     }
 
 
-    bool LobbyView::frameEnded(const Ogre::FrameEvent& evt)
+    bool LobbyView::frameRenderingQueued(const Ogre::FrameEvent& evt)
     {
             if( mStatus == 302)
             {
@@ -238,17 +239,16 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
                     mCamera->lookAt(30,2,245);
             }
 
-
         return true;
     }
 
 
     void LobbyView::destroy()
     {
-            if( mChatView )
+            if( mChatView != nullptr)
             {
                 delete mChatView;
-                mChatView = NULL;
+                mChatView = nullptr;
             }
 
             /*        if(mWaitMsg)
@@ -261,7 +261,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
             Ogre::Root::getSingletonPtr()->removeFrameListener(this);
             GUI::getInstancePtr()->unloadLayout(mLayout);
             GUI::getInstancePtr()->clean();
-            //delete mLogSceneMgr;
+
 
             Scene::destroy();
     }

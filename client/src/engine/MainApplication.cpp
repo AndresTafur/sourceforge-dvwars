@@ -62,7 +62,7 @@ MainApplication::MainApplication()
                 #endif
 
 
-                sprintf(logName,"DVWars-%s.log", asctime(localtime(&currTime)) );
+                sprintf(logName,"DVWars.log", asctime(localtime(&currTime)) );
 
                 mRoot = OGRE_NEW Ogre::Root(pluginsPath, mResourcePath + "DVConfig.cfg", mResourcePath + logName );
 

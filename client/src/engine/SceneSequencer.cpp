@@ -91,15 +91,21 @@ SceneSequencer::SceneSequencer()
 
                                 if(scene != NULL)
                                 {
+
+                                    std::cerr << "[[[[[[[[[[[[[[[[[[[Loading scene: '" << sceneName << "'." << std::endl;
                                     mCurrentScene->destroy();
+
 
                                     scene->create(mRenderTarget);
                                     scene->createCamera();
                                     scene->createGui();
                                     scene->setSequencer(this);
+                                    mCurrentScene = scene;
                                 }
+                                else
+                                    std::cerr << "Scene: '" << sceneName << "' is not available." << std::endl;
 
-                                mCurrentScene = scene;
+
                               mSceneEnded = false;
 
         }

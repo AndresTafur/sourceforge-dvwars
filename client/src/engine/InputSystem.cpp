@@ -42,10 +42,6 @@ InputSystem::InputSystem()
                 mKeyboard     = static_cast<OIS::Keyboard*>(mInputManager->createInputObject( OIS::OISKeyboard, false ));
                 mMouse        = static_cast<OIS::Mouse*>(mInputManager->createInputObject( OIS::OISMouse,true));
 
-                OIS::MouseState &mutableMouseState = const_cast<OIS::MouseState &>(mMouse->getMouseState());
-                mutableMouseState.X.abs = 500;
-                mutableMouseState.Y.abs = 500;
-
                 Ogre::WindowEventUtilities::addWindowEventListener(mWindow, this);
                 Ogre::Root::getSingletonPtr()->addFrameListener(this);
                 windowResized(mWindow);

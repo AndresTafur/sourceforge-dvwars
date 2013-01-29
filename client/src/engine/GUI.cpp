@@ -62,6 +62,9 @@ GUI* GUI::sm_instance = 0;
                     MyGUI::OgreRenderManager::getInstancePtr()->setSceneManager(mgr);
                 }
 
+
+
+
         }
 
 

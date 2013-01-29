@@ -24,9 +24,7 @@ ChatView::ChatView()
    MyGUI::Gui *bgy = MyGUI::Gui::getInstancePtr();
 
 
-            GUI::getInstancePtr()->loadLayout("Chat.gui");
-           // GUI::getInstancePtr()->loadLayout("Lobby.gui");
-
+            mLayout   = GUI::getInstancePtr()->loadLayout("Chat.gui");
             mTab      = bgy->findWidget<MyGUI::Tab>("chatNB");
             mHide     = bgy->findWidget<MyGUI::Button>("chatHide");
             mShow     = bgy->findWidget<MyGUI::Button>("chatShow");
@@ -104,5 +102,13 @@ ChatView::ChatView()
 
 ChatView::~ChatView()
 {
-    //dtor
+     if(mMainChat != nullptr)
+     {
+        delete mMainChat;
+        mMainChat = nullptr;
+     }
+
+     Client::getInstancePtr()->removeListener(this);
+     GUI::getInstancePtr()->unloadLayout(mLayout);
+     delete mMainChat;
 }

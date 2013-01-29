@@ -58,6 +58,7 @@ Ogre::Camera       *mCamera;
 Ogre::Viewport     *mViewPort;
 Ogre::RenderTarget *mWindow;
 
+
 };
 
 #endif // SCENE_H

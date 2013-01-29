@@ -19,7 +19,9 @@
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
 
+
 #include <GUI.h>
+#include <Scene.h>
 #include <BattleStage/view/WorkShopView.h>
 #include <BattleStage/control/MainScene.h>
 #include <BattleStage/control/GameManager.h>
@@ -28,7 +30,7 @@
 /**
  * Ingame main view
  */
-class MainView : public KeyboardListener
+class MainView : public Scene, public KeyboardListener
 {
 public:
 
@@ -39,13 +41,10 @@ public:
         bool processUnbufferedKeyInput(const Ogre::FrameEvent &evt, OIS::Keyboard *kb);
 
 
-        /**
-          *  Create the camera and initializes the RTS Camera manager.
-          */
-        void createCamera();
-
         void createGui();
 
+
+        void destroy();
 
         void onClose(MyGUI::Widget* btn);
 

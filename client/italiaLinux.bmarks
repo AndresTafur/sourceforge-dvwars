@@ -1,192 +1,207 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Release" />
-	<File name="include/BattleStage/control/SquadBuilder.h" open="0" top="0" tabpos="0">
-		<Cursor position="80" topLine="0" />
-	</File>
-	<File name="include/engine/SelectionListener.h" open="0" top="0" tabpos="5">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="include/engine/MainApplication.h" open="0" top="0" tabpos="0">
-		<Cursor position="1376" topLine="38" />
-	</File>
-	<File name="src/LobbyStage/chat/ChatControl.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="778" topLine="0" />
+	<File name="src/BattleStage/control/RTSCameraManager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3393" topLine="0" />
 	</File>
 	<File name="src/engine/GUI.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="778" topLine="0" />
 		<BrowseMarks positions="1200,1200" />
 	</File>
-	<File name="include/BattleStage/control/CreateAction.h" open="0" top="0" tabpos="0">
-		<Cursor position="83" topLine="0" />
-	</File>
-	<File name="include/BattleStage/control/MoveAction.h" open="0" top="0" tabpos="0">
-		<Cursor position="98" topLine="0" />
-	</File>
-	<File name="src/BattleStage/entity/Squad.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="60" topLine="0" />
-	</File>
-	<File name="include/BattleStage/entity/WorkShop.h" open="0" top="0" tabpos="0">
-		<Cursor position="137" topLine="0" />
-	</File>
-	<File name="include/BattleStage/control/BuildingManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="94" topLine="0" />
-	</File>
-	<File name="src/BattleStage/control/GoldAction.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="207" topLine="9" />
-	</File>
-	<File name="include/BattleStage/view/BuildingView.h" open="0" top="0" tabpos="0">
-		<Cursor position="755" topLine="26" />
-	</File>
-	<File name="src/BattleStage/entity/GameObject.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="352" topLine="30" />
-	</File>
-	<File name="include/LobbyStage/chat/ChatView.h" open="0" top="0" tabpos="0">
-		<Cursor position="341" topLine="0" />
-	</File>
-	<File name="src/BattleStage/view/MainView.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="265" topLine="21" />
-	</File>
-	<File name="src/BattleStage/control/RTSCameraManager.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="3393" topLine="0" />
-	</File>
-	<File name="src/BattleStage/control/NatureAction.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="37" topLine="0" />
-	</File>
-	<File name="src/util/ConfigReader.cpp" open="0" top="0" tabpos="9">
-		<Cursor position="778" topLine="0" />
-	</File>
-	<File name="src/BattleStage/entity/MainScene.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="631" topLine="0" />
-	</File>
-	<File name="include/LobbyStage/chat/ChatControl.h" open="0" top="0" tabpos="0">
-		<Cursor position="289" topLine="0" />
-	</File>
-	<File name="src/BattleStage/control/SelectionManager.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="166" topLine="1" />
-	</File>
-	<File name="src/LoginStage/control/LoginSceneManager.cpp" open="1" top="0" tabpos="0">
-		<Cursor position="2777" topLine="117" />
-		<BrowseMarks positions="" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="src/engine/SceneSequencer.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="2971" topLine="0" />
-		<BrowseMarks positions="1418,1810" />
-	</File>
-	<File name="src/engine/MainApplication.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="1022" topLine="0" />
-	</File>
-	<File name="include/engine/SceneSequencer.h" open="0" top="0" tabpos="0">
-		<Cursor position="1084" topLine="12" />
-		<BrowseMarks positions="756" />
-	</File>
-	<File name="src/engine/Client.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="778" topLine="0" />
+	<File name="src/engine/InputSystem.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="777" topLine="0" />
 	</File>
 	<File name="include/LobbyStage/view/LobbyView.h" open="0" top="0" tabpos="0">
-		<Cursor position="687" topLine="18" />
+		<Cursor position="687" topLine="38" />
 		<BrowseMarks positions="375" />
 		<Book_Marks positions="" />
 	</File>
-	<File name="include/BattleStage/view/WorkShopView.h" open="0" top="0" tabpos="0">
-		<Cursor position="361" topLine="0" />
+	<File name="include/util/DaVinciGlobals.h" open="0" top="0" tabpos="0">
+		<Cursor position="140" topLine="0" />
 	</File>
-	<File name="include/BattleStage/entity/Game.h" open="0" top="0" tabpos="0">
-		<Cursor position="72" topLine="0" />
-	</File>
-	<File name="src/BattleStage/view/BuildingView.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1205" topLine="17" />
-	</File>
-	<File name="src/LobbyStage/view/LobbyView.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="2577" topLine="65" />
-		<BrowseMarks positions="2659" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="include/engine/RenderBox.h" open="0" top="0" tabpos="0">
-		<Cursor position="2850" topLine="87" />
-		<BrowseMarks positions="752" />
+	<File name="include/BattleStage/control/SelectionManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="131" topLine="0" />
 	</File>
 	<File name="src/engine/Scene.cpp" open="0" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
 		<BrowseMarks positions="709" />
 	</File>
-	<File name="include/LoginStage/control/LoginSceneManager.h" open="0" top="0" tabpos="2">
-		<Cursor position="103" topLine="0" />
+	<File name="src/engine/MainApplication.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1022" topLine="0" />
 	</File>
-	<File name="src/util/Cripto.cpp" open="0" top="0" tabpos="10">
-		<Cursor position="778" topLine="0" />
+	<File name="include/BattleStage/control/MoveAction.h" open="0" top="0" tabpos="0">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="src/BattleStage/entity/Unit.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="339" topLine="0" />
 	</File>
 	<File name="include/BattleStage/control/MainScene.h" open="0" top="0" tabpos="0">
 		<Cursor position="161" topLine="0" />
 	</File>
-	<File name="include/BattleStage/control/RTSCameraManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="499" topLine="0" />
-	</File>
-	<File name="include/engine/GUI.h" open="0" top="0" tabpos="3">
-		<Cursor position="2121" topLine="60" />
-		<BrowseMarks positions="832" />
+	<File name="include/LobbyStage/chat/ChatControl.h" open="1" top="1" tabpos="0">
+		<Cursor position="289" topLine="0" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
 	</File>
 	<File name="include/engine/Scene.h" open="0" top="0" tabpos="0">
 		<Cursor position="1127" topLine="32" />
 		<BrowseMarks positions="932" />
 	</File>
-	<File name="include/BattleStage/view/MainView.h" open="0" top="0" tabpos="0">
-		<Cursor position="756" topLine="0" />
-	</File>
-	<File name="include/LoginStage/view/LoginView.h" open="0" top="0" tabpos="0">
-		<Cursor position="514" topLine="5" />
-		<BrowseMarks positions="541" />
-	</File>
-	<File name="src/BattleStage/entity/Unit.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="339" topLine="0" />
-	</File>
-	<File name="include/util/DaVinciGlobals.h" open="0" top="0" tabpos="0">
-		<Cursor position="140" topLine="0" />
-	</File>
-	<File name="src/LoginStage/view/LoginView.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="4073" topLine="0" />
-		<BrowseMarks positions="1599,9913" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="src/BattleStage/control/SquadManager.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="37" topLine="0" />
-	</File>
-	<File name="include/engine/ClientListener.h" open="0" top="0" tabpos="3">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="include/BattleStage/control/GameManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="223" topLine="0" />
-	</File>
-	<File name="include/util/ConfigReader.h" open="0" top="0" tabpos="3">
-		<Cursor position="329" topLine="26" />
-	</File>
-	<File name="include/engine/Client.h" open="0" top="0" tabpos="3">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="include/BattleStage/control/SelectionManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="131" topLine="0" />
-	</File>
-	<File name="src/sound/GameSound.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="778" topLine="0" />
-	</File>
-	<File name="include/BattleStage/control/WorkShopManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="315" topLine="0" />
-	</File>
-	<File name="src/engine/InputSystem.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="777" topLine="0" />
-	</File>
-	<File name="include/BattleStage/control/SquadManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="267" topLine="0" />
-	</File>
-	<File name="src/engine/Main.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="1020" topLine="0" />
+	<File name="include/BattleStage/entity/Squad.h" open="0" top="0" tabpos="0">
+		<Cursor position="65" topLine="0" />
 	</File>
 	<File name="include/BattleStage/control/CreationListener.h" open="0" top="0" tabpos="0">
 		<Cursor position="90" topLine="0" />
 		<BrowseMarks positions="93" />
 	</File>
-	<File name="include/BattleStage/entity/Squad.h" open="0" top="0" tabpos="0">
-		<Cursor position="65" topLine="0" />
+	<File name="include/engine/ClientListener.h" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/util/ConfigReader.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="778" topLine="0" />
+	</File>
+	<File name="include/engine/GUI.h" open="0" top="0" tabpos="3">
+		<Cursor position="2121" topLine="60" />
+		<BrowseMarks positions="832" />
+	</File>
+	<File name="include/BattleStage/control/BuildingManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="94" topLine="0" />
+	</File>
+	<File name="src/util/Cripto.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="778" topLine="0" />
+	</File>
+	<File name="include/BattleStage/entity/WorkShop.h" open="0" top="0" tabpos="0">
+		<Cursor position="137" topLine="0" />
+	</File>
+	<File name="include/engine/SceneSequencer.h" open="0" top="0" tabpos="0">
+		<Cursor position="1084" topLine="12" />
+		<BrowseMarks positions="756" />
+	</File>
+	<File name="include/LoginStage/view/LoginView.h" open="1" top="0" tabpos="0">
+		<Cursor position="514" topLine="5" />
+		<BrowseMarks positions="541" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/LobbyStage/view/LobbyView.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="8562" topLine="242" />
+		<BrowseMarks positions="2659" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/BattleStage/control/RTSCameraManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="499" topLine="0" />
+	</File>
+	<File name="src/BattleStage/control/GoldAction.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="207" topLine="9" />
+	</File>
+	<File name="src/LobbyStage/chat/ChatView.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1977" topLine="77" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/BattleStage/control/CreateAction.h" open="0" top="0" tabpos="0">
+		<Cursor position="83" topLine="0" />
+	</File>
+	<File name="include/BattleStage/view/MainView.h" open="0" top="0" tabpos="0">
+		<Cursor position="756" topLine="0" />
+	</File>
+	<File name="include/BattleStage/view/BuildingView.h" open="0" top="0" tabpos="0">
+		<Cursor position="755" topLine="26" />
+	</File>
+	<File name="src/BattleStage/entity/Squad.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="60" topLine="0" />
+	</File>
+	<File name="include/LoginStage/control/LoginSceneManager.h" open="0" top="0" tabpos="2">
+		<Cursor position="103" topLine="0" />
+	</File>
+	<File name="include/engine/Client.h" open="0" top="0" tabpos="3">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/engine/RenderBox.h" open="0" top="0" tabpos="0">
+		<Cursor position="2850" topLine="87" />
+		<BrowseMarks positions="752" />
+	</File>
+	<File name="include/LobbyStage/chat/ChatView.h" open="0" top="0" tabpos="0">
+		<Cursor position="851" topLine="22" />
+		<BrowseMarks positions="818" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/BattleStage/entity/MainScene.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="631" topLine="0" />
+	</File>
+	<File name="src/engine/Client.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="778" topLine="0" />
+	</File>
+	<File name="include/BattleStage/control/SquadManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="267" topLine="0" />
+	</File>
+	<File name="src/BattleStage/entity/GameObject.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="352" topLine="30" />
+	</File>
+	<File name="include/BattleStage/view/WorkShopView.h" open="0" top="0" tabpos="0">
+		<Cursor position="361" topLine="0" />
+	</File>
+	<File name="include/BattleStage/control/SquadBuilder.h" open="0" top="0" tabpos="0">
+		<Cursor position="80" topLine="0" />
+	</File>
+	<File name="src/BattleStage/view/MainView.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="3069" topLine="59" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/util/ConfigReader.h" open="0" top="0" tabpos="3">
+		<Cursor position="329" topLine="26" />
+	</File>
+	<File name="src/engine/SceneSequencer.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="3282" topLine="78" />
+		<BrowseMarks positions="1418,1810" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/engine/MainApplication.h" open="0" top="0" tabpos="0">
+		<Cursor position="1376" topLine="38" />
+	</File>
+	<File name="src/LoginStage/view/LoginView.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="9741" topLine="197" />
+		<BrowseMarks positions="1599,9913" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/sound/GameSound.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="778" topLine="0" />
+	</File>
+	<File name="src/LoginStage/control/LoginSceneManager.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="5131" topLine="117" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="src/BattleStage/view/BuildingView.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1205" topLine="17" />
+	</File>
+	<File name="src/engine/Main.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1020" topLine="0" />
+	</File>
+	<File name="src/LobbyStage/chat/ChatControl.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2356" topLine="11" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="include/BattleStage/control/GameManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="223" topLine="0" />
+	</File>
+	<File name="include/engine/SelectionListener.h" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include/BattleStage/entity/Game.h" open="0" top="0" tabpos="0">
+		<Cursor position="72" topLine="0" />
+	</File>
+	<File name="src/BattleStage/control/NatureAction.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="37" topLine="0" />
+	</File>
+	<File name="src/BattleStage/control/SquadManager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="37" topLine="0" />
+	</File>
+	<File name="include/BattleStage/control/WorkShopManager.h" open="0" top="0" tabpos="0">
+		<Cursor position="315" topLine="0" />
+	</File>
+	<File name="src/BattleStage/control/SelectionManager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="166" topLine="1" />
 	</File>
 </BrowseTracker_layout_file>

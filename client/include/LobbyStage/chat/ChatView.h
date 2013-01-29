@@ -45,6 +45,7 @@ MyGUI::TabPtr             mTab;
 MyGUI::ButtonPtr          mHide;
 MyGUI::ButtonPtr          mShow;
 MyGUI::ButtonPtr          mPrivate;
+MyGUI::VectorWidgetPtr    mLayout;
 
 ChatControl              *mMainChat;
 std::map<std::string, ChatControl*> mControls;

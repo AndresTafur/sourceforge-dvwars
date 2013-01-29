@@ -6,8 +6,8 @@
 		<state value="1" fade="false">Exit</state>
 	</scene>
 	<scene name="Lobby">
-		<state value="1" fade="true">Battle</state>
-		<state value="0" fade="false">Exit</state>
+		<state value="0" fade="true">Login</state>
+		<state value="1" fade="false">Exit</state>
 	</scene>
 
 	<scene name="Battle" initial="true">

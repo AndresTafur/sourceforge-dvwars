@@ -44,7 +44,7 @@ public:
 
         void attend(std::vector<std::string> &data);
 
-        bool frameEnded(const Ogre::FrameEvent& evt);
+        bool frameRenderingQueued(const Ogre::FrameEvent& evt);
 
 
         void destroy();
@@ -64,6 +64,8 @@ std::vector<std::string> mParams;
 
 ChatView                *mChatView;
 Ogre::Light             *mLight;
+
+
 };
 
 #endif // _CHALLENGEVIEW_
