@@ -32,7 +32,7 @@ public:
 
         void unloadScene(Scene *scn, bool destroy = false);
 
-        void queueEndScene(Scene *oldScene, short state);
+        void queueEndScene(short state);
 
 
         inline void setSceneManager(Ogre::SceneManager *mgr) { mSceneMgr = mgr; }

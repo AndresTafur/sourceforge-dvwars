@@ -3,31 +3,14 @@
 
 
 
-RTSCameraManager::RTSCameraManager(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd)
+RTSCameraManager::RTSCameraManager(Ogre::Camera *cam, Ogre::SceneNode *camNode)
 {
-        mCamera     = mgr->createCamera("RTSCam");
-        mCameraNode = mgr->createSceneNode("Camera Node");
+      mCamera     = cam;
+      mCameraNode = camNode;
 
-        mCamera->setPosition(Ogre::Vector3(5,80,5));
-        mCamera->lookAt(Ogre::Vector3(0,-30,0));
-        mCamera->setNearClipDistance( 1 );
-        mCamera->setFarClipDistance( 500 );
-        mCamera->setDirection(-0.5,-0.7,-0.4 );
-
-        mCameraNode->attachObject(mCamera);
-        mCameraNode->setPosition(318.2,80,313 );
-
-
-        mViewPort = wnd->addViewport(mCamera);
-
-        mViewPort->setOverlaysEnabled(true);
-        mViewPort->setBackgroundColour(Ogre::ColourValue(0,0,0));
-        mCamera->setAspectRatio(Ogre::Real(mViewPort->getActualWidth()) / Ogre::Real(mViewPort->getActualHeight()));
-
-
-        Ogre::Root::getSingletonPtr()->addFrameListener(this);
-        InputSystem::getInstancePtr()->addMouseListener(this);
-        InputSystem::getInstancePtr()->addKeyListener(this);
+      Ogre::Root::getSingletonPtr()->addFrameListener(this);
+      InputSystem::getInstancePtr()->addMouseListener(this);
+      InputSystem::getInstancePtr()->addKeyListener(this);
 }
 
 
@@ -115,5 +98,7 @@ RTSCameraManager::RTSCameraManager(Ogre::SceneManager *mgr, Ogre::RenderWindow *
 
 RTSCameraManager::~RTSCameraManager()
 {
-           //if( mCamera) mSceneMgr->destroyAllCameras(); TODO:
+      Ogre::Root::getSingletonPtr()->removeFrameListener(this);
+      InputSystem::getInstancePtr()->removeMouseListener(this);
+      InputSystem::getInstancePtr()->removeKeyListener(this);
 }

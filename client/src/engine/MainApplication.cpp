@@ -55,14 +55,14 @@ MainApplication::MainApplication()
     {
 		Ogre::String pluginsPath;
 		char   logName[100];
-		time_t currTime = time(NULL);
+//		time_t currTime = time(NULL);
 
                 #ifndef OGRE_STATIC_LIB
                     pluginsPath = mResourcePath + "plugins.cfg";
                 #endif
 
 
-                sprintf(logName,"DVWars.log", asctime(localtime(&currTime)) );
+                sprintf(logName,"DVWars.log" /*, asctime(localtime(&currTime)) */ );
 
                 mRoot = OGRE_NEW Ogre::Root(pluginsPath, mResourcePath + "DVConfig.cfg", mResourcePath + logName );
 
@@ -118,22 +118,24 @@ MainApplication::MainApplication()
 
 MainApplication::~MainApplication()
 {
-  std::vector<Ogre::Plugin*> list;
+  Ogre::Root::PluginInstanceList list;
 
-        mRoot->queueEndRendering();
 
-        if( mSceneMgr) mRoot->destroySceneManager(mSceneMgr);
+        GUI::destroy();
+        InputSystem::destroy();
         if( mWindow) mRoot->detachRenderTarget(mWindow);
 
 
         mRoot->getRenderSystem()->unregisterThread();
         mRoot->setRenderSystem(NULL);
 
-//        list = mRoot->getInstalledPlugins ();
+        list = mRoot->getInstalledPlugins ();
 
 
         for(unsigned int i= 0; i < list.size();i++)
             mRoot->uninstallPlugin (list[i]);
+
+        OGRE_DELETE mRoot;
 
         fprintf(stderr," ================= Deleting last object, expecting segfault (OGRE issue) =================\n\n");
 

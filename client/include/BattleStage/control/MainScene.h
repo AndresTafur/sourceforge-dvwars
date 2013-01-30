@@ -3,6 +3,8 @@
 
 
 #include <MyGUI.h>
+#include <Terrain/OgreTerrain.h>
+#include <Terrain/OgreTerrainGroup.h>
 
 #include <engine/GUI.h>
 #include <BattleStage/control/SelectionManager.h>
@@ -14,12 +16,19 @@
 class MainScene
 {
 public:
-        MainScene(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd);
+        MainScene(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd);
 
         /**
           *  Create the camera and initializes the RTS Camera manager.
           */
         void createScene(void);
+
+        void createTerrain();
+
+        void configureTerrainDefaults();
+
+        void defineTerrain();
+
 
         /**
          * Create heighmap and static geometries.
@@ -32,8 +41,11 @@ public:
         virtual ~MainScene();
 
 private:
+  Ogre::TerrainGlobalOptions *mTerrainGlobals;
+  Ogre::TerrainGroup *mTerrainGroup;
+
   Ogre::Light         *mLight;
-  Ogre::RenderWindow  *mWindow;
+  Ogre::RenderTarget  *mWindow;
   Ogre::SceneManager  *mSceneMgr;
 };
 

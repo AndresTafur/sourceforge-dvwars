@@ -32,11 +32,8 @@ void LoginView::create(Ogre::RenderTarget* wnd)
         }
 
 
-
-        void LoginView::createCamera()
+        void LoginView::createSceneObjects()
         {
-           Scene::createCamera();
-
            mLogSceneMgr = new LoginSceneManager(mSceneMgr,mWindow);
            mLogSceneMgr->createScene();
         }

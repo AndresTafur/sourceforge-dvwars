@@ -21,9 +21,11 @@ public:
 
         void create(Ogre::RenderTarget* wnd);
 
+        void createGui();
+
         void createCamera();
 
-        void createGui();
+        void createSceneObjects();
 
 
         std::string getName();

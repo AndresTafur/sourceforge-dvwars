@@ -35,6 +35,7 @@ public:
 
         virtual void createGui() = 0;
 
+        virtual void createSceneObjects() = 0;
 
 
         virtual std::string getName() = 0;

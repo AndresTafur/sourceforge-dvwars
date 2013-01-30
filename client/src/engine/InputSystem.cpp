@@ -88,6 +88,17 @@ InputSystem::InputSystem()
          }
 
 
+         void InputSystem::removeKeyListener(KeyboardListener* obj)
+         {
+            mKeyListeners.remove(obj);
+         }
+
+         void InputSystem::removeMouseListener(OIS::MouseListener* obj)
+         {
+            mMouseListeners.remove(obj);
+         }
+
+
          bool InputSystem::mouseMoved( const OIS::MouseEvent &e )
          {
             bool ret = true;
@@ -170,6 +181,14 @@ InputSystem::InputSystem()
         }
 
 
+        void InputSystem::destroy()
+        {
+                if(smInstance)
+                {
+                    delete smInstance;
+                    smInstance = NULL;
+                }
+        }
 
 
 InputSystem::~InputSystem()

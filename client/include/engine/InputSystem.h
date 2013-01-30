@@ -48,6 +48,23 @@ public:
           */
          void addMouseListener(OIS::MouseListener* obj);
 
+
+         /**
+          * Removes a keyboadListener.
+          * This object has to implement the KeyboardListener interface.
+          */
+         void removeKeyListener(KeyboardListener* obj);
+
+         /**
+          * Removes a MouseListener.
+          * This object has to implement the OIS MouseListener interface.
+          */
+         void removeMouseListener(OIS::MouseListener* obj);
+
+
+         static void destroy();
+
+
         ~InputSystem();
 
 protected:

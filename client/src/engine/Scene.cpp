@@ -44,6 +44,9 @@ void Scene::create(Ogre::RenderTarget *wnd)
         }
 
 
+
+
+
         void Scene::setSequencer(SceneSequencer *seq)
         {
             mSequencer = seq;
@@ -52,8 +55,8 @@ void Scene::create(Ogre::RenderTarget *wnd)
 
         void Scene::destroy()
         {
-            mSceneMgr->destroySceneNode(mCameraNode);
-            mSceneMgr->destroyCamera(mCamera);
+            if(mCameraNode) mSceneMgr->destroySceneNode(mCameraNode);
+            if(mCamera) mSceneMgr->destroyCamera(mCamera);
             mWindow->removeAllViewports();
             mSceneMgr->clearScene();
             Ogre::Root::getSingleton().destroySceneManager(mSceneMgr);
@@ -63,5 +66,5 @@ void Scene::create(Ogre::RenderTarget *wnd)
     //QUick fix
     void Scene::endScene(short state)
     {
-        mSequencer->queueEndScene(this,state);
+        mSequencer->queueEndScene(state);
     }

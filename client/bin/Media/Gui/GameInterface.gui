@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MyGUI type="Layout" version="3.2.0">
-    <Widget type="Widget" skin="PanelSkin" position="5 555 216 205" layer="Back" name="MiniMap">
+    <Widget type="Widget" skin="PanelSkin" position="5 555 216 205" layer="Main" name="MiniMap">
         <Widget type="Progress" skin="ProgressFill" position="131 -323 157 43">
             <Property key="Range" value="100"/>
             <Property key="RangePosition" value="6"/>
         </Widget>
     </Widget>
-    <Widget type="Widget" skin="Panel" position="770 555 250 205" layer="Back">
+    <Widget type="Widget" skin="PanelSkin" position="770 555 250 205" layer="Main">
         <Widget type="TextBox" skin="TextBox" position="77 170 104 16">
             <Property key="Caption" value="3 squads"/>
         </Widget>
@@ -21,22 +21,22 @@
         <Widget type="ImageBox" skin="ImageBox" position="152 56 40 40"/>
         <Widget type="ImageBox" skin="ImageBox" position="200 56 40 40"/>
     </Widget>
-    <Widget type="Button" skin="Button" position="700 735 64 24" layer="Back" name="Close">
-        <Property key="Caption" value="Terminar"/>
+    <Widget type="Button" skin="Button" position="15 5 64 24" layer="Back" name="menuBtn">
+        <Property key="Caption" value="Menu"/>
     </Widget>
-    <Widget type="Progress" skin="ProgressBarFill" position="856 530 160 16" layer="Back" name="Progress_main">
+    <Widget type="ProgressBar" skin="ProgressBarFill" position="856 530 160 16" layer="Main" name="Progress_main">
         <Property key="Range" value="100"/>
         <Property key="RangePosition" value="0"/>
     </Widget>
-    <Widget type="Widget" skin="Panel" position="272 0 400 24" layer="Middle">
+    <Widget type="Widget" skin="PanelSkin" position="272 0 400 24" layer="Main">
         <Widget type="TextBox" skin="TextBox" position="232 0 80 16" name="Gold">
             <Property key="Caption" value="Gold: 500"/>
         </Widget>
     </Widget>
-    <Widget type="Widget" skin="PanelSkin" position="280 20 382 104" layer="Back" name="ProgressPanel">
+    <Widget type="Widget" skin="PanelSkin" position="280 20 382 104" layer="Main" name="ProgressPanel">
         <Widget type="Button" skin="ButtonUpSkin" position="180 8 32 8" name="hideProgressPanel"/>
     </Widget>
-    <Widget type="Button" skin="ButtonDownSkin" position="464 24 32 16" layer="Back" name="showProgressPanel">
+    <Widget type="Button" skin="ButtonDownSkin" position="460 25 32 16" layer="Main" name="showProgressPanel">
         <Property key="Visible" value="false"/>
     </Widget>
 </MyGUI>

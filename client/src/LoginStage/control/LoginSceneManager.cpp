@@ -126,6 +126,17 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
                                 mSceneMgr->getCamera("Main Camera")->lookAt(30,2,245);
                         }
                         else if(mScene){
+
+                              Ogre::Vector3 vect =  mCameraNode->getPosition();
+                              Ogre::Quaternion quat = mSceneMgr->getCamera("Main Camera")->getOrientation();
+                              Ogre::Vector3  dir  =   mSceneMgr->getCamera("Main Camera")->getDirection();
+
+
+                                    fprintf(stderr,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Position:[%f, %f, %f], Orient:[%f,%f,%f,%f], Dir:[%f,%f,%f]",vect.x,vect.y,vect.z,
+                                                        quat.w,quat.x,quat.y,quat.z, dir.x, dir.y,dir.z
+                                                    );
+
+
                                 mScene->endScene(0);
                         }
 

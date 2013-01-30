@@ -70,7 +70,6 @@ protected:
 protected:
 
     Ogre::Root          *mRoot;
-    Ogre::SceneManager  *mSceneMgr;
     Ogre::RenderWindow  *mWindow;
 	Ogre::String         mResourcePath;
 	SceneSequencer      *mSequencer;

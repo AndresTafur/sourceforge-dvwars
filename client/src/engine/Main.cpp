@@ -30,18 +30,27 @@ int main(int argc, char **argv)
 {
     MainApplication app;
 
-    LoginView *mLogin = new LoginView();
-    LobbyView *mLobby = new LobbyView();
+    LoginView  *mLogin  = new LoginView();
+    LobbyView  *mLobby  = new LobbyView();
+    BattleView *mBattle = new BattleView();
     SceneSequencer *seq = new SceneSequencer();
 
     try
     {
         seq->addScene(mLogin);
         seq->addScene(mLobby);
+        seq->addScene(mBattle);
         seq->setSceneSequence("seq.xml");
 
         app.setSequencer(seq);
         app.startApplication();
+
+
+        delete seq;
+        delete mLogin;
+        delete mLobby;
+        delete mBattle;
+
 
         fprintf(stderr,"All components released, expecting libboost exit");
     }

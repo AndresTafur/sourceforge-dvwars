@@ -33,35 +33,8 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
 }
 
-
-        void LobbyView::createCamera()
-        {
-           Scene::createCamera();
-           GameObject *obj;
-           GameObject *obj2;
-           Ogre::SceneNode *mTableNode, *mScrollNode;
-           Ogre::Entity    *mTable, *mScroll;
-
-
-                obj   = new GameObject(0, mSceneMgr, "City.mesh");
-                obj2  = new GameObject(0, mSceneMgr, "Village.mesh");
-
-                obj->setPosition(Ogre::Vector3(30,0,250) );
-                obj->getEntity()->setCastShadows(false);
-
-                obj2->setPosition(Ogre::Vector3(30,-10,247) );
-                obj2->getEntity()->setCastShadows(false);
-
-                mTable      = mSceneMgr->createEntity( "Pedestal.mesh"  );
-                mTableNode  = mSceneMgr->getRootSceneNode()->createChildSceneNode();
-                mTableNode->attachObject(mTable);
-                mTableNode->setPosition(30,-10,250);
-
-                mScroll     = mSceneMgr->createEntity( "Scroll.mesh"  );
-                mScrollNode = mSceneMgr->getRootSceneNode()->createChildSceneNode();
-                mScroll->setCastShadows(false);
-                mScrollNode->attachObject(mScroll);
-                mScrollNode->setPosition(34,-1,247);
+        std::string LobbyView::getName() {
+                return "Lobby";
         }
 
 
@@ -78,8 +51,6 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
                     mChatView  = new ChatView();
                     mLayout    = GUI::getInstance().loadLayout("Lobby.gui");
-
-
                     mShowBud   = bgy->findWidget<MyGUI::Button>("buddiesBtn");
                     mShowBud->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::showBuddies);
 
@@ -96,9 +67,62 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
         }
 
 
-        std::string LobbyView::getName() {
-                return "Lobby";
+        void LobbyView::createCamera()
+        {
+          Ogre::Quaternion quat;
+
+                Scene::createCamera();
+                mCameraNode->setPosition(29.4,8.4,238.2);
+                mCamera->setDirection(-0.2,-0.6,0.7);
+
+                quat.w = 0.08;
+                quat.x = -0.034;
+                quat.y = 0.92;
+                quat.z = 0.365;
+
+                mCamera->setOrientation(quat);
         }
+
+
+        void LobbyView::createSceneObjects()
+        {
+           GameObject *obj;
+           GameObject *obj2;
+           Ogre::SceneNode *mTableNode, *mScrollNode, *wallNode;
+           Ogre::Entity    *mTable, *mScroll, *wall;
+
+
+                obj   = new GameObject(0, mSceneMgr, "City.mesh");
+                obj2  = new GameObject(0, mSceneMgr, "Village.mesh");
+
+                obj->setPosition(Ogre::Vector3(30,0,250) );
+                obj->getEntity()->setCastShadows(false);
+
+                obj2->setPosition(Ogre::Vector3(30,-10,247) );
+                obj2->getEntity()->setCastShadows(false);
+
+
+                wall      = mSceneMgr->createEntity( "museumWall.mesh"  );
+                wallNode  = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+                wall->setCastShadows(false);
+                wallNode->attachObject(wall);
+                wallNode->setPosition(30,35,260);
+
+
+
+                mTable      = mSceneMgr->createEntity( "Pedestal.mesh"  );
+                mTableNode  = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+                mTableNode->attachObject(mTable);
+                mTableNode->setPosition(30,-10,250);
+
+                mScroll     = mSceneMgr->createEntity( "Scroll.mesh"  );
+                mScrollNode = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+                mScroll->setCastShadows(false);
+                mScrollNode->attachObject(mScroll);
+                mScrollNode->setPosition(34,-1,247);
+        }
+
+
 
 
 

@@ -4,12 +4,13 @@
 
 WorkShopManager::WorkShopManager()
 {
+    /*
         mScnMgr    = Ogre::Root::getSingletonPtr()->getSceneManager("MainManager");
         mCamera    = mScnMgr->getCamera("RTSCam");
         mWorkShop  = NULL;
         mWorkShop2 = NULL;
         mBuilding  = NULL;
-
+*/
         Client::getInstancePtr()->addListener(this);
         Ogre::Root::getSingletonPtr()->addFrameListener(this);
 }
@@ -40,7 +41,7 @@ WorkShopManager::WorkShopManager()
 
 
         bool WorkShopManager::frameRenderingQueued(const Ogre::FrameEvent &evt)
-        {
+        {/*
            int coordX, coordZ;
            std::vector<std::string> params;
            Ogre::Vector3 pos;
@@ -94,7 +95,7 @@ WorkShopManager::WorkShopManager()
                                 mWorkShop->attachBuilding(mBuilding);
                             else
                                 mWorkShop2->attachBuilding(mBuilding);
-                    }
+                    }*/
 
             return true;
         }

@@ -59,13 +59,14 @@ SceneSequencer::SceneSequencer()
                     mCurrentScene->create(mRenderTarget);
                     mCurrentScene->createCamera();
                     mCurrentScene->createGui();
+                    mCurrentScene->createSceneObjects();
                     mCurrentScene->setSequencer(this);
                 }
         }
 
 
 
-        void SceneSequencer::queueEndScene(Scene *oldScene, short state)
+        void SceneSequencer::queueEndScene(short state)
         {
                 mSceneEnded  = true;
                 mState       = state;
@@ -80,11 +81,13 @@ SceneSequencer::SceneSequencer()
                                 sprintf(charVal,"%i']",mState);
                                 exp += charVal;
 
+
                                 sceneName = mSeqReader.getAttribute(exp);
 
                                 if( sceneName == "Exit" )
                                 {
                                     Ogre::Root::getSingletonPtr()->queueEndRendering();
+                                    return;
                                 }
 
                                 scene = mScenes[sceneName];
@@ -92,13 +95,13 @@ SceneSequencer::SceneSequencer()
                                 if(scene != NULL)
                                 {
 
-                                    std::cerr << "[[[[[[[[[[[[[[[[[[[Loading scene: '" << sceneName << "'." << std::endl;
+                                    std::cerr << "Loading scene: '" << sceneName << "'." << std::endl;
                                     mCurrentScene->destroy();
-
 
                                     scene->create(mRenderTarget);
                                     scene->createCamera();
                                     scene->createGui();
+                                    scene->createSceneObjects();
                                     scene->setSequencer(this);
                                     mCurrentScene = scene;
                                 }

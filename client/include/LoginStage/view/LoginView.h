@@ -6,7 +6,7 @@
 #include <MyGUI_OgrePlatform.h>
 
 #include <engine/GUI.h>
-#include <BattleStage/view/MainView.h> //Needed to be changed for an independent secuencer
+#include <BattleStage/view/BattleView.h> //Needed to be changed for an independent secuencer
 #include <LobbyStage/view/LobbyView.h>
 
 #include <util/Cripto.h>
@@ -27,17 +27,13 @@ public:
 
         std::string getName();
 
-
-
-
-         /*
-          *  Create the camera and initializes the RTS Camera manager.
-          */
-
-        void createCamera();
+        /*
+         *  Create the camera and initializes the RTS Camera manager.
+         */
 
         void createGui();
 
+        void createSceneObjects();
 
         /*
          *  Handles GUI events.
@@ -75,7 +71,6 @@ public:
 
 private:
 LoginSceneManager  *mLogSceneMgr;
-MainView           *mMainView;
 MyGUI::VectorWidgetPtr mLayout;
 
 };

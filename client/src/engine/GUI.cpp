@@ -127,8 +127,12 @@ GUI* GUI::sm_instance = 0;
         void GUI::destroy()
         {
             //TODO: de-register from InputSystem
-            sm_instance->clean();
-            delete sm_instance;
+            if(sm_instance)
+            {
+                sm_instance->clean();
+                delete sm_instance;
+                sm_instance = nullptr;
+            }
         }
 
 
@@ -141,8 +145,4 @@ GUI* GUI::sm_instance = 0;
             mPlatform->shutdown();
             delete mPlatform;
             mPlatform = 0;
-
-
-            delete sm_instance;
-            sm_instance = 0;
         }

@@ -47,6 +47,7 @@
 					<Add library="alut" />
 					<Add library="vorbisenc" />
 					<Add library="boost_system" />
+					<Add library="OgreTerrain" />
 				</Linker>
 			</Target>
 		</Build>
@@ -86,8 +87,8 @@
 		<Unit filename="include/BattleStage/entity/Squad.h" />
 		<Unit filename="include/BattleStage/entity/Unit.h" />
 		<Unit filename="include/BattleStage/entity/WorkShop.h" />
+		<Unit filename="include/BattleStage/view/BattleView.h" />
 		<Unit filename="include/BattleStage/view/BuildingView.h" />
-		<Unit filename="include/BattleStage/view/MainView.h" />
 		<Unit filename="include/BattleStage/view/WorkShopView.h" />
 		<Unit filename="include/LobbyStage/chat/ChatControl.h" />
 		<Unit filename="include/LobbyStage/chat/ChatView.h" />
@@ -132,8 +133,8 @@
 		<Unit filename="src/BattleStage/entity/Squad.cpp" />
 		<Unit filename="src/BattleStage/entity/Unit.cpp" />
 		<Unit filename="src/BattleStage/entity/WorkShop.cpp" />
+		<Unit filename="src/BattleStage/view/BattleView.cpp" />
 		<Unit filename="src/BattleStage/view/BuildingView.cpp" />
-		<Unit filename="src/BattleStage/view/MainView.cpp" />
 		<Unit filename="src/BattleStage/view/WorkShopView.cpp" />
 		<Unit filename="src/LobbyStage/chat/ChatControl.cpp" />
 		<Unit filename="src/LobbyStage/chat/ChatView.cpp" />

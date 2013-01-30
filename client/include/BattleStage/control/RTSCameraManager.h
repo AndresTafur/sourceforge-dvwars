@@ -17,7 +17,7 @@ class RTSCameraManager : public OIS::MouseListener, public KeyboardListener, pub
 {
     public:
 
-        RTSCameraManager(Ogre::SceneManager *mgr, Ogre::RenderWindow *wnd);
+        RTSCameraManager(Ogre::Camera *cam, Ogre::SceneNode *camNode);
 
         bool frameRenderingQueued(const Ogre::FrameEvent &event);
 
@@ -34,13 +34,15 @@ class RTSCameraManager : public OIS::MouseListener, public KeyboardListener, pub
 
 private:
 
-    Ogre::Camera    *mCamera;
-    Ogre::Viewport  *mViewPort;
-    Ogre::SceneNode *mCameraNode;
-
     int mZoom;
     int mDispH;
     int mDispV;
+
+
+    Ogre::Camera    *mCamera;
+    Ogre::Viewport  *mViewPort;
+    Ogre::SceneNode *mCameraNode;
+    Ogre::SceneManager *mSceneMgr;
 };
 
 #endif // _RTSCAMERA_H
