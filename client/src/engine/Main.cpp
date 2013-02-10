@@ -21,6 +21,9 @@
 #include "MainApplication.h"
 
 
+#include <engine/FakeClient.h>
+#include <util/SingletonContainer.h>
+
 #include <SceneSequencer.h>
 #include <LoginStage/view/LoginView.h>
 #include <LobbyStage/view/LobbyView.h>
@@ -34,13 +37,18 @@ int main(int argc, char **argv)
     LobbyView  *mLobby  = new LobbyView();
     BattleView *mBattle = new BattleView();
     SceneSequencer *seq = new SceneSequencer();
+    FakeClient *fake = new FakeClient();
+
 
     try
     {
+        SingletonContainer::getInstancePtr()->addObject("client",fake);
+
+
         seq->addScene(mLogin);
         seq->addScene(mLobby);
         seq->addScene(mBattle);
-        seq->setSceneSequence("seq.xml");
+        seq->setSceneSequence("seq.dat");
 
         app.setSequencer(seq);
         app.startApplication();

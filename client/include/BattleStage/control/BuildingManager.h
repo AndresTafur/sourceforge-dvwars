@@ -5,7 +5,8 @@
 #include <GameObject.h>
 #include <CreationListener.h>
 
-#include <engine/Client.h>
+#include <engine/AbstractClient.h>
+#include <util/SingletonContainer.h>
 #include <util/Cripto.h>
 
 /**

@@ -5,7 +5,8 @@
 #include <boost/thread.hpp>
 
 #include <Squad.h>
-#include <engine/Client.h>
+#include <engine/AbstractClient.h>
+#include <util/SingletonContainer.h>
 #include <Action.h>
 #include <ActionFactory.h>
 #include <SquadManager.h>

@@ -8,24 +8,19 @@
 
 
 #include "Thread.h"
-#include "ClientListener.h"
+#include "AbstractClient.h"
+
 
 #define SOCKET int
 
 /**
  * Handles a OS specific client socket.
  */
-class Client : public DaVinciWars::Thread
+class Client : public DaVinciWars::Thread, public AbstractClient
 {
-private:
+public:
         /** Default constructor */
         Client();
-
-public:
-
-        static Client *getInstancePtr();
-
-        static Client &getInstance();
 
         void Connect(std::string address, unsigned int port);
 
@@ -36,9 +31,6 @@ public:
         inline void addListener(ClientListener *obj) {  m_attenders.push_back(obj); }
 
         void removeListener(ClientListener *obj);
-
-
-        static void destroy();
 
         /** Default destructor */
         virtual ~Client();
@@ -53,7 +45,6 @@ private:
   SOCKET m_sock;
   struct sockaddr_in m_address;
   bool m_running;
-  static Client*     sm_instance;
   std::vector<ClientListener*> m_attenders;
 };
 

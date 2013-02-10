@@ -54,15 +54,16 @@ public:
         void doRegister(MyGUI::Widget* btn);
 
 
-        /**
-         * Handles network data.
-         * @param data formatted network data.
-         */
+        void setMessage(std::string message);
 
-        void attend(std::vector<std::string> data);
+        void setErrorMessage(std::string error);
+
+
 
         bool frameEnded(const Ogre::FrameEvent& evt);
 
+
+        void unloadLayout();
 
 
         void destroy();

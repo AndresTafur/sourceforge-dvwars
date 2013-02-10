@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+
+<fakeClient>
+
+	<state name="connect" >
+		<response>connected</response>		
+	</state>
+
+	<state name="0">
+		<request  data="601|aa|aa" nextVal="1" >200|601|OK</request>
+	</state>
+
+	<state name="1">
+
+	</state>
+
+</fakeClient>

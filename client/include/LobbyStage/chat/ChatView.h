@@ -5,9 +5,11 @@
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
 
-#include <Client.h>
+
 #include <ChatControl.h>
-#include <ClientListener.h>
+
+#include <engine/AbstractClient.h>
+#include <util/SingletonContainer.h>
 
 #include <GUI.h>
 

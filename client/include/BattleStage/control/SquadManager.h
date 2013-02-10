@@ -9,8 +9,10 @@
 #include <MyGUI_OgrePlatform.h>
 
 
+#include <engine/AbstractClient.h>
+
 #include <util/Cripto.h>
-#include <engine/Client.h>
+#include <util/SingletonContainer.h>
 
 #include <Squad.h>
 #include <SquadBuilder.h>

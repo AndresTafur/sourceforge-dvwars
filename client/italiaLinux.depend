@@ -1,13 +1,15 @@
 # depslib dependency file v1.0
-1297277417 source:/things/otros/unal/ingesoft 2/track/src/Application.cpp
-	"Application.h"
+1358725592 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/ActionFactory.cpp
+	"ActionFactory.h"
 
-1297276674 /things/otros/unal/ingesoft 2/track/src/Application.h
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/ActionFactory.h
+	<map>
+	"Action.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/Action.h
+	<string>
+	<vector>
 	<Ogre.h>
-	<OgreConfigFile.h>
-	<OgreOde_Core.h>
-	"ApplicationFrameListener.h"
-	<CoreFoundation/CoreFoundation.h>
 
 1346563635 /usr/include/OGRE/Ogre.h
 	"OgrePrerequisites.h"
@@ -598,13 +600,6 @@
 1346563635 /usr/include/OGRE/OgreVertexBoneAssignment.h
 	"OgrePrerequisites.h"
 
-1304879284 /usr/include/OGRE/OgreProgressiveMesh.h
-	"OgrePrerequisites.h"
-	"OgreVector3.h"
-	"OgreHardwareVertexBuffer.h"
-	"OgreHardwareIndexBuffer.h"
-	"OgreRenderOperation.h"
-
 1346563635 /usr/include/OGRE/OgreSkeleton.h
 	"OgrePrerequisites.h"
 	"OgreResource.h"
@@ -754,6 +749,22 @@
 	"OgreSingleton.h"
 	"OgreException.h"
 	"OgreHighLevelGpuProgram.h"
+
+1346563635 /usr/include/OGRE/OgreInstanceBatch.h
+	"OgrePrerequisites.h"
+	"OgreRenderOperation.h"
+	"OgreRenderable.h"
+	"OgreMovableObject.h"
+	"OgreMesh.h"
+
+1346563635 /usr/include/OGRE/OgreInstancedEntity.h
+	"OgreMovableObject.h"
+	"OgreNode.h"
+
+1346563635 /usr/include/OGRE/OgreInstanceManager.h
+	"OgrePrerequisites.h"
+	"OgreMesh.h"
+	"OgreRenderOperation.h"
 
 1346563635 /usr/include/OGRE/OgreLight.h
 	"OgrePrerequisites.h"
@@ -1308,120 +1319,75 @@
 	"OgrePrerequisites.h"
 	"OgreShadowCameraSetupLiSPSM.h"
 
-1297476268 /usr/include/OgreOde_Core/OgreOde_Core.h
-	"OgreOdePreReqs.h"
-	"OgreOdeUtility.h"
-	"OgreOdeWorld.h"
-	"OgreOdeBody.h"
-	"OgreOdeMass.h"
-	"OgreOdeJoint.h"
-	"OgreOdeSpace.h"
-	"OgreOdeGeometry.h"
-	"OgreOdeCollision.h"
-	"OgreOdeStepper.h"
-	"OgreOdeEntityInformer.h"
-	"OgreOdeDebugObject.h"
+1360458331 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/BuildingManager.cpp
+	"BuildingManager.h"
 
-1297476268 /usr/include/OgreOde_Core/OgreOdePreReqs.h
-	"Ogre.h"
-	"ode/ode.h"
+1360454626 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/BuildingManager.h
+	<GameObject.h>
+	<CreationListener.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+	<util/Cripto.h>
 
-1297476268 /usr/include/OgreOde_Core/OgreOdeUtility.h
-	"OgreOdePreReqs.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeWorld.h
-	"OgreOdePreReqs.h"
-	"OgreOdeMaintainedList.h"
-	"OgreSingleton.h"
-	<map>
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeMaintainedList.h
-	"OgreOdePreReqs.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeBody.h
-	"OgreOdePreReqs.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeMass.h
-	"OgreOdePreReqs.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeJoint.h
-	"OgreOdePreReqs.h"
-	"OgreOdeMaintainedList.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeSpace.h
-	"OgreOdePreReqs.h"
-	"OgreOdeMaintainedList.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeGeometry.h
-	"OgreOdePreReqs.h"
-	"OgreOdeMaintainedList.h"
-	"OgreOdeTriangleMeshData.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeTriangleMeshData.h
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/GameObject.h
 	<Ogre.h>
-	"OgreOdePreReqs.h"
-	"OgreOdeMaintainedList.h"
 
-1297476268 /usr/include/OgreOde_Core/OgreOdeCollision.h
-	"OgreOdePreReqs.h"
+1358725745 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/CreationListener.h
+	<Squad.h>
+	<Building.h>
 
-1297476268 /usr/include/OgreOde_Core/OgreOdeStepper.h
-	"OgreOdePreReqs.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeEntityInformer.h
-	"OgreOdePreReqs.h"
-	"OgreOdeTriangleMeshData.h"
-
-1297476268 /usr/include/OgreOde_Core/OgreOdeDebugObject.h
-	"OgreOdePreReqs.h"
-
-1297276674 /things/otros/unal/ingesoft 2/track/src/ApplicationFrameListener.h
+1358725750 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Squad.h
 	<Ogre.h>
-	<OgreStringConverter.h>
-	<OgreException.h>
-	<OgreOde_Core.h>
-	<OgreOde_Loader.h>
-	<OgreOde_Prefab.h>
-	<OIS/OIS.h>
-	"Gui/GUI.h"
+	"Unit.h"
 
-1297476151 /usr/include/OgreOde_Loader/OgreOde_Loader.h
-	"OgreOde_LoaderPreReqs.h"
-	"OgreOdeDotLoader.h"
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Unit.h
+	<Ogre.h>
 
-1297476151 /usr/include/OgreOde_Loader/OgreOde_LoaderPreReqs.h
-	"Ogre.h"
-	"ode/ode.h"
-	"OgreOde_Core.h"
-	"OgreOde_Prefab.h"
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Building.h
+	<GameObject.h>
+	<DaVinciGlobals.h>
 
-1297476149 /usr/include/OgreOde_Prefab/OgreOde_Prefab.h
-	"OgreOde_PrefabPreReqs.h"
-	"OgreOdePrefabObject.h"
-	"OgreOdeVehicle.h"
-	"OgreOdeRagdoll.h"
+1359016064 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/DaVinciGlobals.h
 
-1297484046 /usr/include/OgreOde_Prefab/OgreOde_PrefabPreReqs.h
-	"OgreOde_Core.h"
+1360454461 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Client.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<netdb.h>
+	"Thread.h"
+	"AbstractClient.h"
 
-1297476149 /usr/include/OgreOde_Prefab/OgreOdePrefabObject.h
-	"OgreOde_Prefab.h"
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Thread.h
+	<boost/thread.hpp>
+	<stdio.h>
 
-1297476149 /usr/include/OgreOde_Prefab/OgreOdeVehicle.h
-	"OgreOde_Prefab.h"
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/ClientListener.h
+	<string>
 	<vector>
 
-1297476149 /usr/include/OgreOde_Prefab/OgreOdeRagdoll.h
-	"OgreOde_Prefab.h"
-	<map>
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Cripto.h
+	<string>
+	<gcrypt.h>
 
-1297476151 /usr/include/OgreOde_Loader/OgreOdeDotLoader.h
-	"OgreOde_Loader.h"
+1360458362 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/CreateAction.cpp
+	"CreateAction.h"
 
-1297484800 /things/otros/unal/ingesoft 2/track/src/Gui/GUI.h
-	<MyGUI.h>
-	<OIS/OIS.h>
+1358725796 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/CreateAction.h
+	"Action.h"
+	"SquadManager.h"
+
+1360454830 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SquadManager.h
 	<Ogre.h>
+	<OIS/OIS.h>
+	<map>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<engine/AbstractClient.h>
+	<util/Cripto.h>
+	<util/SingletonContainer.h>
+	<Squad.h>
+	<SquadBuilder.h>
+	<SelectionManager.h>
 
 1329946060 /usr/include/MYGUI/MyGUI.h
 	"MyGUI_Gui.h"
@@ -1500,6 +1466,8 @@
 
 1329946064 /usr/include/MYGUI/MyGUI_Platform.h
 
+1329946060 /usr/include/MYGUI/MyGUI_DeprecatedTypes.h
+
 1329946060 /usr/include/MYGUI/MyGUI_Types.h
 	"MyGUI_Prerequest.h"
 	<vector>
@@ -1510,11 +1478,6 @@
 	"MyGUI_TSize.h"
 	"MyGUI_TRect.h"
 	"MyGUI_TCoord.h"
-
-1265851446 /usr/include/MYGUI/MyGUI_Utility.h
-	"MyGUI_Prerequest.h"
-	<vector>
-	<sstream>
 
 1329946062 /usr/include/MYGUI/MyGUI_Align.h
 	"MyGUI_Prerequest.h"
@@ -1552,6 +1515,28 @@
 	<string.h>
 	<sstream>
 
+1329946062 /usr/include/MYGUI/MyGUI_LogSource.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_ILogFilter.h"
+	"MyGUI_ILogListener.h"
+	<vector>
+
+1329946064 /usr/include/MYGUI/MyGUI_ILogFilter.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_LogLevel.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_LogLevel.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_ILogListener.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_LogLevel.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_StringUtility.h
+	"MyGUI_Prerequest.h"
+	<vector>
+	<sstream>
+
 1329946064 /usr/include/MYGUI/MyGUI_TPoint.h
 	"MyGUI_Prerequest.h"
 
@@ -1566,7 +1551,8 @@
 	"MyGUI_TPoint.h"
 	"MyGUI_TSize.h"
 
-1265697580 /usr/include/MYGUI/MyGUI_Instance.h
+1329946062 /usr/include/MYGUI/MyGUI_Singleton.h
+	"MyGUI_Diagnostic.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_XmlDocument.h
 	"MyGUI_Prerequest.h"
@@ -1594,15 +1580,6 @@
 1329946062 /usr/include/MYGUI/MyGUI_IDataStream.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-
-1265851446 /usr/include/MYGUI/MyGUI_IWidgetCreator.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Types.h"
-	"MyGUI_WidgetStyle.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_WidgetStyle.h
-	"MyGUI_Prerequest.h"
-	<string.h>
 
 1329946064 /usr/include/MYGUI/MyGUI_IUnlinkWidget.h
 	"MyGUI_Prerequest.h"
@@ -1639,10 +1616,63 @@
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1329946062 /usr/include/MYGUI/MyGUI_ISubWidgetRect.h
+1329946062 /usr/include/MYGUI/MyGUI_WidgetUserData.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Any.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_WidgetInput.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Macros.h"
+	"MyGUI_WidgetDefines.h"
+	"MyGUI_WidgetToolTip.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
+	"MyGUI_MaskPickInfo.h"
+	"MyGUI_Delegate.h"
+	"MyGUI_EventPair.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_WidgetToolTip.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Types.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_MouseButton.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_KeyCode.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_MaskPickInfo.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Types.h"
+
+1329946064 /usr/include/MYGUI/MyGUI_Delegate.h
+	"MyGUI_Diagnostic.h"
+	<list>
+	<typeinfo>
+	"MyGUI_DelegateImplement.h"
+	"MyGUI_DelegateImplement.h"
+	"MyGUI_DelegateImplement.h"
+	"MyGUI_DelegateImplement.h"
+	"MyGUI_DelegateImplement.h"
+	"MyGUI_DelegateImplement.h"
+	"MyGUI_DelegateImplement.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_DelegateImplement.h
+
+1329946064 /usr/include/MYGUI/MyGUI_EventPair.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_ResourceSkin.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_SubWidgetBinding.h"
+	"MyGUI_ChildSkinInfo.h"
+	"MyGUI_MaskPickInfo.h"
+	"MyGUI_IResource.h"
+	"MyGUI_SubWidgetInfo.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_SubWidgetBinding.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISubWidget.h"
-	"MyGUI_Colour.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_ISubWidget.h
 	"MyGUI_Prerequest.h"
@@ -1692,14 +1722,75 @@
 	"MyGUI_Types.h"
 	"MyGUI_StringUtility.h"
 
-1329946062 /usr/include/MYGUI/MyGUI_Colour.h
+1329946062 /usr/include/MYGUI/MyGUI_ChildSkinInfo.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Types.h"
+	"MyGUI_WidgetStyle.h"
 
-1329946062 /usr/include/MYGUI/MyGUI_ISubWidgetText.h
+1329946064 /usr/include/MYGUI/MyGUI_WidgetStyle.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_ISubWidget.h"
-	"MyGUI_Colour.h"
+	<string.h>
+
+1329946062 /usr/include/MYGUI/MyGUI_IResource.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_XmlDocument.h"
+	"MyGUI_Version.h"
+	"MyGUI_ISerializable.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_SubWidgetInfo.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_ResourceLayout.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_IResource.h"
+	"MyGUI_LayoutData.h"
+
+1329946064 /usr/include/MYGUI/MyGUI_LayoutData.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Common.h"
+
+1329946060 /usr/include/MYGUI/MyGUI_Common.h
+	"MyGUI_Prerequest.h"
+	<string>
+	<list>
+	<set>
+	<map>
+	<vector>
+	<deque>
+	<exception>
+	<math.h>
+	"MyGUI_CustomAllocator.h"
+	"MyGUI_Allocator.h"
+	"MyGUI_Macros.h"
+	"MyGUI_Diagnostic.h"
+	"MyGUI_LogManager.h"
+	"MyGUI_Singleton.h"
+	"MyGUI_Types.h"
+	"MyGUI_StringUtility.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
+	"MyGUI_Version.h"
+	"MyGUI_WidgetStyle.h"
+	"MyGUI_UString.h"
+	"MyGUI_Delegate.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_CustomAllocator.h
+	<memory>
+	<limits>
+	<OgrePrerequisites.h>
+	<OgreMemoryManager.h>
+	<OgreNoMemoryMacros.h>
+	<OgreMemoryMacros.h>
+
+1329946062 /usr/include/MYGUI/MyGUI_Allocator.h
+	<memory>
+	<limits>
+
+1329946062 /usr/include/MYGUI/MyGUI_SkinItem.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_LayerItem.h"
+	"MyGUI_ISubWidgetRect.h"
+	"MyGUI_ISubWidgetText.h"
+	"MyGUI_ResourceSkin.h"
 
 1329946060 /usr/include/MYGUI/MyGUI_LayerItem.h
 	"MyGUI_Prerequest.h"
@@ -1728,34 +1819,22 @@
 	"MyGUI_Delegate.h"
 	"MyGUI_BackwardCompatibility.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Guid.h
+1329946062 /usr/include/MYGUI/MyGUI_BackwardCompatibility.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Colour.h"
+	"MyGUI_ResourceSkin.h"
+	"MyGUI_Any.h"
+	"MyGUI_MouseButton.h"
+	"MyGUI_KeyCode.h"
+	"MyGUI_Macros.h"
+	"MyGUI_WidgetDefines.h"
+	"MyGUI_IResource.h"
+	<map>
+	<set>
+
+1329946062 /usr/include/MYGUI/MyGUI_Colour.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-	<memory.h>
-
-1329946062 /usr/include/MYGUI/MyGUI_IResource.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_XmlDocument.h"
-	"MyGUI_Version.h"
-	"MyGUI_ISerializable.h"
-
-1265697546 /usr/include/MYGUI/MyGUI_ResourceHolder.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Enumerator.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_Delegate.h
-	"MyGUI_Diagnostic.h"
-	<list>
-	<typeinfo>
-	"MyGUI_DelegateImplement.h"
-	"MyGUI_DelegateImplement.h"
-	"MyGUI_DelegateImplement.h"
-	"MyGUI_DelegateImplement.h"
-	"MyGUI_DelegateImplement.h"
-	"MyGUI_DelegateImplement.h"
-	"MyGUI_DelegateImplement.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_DelegateImplement.h
 
 1329946062 /usr/include/MYGUI/MyGUI_ILayer.h
 	"MyGUI_Prerequest.h"
@@ -1767,52 +1846,21 @@
 1329946064 /usr/include/MYGUI/MyGUI_ILayerItem.h
 	"MyGUI_Prerequest.h"
 
-1329946062 /usr/include/MYGUI/MyGUI_WidgetUserData.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Any.h"
-
-1265851446 /usr/include/MYGUI/MyGUI_WidgetEvent.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Macros.h"
-	"MyGUI_WidgetDefines.h"
-	"MyGUI_WidgetToolTip.h"
-	"MyGUI_InputDefine.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_WidgetToolTip.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Types.h"
-
-1265851446 /usr/include/MYGUI/MyGUI_InputDefine.h
-	"MyGUI_Prerequest.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_ResourceSkin.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_SubWidgetBinding.h"
-	"MyGUI_ChildSkinInfo.h"
-	"MyGUI_MaskPickInfo.h"
-	"MyGUI_IResource.h"
-	"MyGUI_SubWidgetInfo.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_SubWidgetBinding.h
+1329946062 /usr/include/MYGUI/MyGUI_ISubWidgetRect.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_ISubWidget.h"
+	"MyGUI_Colour.h"
 
-1329946062 /usr/include/MYGUI/MyGUI_ChildSkinInfo.h
+1329946062 /usr/include/MYGUI/MyGUI_ISubWidgetText.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_WidgetStyle.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_MaskPickInfo.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Types.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_SubWidgetInfo.h
-	"MyGUI_Prerequest.h"
+	"MyGUI_ISubWidget.h"
+	"MyGUI_Colour.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_Button.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_TextBox.h"
 
-1265697562 /usr/include/MYGUI/MyGUI_StaticText.h
+1329946062 /usr/include/MYGUI/MyGUI_TextBox.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 
@@ -1827,9 +1875,9 @@
 	"MyGUI_IItem.h"
 	"MyGUI_IItemContainer.h"
 
-1265697608 /usr/include/MYGUI/MyGUI_Edit.h
+1329946062 /usr/include/MYGUI/MyGUI_EditBox.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_StaticText.h"
+	"MyGUI_TextBox.h"
 	"MyGUI_TextChangeHistory.h"
 	"MyGUI_TextIterator.h"
 	"MyGUI_EventPair.h"
@@ -1856,18 +1904,29 @@
 1329946062 /usr/include/MYGUI/MyGUI_FontData.h
 	"MyGUI_Prerequest.h"
 
-1329946064 /usr/include/MYGUI/MyGUI_EventPair.h
-	"MyGUI_Prerequest.h"
-
 1329946062 /usr/include/MYGUI/MyGUI_ScrollViewBase.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1265697438 /usr/include/MYGUI/MyGUI_List.h
+1329946062 /usr/include/MYGUI/MyGUI_ListBox.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
+	"MyGUI_Button.h"
 	"MyGUI_Any.h"
 	"MyGUI_EventPair.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
+
+1329946060 /usr/include/MYGUI/MyGUI_IItem.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_IItemContainer.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Constants.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_Constants.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_UString.h"
+	"MyGUI_Types.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_ControllerFadeAlpha.h
 	"MyGUI_Prerequest.h"
@@ -1880,21 +1939,15 @@
 	"MyGUI_IObject.h"
 	"MyGUI_Delegate.h"
 
-1265697342 /usr/include/MYGUI/MyGUI_HScroll.h
+1329946064 /usr/include/MYGUI/MyGUI_FlowDirection.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_VScroll.h"
+	<string>
 
-1265697374 /usr/include/MYGUI/MyGUI_VScroll.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-	"MyGUI_EventPair.h"
-
-1265697388 /usr/include/MYGUI/MyGUI_StaticImage.h
+1329946062 /usr/include/MYGUI/MyGUI_ImageBox.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 	"MyGUI_ResourceImageSet.h"
 	"MyGUI_ImageInfo.h"
-	"MyGUI_Guid.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_ResourceImageSet.h
 	"MyGUI_Prerequest.h"
@@ -1915,12 +1968,17 @@
 	"MyGUI_Types.h"
 	"MyGUI_Delegate.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_Tab.h
+1329946064 /usr/include/MYGUI/MyGUI_ResourceImageSetData.h
+	"MyGUI_Prerequest.h"
+
+1329946062 /usr/include/MYGUI/MyGUI_TabControl.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
 	"MyGUI_Any.h"
 	"MyGUI_EventPair.h"
 	"MyGUI_ControllerFadeAlpha.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
 
 1329946060 /usr/include/MYGUI/MyGUI_TabItem.h
 	"MyGUI_Prerequest.h"
@@ -1933,21 +1991,11 @@
 	"MyGUI_EventPair.h"
 	"MyGUI_ControllerFadeAlpha.h"
 
-1265697712 /usr/include/MYGUI/MyGUI_Progress.h
+1329946062 /usr/include/MYGUI/MyGUI_ProgressBar.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Align.h"
+	"MyGUI_FlowDirection.h"
 	"MyGUI_Widget.h"
-
-1265697752 /usr/include/MYGUI/MyGUI_Message.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Window.h"
-	"MyGUI_ResourceImageSet.h"
-	"MyGUI_EventPair.h"
-	"MyGUI_MessageStyle.h"
-	"MyGUI_ControllerFadeAlpha.h"
-
-1265851446 /usr/include/MYGUI/MyGUI_MessageStyle.h
-	"MyGUI_Prerequest.h"
 
 1329946064 /usr/include/MYGUI/MyGUI_ItemBox.h
 	"MyGUI_Prerequest.h"
@@ -1969,18 +2017,24 @@
 1329946062 /usr/include/MYGUI/MyGUI_IBItemInfo.h
 	"MyGUI_Prerequest.h"
 
-1265697662 /usr/include/MYGUI/MyGUI_MultiList.h
+1329946062 /usr/include/MYGUI/MyGUI_MultiListBox.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Widget.h"
-	"MyGUI_List.h"
+	"MyGUI_ListBox.h"
 	"MyGUI_Any.h"
 	"MyGUI_BiIndexBase.h"
 	"MyGUI_EventPair.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
+	"MyGUI_ResizingPolicy.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_BiIndexBase.h
 	"MyGUI_Prerequest.h"
 
-1265851446 /usr/include/MYGUI/MyGUI_MenuCtrl.h
+1329946064 /usr/include/MYGUI/MyGUI_ResizingPolicy.h
+	"MyGUI_Prerequest.h"
+
+1329946064 /usr/include/MYGUI/MyGUI_MenuControl.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 	"MyGUI_MenuItemType.h"
@@ -1989,6 +2043,8 @@
 	"MyGUI_EventPair.h"
 	"MyGUI_MenuItemType.h"
 	"MyGUI_ControllerFadeAlpha.h"
+	"MyGUI_IItem.h"
+	"MyGUI_IItemContainer.h"
 
 1329946064 /usr/include/MYGUI/MyGUI_MenuItemType.h
 	"MyGUI_Prerequest.h"
@@ -2006,6 +2062,10 @@
 1329946062 /usr/include/MYGUI/MyGUI_MenuBar.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_MenuControl.h"
+
+1329946064 /usr/include/MYGUI/MyGUI_ScrollBar.h
+	"MyGUI_Prerequest.h"
+	"MyGUI_Widget.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_ScrollView.h
 	"MyGUI_Prerequest.h"
@@ -2026,21 +2086,16 @@
 1329946062 /usr/include/MYGUI/MyGUI_RenderFormat.h
 	"MyGUI_Macros.h"
 
-1265697572 /usr/include/MYGUI/MyGUI_ListCtrl.h
+1329946062 /usr/include/MYGUI/MyGUI_MultiListItem.h
 	"MyGUI_Prerequest.h"
-	"MyGUI_DDContainer.h"
-	"MyGUI_IBItemInfo.h"
-	"MyGUI_Any.h"
-	"MyGUI_EventPair.h"
-	"MyGUI_ScrollViewBase.h"
+	"MyGUI_TextBox.h"
+	"MyGUI_TabControl.h"
+	"MyGUI_ResizingPolicy.h"
 
-1329946062 /usr/include/MYGUI/MyGUI_ListBox.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Button.h"
-	"MyGUI_Any.h"
+1329946062 /usr/include/MYGUI/MyGUI_DeprecatedWidgets.h
+	"MyGUI_DeprecatedTypes.h"
+	"MyGUI_ScrollBar.h"
 	"MyGUI_EventPair.h"
-	"MyGUI_IItem.h"
-	"MyGUI_IItemContainer.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_InputManager.h
 	"MyGUI_Prerequest.h"
@@ -2131,16 +2186,16 @@
 	"MyGUI_Prerequest.h"
 	<string>
 
+1329946062 /usr/include/MYGUI/MyGUI_DynLib.h
+	"MyGUI_Prerequest.h"
+	<string>
+	<CoreFoundation/CFBundle.h>
+
 1329946062 /usr/include/MYGUI/MyGUI_DynLibManager.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Singleton.h"
 	"MyGUI_DynLib.h"
 	<map>
-
-1329946062 /usr/include/MYGUI/MyGUI_DynLib.h
-	"MyGUI_Prerequest.h"
-	<string>
-	<CoreFoundation/CFBundle.h>
 
 1329946062 /usr/include/MYGUI/MyGUI_ControllerManager.h
 	"MyGUI_Prerequest.h"
@@ -2208,30 +2263,11 @@
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
 
-1265697568 /usr/include/MYGUI/MyGUI_CastWidget.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-
-1265697522 /usr/include/MYGUI/MyGUI_RenderOut.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Utility.h"
-
-1265697792 /usr/include/MYGUI/MyGUI_RawRect.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Colour.h"
-	"MyGUI_XmlDocument.h"
-	"MyGUI_Types.h"
-	"MyGUI_ICroppedRectangle.h"
-	"MyGUI_SubSkin.h"
-	"MyGUI_RenderFormat.h"
-
-1265851446 /usr/include/MYGUI/MyGUI_SubSkin.h
+1329946062 /usr/include/MYGUI/MyGUI_PolygonalSkin.h
 	"MyGUI_Prerequest.h"
 	"MyGUI_Types.h"
-	"MyGUI_XmlDocument.h"
 	"MyGUI_ISubWidgetRect.h"
-	"MyGUI_ResourceSkin.h"
-	"MyGUI_IStateInfo.h"
+	"MyGUI_RenderFormat.h"
 
 1329946062 /usr/include/MYGUI/MyGUI_RotatingSkin.h
 	"MyGUI_Prerequest.h"
@@ -2244,223 +2280,8 @@
 	"MyGUI_Colour.h"
 	"MyGUI_RenderFormat.h"
 
-1297482188 source:/things/otros/unal/ingesoft 2/track/src/ApplicationFrameListener.cpp
-	"ApplicationFrameListener.h"
-
-1297276674 /things/otros/unal/ingesoft 2/track/include/Application.h
-	<Ogre.h>
-	<OgreConfigFile.h>
-	<OgreOde_Core.h>
-	"ApplicationFrameListener.h"
-	<CoreFoundation/CoreFoundation.h>
-
-1297559918 /things/otros/unal/ingesoft 2/track/include/ApplicationFrameListener.h
-	<Ogre.h>
-	<OgreStringConverter.h>
-	<OgreException.h>
-	<OgreOde_Core.h>
-	<OgreOde_Loader.h>
-	<OgreOde_Prefab.h>
-	<OIS/OIS.h>
-	"Gui/GUI.h"
-
-1297276674 source:/things/otros/unal/ingesoft 2/track/src/GameStaticPhysicObject.cpp
-	"GameStaticPhysicObject.h"
-
-1297276674 /things/otros/unal/ingesoft 2/track/include/GameStaticPhysicObject.h
-	"GameObject.h"
-	<OgreOde_Core.h>
-
-1297276674 /things/otros/unal/ingesoft 2/track/include/GameObject.h
-	<Ogre.h>
-
-1297484731 source:/things/otros/unal/ingesoft 2/track/src/GameObject.cpp
-	"GameObject.h"
-
-1297484812 source:/things/otros/unal/ingesoft 2/track/src/Gui/GUI.cpp
-	"GUI.h"
-
-1297562517 source:/things/otros/unal/ingesoft 2/track/src/Main.cpp
-	"Main.h"
-
-1297560359 /things/otros/unal/ingesoft 2/track/include/Main.h
-	<OgreOde_Prefab.h>
-	<MyGUI.h>
-	<Application.h>
-	<GameObject.h>
-	<GameStaticPhysicObject.h>
-	<MainListener.h>
-	"Gui/GUI.h"
-
-1297562915 /things/otros/unal/ingesoft 2/track/include/MainListener.h
-	<list>
-	<OgreOde_Prefab.h>
-	"ApplicationFrameListener.h"
-	"RTSCameraManager.h"
-	"player/PlayerTruck.h"
-	"Truck.h"
-
-1297484853 /things/otros/unal/ingesoft 2/track/src/player/PlayerTruck.h
-	<time.h>
-	"Truck.h"
-	"GameObject.h"
-	"GameStaticPhysicObject.h"
-
-1297484872 /things/otros/unal/ingesoft 2/track/include/Truck.h
-	<Ogre.h>
-	<OgreConfigFile.h>
-	<OgreOde_Core.h>
-	<OgreOde_Loader.h>
-	<OIS/OIS.h>
-	"GameStaticPhysicObject.h"
-
-1297562883 source:/things/otros/unal/ingesoft 2/track/src/MainListener.cpp
-	"MainListener.h"
-
-1297276674 source:/things/otros/unal/ingesoft 2/track/src/Truck.cpp
-	"Truck.h"
-
-1297485802 source:/things/otros/unal/ingesoft 2/track/src/control/RTSCameraManager.cpp
-	"RTSCameraManager.h"
-
-1297485791 /things/otros/unal/ingesoft 2/track/include/control/RTSCameraManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-
-1297562438 source:/things/otros/unal/ingesoft 2/track/src/player/PlayerTruck.cpp
-	"PlayerTruck.h"
-	<stdlib.h>
-
-1297485828 source:/things/otros/unal/ingesoft 2/track/src/track.cpp
-	"Main.h"
-
-1297571462 source:/things/otros/unal/ingesoft 2/italia/src/Application.cpp
-	"Application.h"
-
-1297276674 /things/otros/unal/ingesoft 2/italia/include/Application.h
-	<Ogre.h>
-	<OgreConfigFile.h>
-	<OgreOde_Core.h>
-	"ApplicationFrameListener.h"
-	<CoreFoundation/CoreFoundation.h>
-
-1297564952 /things/otros/unal/ingesoft 2/italia/include/ApplicationFrameListener.h
-	<Ogre.h>
-	<OgreStringConverter.h>
-	<OgreException.h>
-	<OgreOde_Core.h>
-	<OgreOde_Loader.h>
-	<OgreOde_Prefab.h>
-	<OIS/OIS.h>
-	"gui/GUI.h"
-
-1297484800 /things/otros/unal/ingesoft 2/italia/src/Gui/GUI.h
-	<MyGUI.h>
-	<OIS/OIS.h>
-	<Ogre.h>
-
-1297622938 source:/things/otros/unal/ingesoft 2/italia/src/ApplicationFrameListener.cpp
-	"ApplicationFrameListener.h"
-	"MouseNotifier.h"
-
-1297484731 source:/things/otros/unal/ingesoft 2/italia/src/GameObject.cpp
-	"GameObject.h"
-
-1297276674 /things/otros/unal/ingesoft 2/italia/include/GameObject.h
-	<Ogre.h>
-
-1297276674 source:/things/otros/unal/ingesoft 2/italia/src/GameStaticPhysicObject.cpp
-	"GameStaticPhysicObject.h"
-
-1297276674 /things/otros/unal/ingesoft 2/italia/include/GameStaticPhysicObject.h
-	"GameObject.h"
-	<OgreOde_Core.h>
-
-1297484812 source:/things/otros/unal/ingesoft 2/italia/src/Gui/GUI.cpp
-	"GUI.h"
-
-1297625799 source:/things/otros/unal/ingesoft 2/italia/src/Main.cpp
-	"Main.h"
-
-1297625827 /things/otros/unal/ingesoft 2/italia/include/Main.h
-	<OgreOde_Prefab.h>
-	<MyGUI.h>
-	<Application.h>
-	<entity/GameObject.h>
-	<entity/PhysicObject.h>
-	<MainListener.h>
-	<gui/GUI.h>
-	<control/UnitManager.h>
-
-1297573097 /things/otros/unal/ingesoft 2/italia/include/MainListener.h
-	<list>
-	<OgreOde_Prefab.h>
-	"ApplicationFrameListener.h"
-	<control/RTSCameraManager.h>
-	<entity/PhysicObject.h>
-
-1307104064 /things/otros/unal/ingesoft 2/italia/include/control/RTSCameraManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1297484853 /things/otros/unal/ingesoft 2/italia/src/player/PlayerTruck.h
-	<time.h>
-	"Truck.h"
-	"GameObject.h"
-	"GameStaticPhysicObject.h"
-
-1297484872 /things/otros/unal/ingesoft 2/italia/include/Truck.h
-	<Ogre.h>
-	<OgreConfigFile.h>
-	<OgreOde_Core.h>
-	<OgreOde_Loader.h>
-	<OIS/OIS.h>
-	"GameStaticPhysicObject.h"
-
-1297276674 source:/things/otros/unal/ingesoft 2/italia/src/Truck.cpp
-	"Truck.h"
-
-1307104053 source:/things/otros/unal/ingesoft 2/italia/src/control/RTSCameraManager.cpp
-	"RTSCameraManager.h"
-	<InputSystem.h>
-
-1297562438 source:/things/otros/unal/ingesoft 2/italia/src/player/PlayerTruck.cpp
-	"PlayerTruck.h"
-	<stdlib.h>
-
-1297485828 source:/things/otros/unal/ingesoft 2/italia/src/track.cpp
-	"Main.h"
-
-1297624635 source:/things/otros/unal/ingesoft 2/italia/src/MainListener.cpp
-	"MainListener.h"
-
-1297485828 source:/things/otros/unal/ingesoft 2/italia/src/App.cpp
-	"Main.h"
-
-1299380944 /things/otros/unal/ingesoft 2/italia/include/gui/GUI.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<InputSystem.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<engine/RenderBox.h>
-
-1303261838 /things/otros/unal/ingesoft 2/italia/include/entity/GameObject.h
-	<Ogre.h>
-
-1297564681 /things/otros/unal/ingesoft 2/italia/include/entity/PhysicObject.h
-	"GameObject.h"
-	<OgreOde_Core.h>
-
-1303269688 source:/things/otros/unal/ingesoft 2/italia/src/entity/GameObject.cpp
-	<GameObject.h>
-
-1297565201 source:/things/otros/unal/ingesoft 2/italia/src/entity/PhysicObject.cpp
-	<entity/PhysicObject.h>
-
-1299379382 source:/things/otros/unal/ingesoft 2/italia/src/gui/GUI.cpp
-	<gui/GUI.h>
+1329946062 /usr/include/MYGUI/MyGUI_Bitwise.h
+	"MyGUI_Prerequest.h"
 
 1329946120 /usr/include/MYGUI/MyGUI_OgrePlatform.h
 	"MyGUI_Prerequest.h"
@@ -2511,300 +2332,30 @@
 1329946120 /usr/include/MYGUI/MyGUI_OgreDiagnostic.h
 	"MyGUI_Prerequest.h"
 
-1297615392 source:/things/otros/unal/ingesoft 2/italia/src/MouseNotifier.cpp
-	"MouseNotifier.h"
+1358725808 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SquadBuilder.h
+	<Ogre.h>
+	<Squad.h>
 
-1297615137 /things/otros/unal/ingesoft 2/italia/include/MouseNotifier.h
-	<list>
+1358725813 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SelectionManager.h
 	<Ogre.h>
 	<OIS/OIS.h>
-
-1298336526 source:/things/otros/unal/ingesoft 2/italia/src/control/UnitManager.cpp
-	"UnitManager.h"
-
-1298336487 /things/otros/unal/ingesoft 2/italia/include/control/UnitManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<vector>
 	<InputSystem.h>
+	<SelectionListener.h>
 
-1297615137 /things/otros/unal/ingesoft 2/italia/include/engine/MouseNotifier.h
-	<list>
-	<Ogre.h>
-	<OIS/OIS.h>
-
-1298899422 source:/things/otros/unal/ingesoft 2/italia/src/engine/App.cpp
-
-1299392119 /things/otros/unal/ingesoft 2/italia/include/engine/Main.h
-	<Ogre.h>
-	<view/LoginView.h>
-
-1298344962 /things/otros/unal/ingesoft 2/italia/include/engine/Application.h
-	<Ogre.h>
-	<OgreConfigFile.h>
-	<CoreFoundation/CoreFoundation.h>
-
-1298331452 /things/otros/unal/ingesoft 2/italia/include/engine/ApplicationFrameListener.h
-	<Ogre.h>
-	<OgreStringConverter.h>
-	<OgreException.h>
-	<OgreOde_Core.h>
-	<OgreOde_Loader.h>
-	<OgreOde_Prefab.h>
-	<OIS/OIS.h>
-	"gui/GUI.h"
-
-1299358446 /things/otros/unal/ingesoft 2/italia/include/engine/GameObject.h
-	<Ogre.h>
-
-1297564681 /things/otros/unal/ingesoft 2/italia/include/engine/PhysicObject.h
-	"GameObject.h"
-	<OgreOde_Core.h>
-
-1298336899 /things/otros/unal/ingesoft 2/italia/include/engine/MainListener.h
-	<list>
-	<Ogre.h>
-	<engine/RTSCameraManager.h>
-
-1299354771 /things/otros/unal/ingesoft 2/italia/include/engine/RTSCameraManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1298339339 source:/things/otros/unal/ingesoft 2/italia/src/engine/Application.cpp
-	"Application.h"
-
-1298332015 source:/things/otros/unal/ingesoft 2/italia/src/engine/ApplicationFrameListener.cpp
-	"ApplicationFrameListener.h"
-	"MouseNotifier.h"
-
-1297630525 source:/things/otros/unal/ingesoft 2/italia/src/engine/GameObject.cpp
-	<GameObject.h>
-
-1309816915 source:/things/otros/unal/ingesoft 2/italia/src/engine/Main.cpp
-	"Main.h"
-
-1298337004 source:/things/otros/unal/ingesoft 2/italia/src/engine/MainListener.cpp
-	"MainListener.h"
-
-1297615392 source:/things/otros/unal/ingesoft 2/italia/src/engine/MouseNotifier.cpp
-	"MouseNotifier.h"
-
-1297627618 source:/things/otros/unal/ingesoft 2/italia/src/engine/PhysicObject.cpp
-	<PhysicObject.h>
-
-1299208226 source:/things/otros/unal/ingesoft 2/italia/src/engine/RTSCameraManager.cpp
-	"RTSCameraManager.h"
-	<InputSystem.h>
-
-1306761216 source:/things/otros/unal/ingesoft 2/italia/src/control/SquadBuilder.cpp
-	"SquadBuilder.h"
-
-1306761025 /things/otros/unal/ingesoft 2/italia/include/control/SquadBuilder.h
-	<Ogre.h>
-	<entity/Squad.h>
-
-1306680724 /things/otros/unal/ingesoft 2/italia/include/entity/Squad.h
-	<Ogre.h>
-	"entity/Unit.h"
-
-1306682904 source:/things/otros/unal/ingesoft 2/italia/src/entity/Squad.cpp
-	<entity/Squad.h>
-	<entity/Game.h>
-
-1299448195 source:/things/otros/unal/ingesoft 2/italia/src/control/InputSystem.cpp
-	"InputSystem.h"
-
-1299448203 /things/otros/unal/ingesoft 2/italia/include/control/InputSystem.h
+1359509885 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/InputSystem.h
 	<list>
 	<Ogre.h>
 	<OIS/OIS.h>
 	<KeyboardListener.h>
 
-1299392119 /things/otros/unal/ingesoft 2/italia/include/engine/KeyboardListener.h
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/KeyboardListener.h
 	<Ogre.h>
 	<OIS/OIS.h>
 
-1307108778 source:/things/otros/unal/ingesoft 2/italia/src/control/SquadManager.cpp
-	"SquadManager.h"
-	<entity/Game.h>
-
-1306019778 /things/otros/unal/ingesoft 2/italia/include/control/SquadManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<map>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<entity/Squad.h>
-	<control/SquadBuilder.h>
-	<control/SelectionManager.h>
-
-1306761377 source:/things/otros/unal/ingesoft 2/italia/src/entity/Unit.cpp
-	"entity/Unit.h"
-
-1306682822 /things/otros/unal/ingesoft 2/italia/include/entity/Unit.h
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SelectionListener.h
 	<Ogre.h>
 
-1312076815 source:/things/otros/unal/ingesoft 2/italia/src/control/WorkShopManager.cpp
-	"WorkShopManager.h"
-
-1312076798 /things/otros/unal/ingesoft 2/italia/include/control/WorkShopManager.h
-	<Ogre.h>
-	<queue>
-	<entity/Game.h>
-	<entity/Building.h>
-	<entity/WorkShop.h>
-	<control/SelectionManager.h>
-	<control/CreationListener.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<engine/SelectionListener.h>
-
-1307107538 source:/things/otros/unal/ingesoft 2/italia/src/control/SelectionManager.cpp
-	"SelectionManager.h"
-
-1303696680 /things/otros/unal/ingesoft 2/italia/include/control/SelectionManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<control/InputSystem.h>
-	<engine/SelectionListener.h>
-
-1299392119 /things/otros/unal/ingesoft 2/italia/include/engine/SelectionListener.h
-	<Ogre.h>
-
-1299392119 /things/otros/unal/ingesoft 2/italia/include/engine/RenderBox.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-
-1299382418 /things/otros/unal/ingesoft 2/italia/include/entity/LoginScene.h
-	<Ogre.h>
-
-1299382690 source:/things/otros/unal/ingesoft 2/italia/src/entity/LoginScene.cpp
-	"LoginScene.h"
-
-1303577300 source:/things/otros/unal/ingesoft 2/italia/src/entity/MainScene.cpp
-	"MainScene.h"
-
-1303696591 /things/otros/unal/ingesoft 2/italia/include/entity/MainScene.h
-	<MyGUI.h>
-	<view/GUI.h>
-	<control/SelectionManager.h>
-	<control/RTSCameraManager.h>
-
-1306035345 source:/things/otros/unal/ingesoft 2/italia/src/view/WorkShopView.cpp
-	"WorkShopView.h"
-	"util/ConfigReader.h"
-
-1306033978 /things/otros/unal/ingesoft 2/italia/include/view/WorkShopView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<entity/Game.h>
-	<entity/Indicator.h>
-	<view/BuildingView.h>
-	<control/SquadManager.h>
-	<control/WorkShopManager.h>
-	<control/CreationListener.h>
-
-1312076627 source:/things/otros/unal/ingesoft 2/italia/src/control/LoginSceneManager.cpp
-	"LoginSceneManager.h"
-
-1312076621 /things/otros/unal/ingesoft 2/italia/include/control/LoginSceneManager.h
-	<Ogre.h>
-	<entity/Game.h>
-	<engine/Client.h>
-	<engine/ClientListener.h>
-
-1309827312 /things/otros/unal/ingesoft 2/italia/include/view/LoginView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<view/GUI.h>
-	<view/MainView.h>
-	<view/ChallengeView.h>
-	<util/Cripto.h>
-	<entity/Game.h>
-	<control/LoginSceneManager.h>
-
-1299392967 /things/otros/unal/ingesoft 2/italia/include/view/GUI.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<InputSystem.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<engine/RenderBox.h>
-
-1311990267 source:/things/otros/unal/ingesoft 2/italia/src/view/LoginView.cpp
-	"LoginView.h"
-
-1309816904 source:/things/otros/unal/ingesoft 2/italia/src/view/GUI.cpp
-	<view/GUI.h>
-
-1307103671 /things/otros/unal/ingesoft 2/italia/include/view/MainView.h
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<view/GUI.h>
-	<view/WorkShopView.h>
-	<entity/MainScene.h>
-	<control/GameManager.h>
-	<control/LoginSceneManager.h>
-
-1307107126 source:/things/otros/unal/ingesoft 2/italia/src/view/MainView.cpp
-	"MainView.h"
-
-1312076326 /things/otros/unal/ingesoft 2/italia/include/engine/ClientListener.h
-	<string>
-	<vector>
-
-1312077352 source:/things/otros/unal/ingesoft 2/italia/src/engine/Client.cpp
-	"Client.h"
-	<iostream>
-	<stdio.h>
-	<fcntl.h>
-
-1303696644 /things/otros/unal/ingesoft 2/italia/include/engine/Client.h
-	<sys/socket.h>
-	<sys/types.h>
-	<netinet/in.h>
-	<netdb.h>
-	"Thread.h"
-	"ClientListener.h"
-
-1299423936 /things/otros/unal/ingesoft 2/italia/include/engine/Thread.h
-	<boost/thread.hpp>
-	<stdio.h>
-
-1301864854 source:/things/otros/unal/ingesoft 2/italia/src/engine/Cripto.cpp
-	"Cripto.h"
-	<iostream>
-	<stdio.h>
-
-1301864838 /things/otros/unal/ingesoft 2/italia/include/engine/Cripto.h
-	<string>
-	<gcrypt.h>
-
-1301863267 source:/things/otros/unal/ingesoft 2/italia/src/engine/Thread.cpp
-	"Thread.h"
-
-1312165764 /things/otros/unal/ingesoft 2/italia/include/view/ChallengeView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<chat/ChatView.h>
-
-1313114072 source:/things/otros/unal/ingesoft 2/italia/src/view/ChallengeView.cpp
-	"ChallengeView.h"
-	"GameObject.h"
-
-1301187931 source:/things/otros/unal/ingesoft 2/italia/src/engine/ClientListener.cpp
-	"ClientListener.h"
-
-1312076733 source:/things/otros/unal/ingesoft 2/italia/src/control/GameManager.cpp
+1360458401 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/GameManager.cpp
 	"GameManager.h"
 	"GameSound.h"
 	"CreateAction.h"
@@ -2812,233 +2363,224 @@
 	"NatureAction.h"
 	"GoldAction.h"
 
-1312076724 /things/otros/unal/ingesoft 2/italia/include/control/GameManager.h
+1360454885 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/GameManager.h
 	<vector>
 	<boost/thread.hpp>
-	<entity/Squad.h>
-	<engine/Client.h>
-	<control/Action.h>
-	<control/ActionFactory.h>
-	<control/SquadManager.h>
-	<control/SelectionManager.h>
+	<Squad.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+	<Action.h>
+	<ActionFactory.h>
+	<SquadManager.h>
+	<SelectionManager.h>
 
-1302215260 /things/otros/unal/ingesoft 2/italia/include/control/Command.h
-
-1302219032 source:/things/otros/unal/ingesoft 2/italia/src/control/ActionFactory.cpp
-	"ActionFactory.h"
-
-1303697379 /things/otros/unal/ingesoft 2/italia/include/control/ActionFactory.h
-	<map>
-	"Action.h"
-
-1303697327 /things/otros/unal/ingesoft 2/italia/include/control/Action.h
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/sound/GameSound.h
 	<string>
-	<vector>
-	<Ogre.h>
+	<list>
+	<AL/al.h>
+	<AL/alut.h>
+	<ogg/ogg.h>
+	<vorbis/codec.h>
+	<vorbis/vorbisenc.h>
+	<vorbis/vorbisfile.h>
+	"GameSoundListener.h"
+	"util/Thread.h"
 
-1302216210 source:/things/otros/unal/ingesoft 2/italia/src/control/CreateSquad.cpp
-	"CreateSquad.h"
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/sound/GameSoundListener.h
 
-1302218701 /things/otros/unal/ingesoft 2/italia/include/control/CreateSquad.h
-	"Action.h"
-
-1307108778 source:/things/otros/unal/ingesoft 2/italia/src/control/CreateAction.cpp
-	"CreateAction.h"
-
-1303697428 /things/otros/unal/ingesoft 2/italia/include/control/CreateAction.h
-	"Action.h"
-	"control/SquadManager.h"
-
-1306722089 /things/otros/unal/ingesoft 2/italia/include/control/MoveAction.h
+1358725846 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/MoveAction.h
 	<Ogre.h>
 	<Action.h>
-	"control/SquadManager.h"
+	"SquadManager.h"
 
-1307083394 source:/things/otros/unal/ingesoft 2/italia/src/control/MoveAction.cpp
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/NatureAction.h
+	<Action.h>
+	<Ogre.h>
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/GoldAction.h
+	<MyGUI.h>
+	<Action.h>
+	<MyGUI_OgrePlatform.h>
+
+1359024584 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/GoldAction.cpp
+	"GoldAction.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/MoveAction.cpp
 	"MoveAction.h"
 
-1306764496 source:/things/unal/ingesoft2/src/control/ActionFactory.cpp
-	"ActionFactory.h"
+1358725914 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/NatureAction.cpp
+	"NatureAction.h"
+	<Game.h>
 
-1306764488 /things/unal/ingesoft2/include/control/ActionFactory.h
-	<map>
-	"Action.h"
+1358725922 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Game.h
+	<GameObject.h>
+	<GameStaticObjectBatch.h>
 
-1306764488 /things/unal/ingesoft2/include/control/Action.h
-	<string>
-	<vector>
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/GameStaticObjectBatch.h
 	<Ogre.h>
 
-1288808687 /usr/include/OGRE/Threading/OgreThreadDefinesTBB.h
+1359509827 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/RTSCameraManager.cpp
+	"RTSCameraManager.h"
+	<InputSystem.h>
 
-1288808687 /usr/include/OGRE/Threading/OgreThreadHeadersTBB.h
-	<tbb/recursive_mutex.h>
-	<tbb/task_group.h>
-	<tbb/task_scheduler_init.h>
-	<tbb/queuing_rw_mutex.h>
-	<tbb/enumerable_thread_specific.h>
-	<tbb/tbb_thread.h>
-
-1306764496 source:/things/unal/ingesoft2/src/control/CreateAction.cpp
-	"CreateAction.h"
-
-1306764488 /things/unal/ingesoft2/include/control/CreateAction.h
-	"Action.h"
-	"control/SquadManager.h"
-
-1306764488 /things/unal/ingesoft2/include/control/SquadManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<map>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<entity/Squad.h>
-	<control/SquadBuilder.h>
-	<control/SelectionManager.h>
-
-1306764488 /things/unal/ingesoft2/include/engine/Client.h
-	<sys/socket.h>
-	<sys/types.h>
-	<netinet/in.h>
-	<netdb.h>
-	"Thread.h"
-	"ClientListener.h"
-
-1302295699 /things/unal/ingesoft2/include/engine/Thread.h
-	<boost/thread.hpp>
-	<stdio.h>
-
-1306764488 /things/unal/ingesoft2/include/engine/ClientListener.h
-	<string>
-	<vector>
-
-1302295699 /things/unal/ingesoft2/include/engine/Cripto.h
-	<string>
-	<gcrypt.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/Squad.h
-	<Ogre.h>
-	"entity/Unit.h"
-
-1306764489 /things/unal/ingesoft2/include/entity/Unit.h
-	<Ogre.h>
-
-1306764488 /things/unal/ingesoft2/include/control/SquadBuilder.h
-	<Ogre.h>
-	<entity/Squad.h>
-
-1306764488 /things/unal/ingesoft2/include/control/SelectionManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<control/InputSystem.h>
-	<engine/SelectionListener.h>
-
-1306764488 /things/unal/ingesoft2/include/control/InputSystem.h
-	<list>
+1359508718 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/RTSCameraManager.h
 	<Ogre.h>
 	<OIS/OIS.h>
 	<KeyboardListener.h>
 
-1306764488 /things/unal/ingesoft2/include/engine/KeyboardListener.h
+1358719910 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SelectionManager.cpp
+	"SelectionManager.h"
+
+1358719961 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SquadBuilder.cpp
+	"SquadBuilder.h"
+
+1360458476 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SquadManager.cpp
+	"SquadManager.h"
+	<Game.h>
+
+1360454972 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/WorkShopManager.cpp
+	"WorkShopManager.h"
+
+1360454996 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/WorkShopManager.h
 	<Ogre.h>
-	<OIS/OIS.h>
-
-1306764488 /things/unal/ingesoft2/include/engine/SelectionListener.h
-	<Ogre.h>
-
-1306764496 source:/things/unal/ingesoft2/src/control/GameManager.cpp
-	"GameManager.h"
-	"SoundManager.h"
-	"CreateAction.h"
-	"MoveAction.h"
-	"NatureAction.h"
-	"GoldAction.h"
-
-1306764488 /things/unal/ingesoft2/include/control/GameManager.h
-	<vector>
-	<entity/Squad.h>
-	<engine/Client.h>
-	<control/Action.h>
-	<control/ActionFactory.h>
-	<control/SquadManager.h>
-	<control/SelectionManager.h>
-
-1306764488 /things/unal/ingesoft2/include/control/MoveAction.h
-	<Ogre.h>
-	<Action.h>
-	"control/SquadManager.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/InputSystem.cpp
-	"InputSystem.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/LoginSceneManager.cpp
-	"LoginSceneManager.h"
-
-1306764488 /things/unal/ingesoft2/include/control/LoginSceneManager.h
-	<Ogre.h>
-
-1303055391 source:/things/otros/unal/ingesoft 2/italia/src/control/ProgressAction.cpp
-	"ProgressAction.h"
-
-1303055352 /things/otros/unal/ingesoft 2/italia/include/control/ProgressAction.h
-	<Action.h>
-	<MyGUI.h>
-
-1303057629 /things/otros/unal/ingesoft 2/italia/include/control/ProgressListener.h
-
-1306622716 /things/otros/unal/ingesoft 2/italia/include/entity/Game.h
-	<entity/GameObject.h>
-	<entity/GameStaticObjectBatch.h>
-
-1306623049 source:/things/otros/unal/ingesoft 2/italia/src/entity/Game.cpp
-	"Game.h"
-
-1312076471 source:/things/otros/unal/ingesoft 2/italia/src/control/BuildingManager.cpp
-	"BuildingManager.h"
-
-1312076444 /things/otros/unal/ingesoft 2/italia/include/control/BuildingManager.h
-	<entity/GameObject.h>
-	<control/CreationListener.h>
-	<engine/Client.h>
+	<queue>
+	<BattleStage/entity/Game.h>
+	<BattleStage/entity/Building.h>
+	<BattleStage/entity/WorkShop.h>
+	<BattleStage/control/SelectionManager.h>
+	<BattleStage/control/CreationListener.h>
 	<util/Cripto.h>
+	<util/SingletonContainer.h>
+	<engine/AbstractClient.h>
+	<engine/SelectionListener.h>
 
-1306030819 /things/otros/unal/ingesoft 2/italia/include/control/CreationListener.h
-	<entity/Squad.h>
-	<entity/Building.h>
-
-1306034664 /things/otros/unal/ingesoft 2/italia/include/entity/Building.h
-	<GameObject.h>
+1358726078 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/WorkShop.h
 	<DaVinciGlobals.h>
+	<BattleStage/entity/Building.h>
+	<BattleStage/entity/GameObject.h>
 
-1306034291 source:/things/otros/unal/ingesoft 2/italia/src/entity/Building.cpp
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Building.cpp
 	"Building.h"
 
-1303269989 source:/things/otros/unal/ingesoft 2/italia/src/view/BuildingView.cpp
-	"BuildingView.h"
-	<util/ConfigReader.h>
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Game.cpp
+	"Game.h"
 
-1303696406 /things/otros/unal/ingesoft 2/italia/include/view/BuildingView.h
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/GameObject.cpp
+	<GameObject.h>
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/GameStaticObjectBatch.cpp
+	"GameStaticObjectBatch.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Indicator.cpp
+	"Indicator.h"
+
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Indicator.h
+	<Ogre.h>
+
+1359504963 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/MainScene.cpp
+	"MainScene.h"
+
+1359504732 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/MainScene.h
+	<MyGUI.h>
+	<Terrain/OgreTerrain.h>
+	<Terrain/OgreTerrainGroup.h>
+	<engine/GUI.h>
+	<BattleStage/control/SelectionManager.h>
+	<BattleStage/control/RTSCameraManager.h>
+
+1346563634 /usr/include/OGRE/Terrain/OgreTerrain.h
+	"OgreTerrainPrerequisites.h"
+	"OgreCommon.h"
+	"OgreVector3.h"
+	"OgreAxisAlignedBox.h"
+	"OgreSceneManager.h"
+	"OgreTerrainMaterialGenerator.h"
+	"OgreTerrainLayerBlendMap.h"
+	"OgreWorkQueue.h"
+
+1346563634 /usr/include/OGRE/Terrain/OgreTerrainPrerequisites.h
+	"OgrePrerequisites.h"
+
+1346563634 /usr/include/OGRE/Terrain/OgreTerrainMaterialGenerator.h
+	"OgreTerrainPrerequisites.h"
+	"OgrePixelFormat.h"
+	"OgreMaterial.h"
+	"OgreTexture.h"
+
+1346563634 /usr/include/OGRE/Terrain/OgreTerrainLayerBlendMap.h
+	"OgreTerrainPrerequisites.h"
+	"OgreCommon.h"
+	"OgreVector3.h"
+	"OgreDataStream.h"
+
+1346563634 /usr/include/OGRE/Terrain/OgreTerrainGroup.h
+	"OgreTerrainPrerequisites.h"
+	"OgreTerrain.h"
+	"OgreWorkQueue.h"
+	"OgreIteratorWrappers.h"
+
+1359342859 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/GUI.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<InputSystem.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<engine/RenderBox.h>
+
+1358715574 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/RenderBox.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1358726231 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Squad.cpp
+	<BattleStage/entity/Squad.h>
+	<BattleStage/entity/Game.h>
+
+1358726296 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Unit.cpp
+	"BattleStage/entity/Unit.h"
+
+1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/WorkShop.cpp
+	"WorkShop.h"
+
+1359510571 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/BattleView.cpp
+	"BattleView.h"
+
+1359507761 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BattleView.h
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<GUI.h>
+	<Scene.h>
+	<BattleStage/view/WorkShopView.h>
+	<BattleStage/control/MainScene.h>
+	<BattleStage/control/GameManager.h>
+
+1360464269 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Scene.h
+	<Ogre.h>
+
+1358726516 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/WorkShopView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<BattleStage/entity/Game.h>
+	<BattleStage/entity/Indicator.h>
+	<BattleStage/view/BuildingView.h>
+	<BattleStage/control/SquadManager.h>
+	<BattleStage/control/WorkShopManager.h>
+	<BattleStage/control/CreationListener.h>
+
+1359024551 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BuildingView.h
 	<vector>
 	<string>
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
-	<control/CreationListener.h>
-	<control/BuildingManager.h>
+	<BattleStage/control/CreationListener.h>
+	<BattleStage/control/BuildingManager.h>
 
-1306758775 /things/otros/unal/ingesoft 2/italia/include/util/Thread.h
-	<boost/thread.hpp>
-	<stdio.h>
+1359024592 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/BuildingView.cpp
+	"BuildingView.h"
+	<util/ConfigReader.h>
 
-1303696469 /things/otros/unal/ingesoft 2/italia/include/util/Cripto.h
-	<string>
-	<gcrypt.h>
-
-1303260359 source:/things/otros/unal/ingesoft 2/italia/src/util/ConfigReader.cpp
-	"ConfigReader.h"
-
-1303696513 /things/otros/unal/ingesoft 2/italia/include/util/ConfigReader.h
+1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/ConfigReader.h
 	<stdio.h>
 	<string>
 	<vector>
@@ -3170,1231 +2712,15 @@
 	<libxml/tree.h>
 	<libxml/hash.h>
 
-1307108700 source:/things/otros/unal/ingesoft 2/italia/src/util/Cripto.cpp
-	"Cripto.h"
-	<iostream>
-	<stdio.h>
-
-1301863267 source:/things/otros/unal/ingesoft 2/italia/src/util/Thread.cpp
-	"Thread.h"
-
-1306034679 /things/otros/unal/ingesoft 2/italia/include/entity/WorkShop.h
-	<DaVinciGlobals.h>
-	<entity/Building.h>
-	<entity/GameObject.h>
-
-1307098008 source:/things/otros/unal/ingesoft 2/italia/src/entity/WorkShop.cpp
-	"WorkShop.h"
-
-1306023536 /things/otros/unal/ingesoft 2/italia/include/entity/Indicator.h
-	<Ogre.h>
-
-1306026765 source:/things/otros/unal/ingesoft 2/italia/src/entity/Indicator.cpp
-	"Indicator.h"
-
-1306034718 /things/otros/unal/ingesoft 2/italia/include/util/DaVinciGlobals.h
-
-1306761776 source:/things/otros/unal/ingesoft 2/italia/src/control/NatureAction.cpp
-	"NatureAction.h"
-	<entity/Game.h>
-
-1306624819 /things/otros/unal/ingesoft 2/italia/include/control/NatureAction.h
-	<Action.h>
-	<Ogre.h>
-
-1306622865 /things/otros/unal/ingesoft 2/italia/include/entity/GameStaticObjectBatch.h
-	<Ogre.h>
-
-1306622880 source:/things/otros/unal/ingesoft 2/italia/src/entity/GameStaticObjectBatch.cpp
-	"GameStaticObjectBatch.h"
-
-1306762964 source:/things/otros/unal/ingesoft 2/italia/src/control/GoldAction.cpp
-	"GoldAction.h"
-
-1306724886 /things/otros/unal/ingesoft 2/italia/include/control/GoldAction.h
-	<MyGUI.h>
-	<Action.h>
-	<MyGUI_OgrePlatform.h>
-
-1307056128 source:/things/otros/unal/ingesoft 2/italia/src/sound/GameSound.cpp
-	"GameSound.h"
-
-1307056085 /things/otros/unal/ingesoft 2/italia/include/sound/GameSound.h
-	<string>
-	<list>
-	<AL/al.h>
-	<AL/alut.h>
-	<ogg/ogg.h>
-	<vorbis/codec.h>
-	<vorbis/vorbisenc.h>
-	<vorbis/vorbisfile.h>
-	"GameSoundListener.h"
-	"util/Thread.h"
-
-1306759001 source:/things/otros/unal/ingesoft 2/italia/src/sound/SoundManager.cpp
-	"SoundManager.h"
-	<iostream>
-
-1306760022 /things/otros/unal/ingesoft 2/italia/include/sound/SoundManager.h
-	<string>
-	<map>
-	"GameSound.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/BuildingManager.cpp
-	"BuildingManager.h"
-
-1306764488 /things/unal/ingesoft2/include/control/BuildingManager.h
-	<entity/GameObject.h>
-	<control/CreationListener.h>
-	<engine/Client.h>
-	<util/Cripto.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/GameObject.h
-	<Ogre.h>
-
-1306764488 /things/unal/ingesoft2/include/control/CreationListener.h
-	<entity/Squad.h>
-	<entity/Building.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/Building.h
-	<GameObject.h>
-	<DaVinciGlobals.h>
-
-1306764489 /things/unal/ingesoft2/include/util/DaVinciGlobals.h
-
-1306764489 /things/unal/ingesoft2/include/util/Thread.h
-	<boost/thread.hpp>
-	<stdio.h>
-
-1306764489 /things/unal/ingesoft2/include/util/Cripto.h
-	<string>
-	<gcrypt.h>
-
-1306764488 /things/unal/ingesoft2/include/sound/SoundManager.h
-	<string>
-	<map>
-	"GameSound.h"
-
-1306771842 /things/unal/ingesoft2/include/sound/GameSound.h
-	<string>
-	<list>
-	<AL/al.h>
-	<AL/alut.h>
-	<ogg/ogg.h>
-	<vorbis/codec.h>
-	<vorbis/vorbisenc.h>
-	<vorbis/vorbisfile.h>
-	"GameSoundListener.h"
-	"util/Thread.h"
-
-1306764488 /things/unal/ingesoft2/include/control/NatureAction.h
-	<Action.h>
-	<Ogre.h>
-
-1306764488 /things/unal/ingesoft2/include/control/GoldAction.h
-	<MyGUI.h>
-	<Action.h>
-	<MyGUI_OgrePlatform.h>
-
-1306764496 source:/things/unal/ingesoft2/src/control/GoldAction.cpp
-	"GoldAction.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/MoveAction.cpp
-	"MoveAction.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/NatureAction.cpp
-	"NatureAction.h"
-	<entity/Game.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/Game.h
-	<entity/GameObject.h>
-	<entity/GameStaticObjectBatch.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/GameStaticObjectBatch.h
-	<Ogre.h>
-
-1306764496 source:/things/unal/ingesoft2/src/control/RTSCameraManager.cpp
-	"RTSCameraManager.h"
-	<InputSystem.h>
-
-1306764488 /things/unal/ingesoft2/include/control/RTSCameraManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1306764496 source:/things/unal/ingesoft2/src/control/SelectionManager.cpp
-	"SelectionManager.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/SquadBuilder.cpp
-	"SquadBuilder.h"
-
-1306764496 source:/things/unal/ingesoft2/src/control/SquadManager.cpp
-	"SquadManager.h"
-	<entity/Game.h>
-
-1306764496 source:/things/unal/ingesoft2/src/control/WorkShopManager.cpp
-	"WorkShopManager.h"
-
-1306764488 /things/unal/ingesoft2/include/control/WorkShopManager.h
-	<Ogre.h>
-	<queue>
-	<entity/Game.h>
-	<entity/Building.h>
-	<entity/WorkShop.h>
-	<control/SelectionManager.h>
-	<control/CreationListener.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<engine/SelectionListener.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/WorkShop.h
-	<DaVinciGlobals.h>
-	<entity/Building.h>
-	<entity/GameObject.h>
-
-1306764496 source:/things/unal/ingesoft2/src/engine/Client.cpp
-	"Client.h"
-	<iostream>
-	<stdio.h>
-
-1306764496 source:/things/unal/ingesoft2/src/engine/Main.cpp
-	"Main.h"
-
-1306764488 /things/unal/ingesoft2/include/engine/Main.h
-	<Ogre.h>
-	<view/LoginView.h>
-
-1306764489 /things/unal/ingesoft2/include/view/LoginView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<view/GUI.h>
-	<view/MainView.h>
-	<view/ChallengeView.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<engine/ClientListener.h>
-	<entity/Game.h>
-	<control/LoginSceneManager.h>
-
-1306764489 /things/unal/ingesoft2/include/view/GUI.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<InputSystem.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<engine/RenderBox.h>
-
-1306764488 /things/unal/ingesoft2/include/engine/RenderBox.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-
-1306764489 /things/unal/ingesoft2/include/view/MainView.h
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<view/GUI.h>
-	<view/WorkShopView.h>
-	<entity/MainScene.h>
-	<control/GameManager.h>
-	<control/LoginSceneManager.h>
-
-1306764489 /things/unal/ingesoft2/include/view/WorkShopView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<entity/Game.h>
-	<entity/Indicator.h>
-	<view/BuildingView.h>
-	<control/SquadManager.h>
-	<control/WorkShopManager.h>
-	<control/CreationListener.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/Indicator.h
-	<Ogre.h>
-
-1306764489 /things/unal/ingesoft2/include/view/BuildingView.h
-	<vector>
-	<string>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<control/CreationListener.h>
-	<control/BuildingManager.h>
-
-1306764489 /things/unal/ingesoft2/include/entity/MainScene.h
-	<MyGUI.h>
-	<view/GUI.h>
-	<control/SelectionManager.h>
-	<control/RTSCameraManager.h>
-
-1306764489 /things/unal/ingesoft2/include/view/ChallengeView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-
-1306764496 source:/things/unal/ingesoft2/src/entity/Building.cpp
-	"Building.h"
-
-1306764496 source:/things/unal/ingesoft2/src/entity/Game.cpp
-	"Game.h"
-
-1306764496 source:/things/unal/ingesoft2/src/entity/GameObject.cpp
-	<GameObject.h>
-
-1306764496 source:/things/unal/ingesoft2/src/entity/GameStaticObjectBatch.cpp
-	"GameStaticObjectBatch.h"
-
-1306764496 source:/things/unal/ingesoft2/src/entity/Indicator.cpp
-	"Indicator.h"
-
-1306764496 source:/things/unal/ingesoft2/src/entity/MainScene.cpp
-	"MainScene.h"
-
-1306764496 source:/things/unal/ingesoft2/src/entity/Squad.cpp
-	<entity/Squad.h>
-	<entity/Game.h>
-
-1306764496 source:/things/unal/ingesoft2/src/entity/Unit.cpp
-	"entity/Unit.h"
-
-1306764496 source:/things/unal/ingesoft2/src/entity/WorkShop.cpp
-	"WorkShop.h"
-
-1306764496 source:/things/unal/ingesoft2/src/util/ConfigReader.cpp
-	"ConfigReader.h"
-
-1306764489 /things/unal/ingesoft2/include/util/ConfigReader.h
-	<stdio.h>
-	<string>
-	<vector>
-	<libxml/parser.h>
-	<libxml/xpath.h>
-
-1306764496 source:/things/unal/ingesoft2/src/util/Cripto.cpp
-	"Cripto.h"
-	<iostream>
-	<stdio.h>
-
-1306764496 source:/things/unal/ingesoft2/src/util/Thread.cpp
-	"Thread.h"
-
-1306764496 source:/things/unal/ingesoft2/src/view/BuildingView.cpp
-	"BuildingView.h"
-	<util/ConfigReader.h>
-
-1306764496 source:/things/unal/ingesoft2/src/view/ChallengeView.cpp
-	"ChallengeView.h"
-
-1306764496 source:/things/unal/ingesoft2/src/view/GUI.cpp
-	<view/GUI.h>
-
-1306764496 source:/things/unal/ingesoft2/src/view/LoginView.cpp
-	"LoginView.h"
-
-1306764496 source:/things/unal/ingesoft2/src/view/MainView.cpp
-	"MainView.h"
-
-1306764496 source:/things/unal/ingesoft2/src/view/WorkShopView.cpp
+1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/WorkShopView.cpp
 	"WorkShopView.h"
 	"util/ConfigReader.h"
 
-1306771777 /things/unal/ingesoft2/include/sound/GameSoundListener.h
-
-1306771646 source:/things/unal/ingesoft2/src/sound/GameSound.cpp
-	"GameSound.h"
-
-1307056085 /things/otros/unal/ingesoft 2/italia/include/sound/GameSoundListener.h
-
-1312161729 source:/things/otros/unal/ingesoft 2/italia/src/chat/ChatView.cpp
-	"ChatView.h"
-
-1312135869 /things/otros/unal/ingesoft 2/italia/include/chat/ChatView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<Client.h>
-	<ChatControl.h>
-	<ClientListener.h>
-
-1312080886 source:/things/otros/unal/ingesoft 2/italia/src/chat/ChatControl.cpp
-	"ChatControl.h"
-	<Client.h>
-
-1312080501 /things/otros/unal/ingesoft 2/italia/include/chat/ChatControl.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-
-1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/chat/ChatControl.cpp
-	"ChatControl.h"
-	<Client.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/chat/ChatControl.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-
-1346563635 /usr/include/OGRE/OgreInstanceBatch.h
-	"OgrePrerequisites.h"
-	"OgreRenderOperation.h"
-	"OgreRenderable.h"
-	"OgreMovableObject.h"
-	"OgreMesh.h"
-
-1346563635 /usr/include/OGRE/OgreInstancedEntity.h
-	"OgreMovableObject.h"
-	"OgreNode.h"
-
-1346563635 /usr/include/OGRE/OgreInstanceManager.h
-	"OgrePrerequisites.h"
-	"OgreMesh.h"
-	"OgreRenderOperation.h"
-
-1329946060 /usr/include/MYGUI/MyGUI_DeprecatedTypes.h
-
-1329946062 /usr/include/MYGUI/MyGUI_LogSource.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_ILogFilter.h"
-	"MyGUI_ILogListener.h"
-	<vector>
-
-1329946064 /usr/include/MYGUI/MyGUI_ILogFilter.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_LogLevel.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_LogLevel.h
-	"MyGUI_Prerequest.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_ILogListener.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_LogLevel.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_StringUtility.h
-	"MyGUI_Prerequest.h"
-	<vector>
-	<sstream>
-
-1329946062 /usr/include/MYGUI/MyGUI_Singleton.h
-	"MyGUI_Diagnostic.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_WidgetInput.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Macros.h"
-	"MyGUI_WidgetDefines.h"
-	"MyGUI_WidgetToolTip.h"
-	"MyGUI_MouseButton.h"
-	"MyGUI_KeyCode.h"
-	"MyGUI_MaskPickInfo.h"
-	"MyGUI_Delegate.h"
-	"MyGUI_EventPair.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_MouseButton.h
-	"MyGUI_Prerequest.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_KeyCode.h
-	"MyGUI_Prerequest.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_ResourceLayout.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_IResource.h"
-	"MyGUI_LayoutData.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_LayoutData.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Common.h"
-
-1329946060 /usr/include/MYGUI/MyGUI_Common.h
-	"MyGUI_Prerequest.h"
-	<string>
-	<list>
-	<set>
-	<map>
-	<vector>
-	<deque>
-	<exception>
-	<math.h>
-	"MyGUI_CustomAllocator.h"
-	"MyGUI_Allocator.h"
-	"MyGUI_Macros.h"
-	"MyGUI_Diagnostic.h"
-	"MyGUI_LogManager.h"
-	"MyGUI_Singleton.h"
-	"MyGUI_Types.h"
-	"MyGUI_StringUtility.h"
-	"MyGUI_MouseButton.h"
-	"MyGUI_KeyCode.h"
-	"MyGUI_Version.h"
-	"MyGUI_WidgetStyle.h"
-	"MyGUI_UString.h"
-	"MyGUI_Delegate.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_CustomAllocator.h
-	<memory>
-	<limits>
-	<OgrePrerequisites.h>
-	<OgreMemoryManager.h>
-	<OgreNoMemoryMacros.h>
-	<OgreMemoryMacros.h>
-
-1329946062 /usr/include/MYGUI/MyGUI_Allocator.h
-	<memory>
-	<limits>
-
-1329946062 /usr/include/MYGUI/MyGUI_SkinItem.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_LayerItem.h"
-	"MyGUI_ISubWidgetRect.h"
-	"MyGUI_ISubWidgetText.h"
-	"MyGUI_ResourceSkin.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_BackwardCompatibility.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Colour.h"
-	"MyGUI_ResourceSkin.h"
-	"MyGUI_Any.h"
-	"MyGUI_MouseButton.h"
-	"MyGUI_KeyCode.h"
-	"MyGUI_Macros.h"
-	"MyGUI_WidgetDefines.h"
-	"MyGUI_IResource.h"
-	<map>
-	<set>
-
-1329946062 /usr/include/MYGUI/MyGUI_TextBox.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_EditBox.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_TextBox.h"
-	"MyGUI_TextChangeHistory.h"
-	"MyGUI_TextIterator.h"
-	"MyGUI_EventPair.h"
-	"MyGUI_ScrollViewBase.h"
-
-1329946060 /usr/include/MYGUI/MyGUI_IItem.h
-	"MyGUI_Prerequest.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_IItemContainer.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Constants.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_Constants.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_UString.h"
-	"MyGUI_Types.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_FlowDirection.h
-	"MyGUI_Prerequest.h"
-	<string>
-
-1329946062 /usr/include/MYGUI/MyGUI_ImageBox.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-	"MyGUI_ResourceImageSet.h"
-	"MyGUI_ImageInfo.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_ResourceImageSetData.h
-	"MyGUI_Prerequest.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_TabControl.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-	"MyGUI_Any.h"
-	"MyGUI_EventPair.h"
-	"MyGUI_ControllerFadeAlpha.h"
-	"MyGUI_IItem.h"
-	"MyGUI_IItemContainer.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_ProgressBar.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Align.h"
-	"MyGUI_FlowDirection.h"
-	"MyGUI_Widget.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_MultiListBox.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-	"MyGUI_ListBox.h"
-	"MyGUI_Any.h"
-	"MyGUI_BiIndexBase.h"
-	"MyGUI_EventPair.h"
-	"MyGUI_IItem.h"
-	"MyGUI_IItemContainer.h"
-	"MyGUI_ResizingPolicy.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_ResizingPolicy.h
-	"MyGUI_Prerequest.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_MenuControl.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Types.h"
-	"MyGUI_MenuItemType.h"
-	"MyGUI_Widget.h"
-	"MyGUI_Any.h"
-	"MyGUI_EventPair.h"
-	"MyGUI_MenuItemType.h"
-	"MyGUI_ControllerFadeAlpha.h"
-	"MyGUI_IItem.h"
-	"MyGUI_IItemContainer.h"
-
-1329946064 /usr/include/MYGUI/MyGUI_ScrollBar.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Widget.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_MultiListItem.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_TextBox.h"
-	"MyGUI_TabControl.h"
-	"MyGUI_ResizingPolicy.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_DeprecatedWidgets.h
-	"MyGUI_DeprecatedTypes.h"
-	"MyGUI_ScrollBar.h"
-	"MyGUI_EventPair.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_PolygonalSkin.h
-	"MyGUI_Prerequest.h"
-	"MyGUI_Types.h"
-	"MyGUI_ISubWidgetRect.h"
-	"MyGUI_RenderFormat.h"
-
-1329946062 /usr/include/MYGUI/MyGUI_Bitwise.h
-	"MyGUI_Prerequest.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Client.h
-	<sys/socket.h>
-	<sys/types.h>
-	<netinet/in.h>
-	<netdb.h>
-	"Thread.h"
-	"ClientListener.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Thread.h
-	<boost/thread.hpp>
-	<stdio.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/ClientListener.h
-	<string>
-	<vector>
-
-1358722743 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/chat/ChatView.cpp
-	"ChatView.h"
-
-1358722757 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/chat/ChatView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<Client.h>
-	<ChatControl.h>
-	<ClientListener.h>
-	<GUI.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/ActionFactory.cpp
-	"ActionFactory.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/ActionFactory.h
-	<map>
-	"Action.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/Action.h
-	<string>
-	<vector>
-	<Ogre.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/BuildingManager.cpp
-	"BuildingManager.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/BuildingManager.h
-	<entity/GameObject.h>
-	<control/CreationListener.h>
-	<engine/Client.h>
-	<util/Cripto.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/GameObject.h
-	<Ogre.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/CreationListener.h
-	<entity/Squad.h>
-	<entity/Building.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Squad.h
-	<Ogre.h>
-	"entity/Unit.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Unit.h
-	<Ogre.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Building.h
-	<GameObject.h>
-	<DaVinciGlobals.h>
-
-1359016064 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/DaVinciGlobals.h
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Cripto.h
-	<string>
-	<gcrypt.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/CreateAction.cpp
-	"CreateAction.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/CreateAction.h
-	"Action.h"
-	"control/SquadManager.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/SquadManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<map>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<entity/Squad.h>
-	<control/SquadBuilder.h>
-	<control/SelectionManager.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/SquadBuilder.h
-	<Ogre.h>
-	<entity/Squad.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/SelectionManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<control/InputSystem.h>
-	<engine/SelectionListener.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/InputSystem.h
-	<list>
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/KeyboardListener.h
-	<Ogre.h>
-	<OIS/OIS.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SelectionListener.h
-	<Ogre.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/GameManager.cpp
-	"GameManager.h"
-	"GameSound.h"
-	"CreateAction.h"
-	"MoveAction.h"
-	"NatureAction.h"
-	"GoldAction.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/GameManager.h
-	<vector>
-	<boost/thread.hpp>
-	<entity/Squad.h>
-	<engine/Client.h>
-	<control/Action.h>
-	<control/ActionFactory.h>
-	<control/SquadManager.h>
-	<control/SelectionManager.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/sound/GameSound.h
-	<string>
-	<list>
-	<AL/al.h>
-	<AL/alut.h>
-	<ogg/ogg.h>
-	<vorbis/codec.h>
-	<vorbis/vorbisenc.h>
-	<vorbis/vorbisfile.h>
-	"GameSoundListener.h"
-	"util/Thread.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/sound/GameSoundListener.h
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/MoveAction.h
-	<Ogre.h>
-	<Action.h>
-	"control/SquadManager.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/NatureAction.h
-	<Action.h>
-	<Ogre.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/GoldAction.h
-	<MyGUI.h>
-	<Action.h>
-	<MyGUI_OgrePlatform.h>
-
-1358709507 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/GoldAction.cpp
-	"GoldAction.h"
-
-1358714515 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/InputSystem.cpp
-	"InputSystem.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/LoginSceneManager.cpp
-	"LoginSceneManager.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/LoginSceneManager.h
-	<Ogre.h>
-	<entity/Game.h>
-	<engine/Client.h>
-	<engine/ClientListener.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Game.h
-	<entity/GameObject.h>
-	<entity/GameStaticObjectBatch.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/GameStaticObjectBatch.h
-	<Ogre.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/MoveAction.cpp
-	"MoveAction.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/NatureAction.cpp
-	"NatureAction.h"
-	<entity/Game.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/RTSCameraManager.cpp
-	"RTSCameraManager.h"
-	<InputSystem.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/RTSCameraManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1358719910 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/SelectionManager.cpp
-	"SelectionManager.h"
-
-1358719961 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/SquadBuilder.cpp
-	"SquadBuilder.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/SquadManager.cpp
-	"SquadManager.h"
-	<entity/Game.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/control/WorkShopManager.cpp
-	"WorkShopManager.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/control/WorkShopManager.h
-	<Ogre.h>
-	<queue>
-	<entity/Game.h>
-	<entity/Building.h>
-	<entity/WorkShop.h>
-	<control/SelectionManager.h>
-	<control/CreationListener.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<engine/SelectionListener.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/WorkShop.h
-	<DaVinciGlobals.h>
-	<entity/Building.h>
-	<entity/GameObject.h>
-
-1359348483 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Client.cpp
+1360454430 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Client.cpp
 	"Client.h"
 	<iostream>
 	<stdio.h>
 	<fcntl.h>
-
-1359503566 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Main.cpp
-	"MainApplication.h"
-	<SceneSequencer.h>
-	<LoginStage/view/LoginView.h>
-	<LobbyStage/view/LobbyView.h>
-
-1358726841 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Main.h
-	<Ogre.h>
-	<LoginStage/view/LoginView.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/LoginView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<view/GUI.h>
-	<view/MainView.h>
-	<view/ChallengeView.h>
-	<util/Cripto.h>
-	<entity/Game.h>
-	<control/LoginSceneManager.h>
-
-1358722965 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/GUI.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<InputSystem.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<engine/RenderBox.h>
-
-1358715574 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/RenderBox.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/MainView.h
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<view/GUI.h>
-	<view/WorkShopView.h>
-	<entity/MainScene.h>
-	<control/GameManager.h>
-	<control/LoginSceneManager.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/WorkShopView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<entity/Game.h>
-	<entity/Indicator.h>
-	<view/BuildingView.h>
-	<control/SquadManager.h>
-	<control/WorkShopManager.h>
-	<control/CreationListener.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/Indicator.h
-	<Ogre.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/BuildingView.h
-	<vector>
-	<string>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<control/CreationListener.h>
-	<control/BuildingManager.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/entity/MainScene.h
-	<MyGUI.h>
-	<view/GUI.h>
-	<control/SelectionManager.h>
-	<control/RTSCameraManager.h>
-
-1358711150 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/view/ChallengeView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<chat/ChatView.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Building.cpp
-	"Building.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Game.cpp
-	"Game.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/GameObject.cpp
-	<GameObject.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/GameStaticObjectBatch.cpp
-	"GameStaticObjectBatch.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Indicator.cpp
-	"Indicator.h"
-
-1358715682 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/MainScene.cpp
-	"MainScene.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Squad.cpp
-	<entity/Squad.h>
-	<entity/Game.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/Unit.cpp
-	"entity/Unit.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/entity/WorkShop.cpp
-	"WorkShop.h"
-
-1359348619 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/sound/GameSound.cpp
-	"GameSound.h"
-
-1359348634 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/ConfigReader.cpp
-	"ConfigReader.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/ConfigReader.h
-	<stdio.h>
-	<string>
-	<vector>
-	<libxml/parser.h>
-	<libxml/xpath.h>
-
-1359348640 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/Cripto.cpp
-	"Cripto.h"
-	<iostream>
-	<stdio.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/Thread.cpp
-	"Thread.h"
-
-1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/BuildingView.cpp
-	"BuildingView.h"
-	<util/ConfigReader.h>
-
-1358722928 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/ChallengeView.cpp
-	"ChallengeView.h"
-	"GameObject.h"
-
-1358723028 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/GUI.cpp
-	<view/GUI.h>
-
-1358717660 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/LoginView.cpp
-	"LoginView.h"
-
-1358717484 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/MainView.cpp
-	"MainView.h"
-
-1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/view/WorkShopView.cpp
-	"WorkShopView.h"
-	"util/ConfigReader.h"
-
-1358725592 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/ActionFactory.cpp
-	"ActionFactory.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/ActionFactory.h
-	<map>
-	"Action.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/Action.h
-	<string>
-	<vector>
-	<Ogre.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/BuildingManager.cpp
-	"BuildingManager.h"
-
-1358725736 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/BuildingManager.h
-	<GameObject.h>
-	<CreationListener.h>
-	<engine/Client.h>
-	<util/Cripto.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/GameObject.h
-	<Ogre.h>
-
-1358725745 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/CreationListener.h
-	<Squad.h>
-	<Building.h>
-
-1358725750 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Squad.h
-	<Ogre.h>
-	"Unit.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Unit.h
-	<Ogre.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Building.h
-	<GameObject.h>
-	<DaVinciGlobals.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/CreateAction.cpp
-	"CreateAction.h"
-
-1358725796 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/CreateAction.h
-	"Action.h"
-	"SquadManager.h"
-
-1358725803 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SquadManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<map>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<Squad.h>
-	<SquadBuilder.h>
-	<SelectionManager.h>
-
-1358725808 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SquadBuilder.h
-	<Ogre.h>
-	<Squad.h>
-
-1358725813 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/SelectionManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<InputSystem.h>
-	<SelectionListener.h>
-
-1359509885 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/InputSystem.h
-	<list>
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/GameManager.cpp
-	"GameManager.h"
-	"GameSound.h"
-	"CreateAction.h"
-	"MoveAction.h"
-	"NatureAction.h"
-	"GoldAction.h"
-
-1358725839 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/GameManager.h
-	<vector>
-	<boost/thread.hpp>
-	<Squad.h>
-	<engine/Client.h>
-	<Action.h>
-	<ActionFactory.h>
-	<SquadManager.h>
-	<SelectionManager.h>
-
-1358725846 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/MoveAction.h
-	<Ogre.h>
-	<Action.h>
-	"SquadManager.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/NatureAction.h
-	<Action.h>
-	<Ogre.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/GoldAction.h
-	<MyGUI.h>
-	<Action.h>
-	<MyGUI_OgrePlatform.h>
-
-1359024584 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/GoldAction.cpp
-	"GoldAction.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/MoveAction.cpp
-	"MoveAction.h"
-
-1358725914 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/NatureAction.cpp
-	"NatureAction.h"
-	<Game.h>
-
-1358725922 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Game.h
-	<GameObject.h>
-	<GameStaticObjectBatch.h>
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/GameStaticObjectBatch.h
-	<Ogre.h>
-
-1359509827 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/RTSCameraManager.cpp
-	"RTSCameraManager.h"
-	<InputSystem.h>
-
-1359508718 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/RTSCameraManager.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<KeyboardListener.h>
-
-1358719910 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SelectionManager.cpp
-	"SelectionManager.h"
-
-1358719961 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SquadBuilder.cpp
-	"SquadBuilder.h"
-
-1358725957 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/SquadManager.cpp
-	"SquadManager.h"
-	<Game.h>
-
-1359507419 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/control/WorkShopManager.cpp
-	"WorkShopManager.h"
-
-1358726088 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/WorkShopManager.h
-	<Ogre.h>
-	<queue>
-	<BattleStage/entity/Game.h>
-	<BattleStage/entity/Building.h>
-	<BattleStage/entity/WorkShop.h>
-	<BattleStage/control/SelectionManager.h>
-	<BattleStage/control/CreationListener.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<engine/SelectionListener.h>
-
-1358726078 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/WorkShop.h
-	<DaVinciGlobals.h>
-	<BattleStage/entity/Building.h>
-	<BattleStage/entity/GameObject.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Building.cpp
-	"Building.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Game.cpp
-	"Game.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/GameObject.cpp
-	<GameObject.h>
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/GameStaticObjectBatch.cpp
-	"GameStaticObjectBatch.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Indicator.cpp
-	"Indicator.h"
-
-1354734041 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/entity/Indicator.h
-	<Ogre.h>
-
-1359504963 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/MainScene.cpp
-	"MainScene.h"
-
-1359504732 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/control/MainScene.h
-	<MyGUI.h>
-	<Terrain/OgreTerrain.h>
-	<Terrain/OgreTerrainGroup.h>
-	<engine/GUI.h>
-	<BattleStage/control/SelectionManager.h>
-	<BattleStage/control/RTSCameraManager.h>
-
-1359342859 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/GUI.h
-	<Ogre.h>
-	<OIS/OIS.h>
-	<InputSystem.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<engine/RenderBox.h>
-
-1358726231 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Squad.cpp
-	<BattleStage/entity/Squad.h>
-	<BattleStage/entity/Game.h>
-
-1358726296 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/Unit.cpp
-	"BattleStage/entity/Unit.h"
-
-1354734053 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/entity/WorkShop.cpp
-	"WorkShop.h"
-
-1359024592 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/BuildingView.cpp
-	"BuildingView.h"
-	<util/ConfigReader.h>
-
-1359024551 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BuildingView.h
-	<vector>
-	<string>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<BattleStage/control/CreationListener.h>
-	<BattleStage/control/BuildingManager.h>
-
-1359491886 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/MainView.cpp
-	"MainView.h"
-
-1359491790 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/MainView.h
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<GUI.h>
-	<Scene.h>
-	<BattleStage/view/WorkShopView.h>
-	<BattleStage/control/MainScene.h>
-	<BattleStage/control/GameManager.h>
-
-1358726516 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/WorkShopView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<BattleStage/entity/Game.h>
-	<BattleStage/entity/Indicator.h>
-	<BattleStage/view/BuildingView.h>
-	<BattleStage/control/SquadManager.h>
-	<BattleStage/control/WorkShopManager.h>
-	<BattleStage/control/CreationListener.h>
-
-1358716310 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/WorkShopView.cpp
-	"WorkShopView.h"
-	"util/ConfigReader.h"
 
 1359501696 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/GUI.cpp
 	<engine/GUI.h>
@@ -4402,7 +2728,24 @@
 1359509987 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/InputSystem.cpp
 	"InputSystem.h"
 
-1359502975 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/view/LoginView.h
+1360468551 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Main.cpp
+	"MainApplication.h"
+	<engine/FakeClient.h>
+	<util/SingletonContainer.h>
+	<SceneSequencer.h>
+	<LoginStage/view/LoginView.h>
+	<LobbyStage/view/LobbyView.h>
+
+1359501432 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/MainApplication.h
+	<Ogre.h>
+	<SceneSequencer.h>
+	<GUI.h>
+
+1360464205 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SceneSequencer.h
+	<Ogre.h>
+	<ConfigReader.h>
+
+1360462732 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/view/LoginView.h
 	<Ogre.h>
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
@@ -4413,64 +2756,6 @@
 	<LoginStage/control/LoginSceneManager.h>
 	<Scene.h>
 
-1358727000 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/view/ChallengeView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<util/Cripto.h>
-	<engine/Client.h>
-	<LobbyStage/chat/ChatView.h>
-
-1359413034 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatView.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<Client.h>
-	<ChatControl.h>
-	<ClientListener.h>
-	<GUI.h>
-
-1359024737 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatControl.h
-	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-
-1359347967 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/control/LoginSceneManager.h
-	<Ogre.h>
-	<engine/Scene.h>
-	<engine/Client.h>
-	<engine/ClientListener.h>
-
-1359413212 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatControl.cpp
-	"ChatControl.h"
-	<Client.h>
-
-1359496829 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatView.cpp
-	"ChatView.h"
-
-1358722928 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/ChallengeView.cpp
-	"ChallengeView.h"
-	"GameObject.h"
-
-1359511079 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
-	"LoginSceneManager.h"
-
-1359499997 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
-	"LoginView.h"
-
-1359500827 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
-	"SceneSequencer.h"
-	"Scene.h"
-
-1359500128 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/SceneSequencer.h
-	<Ogre.h>
-	<ConfigReader.h>
-
-1359501432 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/MainApplication.h
-	<Ogre.h>
-	<SceneSequencer.h>
-	<GUI.h>
-
 1359511159 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/view/LobbyView.h
 	<Ogre.h>
 	<MyGUI.h>
@@ -4480,61 +2765,98 @@
 	<engine/Scene.h>
 	<LobbyStage/chat/ChatView.h>
 
-1359499375 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/Scene.h
+1360455618 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatView.h
 	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<ChatControl.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+	<GUI.h>
 
-1359502536 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/MainApplication.cpp
+1359024737 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LobbyStage/chat/ChatControl.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1360462401 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/control/LoginSceneManager.h
+	<Ogre.h>
+	<engine/Scene.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+
+1360468469 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/MainApplication.cpp
 	"MainApplication.h"
 
-1359515681 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/LobbyView.cpp
+1360462589 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Scene.cpp
+	<Scene.h>
+	<SceneSequencer.h>
+
+1360468564 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
+	"SceneSequencer.h"
+	"Scene.h"
+
+1360455316 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatControl.cpp
+	"ChatControl.h"
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+
+1360455394 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatView.cpp
+	"ChatView.h"
+
+1360468055 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/LobbyView.cpp
 	"LobbyView.h"
 	"GameObject.h"
 	<LoginStage/control/LoginSceneManager.h>
 
-1359507641 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Scene.cpp
-	<Scene.h>
-	<SceneSequencer.h>
+1360463459 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
+	"LoginSceneManager.h"
 
-1359507761 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BattleView.h
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
-	<GUI.h>
-	<Scene.h>
-	<BattleStage/view/WorkShopView.h>
-	<BattleStage/control/MainScene.h>
-	<BattleStage/control/GameManager.h>
+1360463333 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
+	"LoginView.h"
 
-1359510571 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/BattleView.cpp
-	"BattleView.h"
+1359348619 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/sound/GameSound.cpp
+	"GameSound.h"
 
-1346563634 /usr/include/OGRE/Terrain/OgreTerrain.h
-	"OgreTerrainPrerequisites.h"
-	"OgreCommon.h"
-	"OgreVector3.h"
-	"OgreAxisAlignedBox.h"
-	"OgreSceneManager.h"
-	"OgreTerrainMaterialGenerator.h"
-	"OgreTerrainLayerBlendMap.h"
-	"OgreWorkQueue.h"
+1359348634 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/ConfigReader.cpp
+	"ConfigReader.h"
 
-1346563634 /usr/include/OGRE/Terrain/OgreTerrainPrerequisites.h
-	"OgrePrerequisites.h"
+1359348640 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/Cripto.cpp
+	"Cripto.h"
+	<iostream>
+	<stdio.h>
 
-1346563634 /usr/include/OGRE/Terrain/OgreTerrainMaterialGenerator.h
-	"OgreTerrainPrerequisites.h"
-	"OgrePixelFormat.h"
-	"OgreMaterial.h"
-	"OgreTexture.h"
+1360460445 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/Thread.cpp
+	"Thread.h"
 
-1346563634 /usr/include/OGRE/Terrain/OgreTerrainLayerBlendMap.h
-	"OgreTerrainPrerequisites.h"
-	"OgreCommon.h"
-	"OgreVector3.h"
-	"OgreDataStream.h"
+1360452915 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/AbstractClient.h
+	"ClientListener.h"
 
-1346563634 /usr/include/OGRE/Terrain/OgreTerrainGroup.h
-	"OgreTerrainPrerequisites.h"
-	"OgreTerrain.h"
-	"OgreWorkQueue.h"
-	"OgreIteratorWrappers.h"
+1360463135 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/FakeClient.cpp
+	"FakeClient.h"
+	<iostream>
+	<stdio.h>
+	<fcntl.h>
+
+1360460012 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/FakeClient.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<netdb.h>
+	"Client.h"
+	<util/ConfigReader.h>
+
+1360458237 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/util/SingletonContainer.cpp
+	"SingletonContainer.h"
+
+1360458228 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/SingletonContainer.h
+	<map>
+	<string>
+	"Storable.h"
+
+1360453821 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/util/Storable.h
+
+1360457851 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/AbstractClient.h
+	<util/Storable.h>
+	"ClientListener.h"
 

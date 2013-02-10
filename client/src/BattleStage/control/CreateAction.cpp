@@ -20,7 +20,7 @@ CreateAction::CreateAction(SquadManager  *squadMgr)
                 speed   = atoi(mParams[5].c_str());
 
                 mSquadMgr->createSquad(mParams[1], batchId, owner, size, speed);
-                Client::getInstancePtr()->Send( "502"   );
+                SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send( "502"   );
             return true;
         }
 

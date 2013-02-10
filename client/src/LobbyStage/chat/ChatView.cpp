@@ -39,7 +39,7 @@ ChatView::ChatView()
             bgy->findWidget<MyGUI::Button>("privateCancel")->eventMouseButtonClick +=  MyGUI::newDelegate(this, &ChatView::onPrivate);
 
 
-            Client::getInstancePtr()->addListener(this);
+            SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->addListener(this);
 }
 
 
@@ -77,7 +77,7 @@ ChatView::ChatView()
       std::string tabName =  MyGUI::Gui::getInstancePtr()->findWidget<MyGUI::EditBox>("privateEditDlg")->getCaption();
 
                         mControls.insert( std::make_pair<std::string,ChatControl*>( tabName, new ChatControl( mTab, tabName, "810|" + tabName + "|" )) );
-                        Client::getInstancePtr()->Send("810|"+tabName+"|Starting conversation...\n");
+                        SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send("810|"+tabName+"|Starting conversation...\n");
                         onPrivate(NULL);
     }
 
@@ -108,7 +108,7 @@ ChatView::~ChatView()
         mMainChat = nullptr;
      }
 
-     Client::getInstancePtr()->removeListener(this);
+     SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->removeListener(this);
      GUI::getInstancePtr()->unloadLayout(mLayout);
      delete mMainChat;
 }

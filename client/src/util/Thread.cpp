@@ -10,8 +10,11 @@
     // Create the thread and start work
     void DaVinciWars::Thread::startThread()
     {
-        assert(!m_thread);
-        m_thread = boost::shared_ptr<boost::thread>(new boost::thread(boost::bind(&Thread::run, this)));
+        // assert(!m_thread);
+
+
+        if(!m_thread)
+           m_thread = boost::shared_ptr<boost::thread>(new boost::thread(boost::bind(&Thread::run, this)));
     }
 
     void DaVinciWars::Thread::stopThread() // Note 1

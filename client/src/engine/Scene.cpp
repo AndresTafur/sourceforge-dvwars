@@ -44,6 +44,21 @@ void Scene::create(Ogre::RenderTarget *wnd)
         }
 
 
+        void Scene::setMessage(std::string message)
+        {
+
+        }
+
+        void Scene::setErrorMessage(std::string error)
+        {
+
+        }
+
+
+        void Scene::unloadLayout()
+        {
+
+        }
 
 
 

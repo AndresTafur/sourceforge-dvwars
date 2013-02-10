@@ -34,7 +34,7 @@ void LoginView::create(Ogre::RenderTarget* wnd)
 
         void LoginView::createSceneObjects()
         {
-           mLogSceneMgr = new LoginSceneManager(mSceneMgr,mWindow);
+           mLogSceneMgr = new LoginSceneManager(mSceneMgr,mWindow,this);
            mLogSceneMgr->createScene();
         }
 
@@ -95,7 +95,7 @@ void LoginView::create(Ogre::RenderTarget* wnd)
 
         void LoginView::onExit(MyGUI::Widget* btn)
         {
-            mLogSceneMgr->queueSceneEnd(this);
+           endScene(0);
         }
 
 
@@ -139,6 +139,18 @@ void LoginView::create(Ogre::RenderTarget* wnd)
                 {
 //                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
                 }*/
+        }
+
+
+        void LoginView::setMessage(std::string message)
+        {
+            MyGUI::Gui::getInstance().findWidget<MyGUI::TextBox>("errorMsg")->setCaption(message);
+        }
+
+
+        void LoginView::setErrorMessage(std::string error)
+        {
+            MyGUI::Gui::getInstance().findWidget<MyGUI::TextBox>("errorMsg")->setCaption(error);
         }
 
 
@@ -208,10 +220,16 @@ void LoginView::create(Ogre::RenderTarget* wnd)
         }
 
 
+        void LoginView::unloadLayout()
+        {
+                GUI::getInstancePtr()->unloadLayout(mLayout);
+        }
+
+
         void LoginView::destroy()
         {
             Ogre::Root::getSingletonPtr()->removeFrameListener(this);
-            GUI::getInstancePtr()->unloadLayout(mLayout);
+            unloadLayout();
             GUI::getInstancePtr()->clean();
             delete mLogSceneMgr;
 

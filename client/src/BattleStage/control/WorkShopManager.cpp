@@ -11,7 +11,7 @@ WorkShopManager::WorkShopManager()
         mWorkShop2 = NULL;
         mBuilding  = NULL;
 */
-        Client::getInstancePtr()->addListener(this);
+        SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->addListener(this);
         Ogre::Root::getSingletonPtr()->addFrameListener(this);
 }
 
@@ -110,7 +110,7 @@ WorkShopManager::WorkShopManager()
 
         void WorkShopManager::requestBuildingCreation(std::string type)
         {
-            Client::getInstancePtr()->Send( "702|"+type );
+            SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send( "702|"+type );
         }
 
 
@@ -119,12 +119,12 @@ WorkShopManager::WorkShopManager()
           char locStr[100];
 
                 sprintf(locStr,"503|%f&%f", target.x,target.z);
-                Client::getInstancePtr()->Send( locStr );
+                SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send( locStr );
         }
 
 
 WorkShopManager::~WorkShopManager()
 {
-   Client::getInstancePtr()->removeListener(this);
+   SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->removeListener(this);
    delete mWorkShop;
 }

@@ -4,8 +4,8 @@
 #include <Ogre.h>
 
 #include <engine/Scene.h>
-#include <engine/Client.h>
-#include <engine/ClientListener.h>
+#include <engine/AbstractClient.h>
+#include <util/SingletonContainer.h>
 
 /**
  * Handles the login Scene
@@ -14,7 +14,7 @@ class LoginSceneManager : public ClientListener, public Ogre::FrameListener
 {
 public:
 
-        LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd);
+        LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd, Scene *scn);
 
         /**
          * Creates scene object (currently empty, will create the museum)
@@ -44,12 +44,12 @@ public:
         inline void setStatus( unsigned int status) { mStatus = status; }
 
 
-        inline void queueSceneEnd(Scene *scn) { mSceneEnding = true; mScene = scn;}
+        inline void queueSceneEnd(Scene *scn, unsigned int status = 0) { mSceneEnding = true; mScene = scn;mStatus = status;}
 
 
 private:
 
-Client             *mClient;
+AbstractClient     *mClient;
 Scene              *mScene;
 
 Ogre::Light        *mLight;

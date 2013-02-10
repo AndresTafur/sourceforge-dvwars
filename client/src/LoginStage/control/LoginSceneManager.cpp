@@ -19,7 +19,7 @@
 
 #include "LoginSceneManager.h"
 
-LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd)
+LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget *wnd,Scene* scn)
 {
     mSceneMgr   = mgr;
     mWindow     = wnd;
@@ -28,7 +28,9 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
     mStatus     = 0;
 
     mCameraNode = mgr->getSceneNode("Camera Node");
-    mClient     = Client::getInstancePtr();
+    mClient     = SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client");
+
+    mScene = scn;
 
     Ogre::Root::getSingletonPtr()->addFrameListener(this);
 }
@@ -101,7 +103,11 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
                 if( data[0] == "409")
                     mStatus = 409;
                 else if( data[0] == "200")
-                    mStatus = 200;
+                {
+                    mSceneEnding = true;
+                    mScene->setMessage("Autenticated");
+                }
+
                 else if( data[0] == "201" )
                     mStatus = 201;
                 else if( data[0] == "404")
@@ -126,18 +132,7 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
                                 mSceneMgr->getCamera("Main Camera")->lookAt(30,2,245);
                         }
                         else if(mScene){
-
-                              Ogre::Vector3 vect =  mCameraNode->getPosition();
-                              Ogre::Quaternion quat = mSceneMgr->getCamera("Main Camera")->getOrientation();
-                              Ogre::Vector3  dir  =   mSceneMgr->getCamera("Main Camera")->getDirection();
-
-
-                                    fprintf(stderr,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Position:[%f, %f, %f], Orient:[%f,%f,%f,%f], Dir:[%f,%f,%f]",vect.x,vect.y,vect.z,
-                                                        quat.w,quat.x,quat.y,quat.z, dir.x, dir.y,dir.z
-                                                    );
-
-
-                                mScene->endScene(0);
+                              mScene->endScene(1);
                         }
 
 
@@ -148,7 +143,7 @@ LoginSceneManager::LoginSceneManager(Ogre::SceneManager *mgr, Ogre::RenderTarget
 
 LoginSceneManager::~LoginSceneManager()
 {
-       Client::getInstancePtr()->removeListener(this);
+       SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->removeListener(this);
        Ogre::Root::getSingletonPtr()->removeFrameListener(this);
 
        mSceneMgr->destroyLight(mLight);

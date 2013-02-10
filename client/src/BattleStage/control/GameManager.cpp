@@ -15,7 +15,7 @@ GameManager::GameManager()
     mSquadMgr = new SquadManager();
     mLock     = false;
 
-    Client::getInstancePtr()->addListener(this);
+    SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->addListener(this);
     Ogre::Root::getSingletonPtr()->addFrameListener(this);
 
 

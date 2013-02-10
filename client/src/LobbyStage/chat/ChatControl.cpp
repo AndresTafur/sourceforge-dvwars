@@ -18,7 +18,9 @@
  */
 
 #include "ChatControl.h"
-#include <Client.h>
+#include <engine/AbstractClient.h>
+
+#include <util/SingletonContainer.h>
 
 ChatControl::ChatControl(MyGUI::TabPtr noteBook, std::string tabName, std::string preData) : mPreData(preData)
 {
@@ -44,7 +46,7 @@ ChatControl::ChatControl(MyGUI::TabPtr noteBook, std::string tabName, std::strin
                 if( length > 0 )
                     if(  str.at( sender->getTextLength()-1 ) == '\n')
                     {
-                        Client::getInstancePtr()->Send( mPreData + static_cast<std::string>( sender->getCaption() ) );
+                        SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send( mPreData + static_cast<std::string>( sender->getCaption() ) );
                         sender->eraseText(0, length );
                     }
         }

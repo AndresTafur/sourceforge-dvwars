@@ -61,7 +61,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
                     bgy->findWidget<MyGUI::Button>("quitBtn")->eventMouseButtonClick += MyGUI::newDelegate(this, &LobbyView::onQuit);
 
                     //ensure created in last place
-                    Client::getInstancePtr()->addListener(this);
+                    SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->addListener(this);
 
                     drawLine();
         }
@@ -131,6 +131,8 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
     {
       Ogre::ManualObject* myManualObject  = mSceneMgr->createManualObject("manual1");
       Ogre::SceneNode* myManualObjectNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("manual1_node");
+      Ogre::SceneNode* myRectNode         =  mSceneMgr->getRootSceneNode()->createChildSceneNode("Nodo");
+      Ogre::Rectangle2D  *rectangle2d;
 
             myManualObject->begin("BlueLineMaterial", Ogre::RenderOperation::OT_LINE_LIST);
             myManualObject->position(30, 0, 247);
@@ -139,6 +141,11 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
             // etc
             myManualObject->end();
             myManualObjectNode->attachObject(myManualObject);
+
+
+
+
+
     }
 
 
@@ -157,7 +164,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
             }
 
             val = list->getItemNameAt(selected);
-            Client::getInstancePtr()->Send("302|"+val);
+            SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send("302|"+val);
             list->removeAllItems();
           //  mWaitMsg = MyGUI::Message::createMessageBox("Message",Ogre::String("Challenge"),"Waiting for other player to accept or reject your challenge.", MyGUI::MessageBoxStyle::IconInfo);
     }
@@ -281,7 +288,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
                 mWaitMsg = NULL;
             }
             */
-            Client::getInstancePtr()->removeListener(this);
+            SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->removeListener(this);
             Ogre::Root::getSingletonPtr()->removeFrameListener(this);
             GUI::getInstancePtr()->unloadLayout(mLayout);
             GUI::getInstancePtr()->clean();

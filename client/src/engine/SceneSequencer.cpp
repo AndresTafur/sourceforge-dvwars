@@ -23,21 +23,15 @@
 
 SceneSequencer::SceneSequencer()
 {
-    //ctor
+
 }
 
         void SceneSequencer::addScene(Scene *scn)
         {
+                    scn->setSequencer(this);
                     mScenes.insert( std::make_pair( scn->getName(),scn  ));
         }
 
-
-        void SceneSequencer::unloadScene(Scene *scn, bool destroy)
-        {
-
-
-
-        }
 
 
         void SceneSequencer::setSceneSequence(std::string seqFile)
@@ -52,15 +46,14 @@ SceneSequencer::SceneSequencer()
 
 
                 mCurrentScene = mScenes[sceneName];
-                mSceneEnded = false;
 
                 if(mCurrentScene != NULL)
                 {
                     mCurrentScene->create(mRenderTarget);
-                    mCurrentScene->createCamera();
+                    mCurrentScene->createCamera();/*
                     mCurrentScene->createGui();
                     mCurrentScene->createSceneObjects();
-                    mCurrentScene->setSequencer(this);
+                    mCurrentScene->setSequencer(this);*/
                 }
         }
 
@@ -68,17 +61,14 @@ SceneSequencer::SceneSequencer()
 
         void SceneSequencer::queueEndScene(short state)
         {
-                mSceneEnded  = true;
-                mState       = state;
+                Scene *scene;
+                char   charVal[10];
+                std::string sceneName;
+                std::string exp = "/descendant::sequence/child::scene[@name='"+mCurrentScene->getName()+"']/child::state[@value='";
+                Ogre::SceneManager *mgr;
 
 
-                       Scene *scene;
-                       char   charVal[10];
-                       std::string sceneName;
-                       std::string exp = "/descendant::sequence/child::scene[@name='"+mCurrentScene->getName()+"']/child::state[@value='";
-
-
-                                sprintf(charVal,"%i']",mState);
+                                sprintf(charVal,"%i']",state);
                                 exp += charVal;
 
 
@@ -96,6 +86,7 @@ SceneSequencer::SceneSequencer()
                                 {
 
                                     std::cerr << "Loading scene: '" << sceneName << "'." << std::endl;
+
                                     mCurrentScene->destroy();
 
                                     scene->create(mRenderTarget);
@@ -104,12 +95,10 @@ SceneSequencer::SceneSequencer()
                                     scene->createSceneObjects();
                                     scene->setSequencer(this);
                                     mCurrentScene = scene;
+
                                 }
                                 else
                                     std::cerr << "Scene: '" << sceneName << "' is not available." << std::endl;
-
-
-                              mSceneEnded = false;
 
         }
 

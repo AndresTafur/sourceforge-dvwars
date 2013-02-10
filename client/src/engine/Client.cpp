@@ -24,31 +24,12 @@
 #include <fcntl.h>
 
 
-Client* Client::sm_instance = 0;
-
-
 Client::Client()
 {
     m_sock    = socket(AF_INET, SOCK_STREAM, 0);
     m_running = true;
 }
 
-
-        Client* Client::getInstancePtr()
-        {
-            if(!sm_instance)
-                sm_instance = new Client();
-
-            return sm_instance;
-        }
-
-        Client& Client::getInstance()
-        {
-            if(!sm_instance)
-                sm_instance = new Client();
-
-            return *sm_instance;
-        }
 
 
         void Client::Connect(std::string address, unsigned int port)
@@ -63,8 +44,8 @@ Client::Client()
 
                 host  = gethostbyname(address.c_str());
 
-                m_address.sin_family = AF_INET;    // Ordenación de bytes de la máquina
-                m_address.sin_port = htons(port);  // short, Ordenación de bytes de la red
+                m_address.sin_family = AF_INET;
+                m_address.sin_port = htons(port);
                 m_address.sin_addr = *((struct in_addr *)host->h_addr);
 
                 flag = fcntl(m_sock, F_GETFL, O_NONBLOCK);
@@ -144,13 +125,6 @@ Client::Client()
                     return params;
         }
 
-
-
-        void Client::destroy()
-        {
-            if(sm_instance)
-                delete sm_instance;
-        }
 
 
 Client::~Client()

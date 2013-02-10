@@ -95,8 +95,10 @@
 		<Unit filename="include/LobbyStage/view/LobbyView.h" />
 		<Unit filename="include/LoginStage/control/LoginSceneManager.h" />
 		<Unit filename="include/LoginStage/view/LoginView.h" />
+		<Unit filename="include/engine/AbstractClient.h" />
 		<Unit filename="include/engine/Client.h" />
 		<Unit filename="include/engine/ClientListener.h" />
+		<Unit filename="include/engine/FakeClient.h" />
 		<Unit filename="include/engine/GUI.h" />
 		<Unit filename="include/engine/InputSystem.h" />
 		<Unit filename="include/engine/KeyboardListener.h" />
@@ -111,6 +113,8 @@
 		<Unit filename="include/util/ConfigReader.h" />
 		<Unit filename="include/util/Cripto.h" />
 		<Unit filename="include/util/DaVinciGlobals.h" />
+		<Unit filename="include/util/SingletonContainer.h" />
+		<Unit filename="include/util/Storable.h" />
 		<Unit filename="include/util/Thread.h" />
 		<Unit filename="src/BattleStage/control/ActionFactory.cpp" />
 		<Unit filename="src/BattleStage/control/BuildingManager.cpp" />
@@ -142,6 +146,7 @@
 		<Unit filename="src/LoginStage/control/LoginSceneManager.cpp" />
 		<Unit filename="src/LoginStage/view/LoginView.cpp" />
 		<Unit filename="src/engine/Client.cpp" />
+		<Unit filename="src/engine/FakeClient.cpp" />
 		<Unit filename="src/engine/GUI.cpp" />
 		<Unit filename="src/engine/InputSystem.cpp" />
 		<Unit filename="src/engine/Main.cpp" />
@@ -151,6 +156,7 @@
 		<Unit filename="src/sound/GameSound.cpp" />
 		<Unit filename="src/util/ConfigReader.cpp" />
 		<Unit filename="src/util/Cripto.cpp" />
+		<Unit filename="src/util/SingletonContainer.cpp" />
 		<Unit filename="src/util/Thread.cpp" />
 		<Extensions>
 			<code_completion />

@@ -37,8 +37,18 @@ public:
 
         virtual void createSceneObjects() = 0;
 
+        virtual void setMessage(std::string message);
+
+        virtual void setErrorMessage(std::string error);
+
+
+        virtual void unloadLayout();
+
+
 
         virtual std::string getName() = 0;
+
+        virtual Ogre::SceneManager* getSceneManager() { return mSceneMgr; }
 
 
         void setSequencer(SceneSequencer *seq);

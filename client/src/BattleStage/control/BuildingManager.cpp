@@ -3,7 +3,8 @@
 BuildingManager::BuildingManager(Building *building)
 {
    mBuilding = building;
-   Client::getInstancePtr()->addListener(this);
+   AbstractClient* clt = SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client");
+   clt->addListener(this);
 }
 
         void BuildingManager::attend(std::vector<std::string> &data)
@@ -18,7 +19,7 @@ BuildingManager::BuildingManager(Building *building)
         void BuildingManager::requestSquadCreation(std::string type)
         {
              mQueuedType = type;
-             Client::getInstancePtr()->Send( "701|"+type  );
+             SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send( "701|"+type  );
         }
 
         void BuildingManager::addCreationListener(CreationListener *obj)

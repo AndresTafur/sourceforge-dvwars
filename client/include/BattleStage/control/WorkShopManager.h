@@ -13,7 +13,9 @@
 #include <BattleStage/control/CreationListener.h>
 
 #include <util/Cripto.h>
-#include <engine/Client.h>
+#include <util/SingletonContainer.h>
+
+#include <engine/AbstractClient.h>
 #include <engine/SelectionListener.h>
 
 

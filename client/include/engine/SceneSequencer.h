@@ -30,8 +30,6 @@ public:
 
         void addScene(Scene *scn);
 
-        void unloadScene(Scene *scn, bool destroy = false);
-
         void queueEndScene(short state);
 
 
@@ -54,9 +52,7 @@ private:
  std::map<std::string, Scene*> mScenes;
  ConfigReader  mSeqReader;
 
- bool   mSceneEnded;
  Scene  *mCurrentScene;
- short  mState;
 };
 
 #endif // SCENESEQUENCER_H

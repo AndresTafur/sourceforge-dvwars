@@ -38,7 +38,7 @@ SquadManager::SquadManager()
             if( id == OIS::MB_Right and mSelected )
             {
                  sprintf(buff,"710|%i|%f&%f",mSelected->getID(), ent->singleIntersection.x, ent->singleIntersection.z  );
-                 Client::getInstancePtr()->Send( buff );
+                 SingletonContainer::getInstancePtr()->getObject<AbstractClient*>("client")->Send( buff );
             }
 
             if( id == OIS::MB_Left and mSelected != NULL )
