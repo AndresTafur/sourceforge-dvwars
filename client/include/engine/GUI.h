@@ -5,15 +5,8 @@
 #include <OIS/OIS.h>
 #include <InputSystem.h>
 
-
-
 #include <MyGUI.h>
 #include <MyGUI_OgrePlatform.h>
-
-
-#include <engine/RenderBox.h>
-
-
 
 
 /**

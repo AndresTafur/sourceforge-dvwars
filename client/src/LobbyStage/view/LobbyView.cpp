@@ -93,9 +93,9 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
 
 
                 obj   = new GameObject(0, mSceneMgr, "City.mesh");
-                obj2  = new GameObject(0, mSceneMgr, "Village.mesh");
+                obj2  = new GameObject(0, mSceneMgr, "lobbyVillage.mesh");
 
-                obj->setPosition(Ogre::Vector3(30,0,250) );
+                obj->setPosition(Ogre::Vector3(30,0,251) );
                 obj->getEntity()->setCastShadows(false);
 
                 obj2->setPosition(Ogre::Vector3(30,-10,247) );
@@ -131,8 +131,7 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
     {
       Ogre::ManualObject* myManualObject  = mSceneMgr->createManualObject("manual1");
       Ogre::SceneNode* myManualObjectNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("manual1_node");
-      Ogre::SceneNode* myRectNode         =  mSceneMgr->getRootSceneNode()->createChildSceneNode("Nodo");
-      Ogre::Rectangle2D  *rectangle2d;
+
 
             myManualObject->begin("BlueLineMaterial", Ogre::RenderOperation::OT_LINE_LIST);
             myManualObject->position(30, 0, 247);
@@ -141,10 +140,6 @@ void LobbyView::create( Ogre::RenderTarget* wnd)
             // etc
             myManualObject->end();
             myManualObjectNode->attachObject(myManualObject);
-
-
-
-
 
     }
 

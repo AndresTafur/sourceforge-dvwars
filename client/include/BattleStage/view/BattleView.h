@@ -63,7 +63,6 @@ Ogre::Camera        *mMiniCamera;
 
 Ogre::SceneNode     *mMiniSceneNode;
 Ogre::SceneNode     *mCameraNode;
-wraps::RenderBox     mRenderBox;
 
 MainScene           *mScene;
 RTSCameraManager    *mCamMgr;

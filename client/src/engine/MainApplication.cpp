@@ -35,30 +35,6 @@ MainApplication::MainApplication()
             return;
 
 
- Ogre::Overlay*             overlay;
-Ogre::MaterialPtr material = Ogre::MaterialManager::getSingleton().create("Background", "General");
-material->getTechnique(0)->getPass(0)->createTextureUnitState("loading.png");
-material->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
-material->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
-material->getTechnique(0)->getPass(0)->setLightingEnabled(false);
-material->getTechnique(0)->getPass(0)->setDiffuse(0.5,0.5,0.5,0.3);
-material->getTechnique(0)->getPass(0)->setSceneBlending(Ogre::SBT_TRANSPARENT_ALPHA);
-
-Ogre::OverlayManager& overlayManager = Ogre::OverlayManager::getSingleton();
-   overlay = overlayManager.create( "OverlayName" );
-
-   // Create a panel
-   Ogre::OverlayContainer* panel = static_cast<Ogre::OverlayContainer*>( overlayManager.createOverlayElement( "Panel", "PanelName" ) );
-   panel->setPosition( 0.0, 0.0 );
-   panel->setDimensions( 1, 1 ); // cover the entire window
-   panel->setMaterialName( "Background" );
-   // Add the panel to the overlay
-   overlay->add2D( panel );
-
-   // Show the overlay
-   overlay->show();
-
-
         if( mSequencer != NULL )
         {
             mSequencer->setRenderTarget(mWindow);
@@ -94,16 +70,6 @@ Ogre::OverlayManager& overlayManager = Ogre::OverlayManager::getSingleton();
 
                 Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
 
-
-
-
-
-
-
-
-
-
-
                 loadResources();
 
 
@@ -132,7 +98,7 @@ Ogre::OverlayManager& overlayManager = Ogre::OverlayManager::getSingleton();
         Ogre::ConfigFile::SettingsMultiMap *settings;
 
 
-           //     while (seci.hasMoreElements())
+                while (seci.hasMoreElements())
                 {
                     secName  = seci.peekNextKey();
                     settings = seci.getNext();

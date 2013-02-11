@@ -32,6 +32,7 @@
 					<Add directory="include/LoginStage/control" />
 					<Add directory="include/LoginStage/entity" />
 					<Add directory="include/LoginStage/view" />
+					<Add directory="extern/MyGUI" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />

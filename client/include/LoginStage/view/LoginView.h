@@ -2,8 +2,7 @@
 #define _LOGINVIEW_
 
 #include <Ogre.h>
-#include <MyGUI.h>
-#include <MyGUI_OgrePlatform.h>
+
 
 #include <engine/GUI.h>
 #include <BattleStage/view/BattleView.h> //Needed to be changed for an independent secuencer

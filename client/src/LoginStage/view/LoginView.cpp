@@ -112,8 +112,8 @@ void LoginView::create(Ogre::RenderTarget* wnd)
 
 
         void LoginView::doRegister(MyGUI::Widget* btn)
-        {/*
-          MyGUI::MessagePtr  msg;
+        {
+          MyGUI::WindowPtr  msg;
           std::string pass, pass2, uname, email, side;
           size_t sideIndex;
 
@@ -127,7 +127,8 @@ void LoginView::create(Ogre::RenderTarget* wnd)
 
                         if( pass.compare(pass2) != 0)
                         {
-//                            MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Passwords doesn't match please verify."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
+                            msg = MyGUI::Gui::getInstance().findWidget<MyGUI::Window>("messageBox");
+                            msg->setVisible(true);
                             return;
                         }
 
@@ -138,7 +139,7 @@ void LoginView::create(Ogre::RenderTarget* wnd)
                 catch(std::string)
                 {
 //                    msg = MyGUI::Message::createMessageBox("Message",Ogre::String("Error"),Ogre::String("Unable to connect, please try again later."), MyGUI::MessageBoxStyle::IconError|MyGUI::MessageBoxStyle::Ok);
-                }*/
+                }
         }
 
 

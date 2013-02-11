@@ -24,7 +24,6 @@ GUI* GUI::sm_instance = 0;
         GUI::GUI()
         {
             mInitialized = false;
-
         }
 
         GUI& GUI::getInstance()
@@ -45,7 +44,7 @@ GUI* GUI::sm_instance = 0;
         void GUI::initialize(Ogre::RenderTarget *wnd, Ogre::SceneManager *mgr)
         {
 
-                if( !mInitialized )
+               if( !mInitialized )
                 {
                     mRender = wnd;
                     mPlatform = new MyGUI::OgrePlatform();
@@ -61,10 +60,6 @@ GUI* GUI::sm_instance = 0;
                 else{
                     MyGUI::OgreRenderManager::getInstancePtr()->setSceneManager(mgr);
                 }
-
-
-
-
         }
 
 

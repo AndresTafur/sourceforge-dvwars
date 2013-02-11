@@ -2519,13 +2519,12 @@
 	"OgreWorkQueue.h"
 	"OgreIteratorWrappers.h"
 
-1359342859 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/GUI.h
+1360513671 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/GUI.h
 	<Ogre.h>
 	<OIS/OIS.h>
 	<InputSystem.h>
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
-	<engine/RenderBox.h>
 
 1358715574 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/RenderBox.h
 	<Ogre.h>
@@ -2545,7 +2544,7 @@
 1359510571 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/BattleStage/view/BattleView.cpp
 	"BattleView.h"
 
-1359507761 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BattleView.h
+1360513817 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/BattleStage/view/BattleView.h
 	<MyGUI.h>
 	<MyGUI_OgrePlatform.h>
 	<GUI.h>
@@ -2722,7 +2721,7 @@
 	<stdio.h>
 	<fcntl.h>
 
-1359501696 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/GUI.cpp
+1360513662 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/GUI.cpp
 	<engine/GUI.h>
 
 1359509987 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/InputSystem.cpp
@@ -2745,10 +2744,8 @@
 	<Ogre.h>
 	<ConfigReader.h>
 
-1360462732 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/view/LoginView.h
+1360511135 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/LoginStage/view/LoginView.h
 	<Ogre.h>
-	<MyGUI.h>
-	<MyGUI_OgrePlatform.h>
 	<engine/GUI.h>
 	<BattleStage/view/BattleView.h>
 	<LobbyStage/view/LobbyView.h>
@@ -2785,14 +2782,14 @@
 	<engine/AbstractClient.h>
 	<util/SingletonContainer.h>
 
-1360468469 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/MainApplication.cpp
+1360510743 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/MainApplication.cpp
 	"MainApplication.h"
 
 1360462589 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/Scene.cpp
 	<Scene.h>
 	<SceneSequencer.h>
 
-1360468564 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
+1360491502 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/engine/SceneSequencer.cpp
 	"SceneSequencer.h"
 	"Scene.h"
 
@@ -2804,7 +2801,7 @@
 1360455394 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/chat/ChatView.cpp
 	"ChatView.h"
 
-1360468055 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/LobbyView.cpp
+1360543049 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LobbyStage/view/LobbyView.cpp
 	"LobbyView.h"
 	"GameObject.h"
 	<LoginStage/control/LoginSceneManager.h>
@@ -2812,7 +2809,7 @@
 1360463459 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/control/LoginSceneManager.cpp
 	"LoginSceneManager.h"
 
-1360463333 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
+1360514368 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/LoginStage/view/LoginView.cpp
 	"LoginView.h"
 
 1359348619 source:/run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/src/sound/GameSound.cpp
@@ -2859,4 +2856,21 @@
 1360457851 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/include/engine/AbstractClient.h
 	<util/Storable.h>
 	"ClientListener.h"
+
+1360512797 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/MessageBox/MessageBox.h
+	<MyGUI.h>
+	"MessageBoxStyle.h"
+	<BaseLayout/BaseLayout.h>
+	<BaseLayout/WrapsAttribute.h>
+
+1329935292 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/MessageBox/MessageBoxStyle.h
+	<MyGUI.h>
+
+1360512867 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/BaseLayout/BaseLayout.h
+	<MyGUI.h>
+	"WrapsAttribute.h"
+
+1360513058 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/BaseLayout/WrapsAttribute.h
+
+1360512998 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/BaseLayout/Attribute.h
 

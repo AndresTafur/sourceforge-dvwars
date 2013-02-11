@@ -50,10 +50,10 @@ SceneSequencer::SceneSequencer()
                 if(mCurrentScene != NULL)
                 {
                     mCurrentScene->create(mRenderTarget);
-                    mCurrentScene->createCamera();/*
+                    mCurrentScene->createCamera();
                     mCurrentScene->createGui();
                     mCurrentScene->createSceneObjects();
-                    mCurrentScene->setSequencer(this);*/
+                    mCurrentScene->setSequencer(this);
                 }
         }
 
@@ -65,7 +65,6 @@ SceneSequencer::SceneSequencer()
                 char   charVal[10];
                 std::string sceneName;
                 std::string exp = "/descendant::sequence/child::scene[@name='"+mCurrentScene->getName()+"']/child::state[@value='";
-                Ogre::SceneManager *mgr;
 
 
                                 sprintf(charVal,"%i']",state);
@@ -99,7 +98,6 @@ SceneSequencer::SceneSequencer()
                                 }
                                 else
                                     std::cerr << "Scene: '" << sceneName << "' is not available." << std::endl;
-
         }
 
 
