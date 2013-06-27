@@ -33,6 +33,9 @@
 					<Add directory="include/LoginStage/entity" />
 					<Add directory="include/LoginStage/view" />
 					<Add directory="extern/MyGUI" />
+					<Add directory="include/libs/mapGenerator/module" />
+					<Add directory="include/libs/mapGenerator/terrain" />
+					<Add directory="include/libs/mapGenerator" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
@@ -49,6 +52,8 @@
 					<Add library="vorbisenc" />
 					<Add library="boost_system" />
 					<Add library="OgreTerrain" />
+					<Add library="noise" />
+					<Add library="freeimageplus" />
 				</Linker>
 			</Target>
 		</Build>
@@ -108,6 +113,18 @@
 		<Unit filename="include/engine/Scene.h" />
 		<Unit filename="include/engine/SceneSequencer.h" />
 		<Unit filename="include/engine/SelectionListener.h" />
+		<Unit filename="include/libs/mapGenerator/MapGenerator.h" />
+		<Unit filename="include/libs/mapGenerator/Vect2f.h" />
+		<Unit filename="include/libs/mapGenerator/module/Circle.h" />
+		<Unit filename="include/libs/mapGenerator/noiseutils.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Coast.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Desert.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Grass.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Islands.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Peninsula.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Terrain.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/TerrainBase.h" />
+		<Unit filename="include/libs/mapGenerator/terrain/Winter.h" />
 		<Unit filename="include/sound/GameSound.h" />
 		<Unit filename="include/sound/GameSoundListener.h" />
 		<Unit filename="include/sound/SoundManager.h" />
@@ -154,6 +171,17 @@
 		<Unit filename="src/engine/MainApplication.cpp" />
 		<Unit filename="src/engine/Scene.cpp" />
 		<Unit filename="src/engine/SceneSequencer.cpp" />
+		<Unit filename="src/libs/mapGenerator/MapGenerator.cpp" />
+		<Unit filename="src/libs/mapGenerator/Vect2f.cpp" />
+		<Unit filename="src/libs/mapGenerator/module/Circle.cpp" />
+		<Unit filename="src/libs/mapGenerator/noiseutils.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/Coast.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/Desert.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/Grass.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/Islands.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/Peninsula.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/TerrainBase.cpp" />
+		<Unit filename="src/libs/mapGenerator/terrain/Winter.cpp" />
 		<Unit filename="src/sound/GameSound.cpp" />
 		<Unit filename="src/util/ConfigReader.cpp" />
 		<Unit filename="src/util/Cripto.cpp" />

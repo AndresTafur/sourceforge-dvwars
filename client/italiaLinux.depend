@@ -126,7 +126,7 @@
 1346563635 /usr/include/OGRE/OgreConfig.h
 	"OgreBuildSettings.h"
 
-1359160881 /usr/include/OGRE/OgreBuildSettings.h
+1360257487 /usr/include/OGRE/OgreBuildSettings.h
 
 1346563635 /usr/include/OGRE/Threading/OgreThreadDefines.h
 	"OgreThreadDefinesNone.h"
@@ -2586,7 +2586,7 @@
 	<libxml/parser.h>
 	<libxml/xpath.h>
 
-1344541157 /usr/include/libxml2/libxml/parser.h
+1362602146 /usr/include/libxml2/libxml/parser.h
 	<stdarg.h>
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
@@ -2600,43 +2600,43 @@
 	<libxml/xmlIO.h>
 	<libxml/globals.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlversion.h
+1362602146 /usr/include/libxml2/libxml/xmlversion.h
 	<libxml/xmlexports.h>
 	<ansidecl.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlexports.h
+1362602146 /usr/include/libxml2/libxml/xmlexports.h
 
-1344541157 /usr/include/libxml2/libxml/tree.h
+1362602146 /usr/include/libxml2/libxml/tree.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/xmlstring.h>
 	<libxml/xmlregexp.h>
 	<libxml/xmlmemory.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlstring.h
+1362602146 /usr/include/libxml2/libxml/xmlstring.h
 	<stdarg.h>
 	<libxml/xmlversion.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlregexp.h
+1362602146 /usr/include/libxml2/libxml/xmlregexp.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 	<libxml/dict.h>
 
-1344541157 /usr/include/libxml2/libxml/dict.h
+1362602146 /usr/include/libxml2/libxml/dict.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlmemory.h
+1362602146 /usr/include/libxml2/libxml/xmlmemory.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/threads.h>
 	<libxml/globals.h>
 
-1344541157 /usr/include/libxml2/libxml/threads.h
+1362602146 /usr/include/libxml2/libxml/threads.h
 	<libxml/xmlversion.h>
 	<libxml/globals.h>
 
-1344541157 /usr/include/libxml2/libxml/globals.h
+1362602146 /usr/include/libxml2/libxml/globals.h
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xmlerror.h>
@@ -2645,33 +2645,33 @@
 	<libxml/xmlmemory.h>
 	<libxml/threads.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlerror.h
+1362602146 /usr/include/libxml2/libxml/xmlerror.h
 	<libxml/parser.h>
 
-1344541157 /usr/include/libxml2/libxml/SAX.h
+1362602146 /usr/include/libxml2/libxml/SAX.h
 	<stdio.h>
 	<stdlib.h>
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xlink.h>
 
-1344541157 /usr/include/libxml2/libxml/xlink.h
+1362602146 /usr/include/libxml2/libxml/xlink.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1344541157 /usr/include/libxml2/libxml/SAX2.h
+1362602146 /usr/include/libxml2/libxml/SAX2.h
 	<stdio.h>
 	<stdlib.h>
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/xlink.h>
 
-1344541157 /usr/include/libxml2/libxml/hash.h
+1362602146 /usr/include/libxml2/libxml/hash.h
 	<libxml/xmlversion.h>
 	<libxml/parser.h>
 	<libxml/dict.h>
 
-1344541157 /usr/include/libxml2/libxml/valid.h
+1362602146 /usr/include/libxml2/libxml/valid.h
 	<libxml/xmlversion.h>
 	<libxml/xmlerror.h>
 	<libxml/tree.h>
@@ -2679,25 +2679,25 @@
 	<libxml/xmlautomata.h>
 	<libxml/xmlregexp.h>
 
-1344541157 /usr/include/libxml2/libxml/list.h
+1362602146 /usr/include/libxml2/libxml/list.h
 	<libxml/xmlversion.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlautomata.h
+1362602146 /usr/include/libxml2/libxml/xmlautomata.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 	<libxml/xmlregexp.h>
 
-1344541157 /usr/include/libxml2/libxml/entities.h
+1362602146 /usr/include/libxml2/libxml/entities.h
 	<libxml/xmlversion.h>
 	<libxml/tree.h>
 
-1344541157 /usr/include/libxml2/libxml/encoding.h
+1362602146 /usr/include/libxml2/libxml/encoding.h
 	<libxml/xmlversion.h>
 	<iconv.h>
 	<unicode/ucnv.h>
 	<libxml/tree.h>
 
-1344541157 /usr/include/libxml2/libxml/xmlIO.h
+1362602146 /usr/include/libxml2/libxml/xmlIO.h
 	<stdio.h>
 	<libxml/xmlversion.h>
 	<libxml/globals.h>
@@ -2705,7 +2705,7 @@
 	<libxml/parser.h>
 	<libxml/encoding.h>
 
-1344541157 /usr/include/libxml2/libxml/xpath.h
+1362602146 /usr/include/libxml2/libxml/xpath.h
 	<libxml/xmlversion.h>
 	<libxml/xmlerror.h>
 	<libxml/tree.h>
@@ -2873,4 +2873,553 @@
 1360513058 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/BaseLayout/WrapsAttribute.h
 
 1360512998 /run/media/darkhawk665/2651b40d-8d28-4056-99e3-d84714e4ac7e/dvwars/client/extern/MyGUI/BaseLayout/Attribute.h
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/ActionFactory.cpp
+	"ActionFactory.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/ActionFactory.h
+	<map>
+	"Action.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/Action.h
+	<string>
+	<vector>
+	<Ogre.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/BuildingManager.cpp
+	"BuildingManager.h"
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/BuildingManager.h
+	<GameObject.h>
+	<CreationListener.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+	<util/Cripto.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/GameObject.h
+	<Ogre.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/CreationListener.h
+	<Squad.h>
+	<Building.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/Squad.h
+	<Ogre.h>
+	"Unit.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/Unit.h
+	<Ogre.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/Building.h
+	<GameObject.h>
+	<DaVinciGlobals.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/util/DaVinciGlobals.h
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/engine/AbstractClient.h
+	<util/Storable.h>
+	"ClientListener.h"
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/util/Storable.h
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/engine/ClientListener.h
+	<string>
+	<vector>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/util/SingletonContainer.h
+	<map>
+	<string>
+	"Storable.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/util/Cripto.h
+	<string>
+	<gcrypt.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/CreateAction.cpp
+	"CreateAction.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/CreateAction.h
+	"Action.h"
+	"SquadManager.h"
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/SquadManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<map>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<engine/AbstractClient.h>
+	<util/Cripto.h>
+	<util/SingletonContainer.h>
+	<Squad.h>
+	<SquadBuilder.h>
+	<SelectionManager.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/SquadBuilder.h
+	<Ogre.h>
+	<Squad.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/SelectionManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<InputSystem.h>
+	<SelectionListener.h>
+
+1360013899 /home/jan/davinci/davinciwars-code/client/include/engine/InputSystem.h
+	<list>
+	<Ogre.h>
+	<OIS/OIS.h>
+	<KeyboardListener.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/engine/KeyboardListener.h
+	<Ogre.h>
+	<OIS/OIS.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/engine/SelectionListener.h
+	<Ogre.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/GameManager.cpp
+	"GameManager.h"
+	"GameSound.h"
+	"CreateAction.h"
+	"MoveAction.h"
+	"NatureAction.h"
+	"GoldAction.h"
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/GameManager.h
+	<vector>
+	<boost/thread.hpp>
+	<Squad.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+	<Action.h>
+	<ActionFactory.h>
+	<SquadManager.h>
+	<SelectionManager.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/sound/GameSound.h
+	<string>
+	<list>
+	<AL/al.h>
+	<AL/alut.h>
+	<ogg/ogg.h>
+	<vorbis/codec.h>
+	<vorbis/vorbisenc.h>
+	<vorbis/vorbisfile.h>
+	"GameSoundListener.h"
+	"util/Thread.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/sound/GameSoundListener.h
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/util/Thread.h
+	<boost/thread.hpp>
+	<stdio.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/MoveAction.h
+	<Ogre.h>
+	<Action.h>
+	"SquadManager.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/NatureAction.h
+	<Action.h>
+	<Ogre.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/GoldAction.h
+	<MyGUI.h>
+	<Action.h>
+	<MyGUI_OgrePlatform.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/GoldAction.cpp
+	"GoldAction.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/MoveAction.cpp
+	"MoveAction.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/NatureAction.cpp
+	"NatureAction.h"
+	<Game.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/Game.h
+	<GameObject.h>
+	<GameStaticObjectBatch.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/GameStaticObjectBatch.h
+	<Ogre.h>
+
+1360013910 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/RTSCameraManager.cpp
+	"RTSCameraManager.h"
+	<InputSystem.h>
+
+1360013899 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/RTSCameraManager.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<KeyboardListener.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/SelectionManager.cpp
+	"SelectionManager.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/SquadBuilder.cpp
+	"SquadBuilder.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/SquadManager.cpp
+	"SquadManager.h"
+	<Game.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/control/WorkShopManager.cpp
+	"WorkShopManager.h"
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/WorkShopManager.h
+	<Ogre.h>
+	<queue>
+	<BattleStage/entity/Game.h>
+	<BattleStage/entity/Building.h>
+	<BattleStage/entity/WorkShop.h>
+	<BattleStage/control/SelectionManager.h>
+	<BattleStage/control/CreationListener.h>
+	<util/Cripto.h>
+	<util/SingletonContainer.h>
+	<engine/AbstractClient.h>
+	<engine/SelectionListener.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/WorkShop.h
+	<DaVinciGlobals.h>
+	<BattleStage/entity/Building.h>
+	<BattleStage/entity/GameObject.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/Building.cpp
+	"Building.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/Game.cpp
+	"Game.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/GameObject.cpp
+	<GameObject.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/GameStaticObjectBatch.cpp
+	"GameStaticObjectBatch.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/Indicator.cpp
+	"Indicator.h"
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/entity/Indicator.h
+	<Ogre.h>
+
+1360013910 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/MainScene.cpp
+	"MainScene.h"
+
+1360013899 /home/jan/davinci/davinciwars-code/client/include/BattleStage/control/MainScene.h
+	<MyGUI.h>
+	<Terrain/OgreTerrain.h>
+	<Terrain/OgreTerrainGroup.h>
+	<engine/GUI.h>
+	<BattleStage/control/SelectionManager.h>
+	<BattleStage/control/RTSCameraManager.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/engine/GUI.h
+	<Ogre.h>
+	<OIS/OIS.h>
+	<InputSystem.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/Squad.cpp
+	<BattleStage/entity/Squad.h>
+	<BattleStage/entity/Game.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/Unit.cpp
+	"BattleStage/entity/Unit.h"
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/entity/WorkShop.cpp
+	"WorkShop.h"
+
+1360013910 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/view/BattleView.cpp
+	"BattleView.h"
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/BattleStage/view/BattleView.h
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<GUI.h>
+	<Scene.h>
+	<BattleStage/view/WorkShopView.h>
+	<BattleStage/control/MainScene.h>
+	<BattleStage/control/GameManager.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/engine/Scene.h
+	<Ogre.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/view/WorkShopView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<BattleStage/entity/Game.h>
+	<BattleStage/entity/Indicator.h>
+	<BattleStage/view/BuildingView.h>
+	<BattleStage/control/SquadManager.h>
+	<BattleStage/control/WorkShopManager.h>
+	<BattleStage/control/CreationListener.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/BattleStage/view/BuildingView.h
+	<vector>
+	<string>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<BattleStage/control/CreationListener.h>
+	<BattleStage/control/BuildingManager.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/view/BuildingView.cpp
+	"BuildingView.h"
+	<util/ConfigReader.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/util/ConfigReader.h
+	<stdio.h>
+	<string>
+	<vector>
+	<libxml/parser.h>
+	<libxml/xpath.h>
+
+1359972743 source:/home/jan/davinci/davinciwars-code/client/src/BattleStage/view/WorkShopView.cpp
+	"WorkShopView.h"
+	"util/ConfigReader.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/Client.cpp
+	"Client.h"
+	<iostream>
+	<stdio.h>
+	<fcntl.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/engine/Client.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<netdb.h>
+	"Thread.h"
+	"AbstractClient.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/FakeClient.cpp
+	"FakeClient.h"
+	<iostream>
+	<stdio.h>
+	<fcntl.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/engine/FakeClient.h
+	<sys/socket.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<netdb.h>
+	"Client.h"
+	<util/ConfigReader.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/GUI.cpp
+	<engine/GUI.h>
+
+1360013910 source:/home/jan/davinci/davinciwars-code/client/src/engine/InputSystem.cpp
+	"InputSystem.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/Main.cpp
+	"MainApplication.h"
+	<engine/FakeClient.h>
+	<util/SingletonContainer.h>
+	<SceneSequencer.h>
+	<LoginStage/view/LoginView.h>
+	<LobbyStage/view/LobbyView.h>
+
+1360013899 /home/jan/davinci/davinciwars-code/client/include/engine/MainApplication.h
+	<Ogre.h>
+	<SceneSequencer.h>
+	<GUI.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/engine/SceneSequencer.h
+	<Ogre.h>
+	<ConfigReader.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/LoginStage/view/LoginView.h
+	<Ogre.h>
+	<engine/GUI.h>
+	<BattleStage/view/BattleView.h>
+	<LobbyStage/view/LobbyView.h>
+	<util/Cripto.h>
+	<LoginStage/control/LoginSceneManager.h>
+	<Scene.h>
+
+1360013899 /home/jan/davinci/davinciwars-code/client/include/LobbyStage/view/LobbyView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<util/Cripto.h>
+	<engine/Client.h>
+	<engine/Scene.h>
+	<LobbyStage/chat/ChatView.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/LobbyStage/chat/ChatView.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+	<ChatControl.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+	<GUI.h>
+
+1359972743 /home/jan/davinci/davinciwars-code/client/include/LobbyStage/chat/ChatControl.h
+	<Ogre.h>
+	<MyGUI.h>
+	<MyGUI_OgrePlatform.h>
+
+1364041817 /home/jan/davinci/davinciwars-code/client/include/LoginStage/control/LoginSceneManager.h
+	<Ogre.h>
+	<engine/Scene.h>
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/MainApplication.cpp
+	"MainApplication.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/Scene.cpp
+	<Scene.h>
+	<SceneSequencer.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/engine/SceneSequencer.cpp
+	"SceneSequencer.h"
+	"Scene.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/LobbyStage/chat/ChatControl.cpp
+	"ChatControl.h"
+	<engine/AbstractClient.h>
+	<util/SingletonContainer.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/LobbyStage/chat/ChatView.cpp
+	"ChatView.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/LobbyStage/view/LobbyView.cpp
+	"LobbyView.h"
+	"GameObject.h"
+	<LoginStage/control/LoginSceneManager.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/LoginStage/control/LoginSceneManager.cpp
+	"LoginSceneManager.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/LoginStage/view/LoginView.cpp
+	"LoginView.h"
+
+1359972742 source:/home/jan/davinci/davinciwars-code/client/src/sound/GameSound.cpp
+	"GameSound.h"
+
+1359972742 source:/home/jan/davinci/davinciwars-code/client/src/util/ConfigReader.cpp
+	"ConfigReader.h"
+
+1359972742 source:/home/jan/davinci/davinciwars-code/client/src/util/Cripto.cpp
+	"Cripto.h"
+	<iostream>
+	<stdio.h>
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/util/SingletonContainer.cpp
+	"SingletonContainer.h"
+
+1364042067 source:/home/jan/davinci/davinciwars-code/client/src/util/Thread.cpp
+	"Thread.h"
+
+1372329901 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/MapGenerator.cpp
+	<libnoise/noise.h>
+	<map>
+	<stdexcept>
+	<FreeImagePlus.h>
+	<cstdio>
+	"noiseutils.h"
+	"MapGenerator.h"
+	"Terrain.h"
+
+1364286437 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/noiseutils.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<libnoise/noise.h>
+
+1372329372 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/MapGenerator.h
+	<iostream>
+
+1372277664 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Terrain.h
+	"Grass.h"
+	"Desert.h"
+	"Winter.h"
+	"Coast.h"
+	"Islands.h"
+	"Peninsula.h"
+
+1372329159 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Grass.h
+	"TerrainBase.h"
+
+1372329983 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/TerrainBase.h
+	<libnoise/noise.h>
+	"noiseutils.h"
+
+1372329148 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Desert.h
+	"TerrainBase.h"
+
+1372329272 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Winter.h
+	"TerrainBase.h"
+
+1372329283 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Coast.h
+	"TerrainBase.h"
+
+1372329244 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Islands.h
+	"TerrainBase.h"
+
+1372329255 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/terrain/Peninsula.h
+	"TerrainBase.h"
+
+1372329446 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/module/Circle.cpp
+	<libnoise/misc.h>
+	<cmath>
+	"Circle.h"
+
+1372329208 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/module/Circle.h
+	<libnoise/module/modulebase.h>
+
+1372244878 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/noiseutils.cpp
+	<fstream>
+	<libnoise/interp.h>
+	<libnoise/mathconsts.h>
+	"noiseutils.h"
+
+1372329461 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/Coast.cpp
+	<map>
+	"Circle.h"
+	"Coast.h"
+
+1372329476 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/Desert.cpp
+	<map>
+	"Desert.h"
+
+1372329492 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/Grass.cpp
+	<map>
+	"Grass.h"
+
+1372329507 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/Islands.cpp
+	<map>
+	<cmath>
+	<stdexcept>
+	"Circle.h"
+	"Islands.h"
+	"Vect2f.h"
+
+1372329360 /home/jan/davinci/davinciwars-code/client/include/libs/mapGenerator/Vect2f.h
+
+1372329523 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/Peninsula.cpp
+	<map>
+	<cmath>
+	<stdexcept>
+	"Circle.h"
+	"Peninsula.h"
+	"Vect2f.h"
+
+1372330219 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/TerrainBase.cpp
+	<map>
+	"TerrainBase.h"
+
+1372329553 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/terrain/Winter.cpp
+	<map>
+	"Winter.h"
+
+1372329421 source:/home/jan/davinci/davinciwars-code/client/src/libs/mapGenerator/Vect2f.cpp
+	<cmath>
+	"Vect2f.h"
 
