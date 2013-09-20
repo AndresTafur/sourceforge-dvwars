@@ -46,7 +46,7 @@ void Vect2f::rotate(float angle)
 }
     
 
-void Vect2f::norm(void)
+void Vect2f::unit(void)
 {
     float length = getLength();
     x = x / length;

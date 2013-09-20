@@ -24,9 +24,9 @@
 Terrain::Terrain(unsigned int seed)
 :mSeed(seed)
 {
-    mHeightMapBuilder.SetDestNoiseMap (mNoiseMap);
-    mHeightMapBuilder.SetDestSize (IMG_SIZE, IMG_SIZE);
-    mHeightMapBuilder.SetBounds (
+    mNoiseMapBuilder.SetDestNoiseMap (mNoiseMap);
+    mNoiseMapBuilder.SetDestSize (IMG_SIZE, IMG_SIZE);
+    mNoiseMapBuilder.SetBounds (
             -MAP_SIZE_2, MAP_SIZE_2, -MAP_SIZE_2, MAP_SIZE_2);
 }
 

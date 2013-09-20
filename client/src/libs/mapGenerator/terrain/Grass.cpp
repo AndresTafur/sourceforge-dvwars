@@ -67,8 +67,8 @@ int GrassTerrain::generate()
     finalTerrain.SetBounds (mGrassBound, 10.0);
     finalTerrain.SetEdgeFalloff (0.225);
 
-    mHeightMapBuilder.SetSourceModule (finalTerrain);
-    mHeightMapBuilder.Build ();
+    mNoiseMapBuilder.SetSourceModule (finalTerrain);
+    mNoiseMapBuilder.Build ();
 
     return 0;
 }

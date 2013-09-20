@@ -2,7 +2,8 @@
 //
 // Copyright (C) 2003-2005 Jason Bevins
 //
-// 2013 Jan Havran - removed "reorder" warnings
+// 2013 Jan Havran	- removed "reorder" warnings
+//			- added image in memory storage support
 //
 // This library is free software; you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as published by
@@ -1107,6 +1108,7 @@ namespace noise
     /// To write the image to a file, perform the following steps:
     /// - Pass the filename to the SetDestFilename() method.
     /// - Pass an Image object to the SetSourceImage() method.
+    /// - Call the Write() method.
     /// - Call the WriteDestFile() method.
     ///
     /// The SetDestFilename() and SetSourceImage() methods must be called
@@ -1118,7 +1120,7 @@ namespace noise
 
         /// Constructor.
         WriterBMP ():
-          m_pSourceImage (NULL)
+          m_pSourceImage (NULL), m_size(0L)
         {
         }
 
@@ -1140,6 +1142,14 @@ namespace noise
           m_destFilename = filename;
         }
 
+	/// Returns real size of the image in bytes.
+	///
+	/// @returns real size of the image in bytes.
+	size_t GetSizeInBytes() const
+	{
+	  return m_size;
+	}
+
         /// Sets the image object that is written to the file.
         ///
         /// @param sourceImage The image object to write.
@@ -1151,22 +1161,41 @@ namespace noise
           m_pSourceImage = &sourceImage;
         }
 
-        /// Writes the contents of the image object to the file.
+	/// Writes the contents of the image to the memory
+	///
+	/// @pre SetSourceImage() has been previously called.
+	///
+        /// @throw noise::ExceptionInvalidParam See the preconditions.
+        /// @throw noise::ExceptionOutOfMemory Out of memory.
+        /// @throw noise::ExceptionUnknown An unknown exception occurred.
+	///
+	/// This method encodes the contents of the image and writes it to
+	/// memory. Before calling this method, call the SetSourceImage()
+	/// method to specify the image.
+
+	void Write ();
+        /// Writes the contents of the memory to the file.
         ///
         /// @pre SetDestFilename() has been previously called.
-        /// @pre SetSourceImage() has been previously called.
+        /// @pre Write() has been previously called.
         ///
         /// @throw noise::ExceptionInvalidParam See the preconditions.
         /// @throw noise::ExceptionOutOfMemory Out of memory.
         /// @throw noise::ExceptionUnknown An unknown exception occurred.
         /// Possibly the file could not be written.
         ///
-        /// This method encodes the contents of the image and writes it to a
-        /// file.  Before calling this method, call the SetSourceImage()
-        /// method to specify the image, then call the SetDestFilename()
-        /// method to specify the name of the file to write.
+        /// This method write memory to a file. Before calling this method,
+	/// call the Write() method to encode the contents of the image and
+        /// the SetDestFilename() method to specify the name of the file
+	/// to write.
         void WriteDestFile ();
 
+	/// Returns copy of the contents of the memory with image
+	///
+	/// @pre Write() has been previously called.
+	///
+	/// @returns copy of the contents of the memory with image
+	unsigned char * GetMem();
       protected:
 
         /// Calculates the width of one horizontal line in the file, in bytes.
@@ -1184,6 +1213,12 @@ namespace noise
 
         /// A pointer to the image object that will be written to the file.
         Image* m_pSourceImage;
+
+	/// Store space for contents of the image
+	std::string m_pictBuffer;
+
+	/// Real size of the image in bytes
+	size_t m_size;
 
     };
 
@@ -2540,3 +2575,4 @@ namespace noise
 }
 
 #endif
+

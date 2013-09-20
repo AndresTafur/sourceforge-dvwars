@@ -66,8 +66,8 @@ int DesertTerrain::generate()
     finalTerrain.SetBounds (mDesertBound, 10.0);
     finalTerrain.SetEdgeFalloff (0.125);
     
-    mHeightMapBuilder.SetSourceModule (finalTerrain);
-    mHeightMapBuilder.Build ();
+    mNoiseMapBuilder.SetSourceModule (finalTerrain);
+    mNoiseMapBuilder.Build ();
 
     return 0;
 }

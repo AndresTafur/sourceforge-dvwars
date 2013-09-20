@@ -2,7 +2,8 @@
 //
 // Copyright (C) 2003-2005 Jason Bevins
 //
-// 2013 Jan Havran - removed "unused-variable" warning
+// 2013 Jan Havran	- removed "unused-variable" warning
+//			- added image in memory storage support
 //
 // This library is free software; you can redistribute it and/or modify it
 // under the terms of the GNU Lesser General Public License as published by
@@ -23,6 +24,7 @@
 //
 
 #include <fstream>
+#include <sstream>
 
 #include <libnoise/interp.h>
 #include <libnoise/mathconsts.h>
@@ -569,7 +571,7 @@ int WriterBMP::CalcWidthByteCount (int width) const
   return ((width * 3) + 3) & ~0x03;
 }
 
-void WriterBMP::WriteDestFile ()
+void WriterBMP::Write ()
 {
   if (m_pSourceImage == NULL) {
     throw noise::ExceptionInvalidParam ();
@@ -585,9 +587,9 @@ void WriterBMP::WriteDestFile ()
   // This buffer holds one horizontal line in the destination file.
   noise::uint8* pLineBuffer = NULL;
 
-  // File object used to write the file.
-  std::ofstream os;
-  os.clear ();
+  // Stringstream object used to write to memory.
+  std::stringstream ss;
+  ss.clear ();
 
   // Allocate a buffer to hold one horizontal line in the bitmap.
   try {
@@ -597,34 +599,25 @@ void WriterBMP::WriteDestFile ()
     throw noise::ExceptionOutOfMemory ();
   }
 
-  // Open the destination file.
-  os.open (m_destFilename.c_str (), std::ios::out | std::ios::binary);
-  if (os.fail () || os.bad ()) {
-    delete[] pLineBuffer;
-    throw noise::ExceptionUnknown ();
-  }
-
   // Build the header.
   noise::uint8 d[4];
-  os.write ("BM", 2);
-  os.write ((char*)UnpackLittle32 (d, destSize + BMP_HEADER_SIZE), 4);
-  os.write ("\0\0\0\0", 4);
-  os.write ((char*)UnpackLittle32 (d, (noise::uint32)BMP_HEADER_SIZE), 4);
-  os.write ((char*)UnpackLittle32 (d, 40), 4);   // Palette offset
-  os.write ((char*)UnpackLittle32 (d, (noise::uint32)width ), 4);
-  os.write ((char*)UnpackLittle32 (d, (noise::uint32)height), 4);
-  os.write ((char*)UnpackLittle16 (d, 1 ), 2);   // Planes per pixel
-  os.write ((char*)UnpackLittle16 (d, 24), 2);   // Bits per plane
-  os.write ("\0\0\0\0", 4); // Compression (0 = none)
-  os.write ((char*)UnpackLittle32 (d, (noise::uint32)destSize), 4);
-  os.write ((char*)UnpackLittle32 (d, 2834), 4); // X pixels per meter
-  os.write ((char*)UnpackLittle32 (d, 2834), 4); // Y pixels per meter
-  os.write ("\0\0\0\0", 4);
-  os.write ("\0\0\0\0", 4);
-  if (os.fail () || os.bad ()) {
-    os.clear ();
-    os.close ();
-    os.clear ();
+  ss.write ("BM", 2);
+  ss.write ((char*)UnpackLittle32 (d, destSize + BMP_HEADER_SIZE), 4);
+  ss.write ("\0\0\0\0", 4);
+  ss.write ((char*)UnpackLittle32 (d, (noise::uint32)BMP_HEADER_SIZE), 4);
+  ss.write ((char*)UnpackLittle32 (d, 40), 4);   // Palette offset
+  ss.write ((char*)UnpackLittle32 (d, (noise::uint32)width ), 4);
+  ss.write ((char*)UnpackLittle32 (d, (noise::uint32)height), 4);
+  ss.write ((char*)UnpackLittle16 (d, 1 ), 2);   // Planes per pixel
+  ss.write ((char*)UnpackLittle16 (d, 24), 2);   // Bits per plane
+  ss.write ("\0\0\0\0", 4); // Compression (0 = none)
+  ss.write ((char*)UnpackLittle32 (d, (noise::uint32)destSize), 4);
+  ss.write ((char*)UnpackLittle32 (d, 2834), 4); // X pixels per meter
+  ss.write ((char*)UnpackLittle32 (d, 2834), 4); // Y pixels per meter
+  ss.write ("\0\0\0\0", 4);
+  ss.write ("\0\0\0\0", 4);
+  if (ss.fail () || ss.bad ()) {
+    ss.clear ();
     delete[] pLineBuffer;
     throw noise::ExceptionUnknown ();
   }
@@ -640,19 +633,61 @@ void WriterBMP::WriteDestFile ()
       *pDest++ = pSource->red  ;
       ++pSource;
     }
-    os.write ((char*)pLineBuffer, (size_t)bufferSize);
-    if (os.fail () || os.bad ()) {
-      os.clear ();
-      os.close ();
-      os.clear ();
+    ss.write ((char*)pLineBuffer, (size_t)bufferSize);
+    if (ss.fail () || ss.bad ()) {
+      ss.clear ();
       delete[] pLineBuffer;
       throw noise::ExceptionUnknown ();
     }
   }
 
-  os.close ();
-  os.clear ();
+  // Copy image
+  m_pictBuffer = ss.str();
+
+  // Get size of the image
+  ss.seekg(0, std::ios::end);
+  m_size = ss.tellg();
+
+  ss.clear ();
   delete[] pLineBuffer;
+}
+
+void WriterBMP::WriteDestFile ()
+{
+  if (m_pictBuffer.empty()) {
+    Write();
+  }
+
+  // File object used to write the file.
+  std::ofstream os;
+  os.clear();
+
+  // Open the destination file.
+  os.open (m_destFilename.c_str (), std::ios::out | std::ios::binary);
+  if (os.fail () || os.bad ()) {
+    throw noise::ExceptionUnknown ();
+  } 
+
+  // Write image to file.
+  os << m_pictBuffer;
+
+  if (os.fail () || os.bad ()) {
+    os.clear ();
+    os.close ();
+    os.clear ();
+    throw noise::ExceptionUnknown ();
+  } 
+
+  os.close();
+  os.clear();
+}
+
+unsigned char * WriterBMP::GetMem()
+{
+  unsigned char * mem = new unsigned char[m_size];
+  memcpy(mem, m_pictBuffer.c_str(), m_size);
+
+  return mem;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -1298,3 +1333,4 @@ void RendererNormalMap::Render ()
     }
   }
 }
+

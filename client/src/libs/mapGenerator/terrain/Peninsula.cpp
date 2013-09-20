@@ -1,3 +1,4 @@
+
 /*
  *  Copyright (C) 2013 Jan Havran (sonicpp).
  *
@@ -98,7 +99,7 @@ int PeninsulaTerrain::generate()
     module::TranslatePoint islands[mPeninsulaCount];
     module::Max maxims[(mPeninsulaCount == 1) ? 1 : (mPeninsulaCount - 1)];
     Vect2f vect(1.0, -1.0);
-    vect.norm();
+    vect.unit();
 
     module::Circle circle[(mPeninsulaCount)];
 
@@ -182,8 +183,8 @@ int PeninsulaTerrain::generate()
     finalTerrain.SetBounds (0.0 , 10.0);
     finalTerrain.SetEdgeFalloff (0.325);
 
-    mHeightMapBuilder.SetSourceModule (finalTerrain);
-    mHeightMapBuilder.Build ();
+    mNoiseMapBuilder.SetSourceModule (finalTerrain);
+    mNoiseMapBuilder.Build ();
 
     return 0;
 }

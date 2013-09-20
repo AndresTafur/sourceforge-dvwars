@@ -80,8 +80,8 @@ int CoastTerrain::generate()
     finalTerrain.SetBounds (0.0 , 10.0);
     finalTerrain.SetEdgeFalloff (0.325);
     
-    mHeightMapBuilder.SetSourceModule (finalTerrain);
-    mHeightMapBuilder.Build ();
+    mNoiseMapBuilder.SetSourceModule (finalTerrain);
+    mNoiseMapBuilder.Build ();
 
     return 0;
 }

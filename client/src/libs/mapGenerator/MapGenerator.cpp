@@ -21,7 +21,6 @@
 #include <map>
 #include <stdexcept>
 #include <FreeImagePlus.h>
-#include <cstdio> // func "remove"
 
 #include "noiseutils.h"
 #include "MapGenerator.h"
@@ -55,15 +54,45 @@ void MapGenerator::generateMap(std::string type, std::string location, int seed)
         utils::Image heightMap = terrain->getHeightMap();
 
         utils::WriterBMP writerColor, writerHeight;
-    
-        //TODO save as *.[bmp | jpg] directly
+	size_t size;
+	std::string full_name;
+	unsigned char *data;
+	fipMemoryIO *mem;
+	FREE_IMAGE_FORMAT fif;
+	FIBITMAP * check;
+
         writerColor.SetSourceImage (colorMap);
-        writerColor.SetDestFilename (location + "map.bmp");
-        writerColor.WriteDestFile ();
+	writerColor.Write();
+	size = writerColor.GetSizeInBytes();
+	data = writerColor.GetMem();
+	mem = new fipMemoryIO(data, size);
+	if (!mem->isValid())
+		throw std::runtime_error("MapGenerator: Bad image content");
+	fif = mem->getFileType();
+	check = mem->load(fif, PNG_DEFAULT);
+	delete mem;
+	full_name = location + "terrain_texture.png";
+	if (!FreeImage_Save(FIF_PNG, check, full_name.c_str(), PNG_DEFAULT)) {
+            throw std::logic_error("An error occurred while saving" \
+                " image '" + full_name + "'");
+        }
 
         writerHeight.SetSourceImage(heightMap);
-        writerHeight.SetDestFilename(location + "map2.bmp");
-        writerHeight.WriteDestFile();
+	writerHeight.Write();
+	size = writerHeight.GetSizeInBytes();
+	data = writerHeight.GetMem();
+	mem = new fipMemoryIO(data, size);
+	if (!mem->isValid())
+		throw std::runtime_error("MapGenerator: Bad image content");
+	fif = mem->getFileType();
+	check = mem->load(fif, PNG_DEFAULT);
+	delete mem;
+	full_name = location + "terrain.png";
+	if (!FreeImage_Save(FIF_PNG, check, full_name.c_str(), PNG_DEFAULT)) {
+            throw std::logic_error("An error occurred while saving" \
+                " image '" + full_name + "'");
+    }
+		
     }
     catch (ExceptionInvalidParam& e) {
         throw std::invalid_argument("Noise: invalid param");
@@ -80,15 +109,6 @@ void MapGenerator::generateMap(std::string type, std::string location, int seed)
     catch (Exception& e) {
         throw std::runtime_error("Noise: general error");
     }
-
-    mImage.load((location + "map2.bmp").c_str());
-    mImage.convertToGrayscale();
-    mImage.save((location + "terrain.png").c_str());
-    
-    mImage.load((location + "map.bmp").c_str());
-    mImage.save((location + "terrain_texture.jpg").c_str());
-    remove((location + "map.bmp").c_str());
-    remove((location + "map2.bmp").c_str());
 
     delete terrain;
 }
